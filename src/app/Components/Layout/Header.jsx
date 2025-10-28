@@ -1,0 +1,241 @@
+"use client";
+import Link from "next/link";
+import React, { useState, useRef, useEffect } from "react";
+import { Dropdown } from "react-bootstrap";
+
+const Header = () => {
+  const [isActive, setIsActive] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggleClick = (event) => {
+    setIsActive((current) => !current);
+  };
+
+
+  const handleSearchClick = (e) => {
+    setIsOpen((current) => !current);
+    console.log('clicked');
+  }
+  useEffect(() => {
+    const body = document.body;
+    if (isOpen) {
+      body.classList.add("search-popup-active");
+      body.style.overflow = "hidden"; // 🚫 Disable scroll
+    } else {
+      body.classList.remove("search-popup-active");
+      body.style.overflow = ""; // ✅ Re-enable scroll
+    }
+
+    // Cleanup if component unmounts
+    return () => body.classList.remove("search-popup-active");
+  }, [isOpen]);
+  const dropdownRef = useRef();
+
+
+  // const handleMenuClose = () => {
+  //   dropdownRef.current?.click();
+  //   handleToggleClick();
+  //   setIsActive(false);
+  // };
+
+  return (
+
+    <div className="sticky-top">
+      <div className="topHeader">
+        <div className="container">
+          <div>
+            <div className="displayFlex alignItem_center gap16">
+              <div>
+                <select className="langSelect">
+                  <option value="en">English</option>
+                  <option value="ar">Arabic</option>
+                  <option value="hi">Hindi</option>
+                </select>
+              </div>
+              <div>
+                <Dropdown className="phnoSelect">
+                  <Dropdown.Toggle variant="success" id="dropdown-basic">
+                    India :&nbsp;
+                    <Link href="tel:+919498660803">+919498660803</Link>
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="/service-page/online_safety_testing"> Bahrain :&nbsp;
+                      <Link href="tel:+97366622536">+97366622536</Link></Dropdown.Item>
+                    <Dropdown.Item href="/service-page/offline_valve_testing">UAE :&nbsp;
+                      <Link href="tel:+971504712069">+971504712069</Link></Dropdown.Item>
+
+
+                    <Dropdown.Item href="/service-page/offline_valve_testing">Saudi :&nbsp; 
+                      <Link href="tel:+966507745097">+966507745097</Link></Dropdown.Item>
+
+
+                  </Dropdown.Menu>
+                </Dropdown>
+              </div>
+
+
+            </div>
+            <div>
+              <ul className="socialMediaLink">
+                <li>
+                  <Link href="#">
+                    <img src="/assets/img/icons_facebook.svg" alt="fb" />
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#">
+                    <img src="/assets/img/icons_instagram.svg" alt="insta" />
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#">
+                    <img src="/assets/img/icons_linkedin.svg" alt="linkedin" />
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="#">
+                    <img src="/assets/img/x-twitter.svg" alt="twitter" />
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#">
+                    <img src="/assets/img/youtube_icon.svg" alt="youtube" />
+                  </Link>
+                </li>
+
+
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <header>
+        <div className="container">
+          <nav>
+            <div className="mobileHeader">
+              <div className="brandlogo">
+                <Link href={"/"} prefetch>
+                  <img
+                    src="/assets/img/stsc_logo.png"
+                    alt="Logo"
+                  />
+                </Link>
+              </div>
+
+              <div className="mobileToggle">
+                <button className="emptyBtn" onClick={handleToggleClick}>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+            <div
+              className={isActive ? " navbarCollapse show" : "navbarCollapse"}
+            >
+              <div className="margin_auto">
+                <ul>
+                  <li>
+                    <Link href={"/"} prefetch>
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={"/about-us"} prefetch>
+                      About Us
+                    </Link>
+                  </li>
+                  <li>
+                    {/* <Link href="#" prefetch>
+                      Services
+                    </Link> */}
+                    <Dropdown>
+                      <Dropdown.Toggle variant="success" id="dropdown-basic">
+                        Services
+                      </Dropdown.Toggle>
+
+                      <Dropdown.Menu>
+                        <Dropdown.Item href="/service-page/online_safety_testing">Online Safety Valve Testing (Trevi  Type)</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/offline_valve_testing">Offline Valve Testing</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/alltype_valve_services">All Types of Valve Servicing</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/online_seal">Online Leak Sealing – SYLMASATA & Conventional</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/hot_tapping">Hot Tapping & Insertion of S-Type( Gate Valve Online)</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/heat_exchanger">Heat Exchanger, Maintenance & Supply</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/ro_plant_epc_contracts">RO Plant EPC Contracts Upto 2MIGPDA</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/solar_plant_epc">Solar Plant EPC upto  5MW & Maintenance</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/ro_membrane">RO Plants Retro  Fitting</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/upvc_aluminiumdoors_windowsfabrication">UPVC & Aluminium Doors & Windows Fabrication & Installation</Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
+
+                  </li>
+                  <li>
+                    <Link href={"/gallery"} prefetch>
+                      Gallery
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#" prefetch>
+                      Reference and PO’s
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={"/testmonials"} prefetch>
+                      Testmonials
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={'/our-infrastructure'} prefetch>
+                      Our Infrastructure
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={"/contact-us"} prefetch>
+                      Contact Us
+                    </Link>
+                  </li>
+
+
+
+                </ul>
+              </div>
+              <div>
+
+                <button className="circleIconbtn" onClick={handleSearchClick}>
+                  <img src="/assets/img/tabler_search.svg" alt="search" />
+                </button>
+
+
+              </div>
+
+            </div>
+          </nav>
+        </div>
+      </header>
+      {/* popup search */}
+      {
+        isOpen && (
+          <div className={isOpen ? "search-popup opened" : "search-popup"}>
+            <button className="close-search" onClick={() => setIsOpen(false)}>
+              <img src="/assets/img/ic_round-close.svg" alt="close" /></button>
+            <form action="#" onSubmit={(e) => e.preventDefault()}>
+              <div className="form-group">
+                <input type="search" name="search-field" placeholder="Search Here..." required="" />
+                <button type="submit">  <img src="/assets/img/tabler_search.svg" alt="search" /></button>
+              </div>
+            </form>
+          </div>
+        )
+      }
+    </div>
+
+
+  );
+};
+
+export default Header;
