@@ -173,8 +173,8 @@ const Page = () => {
                     <div className='row alignItem_center' >
                         <div className='col-lg-6'>
                             <div>
-                                <h1>Testmonials</h1>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <h1>Credentials</h1>
+                                <p>We are grateful to our clients for giving us the opportunity to work for them; it is a tremendous source of encouragement for our team when our work is recognized. Numerous business leaders from Saudi Arabia and overseas have expressed appreciation for our team thus far.</p>
                                 <button className='mainbtn'>Contact Us</button>
                             </div>
                         </div>
@@ -196,8 +196,8 @@ const Page = () => {
                         id="uncontrolled-tab-example"
                         className="infrastructureTab"
                     >
-                        <Tab eventKey="appreciationLetterTab" title="Appreciation Letter">
-                            <div className="appLetterTab">
+                        <Tab eventKey=" crCopiesTab" title="CR Copies data">
+                            <div className="crCopiesTab">
                                 <LightGallery
                                     onInit={onInit}
                                     speed={500}
@@ -247,10 +247,10 @@ const Page = () => {
                                 </LightGallery>
                             </div>
                         </Tab>
-                        <Tab eventKey="crCopiesTab" title="CR Copies">
+                        <Tab eventKey="appreciationLetterTab" title="Appreciation letter data">
 
 
-                            <div className="crCopiesTab">
+                            <div className=" appLetterTab">
                                 <LightGallery
                                     onInit={onInit}
                                     speed={500}
@@ -273,6 +273,9 @@ const Page = () => {
                                 </LightGallery>
                             </div>
                         </Tab>
+
+                        <Tab eventKey="referenceTab" title="Reference"
+                        ></Tab>
 
                     </Tabs>
                 </div>

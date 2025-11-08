@@ -44,7 +44,7 @@ const Header = () => {
       <div className="topHeader">
         <div className="container">
           <div>
-            <div className="displayFlex alignItem_center gap16">
+            <div className="displayFlex alignItem_center gap30">
               <div>
                 <select className="langSelect">
                   <option value="en">English</option>
@@ -55,8 +55,16 @@ const Header = () => {
               <div>
                 <Dropdown className="phnoSelect">
                   <Dropdown.Toggle variant="success" id="dropdown-basic">
-                    India :&nbsp;
-                    <Link href="tel:+919498660803">+919498660803</Link>
+
+                    <div className="displayInlineFlex alignItem_center gap12">
+                      <div>
+                        <img src="/assets/img/phonetop_icon.svg" alt="phone" />
+                      </div>
+                      <div>
+                        Saudi :&nbsp;
+                        <Link href="tel:+966507745097">+966507745097</Link>
+                      </div> 
+                    </div>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
@@ -65,9 +73,11 @@ const Header = () => {
                     <Dropdown.Item href="/service-page/offline_valve_testing">UAE :&nbsp;
                       <Link href="tel:+971504712069">+971504712069</Link></Dropdown.Item>
 
+                   
 
-                    <Dropdown.Item href="/service-page/offline_valve_testing">Saudi :&nbsp; 
-                      <Link href="tel:+966507745097">+966507745097</Link></Dropdown.Item>
+                    <Dropdown.Item href="/service-page/offline_valve_testing">
+                      India :&nbsp;
+                      <Link href="tel:+919498660803">+919498660803</Link></Dropdown.Item>
 
 
                   </Dropdown.Menu>
@@ -81,6 +91,11 @@ const Header = () => {
                 <li>
                   <Link href="#">
                     <img src="/assets/img/icons_facebook.svg" alt="fb" />
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#">
+                    <img src="/assets/img/ic_baseline-whatsapp.svg" alt="whatsapp" />
                   </Link>
                 </li>
                 <li>
@@ -121,7 +136,7 @@ const Header = () => {
               <div className="brandlogo">
                 <Link href={"/"} prefetch>
                   <img
-                    src="/assets/img/stsc_logo.png"
+                    src="/assets/img/stsc_full.png"
                     alt="Logo"
                   />
                 </Link>
@@ -146,16 +161,31 @@ const Header = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href={"/about-us"} prefetch>
+                    {/* <Link href={"/about-us"} prefetch>
                       About Us
-                    </Link>
+                    </Link> */}
+
+
+
+                    <Dropdown>
+                      <Dropdown.Toggle id="dropdown-basic">
+                        About Us
+                      </Dropdown.Toggle>
+
+                      <Dropdown.Menu>
+                        <Dropdown.Item href={'/company'}>Company</Dropdown.Item>
+                        <Dropdown.Item href={'/leadership-team'}>Leadership team</Dropdown.Item>
+                        <Dropdown.Item href={'/group-companies'}>Group companies</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
+
                   </li>
-                  <li>
+                  <li >
                     {/* <Link href="#" prefetch>
                       Services
                     </Link> */}
-                    <Dropdown>
-                      <Dropdown.Toggle variant="success" id="dropdown-basic">
+                    <Dropdown className="serviceDropdown">
+                      <Dropdown.Toggle   id="dropdown-basic">
                         Services
                       </Dropdown.Toggle>
 
@@ -163,6 +193,7 @@ const Header = () => {
                         <Dropdown.Item href="/service-page/online_safety_testing">Online Safety Valve Testing (Trevi  Type)</Dropdown.Item>
                         <Dropdown.Item href="/service-page/offline_valve_testing">Offline Valve Testing</Dropdown.Item>
                         <Dropdown.Item href="/service-page/alltype_valve_services">All Types of Valve Servicing</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">Technical Manpower supply for Power plant refineries and Water plant</Dropdown.Item>
                         <Dropdown.Item href="/service-page/online_seal">Online Leak Sealing – SYLMASATA & Conventional</Dropdown.Item>
                         <Dropdown.Item href="/service-page/hot_tapping">Hot Tapping & Insertion of S-Type( Gate Valve Online)</Dropdown.Item>
                         <Dropdown.Item href="/service-page/heat_exchanger">Heat Exchanger, Maintenance & Supply</Dropdown.Item>
@@ -170,28 +201,40 @@ const Header = () => {
                         <Dropdown.Item href="/service-page/solar_plant_epc">Solar Plant EPC upto  5MW & Maintenance</Dropdown.Item>
                         <Dropdown.Item href="/service-page/ro_membrane">RO Plants Retro  Fitting</Dropdown.Item>
                         <Dropdown.Item href="/service-page/upvc_aluminiumdoors_windowsfabrication">UPVC & Aluminium Doors & Windows Fabrication & Installation</Dropdown.Item>
+
                       </Dropdown.Menu>
                     </Dropdown>
 
                   </li>
                   <li>
-                    <Link href={"/gallery"} prefetch>
-                      Gallery
-                    </Link>
+                   
+
+                      <Dropdown>
+                        <Dropdown.Toggle id="dropdown-basic">
+                          Our Infrastructure
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                          <Dropdown.Item href={'/gallery'}>Photo Gallery</Dropdown.Item>
+                          <Dropdown.Item href="#">Video Gallery</Dropdown.Item>
+                        <Dropdown.Item href="#">Our Branches</Dropdown.Item>
+                        <Dropdown.Item href="#">Trainings</Dropdown.Item>
+                        </Dropdown.Menu>
+                      </Dropdown>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="#" prefetch>
-                      Reference and PO’s
+                      Credentials’
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href={"/testmonials"} prefetch>
-                      Testmonials
+                      Credentials
                     </Link>
                   </li>
                   <li>
                     <Link href={'/our-infrastructure'} prefetch>
-                      Our Infrastructure
+                      Careers
                     </Link>
                   </li>
                   <li>

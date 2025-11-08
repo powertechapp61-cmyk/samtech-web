@@ -305,11 +305,202 @@ const ServicePage = () => {
             ]
         },
 
+        technical_manpower_supply_for_power_plant_refineries_and_water_plant: {
+            title: "Technical Manpower supply for Power plant refineries and Water plant",
+            subTitle: "SERVICES",
+            bannerImg: "/assets/img/upvc_bnr.png",
+            bannerparagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            content: [
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            ],
+            imgs: [
+                "/assets/img/upvc_bnr.png",
+            ],
+            clients: [
+                {
+                    name: "BAHRAIN",
+                    companines: [
+                        "FOULATH HOLDING B.S.C ",
+                        "BAHRAIN STEELS BSCC (E.C)"
+                    ]
+                },
+                {
+                    name: "DUBAI",
+                    companines: [
+                        "SHOMCO"
+                    ]
+                }
+            ]
+        },
+
     }
     return (
         <>
 
             <Service pageData={pageData[`${pagename}`]} pagename={pagename} />
+
+
+            <section className='leadsGeneration_sec'>
+                <div className='container'>
+                    
+                    <div className='leadsGen-wrapper'>
+                        <div className='row'>
+                            <div className='col-lg-5'>
+                                    <div className='leadsGen-img'>
+                                    <img src="/assets/img/leadsGen_img.png" alt='lead gen' />
+                                </div>
+                            </div>
+                            <div className='col-lg-7'>
+                                <div className='leadGenFrame'>
+                                <h2>Leads Generation</h2>
+
+                                    <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_24'>It is a long established fact that a reader will be distracted by the readable content of a page randomised words which don{`'`}t look even slightly when looking at its layout.</p>
+                                <form>
+
+                                    <div className='row'>
+                                        <div className='col-lg-6'>
+                                            <div className="mb_24">
+                                                {/* <label className="labeltext">First Name</label> */}
+                                                <input placeholder='First name'
+                                                    type="text"
+                                                    name="name"
+                                                    className="mainInput"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className='col-lg-6'>
+                                            <div className="mb_24">
+                                                {/* <label className="labeltext">Last Name</label> */}
+                                                <input placeholder='Last name'
+                                                    type="text"
+                                                    name="name"
+                                                    className="mainInput"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div className='row'>
+                                        <div className='col-lg-6'>
+                                            <div className="mb_24">
+                                                {/* <label className="labeltext">Company Name</label> */}
+                                                <input placeholder='Phone Number'
+                                                    type="text"
+                                                    name="name"
+                                                    className="mainInput"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className='col-lg-6'>
+                                            <div className="mb_24">
+                                                {/* <label className="labeltext">Email Address</label> */}
+                                                <input placeholder='Email Address'
+                                                    type="text"
+                                                    name="name"
+                                                    className="mainInput"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div className='row'>
+                                        <div className='col-lg-6'>
+                                            <div className="mb_24">
+                                                {/* <label className="labeltext">Phone number</label> */}
+                                                <input placeholder='Company Name'
+                                                    type="text"
+                                                    name="name"
+                                                    className="mainInput"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className='col-lg-6'>
+                                            <div className="mb_24">
+                                                {/* <label className="labeltext">Job Title</label> */}
+                                                <input placeholder='Website'
+                                                    type="text"
+                                                    name="name"
+                                                    className="mainInput"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                    <div className='row'>
+                                        <div className='col-lg-6'>
+                                            <div className="mb_24">
+                                                {/* <label className="labeltext">Job Title</label> */}
+
+                                                <select className="mainInput">
+                                                    <option>Select Country</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div className='col-lg-6'>
+                                            <div className="mb_24">
+                                                {/* <label className="labeltext">Country</label> */}
+                                                <input placeholder='City'
+                                                    type="text"
+                                                    name="name"
+                                                    className="mainInput"
+                                                />
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div className='row'>
+                                        <div className='col-lg-6'>
+                                            <div className="mb_24">
+                                                {/* <label className="labeltext">Phone number</label> */}
+                                                <input placeholder='Zip'
+                                                    type="text"
+                                                    name="name"
+                                                    className="mainInput"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className='col-lg-6'>
+                                            <div className="mb_24">
+                                                {/* <label className="labeltext">Job Title</label> */}
+                                                <input placeholder='State'
+                                                    type="text"
+                                                    name="name"
+                                                    className="mainInput"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <textarea rows={4} className='mb_24' placeholder='How may we help you?'>
+
+                                    </textarea>
+
+
+
+                                    <button
+                                        type="submit"
+                                        className="mainbtn">
+                                        Submit
+                                    </button>
+                                </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
         </>
     )
 }

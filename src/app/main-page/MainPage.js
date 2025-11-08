@@ -4,13 +4,10 @@ import React, { useRef, useState } from 'react'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { Modal } from "react-bootstrap";
-import Marquee from "react-fast-marquee";
+import LeaderShipTeam from '../Components/LeaderShipTeam';
 
 const Mainpage = () => {
-      const marqueeRef = useRef(null);
-  
-  const [showModal, setShowModal] = useState(null); // null or modal id
+
 
   const clientSay = [
     {
@@ -50,55 +47,7 @@ const Mainpage = () => {
     },
 
   ];
-  const leadershipteamModals = [
-    {
-      id: 1,
-      Img: "/assets/img/director.jpg",
-      Name: "Mr. S. A. MOHAMED SULTAN",
-      Role: "Managing Director - Power Tech Group Companies",
-      content: `
-1983 - Bachelor's degree in Mechanical Engineering(B.E.) from Madras University, Tamil Nadu
 
-Chairman - Chennai Power and Desalination Training Institute
-
-A seasoned professional with over 35 years of cross - cultural experience in Operations, Maintenance, Production Planning & Control, Quality Assurance & Manpower Planning in power and desalination plants in India and the Middle East.Experienced with multinational companies such as ABB, Mitsubishi, and Ansaldo.
-
-  Worked in NLC and NTPC - Ramagundam at managerial level. 
-
-Ministry of Electricity and Water, Bahrain - Power and desalination plant.
-
-Dubai Electricity and Water Authority - In charge of water transmission network for Dubai.
-    ` },
-    {
-      id: 2,
-      Img: "/assets/img/sheikrajas.jpg",
-      Name: "Mr. A. MOHAMMED SHEIK RAJA",
-      Role: "General Manager- Power Tech Group Companies",
-      content: `B. Tech from Madras University and M.BA (Marketing & Finance) from Delhi
-Over 20+ Years of Experience in working with Top Multinational Companies in India & GCC Region
-Had worked with Companies like IBM, HPE, DELL and SHARP in leadership roles
-Has exposure to various Industries such as Information Technology, Office Automation, Solar, Power Plants and Technical Manpower Provisioning
-Driven, Progressive and Team Player with sharp business acumen, who always puts customers first in all his engagement
-Won Several Accolades over the years for consistently delivering results and has several Industry certifications under his belt`
-
-    },
-    {
-      id: 3, Img: "/assets/img/gm1.jpg", Name: "Mr. AHMED IBRAHIM", Role: "General Manager - Global Powertech UAE",
-      content: `BE - MBA from Anna University
-General Manager - Global Powertech UAE
-15+Years’ Experience is Power Transmission and Distribution Engineering, EPC Projects.
-Having EPC Experience in 400kV, 132kV, Substation.. Underground Cabling works, OHL line replacement.
-Worked in Contractor, Consultant Field such a reputed companies.. Engie, MITSUBISHI ELECTRIC, MOTTMAC DONALD, POYRY SWITZERLAND Executed Ministry Projects in DEWA, Etihad WE, SEWA in UAE` },
-    {
-      id: 4, Img: "/assets/img/Jasim.jpg", Name: "Mr. J. MOHAMED JASIM", Role: "Manager- Power Tech Group Companies",
-
-      content: `B.E graduate from Anna University with 4+ years of leadership
-experience in IT, Data Management, Solar, Power Plants, and Technical Manpower Provisioning. Currently a Manager
-at Power Tech Group Companies, previously worked with clients like Reddit and Axis Bank. A results-driven professional with
-sharp business acumen, industry certifications, and multiple
-accolades for excellence. A proactive team player
-committed to innovation and customer success.` },
-  ];
   const serviceSlider = {
     dots: false,
     arrows: false,
@@ -143,8 +92,8 @@ committed to innovation and customer success.` },
     infinite: true,
     autoplay: true,
     autoplaySpeed: 3000,
-    slidesToShow: 5,
-    slidesToScroll: 4,
+    slidesToShow: 9,
+    slidesToScroll: 1,
     lazyLoad: false,
     responsive: [
       {
@@ -222,6 +171,30 @@ committed to innovation and customer success.` },
     autoplaySpeed: 4000,
     arrows: true,
     fade: true, // smooth fade transition
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        },
+      },
+    ],
   };
   const banners = [
     { id: 1, img: "/assets/img/industry_illu2.jpg", title: "Online Safety Valve Testing (Trevi  Type)", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." },
@@ -234,6 +207,8 @@ committed to innovation and customer success.` },
     { id: 8, img: "/assets/img/industry_illu.jpg", title: "Solar Plant EPC upto  5MW & Maintenance", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." },
     { id: 9, img: "/assets/img/industry_illu2.jpg", title: "RO Plants Retro  Fitting", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." },
     { id: 10, img: "/assets/img/industry_illu.jpg", title: "UPVC & Aluminium Doors & Windows Fabrication & Installation", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." },
+    { id: 11, img: "/assets/img/industry_illu.jpg", title: "Technical Manpower supply for Power plant refineries and Water plant", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." },
+
   ];
 
 
@@ -271,11 +246,10 @@ committed to innovation and customer success.` },
 
           {banners.map((banner) => (
             <div key={banner.id} className="banner-slide">
-
               <img
                 src={banner.img}
                 alt={banner.title}
-                // priority
+              // priority
               />
               <div className="bnrContent">
                 <div className='container-fluid'>
@@ -296,16 +270,7 @@ committed to innovation and customer success.` },
 
       </section>
 
-      <section className=''>
-        <div className='container'>
 
-          <Slider {...clientlogoSlider}>
-            <div>
-
-            </div>
-          </Slider>
-        </div>
-      </section>
 
 
 
@@ -326,36 +291,63 @@ committed to innovation and customer success.` },
             <div className='col-lg-4'>
               <div className="serviceItem">
                 <div className="service-img">
-                  <img src="/assets/img/02.jpg" alt='sdd' />
+                  <img src="/assets/img/online_safety_valve_testing_img.jpg" alt='Online Safety Valve Testing' />
+                  <Link href="/service-page/online_safety_testing">
+                    <img src="/assets/img/bx_link.svg" alt='link' />
+                  </Link>
                 </div>
                 <div className="service-caption">
-                  <h3> Online Safety Valve Testing (Trevi  Type)</h3>
+                  <Link href="/service-page/online_safety_testing">
+                  <h3> Online Safety Valve Testing (Trevi  Type)</h3></Link>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                  <Link href="#">Learn More</Link>
                 </div>
               </div>
             </div>
             <div className='col-lg-4'>
               <div className="serviceItem">
                 <div className="service-img">
-                  <img src="/assets/img/02.jpg" alt='sdd' />
+                  <img src="/assets/img/offline_valve_testing_home.png" alt='Offline Valve Testing' />
+
+                  <Link href="/service-page/offline_valve_testing">
+                    <img src="/assets/img/bx_link.svg" alt='link' />
+                  </Link>
+
                 </div>
                 <div className="service-caption">
-                  <h3>Offline Valve Testing</h3>
+                  <Link href="/service-page/offline_valve_testing"><h3>Offline Valve Testing</h3></Link> 
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                  <Link href="#">Learn More</Link>
                 </div>
               </div>
             </div>
             <div className='col-lg-4'>
               <div className="serviceItem">
                 <div className="service-img">
-                  <img src="/assets/img/02.jpg" alt='sdd' />
+                  <img src="/assets/img/valve_service_home.jpeg" alt='All Types of Valve Servicing' />
+                  <Link href="/service-page/alltype_valve_services">
+                    <img src="/assets/img/bx_link.svg" alt='link' />
+                  </Link>
                 </div>
                 <div className="service-caption">
-                  <h3>All Types of Valve Servicing</h3>
+                  <Link href="/service-page/offline_valve_testing">
+                  <h3>All Types of Valve Servicing</h3></Link>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                  <Link href="#">Learn More</Link>
+                </div>
+              </div>
+            </div>
+            <div className='col-lg-4'>
+              <div className="serviceItem">
+                <div className="service-img">
+                  <img src="/assets/img/technical_manpower_provisioning_home.jpg" alt='Technical Manpower supply for Power plant refineries and Water plant' />
+
+                  <Link href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">
+                    <img src="/assets/img/bx_link.svg" alt='link' />
+                  </Link>
+
+                </div>
+                <div className="service-caption">
+                  <Link href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">
+                  <h3>Technical Manpower supply for Power plant refineries and Water plant</h3></Link>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
               </div>
             </div>
@@ -363,60 +355,90 @@ committed to innovation and customer success.` },
 
               <div className="serviceItem">
                 <div className="service-img">
-                  <img src="/assets/img/02.jpg" alt='sdd' />
+                  <img src="/assets/img/online_leak_sealing_home.png" alt='Online Leak Sealing' />
+
+
+                  <Link href="/service-page/online_seal">
+                    <img src="/assets/img/bx_link.svg" alt='link' />
+                  </Link>
+
+
+
+
                 </div>
                 <div className="service-caption">
-                  <h3>Online Leak Sealing – SYLMASATA & Conventional</h3>
+                  <Link href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">
+                  <h3>Online Leak Sealing – SYLMASATA & Conventional</h3></Link>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                  <Link href="#">Learn More</Link>
                 </div>
               </div>
             </div>
             <div className='col-lg-4'>
               <div className="serviceItem">
                 <div className="service-img">
-                  <img src="/assets/img/02.jpg" alt='sdd' />
+                  <img src="/assets/img/hottapping_home.jpg" alt='Hot Tapping' />
+
+                  <Link href="/service-page/hot_tapping">
+                    <img src="/assets/img/bx_link.svg" alt='link' />
+                  </Link>
+
+
                 </div>
                 <div className="service-caption">
-                  <h3>Hot Tapping & Insertion of S-Type( Gate Valve Online)</h3>
+                  <Link href="/service-page/hot_tapping">
+                  <h3>Hot Tapping & Insertion of S-Type( Gate Valve Online)</h3></Link>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                  <Link href="#">Learn More</Link>
                 </div>
               </div>
             </div>
             <div className='col-lg-4'>
               <div className="serviceItem">
                 <div className="service-img">
-                  <img src="/assets/img/02.jpg" alt='sdd' />
+                  <img src="/assets/img/heat_exchanger_maintenance_home.jpg" alt='Heat Exchanger, Maintenance' />
+
+                  <Link href="/service-page/heat_exchanger">
+                    <img src="/assets/img/bx_link.svg" alt='link' />
+                  </Link>
+
+
                 </div>
                 <div className="service-caption">
-                  <h3>Heat Exchanger, Maintenance & Supply</h3>
+                  <Link href="/service-page/heat_exchanger">  <h3>Heat Exchanger, Maintenance & Supply</h3></Link>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                  <Link href="#">Learn More</Link>
                 </div>
               </div>
             </div>
             <div className='col-lg-4'>
               <div className="serviceItem">
                 <div className="service-img">
-                  <img src="/assets/img/02.jpg" alt='sdd' />
+                  <img src="/assets/img/ro_plant_epc_contracts_home.jpg" alt='RO Plant EPC Contracts' />
+
+                  <Link href="/service-page/ro_plant_epc_contracts">
+                    <img src="/assets/img/bx_link.svg" alt='link' />
+                  </Link>
+
+
                 </div>
                 <div className="service-caption">
-                  <h3>RO Plant EPC Contracts Upto 2MIGPDA</h3>
+                  <Link href="/service-page/ro_plant_epc_contracts"> <h3>RO Plant EPC Contracts Upto 2MIGPDA</h3></Link>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                  <Link href="#">Learn More</Link>
                 </div>
               </div>
             </div>
             <div className='col-lg-4'>
               <div className="serviceItem">
                 <div className="service-img">
-                  <img src="/assets/img/02.jpg" alt='sdd' />
+                  <img src="/assets/img/solar-plant_epc_home.jpeg" alt='Solar Plant EPC' />
+
+                  <Link href="/service-page/solar_plant_epc">
+                    <img src="/assets/img/bx_link.svg" alt='link' />
+                  </Link>
+
+
                 </div>
                 <div className="service-caption">
-                  <h3>Solar Plant EPC upto  5MW & Maintenance</h3>
+                  <Link href="/service-page/solar_plant_epc"> <h3>Solar Plant EPC upto  5MW & Maintenance</h3> </Link>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                  <Link href="#">Learn More</Link>
                 </div>
               </div>
             </div>
@@ -424,27 +446,40 @@ committed to innovation and customer success.` },
 
               <div className="serviceItem">
                 <div className="service-img">
-                  <img src="/assets/img/02.jpg" alt='sdd' />
+                  <img src="/assets/img/ro-plants-retro-fitting_home.jpg" alt='RO Plants Retro  Fitting' />
+
+
+                  <Link href="/service-page/ro_membrane">
+                    <img src="/assets/img/bx_link.svg" alt='link' />
+                  </Link>
+
                 </div>
                 <div className="service-caption">
-                  <h3>RO Plants Retro  Fitting</h3>
+                  <Link href="/service-page/ro_membrane"> <h3>RO Plants Retro  Fitting</h3></Link>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                  <Link href="#">Learn More</Link>
                 </div>
               </div>
             </div>
             <div className='col-lg-4'>
               <div className="serviceItem">
                 <div className="service-img">
-                  <img src="/assets/img/02.jpg" alt='sdd' />
+                  <img src="/assets/img/upvc_home.png" alt='UPVC' />
+
+                  <Link href="/service-page/upvc_aluminiumdoors_windowsfabrication">
+                    <img src="/assets/img/bx_link.svg" alt='link' />
+                  </Link>
+
+
+
                 </div>
                 <div className="service-caption">
-                  <h3>UPVC & Aluminium Doors & Windows Fabrication & Installation</h3>
+                  <Link href="/service-page/upvc_aluminiumdoors_windowsfabrication"> <h3>UPVC & Aluminium Doors & Windows Fabrication & Installation</h3></Link>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                  <Link href="#">Learn More</Link>
                 </div>
               </div>
             </div>
+
+
           </div>
           {/* </Slider> */}
           {/* </div> */}
@@ -479,70 +514,60 @@ committed to innovation and customer success.` },
         </Slider>
       </section>
 
-      <section className='leadershipTeamSec'>
+      <LeaderShipTeam />
+
+
+      <section className='weServeGlobally_sec'>
         <div className='container'>
-
           <div className="site-heading">
-            <span className="site-title-tagline textalign_center">--- Team ---</span>
-            <h2 className="site-title textalign_center">
-              Meet our <span>Leadership Team</span>
-            </h2>
+            <span className="site-title-tagline">--- WE SERVE GLOBALLY ---</span>
+            <h2 className="site-title"> More Than <span>22 Countries</span></h2>
           </div>
-
 
 
           <div className='row'>
-            {leadershipteamModals.map((modal) => (
-              <div className='col-lg-3' key={modal.id}>
-                <div className='leadershipteamItem' onClick={() => setShowModal(modal.id)}>
-                  <div className='leadershipteam-img'>
-                    <img src={modal.Img} alt={modal.Name} />
-                  </div>
-                  <div className='leadershipteam-info'>
-                    <h5>{modal.Name}</h5>
-                    <p>{modal.Role}</p>
-                  </div>
+
+            <div className='col-lg-5'>
+              <div className='mb_40'>
+                <p className='tranquilPondText_Clr fontSize16 fontWeight400 fontStyleItalic'>Owing to the unmatched quality and reliability of our products, our line of Leak Sealing Products and Services is in significant demand globally.</p>
+              </div>
+
+              <div className='ourGlobalPresence'>
+                <div>
+                  <h5>6+</h5>
+                  <p>BRANCHES</p>
+                </div>
+                <div>
+                  <h5>6+</h5>
+                  <p>AUTHORIZED DEALERS</p>
+                </div>
+                <div>
+                  <h5>2500+</h5>
+                  <p>CUSTOMERS</p>
                 </div>
               </div>
-            ))}
+
+            </div>
+
+            <div className='col-lg-7'>
+              <div>
+
+                <h5 className='blackText_Clr fontSize24 fontWeight600 mb_16'>Our Global Presence</h5>
+
+                <p className='blackText_Clr fontSize16 fontWeight400'>
+                  Power Tech Development an ISO 9001 and ISO 45001 company is Unique in Indian sub-continent and GCC countries, as ONE-STOP-SHOP for total power plant services in the areas of Repairs & Retrofits, EPC contracts.
+
+                </p>
+
+                {/* <p className='blackText_Clr fontSize16 fontWeight400'>Since a decade, we have been able to gain the trust of customers, partners and has nurtured professional relationship that enable mutual growth and benefits.
+
+                </p> */}
+              </div>
+            </div>
+
           </div>
-
-          {leadershipteamModals.map((modal) => (
-            <Modal dialogClassName="leadershipTeamModal-dialog" // styling modal dialog
-              contentClassName="leadershipTeamModal-content" // styling modal content
-              key={modal.id}
-              show={showModal === modal.id}
-              onHide={() => setShowModal(null)}
-              centered
-            >
-              <Modal.Header closeButton>
-                <Modal.Title>{modal.title}</Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-
-                <div className='leadershipteampopUp-info'>
-                  <div className="displayFlex alignItem_center gap20 mb_24">
-                    <div>
-                      <img src={modal.Img} alt={modal.Name} />
-                    </div>
-                    <div>
-                      <h2>{modal.Name}</h2>
-                      <h5>{modal.Role}</h5>
-                    </div>                      </div>
-
-
-                  <p>   {modal.content}</p>
-
-
-                </div>
-              </Modal.Body>
-            </Modal>
-          ))}
         </div>
       </section>
-
- 
-
 
       <section className='testmonials_sec'>
         <div className='container'>
@@ -597,7 +622,7 @@ committed to innovation and customer success.` },
       </section>
 
 
-      <section className="about-area">
+      {/* <section className="about-area">
         <div className="container">
           <div className="row g-4 align-items-center">
             <div className="col-lg-6">
@@ -685,7 +710,7 @@ committed to innovation and customer success.` },
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <section className='industrySec'>
         <div className='container'>
@@ -752,116 +777,114 @@ committed to innovation and customer success.` },
         </div>
       </section> */}
 
-                  <section className='clientlogosec'>
-                      <div className="site-heading">
-                          <span className="site-title-tagline textalign_center">--- Client ---</span>
-                          <h2 className="site-title textalign_center">
-                              <span>Valve Services</span> - Human Resource <br /> & Manpower Supply
-                          </h2>
-                      </div>
-                      <div className="customerLogos">
-      
-                          <Marquee direction="left" ref={marqueeRef} speed={70} className="marquee" loop={0}>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c1.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c2.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c3.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c4.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c5.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c6.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c7.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c8.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c9.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c10.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c11.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c12.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c13.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c14.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c15.jpg" alt='' />
-                              </div>
-                          </Marquee>
-                          <Marquee className="marquee" direction="right" loop={0} speed={70} >
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c16.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c17.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c18.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c19.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c20.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c21.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c22.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c23.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c24.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c25.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c26.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c27.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c28.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c29.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c30.jpg" alt='' />
-                              </div>
-                              <div className='clientLogo_item'>
-                                  <img src="/assets/img/clientlogo/c31.jpg" alt='' />
-                              </div>
-                          </Marquee>
-      
-      
-                      </div>
-                  </section>
+      <section className='clientlogosec'>
+        <div className="site-heading">
+          <span className="site-title-tagline textalign_center">--- Client ---</span>
+          <h2 className="site-title textalign_center">
+            We Are <span>Trusted</span> By
+          </h2>
+        </div>
+        <div className="customerLogos">
+
+          <Slider {...clientlogoSlider}>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c1.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c2.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c3.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c4.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c5.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c6.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c7.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c8.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c9.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c10.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c11.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c12.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c13.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c14.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c15.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c16.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c17.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c18.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c19.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c20.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c21.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c22.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c23.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c24.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c25.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c26.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c27.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c28.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c29.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c30.jpg" alt='' />
+            </div>
+            <div className='clientLogo_item'>
+              <img src="/assets/img/clientlogo/c31.jpg" alt='' />
+            </div>
+          </Slider>
+
+
+        </div>
+      </section>
 
       <section className="video-area">
         <div className="container">

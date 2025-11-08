@@ -18,7 +18,7 @@ const Service = ({ pageData, pagename }) => {
         <div className="container height100per">
           <div className='row alignItem_center height100per' >
             <div className='col-lg-6'>
-              <div className='innerpage_bnrContent'>
+              <div className='innerpage_bnrContent mobspaceMb_24'>
                 <ul className='page_breadcrumb'>
                   <li><Link href={"/"}> Home</Link></li>
                   <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
@@ -49,7 +49,7 @@ const Service = ({ pageData, pagename }) => {
       <section className='serviceContentpart'>
         <div className="container">
           <div className='row'>
-            <div className='col-lg-6'>
+            <div className='col-lg-6 mobspaceMb_24'>
               {page.imgs.map((img, index) => (
                 <div key={index}>
                   <div className='serviceContentImg'>
