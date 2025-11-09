@@ -154,7 +154,7 @@ const Page = () => {
                         <div className='col-lg-6'>
                             <div className="site-heading">
                                 <h2 className="site-title">
-                                    How can we help you ?
+                                    How can we <span> help you ?</span>
                                 </h2>
                                 <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_24'>Let us know how we can help you with your existing or future projects, and one of our sales or support representatives will contact you shortly.</p>
                             </div>

@@ -68,7 +68,7 @@ const Page = () => {
 
 
 
-    const appLetterItems = [
+    const crCopiesItems = [
         {
             type: "image",
             src: "/assets/img/testmonials/c1.jpg",
@@ -81,6 +81,18 @@ const Page = () => {
             thumb: "/assets/img/testmonials/c2.jpg",
             caption: "Company Registration Certificate – Valve Tech Testing",
         },
+        {
+            type: "image",
+            src: "/assets/img/testmonials/company-registration-certificate-sam-tech.png",
+            thumb: "/assets/img/testmonials/company-registration-certificate-sam-tech.png",
+            caption: "Company Registration Certificate – Sam Tech",
+        },
+        {
+            type: "image",
+            src: "/assets/img/testmonials/vat-certificate.jpg",
+            thumb: "/assets/img/testmonials/vat-certificate.jpg",
+            caption: "VAT Certificate",
+        },
     ]
 
 
@@ -89,42 +101,79 @@ const Page = () => {
             type: "image",
             src: "/assets/img/testmonials/c3.jpg",
             thumb: "/assets/img/testmonials/c3.jpg",
-            caption: "ISO 9001:2015",
+            caption: "ISO - Quality Assured",
         },
         {
             type: "image",
             src: "/assets/img/testmonials/c4.jpg",
             thumb: "/assets/img/testmonials/c4.jpg",
-            caption: "ISO 45001:2018",
+            caption: "ISO- Occupational Safety",
         },
         {
             type: "image",
             src: "/assets/img/testmonials/c5.jpg",
             thumb: "/assets/img/testmonials/c5.jpg",
-            caption: "ISO 14001: 2015",
+            caption: "ISO - Green Business",
         },
     ]
 
+    const clientSay = [
+        {
+            id: 1,
+            year: "February 27, 2025",
+            Desc: "PTD received &apos;Best Employee Accommodation Management and Maintenance &apos; from ALBA CEO for the year 2024, Post various audits from ALBA Team",
+        },
+        {
+            id: 2,
+            year: 'October 16, 2024',
+            Desc: "Power Tech Group is now ISO 14001 Certified , along with the previously held ISO 9001 and ISO 45001 Certification, Recently we completed the Integrated Management System Audit for all 3 certifications and got certified",
+        },
+        {
+            id: 3,
+            year: 'August 11, 2024',
+            Desc: "PTD Successfully completed GT T1C Nozzle Replacement Mitsubishi works for ALBA Block 4 Expansion Project and received a letter of Appreciation for our support and completion of the Project from MHI Team.",
+        },
+        {
+            id: 4,
+            year: "July 28, 2024",
+            Desc: 'PTD has secured 3 Year long term contract with ALBA Power Station 5 for Mechanical, Electrical and Instrumentation Department.',
+        },
+        {
+            id: 5,
+            year: "December 21, 2022",
+            Desc: "Power Tech Group is happy to share that our company  has been awarded a Silver EcoVadis Medal. This result places our company among the top 25 percent of companies assessed by EcoVadis.",
+        },
+        {
+            id: 6,
+            year: "November 30, 2022",
+            Desc: "PTD Successfully Completed GT Major Outage with NMES (ACWA POWER) for the NOMAC ALDUR-II Plant,  PTD Also completed Unplanned GT-12 Outage in ALDUR-1 for AEOM",
+        },
+        {
+            id: 7,
+            year: "April 15, 2022",
+            Desc: "Power Tech recently completed GPIC Turnaround 2022 in Bahrain, providing close to 100 resources from Instrumentation, Electrical and Mechanical Stream",
+        },
 
+    ];
 
-    const crCopiesItems = [
+    const appLetterItems = [
         {
             type: "image",
             src: "/assets/img/testmonials/c6.jpg",
             thumb: "/assets/img/testmonials/c6.jpg",
-            caption: "Customer Appreciation Letter- Mitsubishi , Japan",
+            caption: "Business Appreciation Letter- Mitsubishi , Japan",
         },
         {
             type: "image",
             src: "/assets/img/testmonials/c7.jpg",
             thumb: "/assets/img/testmonials/c7.jpg",
-            caption: "Customer Appreciation Letter- Electricity Water Authority",
+            caption: "Electricity Water Authority - Hawar Power And Water Station - Appreciation Letter - PTD",
         },
         {
             type: "image",
             src: "/assets/img/testmonials/c8.jpg",
             thumb: "/assets/img/testmonials/c8.jpg",
-            caption: "Customer Appreciation Letter- NOMAC",
+            caption: "NOMAC Appreciation Letter- Power Tech Development",
         },
         {
             type: "image",
@@ -144,7 +193,7 @@ const Page = () => {
             type: "image",
             src: "/assets/img/testmonials/5.jpg",
             thumb: "/assets/img/testmonials/5.jpg",
-            caption: "Customer Appreciation Letters",
+            caption: "Thanks and Appreciation - MTM-L-148- GPIC",
         },
         {
             type: "image",
@@ -161,6 +210,19 @@ const Page = () => {
         },
 
 
+        {
+            type: "image",
+            src: "/assets/img/testmonials/certificate_for_outstanding_worker_one.jpeg",
+            thumb: "/assets/img/testmonials/certificate_for_outstanding_worker_one.jpeg",
+            caption: "Certificate For Outstanding Worker Accommodation Management & Maintenance in 2024 1",
+        },
+
+        {
+            type: "image",
+            src: "/assets/img/testmonials/certificate_for_outstanding_worker_two.jpg",
+            thumb: "/assets/img/testmonials/certificate_for_outstanding_worker_two.jpg",
+            caption: "Certificate For Outstanding Worker Accommodation Management & Maintenance in 2024",
+        },
 
 
 
@@ -194,28 +256,28 @@ const Page = () => {
                     <Tabs
                         defaultActiveKey="appreciationLetterTab"
                         id="uncontrolled-tab-example"
-                        className="infrastructureTab"
+                        className="stscTab"
                     >
-                        <Tab eventKey=" crCopiesTab" title="CR Copies data">
+                        <Tab eventKey="crCopiesTab" title="CR Copies data">
                             <div className="crCopiesTab">
                                 <LightGallery
                                     onInit={onInit}
                                     speed={500}
                                     plugins={[lgZoom, lgThumbnail]}
                                 >
-                                    {appLetterItems.map((appLtrItem, i) => (
+                                    {crCopiesItems.map((crCopiesItem, i) => (
 
                                         <a key={i}
-                                            href={appLtrItem.src}
-                                            data-sub-html={`<h4>${appLtrItem.caption}</h4>`}
-                                            data-poster={appLtrItem.type === "video" ? appLtrItem.thumb : undefined}
+                                            href={crCopiesItem.src}
+                                            data-sub-html={`<h4>${crCopiesItem.caption}</h4>`}
+                                            data-poster={crCopiesItem.type === "video" ? crCopiesItem.thumb : undefined}
                                         >
                                             <img
-                                                src={appLtrItem.thumb}
-                                                alt={appLtrItem.caption}
+                                                src={crCopiesItem.thumb}
+                                                alt={crCopiesItem.caption}
                                             />
 
-                                            <h5>{appLtrItem.caption}</h5>
+                                            <h5>{crCopiesItem.caption}</h5>
                                         </a>
                                     ))}
                                 </LightGallery>
@@ -256,18 +318,18 @@ const Page = () => {
                                     speed={500}
                                     plugins={[lgZoom, lgThumbnail]}
                                 >
-                                    {crCopiesItems.map((crCopiesItem, i) => (
+                                    {appLetterItems.map((appLtrItem, i) => (
 
                                         <a key={i}
-                                            href={crCopiesItem.src}
-                                            data-sub-html={`<h4>${crCopiesItem.caption}</h4>`}
-                                            data-poster={crCopiesItem.type === "video" ? crCopiesItem.thumb : undefined}
+                                            href={appLtrItem.src}
+                                            data-sub-html={`<h4>${appLtrItem.caption}</h4>`}
+                                            data-poster={appLtrItem.type === "video" ? appLtrItem.thumb : undefined}
                                         >
                                             <img
-                                                src={crCopiesItem.thumb}
-                                                alt={crCopiesItem.caption}
+                                                src={appLtrItem.thumb}
+                                                alt={appLtrItem.caption}
                                             />
-                                            <h5>{crCopiesItem.caption}</h5>
+                                            <h5>{appLtrItem.caption}</h5>
                                         </a>
                                     ))}
                                 </LightGallery>
@@ -275,166 +337,53 @@ const Page = () => {
                         </Tab>
 
                         <Tab eventKey="referenceTab" title="Reference"
-                        ></Tab>
+                        >   
+                        <div className='row'>
+
+                            {clientSay.map((item) => (
+                                <div className='col-lg-4 mb_50' key={item.id}>
+                                <div className="testimonialItem">
+                                    <div>
+                                        <div className='quoteRightImg'>
+                                            <img src="/assets/img/quote.svg" alt='quote' />
+                                        </div>
+                                        <h3>{item.year}</h3>
+                                        <p>{item.Desc}</p>
+                                    </div>
+                                    <div className='displayFlex alignItem_center justifyContent_spacebetween'>
+                                        <div className='displayFlex alignItem_center gap12 dpProfile'>
+                                            <div className=''>
+                                                <img src="/assets/img/dp.jpg" alt='sdd' />
+                                            </div>
+                                            <div>
+                                                <h5>Raj kumar</h5>
+                                                <span>UI / UX</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <ul className='displayFlex alignItem_center gap12 emptyList'>
+                                                <li>
+                                                    <img src="/assets/img/star_fill.svg" alt='star' />
+                                                </li>
+                                                <li>
+                                                    <img src="/assets/img/star_fill.svg" alt='star' />
+                                                </li>
+                                                <li>
+                                                    <img src="/assets/img/star_empty.svg" alt='star' />
+                                                </li>
+                                                <li>
+                                                    <img src="/assets/img/star_empty.svg" alt='star' />
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            ))}
+                            </div>
+                        </Tab>
 
                     </Tabs>
-                </div>
-            </section>
-            <section className='testmonials_sec'>
-                <div className='container'>
-
-                    <div className="site-heading">
-                        <span className="site-title-tagline textalign_center">--- Testmonials ---</span>
-                        <h2 className="site-title textalign_center"> What Our <span>Client Say{`'`}s</span></h2>
-                    </div>
-
-                    <Slider {...testimonialSlider}>
-                        <div className="testimonialItem">
-
-                            <div className='quoteRightImg'>
-                                <img src="/assets/img/quote.svg" alt='quote' />
-                            </div>
-                            <h3>Transformative Experience</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry{`'`}s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-
-                            <div className='displayFlex alignItem_center justifyContent_spacebetween'>
-                                <div className='displayFlex alignItem_center gap12 dpProfile'>
-                                    <div className=''>
-                                        <img src="/assets/img/dp.jpg" alt='sdd' />
-                                    </div>
-                                    <div>
-                                        <h5>Raj kumar</h5>
-                                        <span>UI / UX</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <ul className='displayFlex alignItem_center gap12 emptyList'>
-                                        <li>
-                                            <img src="/assets/img/star_fill.svg" alt='star' />
-                                        </li>
-                                        <li>
-                                            <img src="/assets/img/star_fill.svg" alt='star' />
-                                        </li>
-                                        <li>
-                                            <img src="/assets/img/star_empty.svg" alt='star' />
-                                        </li>
-                                        <li>
-                                            <img src="/assets/img/star_empty.svg" alt='star' />
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="testimonialItem">
-
-                            <div className='quoteRightImg'>
-                                <img src="/assets/img/quote.svg" alt='quote' />
-                            </div>
-                            <h3>Transformative Experience</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry{`'`}s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-
-                            <div className='displayFlex alignItem_center justifyContent_spacebetween'>
-                                <div className='displayFlex alignItem_center gap12 dpProfile'>
-                                    <div className=''>
-                                        <img src="/assets/img/dp.jpg" alt='sdd' />
-                                    </div>
-                                    <div>
-                                        <h5>Raj kumar</h5>
-                                        <span>UI / UX</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <ul className='displayFlex alignItem_center gap12 emptyList'>
-                                        <li>
-                                            <img src="/assets/img/star_fill.svg" alt='star' />
-                                        </li>
-                                        <li>
-                                            <img src="/assets/img/star_fill.svg" alt='star' />
-                                        </li>
-                                        <li>
-                                            <img src="/assets/img/star_empty.svg" alt='star' />
-                                        </li>
-                                        <li>
-                                            <img src="/assets/img/star_empty.svg" alt='star' />
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="testimonialItem">
-
-                            <div className='quoteRightImg'>
-                                <img src="/assets/img/quote.svg" alt='quote' />
-                            </div>
-                            <h3>Transformative Experience</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry{`'`}s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-
-                            <div className='displayFlex alignItem_center justifyContent_spacebetween'>
-                                <div className='displayFlex alignItem_center gap12 dpProfile'>
-                                    <div className=''>
-                                        <img src="/assets/img/dp.jpg" alt='sdd' />
-                                    </div>
-                                    <div>
-                                        <h5>Raj kumar</h5>
-                                        <span>UI / UX</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <ul className='displayFlex alignItem_center gap12 emptyList'>
-                                        <li>
-                                            <img src="/assets/img/star_fill.svg" alt='star' />
-                                        </li>
-                                        <li>
-                                            <img src="/assets/img/star_fill.svg" alt='star' />
-                                        </li>
-                                        <li>
-                                            <img src="/assets/img/star_empty.svg" alt='star' />
-                                        </li>
-                                        <li>
-                                            <img src="/assets/img/star_empty.svg" alt='star' />
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="testimonialItem">
-
-                            <div className='quoteRightImg'>
-                                <img src="/assets/img/quote.svg" alt='quote' />
-                            </div>
-                            <h3>Transformative Experience</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry{`'`}s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-
-                            <div className='displayFlex alignItem_center justifyContent_spacebetween'>
-                                <div className='displayFlex alignItem_center gap12 dpProfile'>
-                                    <div className=''>
-                                        <img src="/assets/img/dp.jpg" alt='sdd' />
-                                    </div>
-                                    <div>
-                                        <h5>Raj kumar</h5>
-                                        <span>UI / UX</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <ul className='displayFlex alignItem_center gap12 emptyList'>
-                                        <li>
-                                            <img src="/assets/img/star_fill.svg" alt='star' />
-                                        </li>
-                                        <li>
-                                            <img src="/assets/img/star_fill.svg" alt='star' />
-                                        </li>
-                                        <li>
-                                            <img src="/assets/img/star_empty.svg" alt='star' />
-                                        </li>
-                                        <li>
-                                            <img src="/assets/img/star_empty.svg" alt='star' />
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </Slider>
-
                 </div>
             </section>
         </>

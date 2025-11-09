@@ -41,7 +41,7 @@ const page = () => {
                             <div className='groupCompanyItem'>
                                 <div>
                                     <div className='groupCompanylogo'>
-                                        <img src="/assets/img/pti.jpg" alt='pti' />
+                                        <img src="/assets/img/ptd.png" alt='ptd' />
                                     </div>
 
                                     <h2> Power Tech Development W.L.L, Bahrain</h2>
@@ -76,7 +76,7 @@ const page = () => {
                             <div className='groupCompanyItem'>
                                 <div>
                                     <div className='groupCompanylogo'>
-                                        <img src="/assets/img/pti.jpg" alt='pti' />
+                                        <img src="/assets/img/gptc.png" alt='gptc' />
                                     </div>
 
                                     <h2> Global Power Tech Testing & Contracting L.L.C, UAE</h2>
@@ -111,7 +111,7 @@ const page = () => {
                         <div className='groupCompanyItem'>
                             <div>
                                 <div className='groupCompanylogo'>
-                                    <img src="/assets/img/pti.jpg" alt='pti' />
+                                        <img src="/assets/img/stsc.png" alt='stsc' />
                                 </div>
 
                                 <h2> SAM Technical Service Contracting Est, Saudi Arabia</h2>
@@ -147,7 +147,7 @@ const page = () => {
                     <div className='groupCompanyItem'>
                         <div>
                             <div className='groupCompanylogo'>
-                                <img src="/assets/img/pti.jpg" alt='pti' />
+                                        <img src="/assets/img/cpdti.png" alt='cpdti' />
                             </div>
 
                             <h2>Chennai Power & Desalination Training Institute, India</h2>
@@ -183,7 +183,7 @@ const page = () => {
                     <div className='groupCompanyItem'>
                         <div>
                             <div className='groupCompanylogo'>
-                                <img src="/assets/img/pti.jpg" alt='pti' />
+                                        <img src="/assets/img/pemi_logo.jpg" alt='pemi_logo' />
                             </div>
 
                             <h2>POWERTECH ELECTRO MECHANICAL INDUSTRIES Pvt.(Ltd)</h2>
@@ -217,7 +217,7 @@ const page = () => {
                     <div className='groupCompanyItem'>
                         <div>
                             <div className='groupCompanylogo'>
-                                <img src="/assets/img/pti.jpg" alt='pti' />
+                                        <img src="/assets/img/ib-badooda.png" alt='ib-badooda' />
                             </div>
 
                             <h2>IBN Badooda Electro Mechanical Workshop, Bahrain</h2>
@@ -251,7 +251,7 @@ const page = () => {
                     <div className='groupCompanyItem'>
                         <div>
                             <div className='groupCompanylogo'>
-                                <img src="/assets/img/pti.jpg" alt='pti' />
+                                        <img src="/assets/img/ptintl.png" alt='ptintl' />
                             </div>
 
                             <h2>Power Tech International, India</h2>
@@ -287,7 +287,7 @@ const page = () => {
                     <div className='groupCompanyItem'>
                         <div>
                             <div className='groupCompanylogo'>
-                                <img src="/assets/img/pti.jpg" alt='pti' />
+                                        <img src="/assets/img/vtts.png" alt='vtts' />
                             </div>
 
                             <h2> Valve Tech Testing & Services, Bahrain</h2>
@@ -321,7 +321,7 @@ const page = () => {
                     <div className='groupCompanyItem'>
                         <div>
                             <div className='groupCompanylogo'>
-                                <img src="/assets/img/pti.jpg" alt='pti' />
+                                        <img src="/assets/img/ptts.png" alt='ptts' />
                             </div>
 
                             <h2>Power Tech Testing & Services, India</h2>
@@ -393,7 +393,7 @@ const page = () => {
                     <div className='groupCompanyItem'>
                         <div>
                             <div className='groupCompanylogo'>
-                                <img src="/assets/img/pti.jpg" alt='pti' />
+                                        <img src="/assets/img/q-power.png" alt='Q-Power Tech Mechanical Contracting' />
                             </div>
 
                             <h2>Q-Power Tech Mechanical Contracting, Qatar</h2>
@@ -428,7 +428,7 @@ const page = () => {
                     <div className='groupCompanyItem'>
                         <div>
                             <div className='groupCompanylogo'>
-                                <img src="/assets/img/pti.jpg" alt='pti' />
+                                        <img src="/assets/img/knowledge_city.png" alt='knowledge_city' />
                             </div>
 
                             <h2> Knowledge City, India</h2>

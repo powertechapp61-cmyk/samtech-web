@@ -88,34 +88,35 @@ const Header = () => {
             </div>
             <div>
               <ul className="socialMediaLink">
+               
                 <li>
-                  <Link href="#">
-                    <img src="/assets/img/icons_facebook.svg" alt="fb" />
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#">
+                  <Link href="https://wa.me/966507745097" target="_blank">
                     <img src="/assets/img/ic_baseline-whatsapp.svg" alt="whatsapp" />
                   </Link>
                 </li>
                 <li>
-                  <Link href="#">
+                  <Link href="https://www.facebook.com/people/Power-Tech-Group-Companies/61558411207892/" target="_blank">
+                    <img src="/assets/img/icons_facebook.svg" alt="fb" />
+                  </Link>
+                </li>
+                <li>
+                  <Link href="https://www.instagram.com/cpdti.chennai/" target="_blank">
                     <img src="/assets/img/icons_instagram.svg" alt="insta" />
                   </Link>
                 </li>
                 <li>
-                  <Link href="#">
+                  <Link href="https://www.linkedin.com/company/powertechdevelopment/" target="_blank">
                     <img src="/assets/img/icons_linkedin.svg" alt="linkedin" />
                   </Link>
                 </li>
 
                 <li>
-                  <Link href="#">
+                  <Link href="https://x.com/powertechgroup" target="_blank">
                     <img src="/assets/img/x-twitter.svg" alt="twitter" />
                   </Link>
                 </li>
                 <li>
-                  <Link href="#">
+                  <Link href="https://www.youtube.com/@chennaipowerdesalinationtr3180" target="_blank">
                     <img src="/assets/img/youtube_icon.svg" alt="youtube" />
                   </Link>
                 </li>
@@ -215,10 +216,10 @@ const Header = () => {
                         </Dropdown.Toggle>
 
                         <Dropdown.Menu>
-                          <Dropdown.Item href={'/gallery'}>Photo Gallery</Dropdown.Item>
+                        <Dropdown.Item href={'/photo-gallery'}>Photo Gallery</Dropdown.Item>
                           <Dropdown.Item href="#">Video Gallery</Dropdown.Item>
-                        <Dropdown.Item href="#">Our Branches</Dropdown.Item>
-                        <Dropdown.Item href="#">Trainings</Dropdown.Item>
+                        <Dropdown.Item href={'/our-branches'}>Our Branches</Dropdown.Item>
+                        <Dropdown.Item href={'/trainings'}>Trainings</Dropdown.Item>
                         </Dropdown.Menu>
                       </Dropdown>
                   </li>
@@ -233,7 +234,7 @@ const Header = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href={'/our-infrastructure'} prefetch>
+                    <Link href={'/careers'} prefetch>
                       Careers
                     </Link>
                   </li>
