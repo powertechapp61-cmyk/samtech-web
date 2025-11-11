@@ -357,7 +357,7 @@ const page = () => {
                         <div>
                         <div>
                             <div className='groupCompanylogo'>
-                                <img src="/assets/img/pti.jpg" alt='pti' />
+                                            <img src="/assets/img/sams_logo.jpg" alt='sams' />
                             </div>
                         </div>
 

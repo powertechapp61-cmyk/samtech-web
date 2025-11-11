@@ -24,7 +24,7 @@ const page = () => {
                       </div>
                       <div className='col-lg-5 offset-lg-1'>
                           <div className="aboutbnr_img" >
-                              <img src="/assets/img/company.jpeg"
+                              <img src="/assets/img/gallery_img/01653488601.jpeg"
                                   alt="company" />
 
 

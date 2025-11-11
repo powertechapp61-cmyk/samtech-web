@@ -86,12 +86,16 @@ const Header = () => {
 
 
             </div>
+            <div className="displayFlex alignItem_center gap30">
+            <div className="certifiedLogo">
+              <img src="/assets/img/logo2.jpg" alt="logo" />
+            </div>
             <div>
               <ul className="socialMediaLink">
                
                 <li>
                   <Link href="https://wa.me/966507745097" target="_blank">
-                    <img src="/assets/img/ic_baseline-whatsapp.svg" alt="whatsapp" />
+                    <img style={{width:'24px'}} src="/assets/img/ic_baseline-whatsapp.svg" alt="whatsapp" />
                   </Link>
                 </li>
                 <li>
@@ -123,6 +127,7 @@ const Header = () => {
 
 
               </ul>
+            </div>
             </div>
           </div>
 

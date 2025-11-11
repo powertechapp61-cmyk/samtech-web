@@ -543,7 +543,18 @@ ul.socialMediaLink {
 ul.socialMediaLink li img {
     width: 20px;
 }
+.certifiedLogo img{
+    width: 120px;
+    transition: all .2s ease-in-out;
+}
 
+.certifiedLogo:hover img {
+    transform: scale(2) translate(-25px , 5px);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 40px 5px;
+    // width: 200px;
+    height: auto;
+    // object-fit: contain;
+}
 header {
     padding: 0px;
     background: var(--white_clr);
