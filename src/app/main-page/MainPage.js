@@ -95,7 +95,7 @@ const Mainpage = () => {
     }, {
       id: "side_tab6", title: "Hot Tapping & Insertion of S-Type (Gate Valve Online)", content: (
       <>
-        <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Hot tapping is more than just a fancy technique; it's a game-changer in the world of pipeline management. By prioritizing efficiency, safety, and sustainability, it offers a clear advantage for maintaining and upgrading your system with minimal disruption. If you're looking for a way to keep your operations flowing while optimizing your pipeline network, hot tapping might just be the answer you've been searching for</p>
+        <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{`Hot tapping is more than just a fancy technique; it's a game-changer in the world of pipeline management. By prioritizing efficiency, safety, and sustainability, it offers a clear advantage for maintaining and upgrading your system with minimal disruption. If you're looking for a way to keep your operations flowing while optimizing your pipeline network, hot tapping might just be the answer you've been searching for`}</p>
           <Link href="/service-page/hot_tapping">To know more Click Here</Link>
         </>
       )
