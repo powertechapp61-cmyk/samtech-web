@@ -5,17 +5,33 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import LeaderShipTeam from '../Components/LeaderShipTeam';
+import Image from 'next/image';
 
 const Mainpage = () => {
   const [active, setActive] = useState("side_tab1");
-  const [isTabsVisible, setIsTabsVisible] = useState(window.innerWidth >= 800);
+  // const [isTabsVisible, setIsTabsVisible] = useState(window.innerWidth >= 800);
 
+
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsTabsVisible(window.innerWidth >= 800);
+  //   };
+  //   window.addEventListener("resize", handleResize);
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
+
+    const [isTabsVisible, setIsTabsVisible] = useState(false);
 
   useEffect(() => {
+    // Runs only in the client
+    setIsTabsVisible(window.innerWidth >= 800);
+
     const handleResize = () => {
       setIsTabsVisible(window.innerWidth >= 800);
     };
+
     window.addEventListener("resize", handleResize);
+
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -25,7 +41,7 @@ const Mainpage = () => {
       id: "side_tab1", title: "Online Safety Valve Testing (Trevi Type)", content: (
         <>
           <div>
-            <img src="" alt='' />
+            <Image src={null} alt='' />
           </div>
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>THE ONLY THING MORE IMPORTANT THAN A SAFETY VALVE IS HOW YOU TEST IT</p>
           <h5>AccuTEST Safety Valve Test System & L – PLAN LEGA TEST System- Online Safety Valve Testing Test Online</h5>
