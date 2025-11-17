@@ -644,6 +644,9 @@ const GalleryPage = () => {
                                     src={item.thumb}
                                     alt={item.caption}
                                 />
+                                {/* <div>
+                                    <h5>{item.caption}</div>
+                                </div> */}
                             </a>
                         ))}
                     </LightGallery>

@@ -354,7 +354,7 @@ const ServicePage = () => {
                             </div>
                             <div className='col-lg-7'>
                                 <div className='leadGenFrame'>
-                                <h2>Leads Generation</h2>
+                                    <h2>How can we help you ?</h2>
 
                                     <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_24'>It is a long established fact that a reader will be distracted by the readable content of a page randomised words which don{`'`}t look even slightly when looking at its layout.</p>
                                 <form>
@@ -384,20 +384,23 @@ const ServicePage = () => {
 
 
                                     <div className='row'>
-                                        <div className='col-lg-6'>
-                                            <div className="mb_24">
-                                                {/* <label className="labeltext">Company Name</label> */}
-                                                <input placeholder='Phone Number'
-                                                    type="text"
-                                                    name="name"
-                                                    className="mainInput"
-                                                />
+                                            <div className='col-lg-6'>
+                                                <div className="mb_24">
+                                                    {/* <label className="labeltext">Phone number</label> */}
+                                                    <input placeholder='Company Name'
+                                                        type="text"
+                                                        name="name"
+                                                        className="mainInput"
+                                                    />
+                                                </div>
                                             </div>
-                                        </div>
+
+
+                                      
                                         <div className='col-lg-6'>
                                             <div className="mb_24">
                                                 {/* <label className="labeltext">Email Address</label> */}
-                                                <input placeholder='Email Address'
+                                                <input placeholder='Company Email Address'
                                                     type="text"
                                                     name="name"
                                                     className="mainInput"
@@ -408,20 +411,20 @@ const ServicePage = () => {
 
 
                                     <div className='row'>
-                                        <div className='col-lg-6'>
-                                            <div className="mb_24">
-                                                {/* <label className="labeltext">Phone number</label> */}
-                                                <input placeholder='Company Name'
-                                                    type="text"
-                                                    name="name"
-                                                    className="mainInput"
-                                                />
+                                            <div className='col-lg-6'>
+                                                <div className="mb_24">
+                                                    {/* <label className="labeltext">Company Name</label> */}
+                                                    <input placeholder='Primary Phone Number'
+                                                        type="text"
+                                                        name="name"
+                                                        className="mainInput"
+                                                    />
+                                                </div>
                                             </div>
-                                        </div>
                                         <div className='col-lg-6'>
                                             <div className="mb_24">
                                                 {/* <label className="labeltext">Job Title</label> */}
-                                                <input placeholder='Website'
+                                                    <input placeholder='Job Title'
                                                     type="text"
                                                     name="name"
                                                     className="mainInput"
@@ -440,14 +443,14 @@ const ServicePage = () => {
                                                 {/* <label className="labeltext">Job Title</label> */}
 
                                                 <select className="mainInput">
-                                                    <option>Select Country</option>
+                                                        <option>Select Category </option>
                                                 </select>
                                             </div>
                                         </div>
                                         <div className='col-lg-6'>
                                             <div className="mb_24">
                                                 {/* <label className="labeltext">Country</label> */}
-                                                <input placeholder='City'
+                                                    <input placeholder='Country'
                                                     type="text"
                                                     name="name"
                                                     className="mainInput"
@@ -458,39 +461,15 @@ const ServicePage = () => {
                                     </div>
 
 
-                                    <div className='row'>
-                                        <div className='col-lg-6'>
-                                            <div className="mb_24">
-                                                {/* <label className="labeltext">Phone number</label> */}
-                                                <input placeholder='Zip'
-                                                    type="text"
-                                                    name="name"
-                                                    className="mainInput"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className='col-lg-6'>
-                                            <div className="mb_24">
-                                                {/* <label className="labeltext">Job Title</label> */}
-                                                <input placeholder='State'
-                                                    type="text"
-                                                    name="name"
-                                                    className="mainInput"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
 
-                                    <textarea rows={4} className='mb_24' placeholder='How may we help you?'>
 
-                                    </textarea>
 
 
 
                                     <button
                                         type="submit"
                                         className="mainbtn">
-                                        Submit
+                                            SUBMIT FORM
                                     </button>
                                 </form>
 

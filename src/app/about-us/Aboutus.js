@@ -295,7 +295,7 @@ const AboutUs = () => {
 
             <section className='clientlogosec'>
                 <div className="site-heading">
-                    <span className="site-title-tagline textalign_center">--- Client ---</span>
+                    {/* <span className="site-title-tagline textalign_center">--- Client ---</span> */}
                     <h2 className="site-title textalign_center">
                         <span>Valve Services</span> - Human Resource <br /> & Manpower Supply
                     </h2>

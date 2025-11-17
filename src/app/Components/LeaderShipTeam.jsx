@@ -60,7 +60,7 @@ committed to innovation and customer success.` },
         <div className='container'>
 
           <div className="site-heading">
-            <span className="site-title-tagline textalign_center">--- Team ---</span>
+            {/* <span className="site-title-tagline textalign_center">--- Team ---</span> */}
             <h2 className="site-title textalign_center">
               Meet our <span>Leadership Team</span>
             </h2>

@@ -20,10 +20,8 @@ const Header = () => {
     const body = document.body;
     if (isOpen) {
       body.classList.add("search-popup-active");
-      body.style.overflow = "hidden"; // 🚫 Disable scroll
     } else {
       body.classList.remove("search-popup-active");
-      body.style.overflow = ""; // ✅ Re-enable scroll
     }
 
     // Cleanup if component unmounts
@@ -86,13 +84,15 @@ const Header = () => {
 
 
             </div>
-            <div className="displayFlex alignItem_center gap30">
-            <div className="certifiedLogo">
-              <img src="/assets/img/logo2.jpg" alt="logo" />
-            </div>
+            {/* <div className="displayFlex alignItem_center gap30"> */}
+           
             <div>
               <ul className="socialMediaLink">
-               
+               <li>
+                  <button className="circleIconbtn" onClick={handleSearchClick}>
+                    <img className="whiteFilter" src="/assets/img/tabler_search.svg" alt="search" />
+                  </button>
+               </li>
                 <li>
                   <Link href="https://wa.me/966507745097" target="_blank">
                     <img style={{width:'24px'}} src="/assets/img/ic_baseline-whatsapp.svg" alt="whatsapp" />
@@ -129,8 +129,23 @@ const Header = () => {
               </ul>
             </div>
             </div>
-          </div>
-
+          {
+            isOpen && (
+              <div className={isOpen ? "search-popup opened" : "search-popup"}>
+                {/* <button className="close-search" >
+              </button> */}
+                <form action="#" onSubmit={(e) => e.preventDefault()}>
+                  <div className="form-group">
+                    <input type="search" name="search-field" placeholder="Search Here..." required="" />
+                    <button type="submit" onClick={() => setIsOpen(false)}>
+                      <img src="/assets/img/ic_round-close.svg" alt="close" />
+                      {/* <img src="/assets/img/tabler_search.svg" alt="search" /> */}
+                    </button>
+                  </div>
+                </form>
+              </div>
+            )
+          }
         </div>
 
       </div>
@@ -175,11 +190,11 @@ const Header = () => {
 
                     <Dropdown>
                       <Dropdown.Toggle id="dropdown-basic">
-                        About Us
+                        Company
                       </Dropdown.Toggle>
 
                       <Dropdown.Menu>
-                        <Dropdown.Item href={'/company'}>Company</Dropdown.Item>
+                        <Dropdown.Item href={'/company'}>About Us </Dropdown.Item>
                         <Dropdown.Item href={'/leadership-team'}>Leadership team</Dropdown.Item>
                         <Dropdown.Item href={'/group-companies'}>Group companies</Dropdown.Item>
                         </Dropdown.Menu>
@@ -213,11 +228,20 @@ const Header = () => {
 
                   </li>
                   <li>
-                   
-
+                    <Link href={"/appreciations"} prefetch>
+                      Appreciations
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={"/brochures"} prefetch>
+                      Brochures
+                    </Link>
+                  </li>
+                  <li>
+                  
                       <Dropdown>
                         <Dropdown.Toggle id="dropdown-basic">
-                          Our Infrastructure
+                        Gallery
                         </Dropdown.Toggle>
 
                         <Dropdown.Menu>
@@ -233,11 +257,8 @@ const Header = () => {
                       Credentials’
                     </Link>
                   </li> */}
-                  <li>
-                    <Link href={"/testmonials"} prefetch>
-                      Credentials
-                    </Link>
-                  </li>
+                 
+                
                   <li>
                     <Link href={'/careers'} prefetch>
                       Careers
@@ -255,10 +276,10 @@ const Header = () => {
               </div>
               <div>
 
-                <button className="circleIconbtn" onClick={handleSearchClick}>
-                  <img src="/assets/img/tabler_search.svg" alt="search" />
-                </button>
 
+                <div className="certifiedLogo">
+                  <img src="/assets/img/logo2.jpg" alt="logo" />
+                </div>
 
               </div>
 
@@ -267,20 +288,7 @@ const Header = () => {
         </div>
       </header>
       {/* popup search */}
-      {
-        isOpen && (
-          <div className={isOpen ? "search-popup opened" : "search-popup"}>
-            <button className="close-search" onClick={() => setIsOpen(false)}>
-              <img src="/assets/img/ic_round-close.svg" alt="close" /></button>
-            <form action="#" onSubmit={(e) => e.preventDefault()}>
-              <div className="form-group">
-                <input type="search" name="search-field" placeholder="Search Here..." required="" />
-                <button type="submit">  <img src="/assets/img/tabler_search.svg" alt="search" /></button>
-              </div>
-            </form>
-          </div>
-        )
-      }
+    
     </div>
 
 
