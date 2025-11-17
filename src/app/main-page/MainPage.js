@@ -365,7 +365,7 @@ const Mainpage = () => {
               <div className='bnrContent'>
                 <span>--- A unit of Powertech Group Companies ---</span>
                 <h1>Operations and Maintenance Service Provider </h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry{`'`}s standard dummy text ever since the 1500s,   </p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,   </p>
                 <button className='mainbtn'>Learn More</button>
               </div>
             </div>
@@ -408,7 +408,7 @@ const Mainpage = () => {
 
           {/* <div className="site-heading">
              <span className="site-title-tagline textalign_center">--- Testmonials ---</span> 
-            <h2 className="site-title textalign_center"> What Our <span>Client Say{`'`}s</span></h2>
+            <h2 className="site-title textalign_center"> What Our <span>Client Say&apos;s</span></h2>
           </div> */}
 
           {/* <Slider {...testimonialSlider}> */}
