@@ -4,21 +4,21 @@ import React from 'react'
 const Page = () => {
     return (
         <>
-            <section className='aboutbnr mb_80'>
+            <section className='hero-banner mb_80'>
                 <div className='container'>
                     <div className='row alignItem_center' >
                         <div className='col-lg-6'>
-                            <div>
+                            <div className='innerpage_bnrContent'>
                                 <h1>Contact us</h1>
                                 <p>There are many variations of passages available but the majority have suffered alteration in some form by injected humour randomised words which don&apos;t look even slightly believable. If you are going to use passage.
 
                                 </p>
-                                <button className='mainbtn'>Contact Us</button>
+                               
                             </div>
                         </div>
                         <div className='col-lg-5 offset-lg-1'>
-                            <div className='aboutbnr_img'>
-                                <img className="img-1" src="/assets/img/industry_illu.jpg" alt="about us img" />
+                            <div className='hero-banner_img'>
+                                <img className="img-1" src="/assets/img/company-photo/sl3.jpg" alt="about us img" />
                             </div>
                         </div>
                     </div>
@@ -171,7 +171,7 @@ const Page = () => {
                             </div>
                             <div className='col-lg-6'>
                                 <div className='leadGenFrame'>
-                                    <h2 className='mb_24'>Connect with Power Tech , by completing the form below</h2>
+                                    <h2 className='mb_24'>Connect with Sam Tech , by completing the form below</h2>
                                     <form>
 
                                         <div className='row'>
@@ -288,18 +288,18 @@ const Page = () => {
                                 <div className='addressItem'>
                                     <div>
                                         <h2>Bahrain Office</h2>
-                                        <p>Power Tech Development W.L.L</p>
+                                        <p>Sam Technical Service Contracting Est W.L.L</p>
                                     </div>
 
 
                                     <ul>
                                         <li>
-                                            <img className='width24px' src="/assets/img/gis_location-poi.svg" />
+                                            <img className='width24px ' src="/assets/img/gis_location-poi.svg" />
                                             <span>Building 1506, Road 4819, Block 948, Lhassay, Manama, Bahrain</span>
                                         </li>
                                         <li>
                                             <div className='width24px'>
-                                                <img className='blackFilter width20px' src="/assets/img/phonetop_icon.svg" />
+                                            <img className='width20px blackFilter' src="/assets/img/phonetop_icon.svg" />
                                             </div>
                                             <span>
                                                 <Link href="tel:97337164858">+973 3716 4858</Link> ,
@@ -307,14 +307,14 @@ const Page = () => {
                                             </span>
                                         </li>
                                         <li>
-                                            <img className='width24px' src="/assets/img/whatsappIcon.svg" alt='whatsapp' />
+                                        <img className='width24px blackFilter' src="/assets/img/ic_baseline-whatsapp.svg" alt='whatsapp' />
 
                                             <Link href="https://wa.me/97334010755" target="_blank">
                                                 973 3401 0755
                                             </Link>
                                         </li>
                                         <li>
-                                            <img className='width24px' src="/assets/img/mail_icon.svg" alt='mail' />
+                                        <img className='width24px' src="/assets/img/mail_icon.svg" alt='mail' />
 
                                             <Link href={'mailto:gm@powertechdevelopment.com'}>
                                                 gm@powertechdevelopment.com
@@ -347,7 +347,7 @@ const Page = () => {
                                             </span>
                                         </li>
                                         <li>
-                                            <img className='width24px' src="/assets/img/whatsappIcon.svg" alt='whatsapp' />
+                                        <img className='width24px blackFilter' src="/assets/img/ic_baseline-whatsapp.svg" alt='whatsapp' />
 
                                             <Link href="https://wa.me/966507745097" target="_blank">
                                                 966 507745097
@@ -380,14 +380,14 @@ const Page = () => {
                                         </li>
                                         <li>
                                             <div className='width24px'>
-                                                <img className='blackFilter width20px' src="/assets/img/phonetop_icon.svg" />
+                                            <img className='width20px blackFilter' src="/assets/img/phonetop_icon.svg" />
                                             </div>
                                             <span>
                                                 <Link href="tel:971504712069">971504712069</Link>
                                             </span>
                                         </li>
                                         <li>
-                                            <img className='width24px' src="/assets/img/whatsappIcon.svg" alt='whatsapp' />
+                                        <img className='width24px blackFilter' src="/assets/img/ic_baseline-whatsapp.svg" alt='whatsapp' />
 
                                             <Link href="https://wa.me/971504712069" target="_blank">
                                                 971 50 471 2069
@@ -420,14 +420,14 @@ const Page = () => {
                                         </li>
                                         <li>
                                             <div className='width24px'>
-                                                <img className='blackFilter width20px' src="/assets/img/phonetop_icon.svg" />
+                                            <img className='width20px blackFilter' src="/assets/img/phonetop_icon.svg" />
                                             </div>
                                             <span>
                                                 <Link href="tel:919498660803">+91 94986 60803</Link>
                                             </span>
                                         </li>
                                         <li>
-                                            <img className='width24px' src="/assets/img/whatsappIcon.svg" alt='whatsapp' />
+                                        <img className='width24px blackFilter ' src="/assets/img/ic_baseline-whatsapp.svg" alt='whatsapp' />
 
                                             <Link href="https://wa.me/919498660803" target="_blank">
                                                 +91 94986 60803

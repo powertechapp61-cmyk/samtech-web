@@ -9,7 +9,7 @@ export const metadata = {
   title: "Sam Technical Service Contracting EST",
   description: "Professional Technical Services in Middel East",
   // icons: {
-  //   icon: "/favicon.ico",
+  icon: "/assets/img/favicon.ico",
   //   apple: "/apple-touch-icon.png"
   // },
   keywords: ["technical service", "maintenance", "plumbing","sam tech Sa","sam tech saudi","sam tech saudi arabia","sam tech","Sam Technical Service"],

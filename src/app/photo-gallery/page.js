@@ -266,7 +266,7 @@ const GalleryPage = () => {
             type: "image",
             src: "/assets/img/gallery_img/01727517800.jpeg",
             thumb: "/assets/img/gallery_img/01727517800.jpeg",
-             caption: "ALBA Team Visit to PTD office",
+            caption: "ALBA Team Visit to PTD office",
         },
         {
             type: "image",
@@ -472,7 +472,7 @@ const GalleryPage = () => {
             caption: "EWA valve fixing completed and collected 1valve for servicing",
         },
 
-       
+
 
         {
             type: "image",
@@ -597,13 +597,13 @@ const GalleryPage = () => {
 
     return (
         <>
-            <section className='aboutbnr'>
+            <section className='hero-banner'>
                 <div className='container'>
                     <div className='row alignItem_center' >
                         <div className='col-lg-6'>
-                            <div>
+                            <div className='innerpage_bnrContent'>
                                 <ul className='page_breadcrumb'>
-                                    <li><Link   href={"/"}> Home</Link></li>
+                                    <li><Link href={"/"}> Home</Link></li>
                                     <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
                                     <li>Our Infrastructure</li>
                                     <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
@@ -613,11 +613,11 @@ const GalleryPage = () => {
                                 <p>There are many variations of passages available but the majority have suffered alteration in some form by injected humour randomised words which don&apos;t look even slightly believable. If you are going to use passage.
 
                                 </p>
-                                <button className='mainbtn'>Contact Us</button>
+                                <Link href="/contact-us" className='mainbtn'>Contact Us</Link>
                             </div>
                         </div>
                         <div className='col-lg-5 offset-lg-1'>
-                            <div className='aboutbnr_img'>
+                            <div className='hero-banner_img'>
                                 <img className="img-1" src="/assets/img/gallery_img/01696864443.jpeg" alt="gallery" />
                             </div>
                         </div>
@@ -640,20 +640,15 @@ const GalleryPage = () => {
                                 data-sub-html={`<h4>${item.caption}</h4>`}
                                 data-poster={item.type === "video" ? item.thumb : undefined}
                             >
-                                <img
-                                    src={item.thumb}
-                                    alt={item.caption}
-                                />
-                                {/* <div>
-                                    <h5>{item.caption}</div>
-                                </div> */}
+                                <img src={item.thumb} alt={item.caption} />
+                                <div className='galleryhover'><h5>{item.caption}</h5></div>
                             </a>
                         ))}
-                    </LightGallery>
+                </LightGallery>
 
 
-                </div>
-            </section>
+            </div>
+        </section >
         </>
     )
 }

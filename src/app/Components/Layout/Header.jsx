@@ -11,7 +11,13 @@ const Header = () => {
     setIsActive((current) => !current);
   };
 
+  const [searchText, setSearchText] = useState("");
 
+  const parentClasses = `
+  search-popup 
+  ${isOpen ? "opened" : ""} 
+  ${searchText.length > 0 ? "showDropdown" : ""}
+`.trim();
   const handleSearchClick = (e) => {
     setIsOpen((current) => !current);
     console.log('clicked');
@@ -131,18 +137,28 @@ const Header = () => {
             </div>
           {
             isOpen && (
-              <div className={isOpen ? "search-popup opened" : "search-popup"}>
-                {/* <button className="close-search" >
-              </button> */}
+              <div className={parentClasses}>
                 <form action="#" onSubmit={(e) => e.preventDefault()}>
                   <div className="form-group">
-                    <input type="search" name="search-field" placeholder="Search Here..." required="" />
+                    <input type="search" name="search-field" placeholder="Search Here..." value={searchText}
+                      onChange={(e) => setSearchText(e.target.value)} onFocus={() => setIsOpen(true)} required="" />
                     <button type="submit" onClick={() => setIsOpen(false)}>
                       <img src="/assets/img/ic_round-close.svg" alt="close" />
-                      {/* <img src="/assets/img/tabler_search.svg" alt="search" /> */}
                     </button>
                   </div>
                 </form>
+
+                {/* Dropdown: only show when user types */}
+                {searchText.length > 0 && (
+                <div className="searchDropdown">
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                    <li>Commodi ducimus doloremque perferendis aut amet hic, modi pariatur! Animi, officiis natus, neque repellat laboriosam repellendus perferendis cupiditate cumque, reiciendis eum ad.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                  </ul>
+                </div>
+                )}
               </div>
             )
           }
@@ -215,7 +231,7 @@ const Header = () => {
                         <Dropdown.Item href="/service-page/offline_valve_testing">Offline Valve Testing</Dropdown.Item>
                         <Dropdown.Item href="/service-page/alltype_valve_services">All Types of Valve Servicing</Dropdown.Item>
                         <Dropdown.Item href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">Technical Manpower supply for Power plant refineries and Water plant</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/online_seal">Online Leak Sealing – SYLMASATA & Conventional</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/online_seal_leaking">Online Leak Sealing – SYLMASATA & Conventional</Dropdown.Item>
                         <Dropdown.Item href="/service-page/hot_tapping">Hot Tapping & Insertion of S-Type( Gate Valve Online)</Dropdown.Item>
                         <Dropdown.Item href="/service-page/heat_exchanger">Heat Exchanger, Maintenance & Supply</Dropdown.Item>
                         <Dropdown.Item href="/service-page/ro_plant_epc_contracts">RO Plant EPC Contracts Upto 2MIGPDA</Dropdown.Item>

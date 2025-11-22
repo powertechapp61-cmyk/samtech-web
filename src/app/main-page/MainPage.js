@@ -1,6 +1,9 @@
 "use client";
 import Link from 'next/link'
 import React, { useRef, useState, useEffect } from 'react'
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -24,15 +27,23 @@ const Mainpage = () => {
 
   useEffect(() => {
     // Runs only in the client
-    setIsTabsVisible(window.innerWidth >= 800);
+    // setIsTabsVisible(window.innerWidth >= 800);
 
-    const handleResize = () => {
-      setIsTabsVisible(window.innerWidth >= 800);
+    // const handleResize = () => {
+    //   setIsTabsVisible(window.innerWidth >= 800);
+    // };
+
+    const checkSize = () => {
+      setIsTabsVisible(window.innerWidth > 1026); // desktop only above 1026px
     };
 
-    window.addEventListener("resize", handleResize);
+    // window.addEventListener("resize", handleResize);
 
-    return () => window.removeEventListener("resize", handleResize);
+    // return () => window.removeEventListener("resize", handleResize);
+    checkSize();
+    window.addEventListener("resize", checkSize);
+
+    return () => window.removeEventListener("resize", checkSize);
   }, []);
 
 
@@ -40,13 +51,13 @@ const Mainpage = () => {
     {
       id: "side_tab1", title: "Online Safety Valve Testing (Trevi Type)", content: (
         <>
-          <div>
-            <Image src={null} alt='' />
+          <div className='mb_24'>
+            <img src="/assets/img/treviType.webp" alt="Online Safety Valve Testing (Trevi Type)" />
           </div>
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>THE ONLY THING MORE IMPORTANT THAN A SAFETY VALVE IS HOW YOU TEST IT</p>
           <h5>AccuTEST Safety Valve Test System & L – PLAN LEGA TEST System- Online Safety Valve Testing Test Online</h5>
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Safety valves are essential to the protection of lives and property, so regular testing is crucial to ensure that valves are functioning properly. But can you really be sure of the results if the test is not conducted under the stress of everyday conditions?</p>
-          <Link href="/service-page/online_safety_testing">To know more Click Here</Link>
+          <Link className='mainbtn' href="/service-page/online_safety_testing">To know more Click Here</Link>
 
 
         </>
@@ -55,18 +66,28 @@ const Mainpage = () => {
     {
       id: "side_tab2", title: "Offline Valve Testing", content: (
         <>
+          <div className='mb_24'>
+            <img src="/assets/img/safety_valve_calibration.png" alt="safety valve calibration" />
+          </div>
+          
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>THE ONLY THING MORE IMPORTANT THAN A SAFETY VALVE IS HOW YOU TEST IT</p>
           <h5>TESTING CURVE, HARDWARE- Offline Valve Testing</h5>
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Safety valves are essential to the protection of lives and property, so regular testing is crucial to ensure that valves are functioning properly. But can you really be sure of the results if the test is not conducted under the stress of everyday conditions?</p>
-          <Link href="/service-page/offline_valve_testing">To know more Click Here</Link>
+          <Link className='mainbtn' href="/service-page/offline_valve_testing">To know more Click Here</Link>
           </>
       )
     },
     {
       id: "side_tab3", title: "All Types of Valve Servicing", content: (
         <>
+          <div className='mb_24'>
+            <img src="/assets/img/valve_servicing_testing.png" alt="valve servicing testing" />
+          </div>
+          
+
+
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Our Group Company Valve Tech testing and services and Power Tech testing and services specialize in handling services for different type of Valves, Actuators, Pumps, Compressors etc, for more information pls visit <Link target='_blank' href="www.powertechtesting.com">www.powertechtesting.com</Link></p>
-          <Link href="/service-page/alltype_valve_services">To know more Click Here</Link>
+          <Link className='mainbtn' href="/service-page/alltype_valve_services">To know more Click Here</Link>
 
 
              </>
@@ -78,15 +99,19 @@ const Mainpage = () => {
           
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Under Construction</p>
 
-          <Link href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">To know more Click Here</Link>
+          <Link className='mainbtn' href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">To know more Click Here</Link>
 
         </>
       )
     }, {
       id: "side_tab5", title: "ONLINE SEAL LEAKING", content: (
         <>
+          <div className='mb_24'>
+            <img src="/assets/img/online_seal_leaking.png" alt="online seal leaking" />
+          </div>
+          
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Online leak sealing today is the leak-sealing solutions of choice as it saves energy, prevents and expensive and unwanted shutdown and can address a wide variety of leaks. With the combination of engineering solutions support from global experts, we have leak sealing compounds that can address a wide variety of steam, chemical, hydrocarbon and gas leaks at temperature up to 700° C. We have highly trained, highly skilled technicians who can handle the adverse situations very tactically and bring downs the situation to normal conditions</p>
-          <Link href="/service-page/online_seal">To know more Click Here</Link>
+          <Link className='mainbtn' href="/service-page/online_seal_leaking">To know more Click Here</Link>
 
 
          
@@ -95,16 +120,23 @@ const Mainpage = () => {
     }, {
       id: "side_tab6", title: "Hot Tapping & Insertion of S-Type (Gate Valve Online)", content: (
       <>
+          <div className='mb_24'>
+            <img src="/assets/img/gate_valve_online.png" alt="gate_valve_online" />
+          </div>
         <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{`Hot tapping is more than just a fancy technique; it's a game-changer in the world of pipeline management. By prioritizing efficiency, safety, and sustainability, it offers a clear advantage for maintaining and upgrading your system with minimal disruption. If you're looking for a way to keep your operations flowing while optimizing your pipeline network, hot tapping might just be the answer you've been searching for`}</p>
-          <Link href="/service-page/hot_tapping">To know more Click Here</Link>
+          <Link className='mainbtn' href="/service-page/hot_tapping">To know more Click Here</Link>
         </>
       )
     }, {
       id: "side_tab7", title: "Heat Exchanger, Maintenance & Supply", content: (
         <>
+          
+          <div className='mb_24'>
+            <img src="/assets/img/heatExchanger.png" alt="heatExchanger" />
+          </div>
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>A heat exchanger is an apparatus where the exchange of heat energy occurs between two different fluids at different temperatures.</p>
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>The most used is what is known as “tubular beam and cloak exchanger “, as its large surface structure allows to exchange large quantities of heat.</p>
-          <Link href="/service-page/heat_exchanger">To know more Click Here</Link>
+          <Link className='mainbtn' href="/service-page/heat_exchanger">To know more Click Here</Link>
 
         </>
       )
@@ -113,14 +145,14 @@ const Mainpage = () => {
         <>
         <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Under Construction</p>
 
-   <Link href="/service-page/ro_plant_epc_contracts">To know more Click Here</Link>
+          <Link className='mainbtn' href="/service-page/ro_plant_epc_contracts">To know more Click Here</Link>
         </>
       )
     }, {
       id: "side_tab9", title: "Solar Plant EPC upto 5MW & Maintenance", content: (
         <>
         <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Under Construction</p>
-       <Link href="/service-page/solar_plant_epc">To know more Click Here</Link>
+          <Link className='mainbtn' href="/service-page/solar_plant_epc">To know more Click Here</Link>
 
         </>
       )
@@ -128,7 +160,7 @@ const Mainpage = () => {
       id: "side_tab10", title: "RO Plants Retro Fitting", content: (
         <>
         <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Under Construction</p>
-        <Link href="/service-page/ro_membrane">To know more Click Here</Link>
+          <Link className='mainbtn' href="/service-page/ro_membrane">To know more Click Here</Link>
 
         </>
       )
@@ -136,7 +168,7 @@ const Mainpage = () => {
       id: "side_tab11", title: "UPVC & Aluminium Doors & Windows Fabrication & Installation", content: (
         <>
         <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Under Construction</p>
-          <Link href="/service-page/upvc_aluminiumdoors_windowsfabrication">To know more Click Here</Link>
+          <Link className='mainbtn' href="/service-page/upvc_aluminiumdoors_windowsfabrication">To know more Click Here</Link>
         </>
       )
     }
@@ -234,7 +266,7 @@ const Mainpage = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 4,
           infinite: true,
           dots: false,
         },
@@ -242,7 +274,7 @@ const Mainpage = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           centerPadding: "0px",
           centerMode: false,
         },
@@ -250,7 +282,7 @@ const Mainpage = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           centerPadding: "0px",
           centerMode: false,
         },
@@ -357,6 +389,48 @@ const Mainpage = () => {
     arrows: false,
     fade: true, // smooth fade transition
   };
+
+
+  const itemsRef = useRef([]);
+  const sectionRef = useRef(null);
+
+
+  const addToRefs = (el) => {
+    if (el && !itemsRef.current.includes(el)) {
+      itemsRef.current.push(el);
+    }
+  };
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      itemsRef.current.forEach((el) => {
+        const finalValue = Number(el.dataset.value);
+
+        gsap.fromTo(
+          el,
+          { textContent: 0 },
+          {
+            textContent: finalValue,
+            duration: 2,
+            ease: "power1.out",
+            snap: { textContent: 1 },
+            onUpdate() {
+              el.innerHTML = Number(el.textContent).toLocaleString() + "+";
+            },
+            scrollTrigger: {
+              trigger: sectionRef.current,
+              start: "top 80%",
+              // markers: true,   // <--- TEST THIS
+              toggleActions: "play none none none",
+            },
+          }
+        );
+      });
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
   return (
     <>
       <section className='herobnr'>
@@ -491,47 +565,51 @@ const Mainpage = () => {
       <LeaderShipTeam />
 
 
-      <section className='weServeGlobally_sec'>
+      <section className='weServeGlobally_sec' ref={sectionRef}>
         <div className='container'>
-          <div className="site-heading">
+          {/* <div className="site-heading"> */}
             {/* <span className="site-title-tagline">--- WE SERVE GLOBALLY ---</span> */}
-            <h2 className="site-title">WE SERVE <span>GLOBALLY</span></h2>
-          </div>
+            <h2>WE SERVE <span>GLOBALLY</span></h2>
+          {/* </div> */}
 
 
           <div className='row'>
 
-            <div className='col-lg-5'>
+            <div className='col-lg-7 mobspaceMb_34'>
               {/* <div className='mb_40'>
                 <p className='tranquilPondText_Clr fontSize16 fontWeight400 fontStyleItalic'>Owing to the unmatched quality and reliability of our products, our line of Leak Sealing Products and Services is in significant demand globally.</p>
               </div> */}
 
+              <div className='mb_16'>
+
+                <h5 className='blackText_Clr fontSize24 fontWeight600 mb_12'>Our Global Presence</h5>
+
+                <p className='blackText_Clr fontSize16 fontWeight400'>Power Tech Group Companies an ISO 9001 and ISO 45001 company is Unique in Indian sub-continent and GCC countries, as ONE-STOP-SHOP for total power plant services in the areas of Repairs & Retrofits, EPC contracts, O&M contracts, Re-Engineering and Relocation of Power Plants, Spares & Services for a decade. We offer Qualitative and Economical Alternative to various OEMS around the World in the areas of expertise. We offer quality services and expertise in Repairs & Retrofits, Spares & Services, EPC contracts, O&M Contracts, Re-Engineering and Relocation of Power Plants, for a decade.</p>
+
+
+              </div>
               <div className='ourGlobalPresence'>
                 <div>
-                  <h5>15+</h5>
+                  <h5 className="data" ref={addToRefs} data-value="15">0</h5>
                   <p>Years</p>
                 </div>
                 <div>
-                  <h5>5+</h5>
+                  <h5 className="data" ref={addToRefs} data-value="5">0</h5>
                   <p>Countries</p>
                 </div>
                 <div>
-                  <h5>250+</h5>
+                  <h5 className="data" ref={addToRefs} data-value="250">0</h5>
                   <p>Customers</p>
                 </div>
               </div>
 
             </div>
 
-            <div className='col-lg-7'>
+            <div className='col-lg-5'>
               <div>
-
-                <h5 className='blackText_Clr fontSize24 fontWeight600 mb_16'>Our Global Presence</h5>
-
-                <p className='blackText_Clr fontSize16 fontWeight400'>Power Tech Group Companies an ISO 9001 and ISO 45001 company is Unique in Indian sub-continent and GCC countries, as ONE-STOP-SHOP for total power plant services in the areas of Repairs & Retrofits, EPC contracts, O&M contracts, Re-Engineering and Relocation of Power Plants, Spares & Services for a decade. We offer Qualitative and Economical Alternative to various OEMS around the World in the areas of expertise. We offer quality services and expertise in Repairs & Retrofits, Spares & Services, EPC contracts, O&M Contracts, Re-Engineering and Relocation of Power Plants, for a decade.</p>
-
-
+                <img className='width100per borderRadius10' src="/assets/img/operation_and_maintainance_service_provider.jpg" />
               </div>
+
             </div>
 
           </div>
@@ -540,13 +618,15 @@ const Mainpage = () => {
 
 
       <section className='service_sec'>
-        <div className='container'>
+        <div className='container positionRelative zIndex999'>
           <div className="site-heading">
             {/* <span className="site-title-tagline textalign_center">--- Service ---</span> */}
             <h2 className="site-title textalign_center">
               <span>Valve Services</span> - Human Resource <br /> & Manpower Supply
             </h2>
           </div>
+          <div className='gear-pattern-layer'></div>
+
 
 
 
@@ -577,13 +657,16 @@ const Mainpage = () => {
                   key={t.id}
                   className={`item ${active === t.id ? "active" : ""}`}
                   onClick={() => {
-                    if (!isTabsVisible) setActive(t.id);
+                    if (!isTabsVisible) {
+                      setActive(prev => (prev === t.id ? null : t.id));  // toggle open/close
+                    }
                   }}
                 >
                   {/* Accordion title (mobile only) */}
                   {!isTabsVisible && (
                     <div className={`${active === t.id ? "bg-gray-700" : "bg-gray-200"}`}>
-                      {t.title}
+                      <span>{t.title}</span>
+                      <img className='arrowToggle' src="/assets/img/arrowdown_icon.svg" />
                     </div>
                   )}
 
@@ -596,6 +679,7 @@ const Mainpage = () => {
               ))}
             </div>
           </div>
+
 
           {/* <div className='industriesLeftSpace'> */}
 
@@ -834,7 +918,7 @@ const Mainpage = () => {
                     Our Edukation System <span>Inspires</span> You More.
                   </h2>
                 </div>
-                <p className='tranquilPondText_Clr fontSize16 fontWeight400'>Power Tech Development an ISO 9001 and ISO 45001 company is Unique in Indian sub-continent and GCC countries, as ONE-STOP-SHOP for total power plant services in the areas of Repairs & Retrofits, EPC contracts.
+                <p className='tranquilPondText_Clr fontSize16 fontWeight400'>Sam Technical Service Contracting Est an ISO 9001 and ISO 45001 company is Unique in Indian sub-continent and GCC countries, as ONE-STOP-SHOP for total power plant services in the areas of Repairs & Retrofits, EPC contracts.
 
                 </p>
                 <div className="about-content">

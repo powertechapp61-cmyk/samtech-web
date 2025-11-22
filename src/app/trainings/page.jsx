@@ -61,11 +61,11 @@ const page = () => {
   return (
 
     <>
-          <section className='aboutbnr'>
+          <section className='hero-banner'>
               <div className='container'>
                   <div className='row alignItem_center' >
                       <div className='col-lg-6'>
-                          <div>
+                          <div className='innerpage_bnrContent'>
                               <ul className='page_breadcrumb'>
                                   <li><Link href={"/"}> Home</Link></li>
                                   <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
@@ -77,12 +77,12 @@ const page = () => {
                               <p>There are many variations of passages available but the majority have suffered alteration in some form by injected humour randomised words which don&apos;t look even slightly believable. If you are going to use passage.
 
                               </p>
-                              <button className='mainbtn'>Contact Us</button>
+                               <Link href="/contact-us" className='mainbtn'>Contact Us</Link>
                           </div>
                       </div>
                       <div className='col-lg-5 offset-lg-1'>
-                          <div className='aboutbnr_img'>
-                              <img className="img-1" src="/assets/img/gallery_img/01696864443.jpeg" alt="gallery" />
+                          <div className='hero-banner_img'>
+                              <img className="img-1" src="/assets/img/trainings/ai_training_by_ibm.jpg" alt="gallery" />
                           </div>
                       </div>
                   </div>
@@ -106,6 +106,7 @@ const page = () => {
                                   src={item.thumb}
                                   alt={item.caption}
                               />
+                              <div className='galleryhover'><h5>{item.caption}</h5></div>
                           </a>
                       ))}
                   </LightGallery>

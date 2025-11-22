@@ -5,11 +5,11 @@ import LeaderShipTeam from '../Components/LeaderShipTeam'
 const page = () => {
   return (
     <>
-          <section className='service_bnr'>
+          <section className='hero-banner'>
               <div className="container height100per">
                   <div className='row alignItem_center height100per' >
                       <div className='col-lg-6'>
-                          <div className='innerpage_bnrContent mobspaceMb_24'>
+                          <div className='innerpage_bnrContent'>
                               <ul className='page_breadcrumb'>
                                   <li><Link href={"/"}> Home</Link></li>
                                   <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
@@ -20,11 +20,11 @@ const page = () => {
                               <h1>Leadership Team</h1>
                               {/* <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>{page.subTitle}</p> */}
                               <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus quod fugiat corrupti, aut accusamus, porro esse, corporis nisi qui excepturi nostrum in? Maxime maiores nostrum eius cumque velit architecto ullam.</p>
-                              <button className='mainbtn'>Contact Us</button>
+                              <Link href="/contact-us" className='mainbtn'>Contact Us</Link>
                           </div>
                       </div>
                       <div className='col-lg-5 offset-lg-1'>
-                          <div className="aboutbnr_img" >
+                          <div className="hero-banner_img" >
                               <img src="/assets/img/company.jpeg"
                                   alt="company" />
 

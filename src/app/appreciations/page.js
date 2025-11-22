@@ -20,6 +20,7 @@ import 'lightgallery/scss/lg-zoom.scss';
 // import plugins if you need
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
+import Link from 'next/link';
 
 const page = () => {
     const onInit = () => {
@@ -35,7 +36,7 @@ const page = () => {
             type: "image",
             src: "/assets/img/testmonials/c1.jpg",
             thumb: "/assets/img/testmonials/c1.jpg",
-            caption: "Company Registration Certificate – Power Tech Development",
+            caption: "Company Registration Certificate – Sam Technical Service Contracting Est",
         },
         {
             type: "image",
@@ -98,7 +99,7 @@ const page = () => {
             type: "image",
             src: "/assets/img/testmonials/c8.jpg",
             thumb: "/assets/img/testmonials/c8.jpg",
-            caption: "NOMAC Appreciation Letter- Power Tech Development",
+            caption: "NOMAC Appreciation Letter- Sam Technical Service Contracting Est",
         },
         {
             type: "image",
@@ -170,19 +171,19 @@ const page = () => {
     
   return (
     <>
-          <section className='aboutbnr'>
+          <section className='hero-banner'>
               <div className='container'>
                   <div className='row alignItem_center' >
                       <div className='col-lg-6'>
-                          <div>
+                          <div className='innerpage_bnrContent'>
                               <h1>Appreciations</h1>
                               <p>We are grateful to our clients for giving us the opportunity to work for them; it is a tremendous source of encouragement for our team when our work is recognized. Numerous business leaders from Saudi Arabia and overseas have expressed appreciation for our team thus far.</p>
-                              <button className='mainbtn'>Contact Us</button>
+                              <Link  href="/contact-us" className='mainbtn'>Contact Us</Link>
                           </div>
                       </div>
                       <div className='col-lg-5 offset-lg-1'>
-                          <div className='aboutbnr_img'>
-                              <img className="img-1" src="/assets/img/industry_illu.jpg" alt="about us img" />
+                          <div className='hero-banner_img'>
+                              <img className="img-1" src="/assets/img/company-photo/slider1.jpg" alt="about us img" />
                           </div>
                       </div>
                   </div>

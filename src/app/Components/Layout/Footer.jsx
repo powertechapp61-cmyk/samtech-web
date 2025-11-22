@@ -90,67 +90,75 @@ const Footer = () => {
             <div className='col-lg-4 mobspaceMb_24'>
               <h2>About Us</h2>
               <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>Sam Technical Service Contracting Est an ISO 9001 and ISO 45001 company is Unique in Indian sub-continent and GCC countries, as ONE-STOP-SHOP for total power plant services in the areas of Repairs & Retrofits, EPC contracts.</p>
-              <div className='qrCodeLink'>
-              <img src="/assets/img/qrcode.png" alt="qrcode" />
-              </div>
-            
 
 
             </div>
-            <div className='col-lg-4 mobspaceMb_24'>
+            <div className='col-lg-2 mobspaceMb_24'>
               <h2>Quick Links</h2>
-        
+
 
               <ul className='quicklinks'>
                 <li>
                   <Link href={"/"} prefetch>
-                    Home
+                    <img src="/assets/img/stepPoint.svg" alt='step point' />
+                    <span>Home</span>
+                    
                   </Link>
                 </li>
                 <li>
                   <Link href={"/about-us"} prefetch>
-                      About Us
-                    </Link>
-
-
-
-                
-
+                    <img src="/assets/img/stepPoint.svg" alt='step point' />
+                    <span>About Us</span>
+                  </Link>
                 </li>
+                <li>
+                  <Link href={"/group-companies"} prefetch>
+                    <img src="/assets/img/stepPoint.svg" alt='step point' />
+                    <span>Group Companies</span>
 
+                  </Link>
+                </li>
                 <li>
                   <Link href={"/appreciations"} prefetch>
-                    Appreciations
+                    <img src="/assets/img/stepPoint.svg" alt='step point' />
+                    <span>Appreciations</span>
+
                   </Link>
                 </li>
-                <li>
-                  <Link href={"/brochures"} prefetch>
-                    Brochures
-                  </Link>
-                </li>
+              
                 <li>
                   <Link href={'/photo-gallery'} prefetch>
-                    Photo Gallery
+                    <img src="/assets/img/stepPoint.svg" alt='step point' />
+                    <span> Photo Gallery</span>
+
                   </Link>
                 </li>
                 <li>
                   <Link href={'/our-branches'} prefetch>
-                    Our Branches
+                    <img src="/assets/img/stepPoint.svg" alt='step point' />
+                    <span>Our Branches</span>
+
                   </Link>
                 </li>
                 <li>
                   <Link href={'/trainings'} prefetch>
-                    Trainings
+                    <img src="/assets/img/stepPoint.svg" alt='step point' />
+                    <span>Trainings</span>
+
                   </Link>
                 </li>
                 <li>
                   <Link href={'/careers'} prefetch>
-                    Careers
+                    <img src="/assets/img/stepPoint.svg" alt='step point' />
+                    <span>Careers</span>
+
                   </Link>
                 </li>
                 <li>
                   <Link href={"/contact-us"} prefetch>
-                    Contact Us
+                    <img src="/assets/img/stepPoint.svg" alt='step point' />
+                    <span> Contact Us</span>
+
                   </Link>
                 </li>
 
@@ -158,9 +166,22 @@ const Footer = () => {
 
               </ul>
             </div>
-            <div className='col-lg-4 mobspaceMb_24'>
-              <h2>Quick Contact</h2>
-              <Link target='_blank' className='blackText_Clr textDecoration_none  fontWeight400 fontSize16' href="https://maps.app.goo.gl/ECLS7hB7t8YHagqh8">
+
+            <div className='col-lg-2 mobspaceMb_24'>
+              <h2>Quick Code</h2>
+
+              <div className='qrCodeLink'>
+                <img src="/assets/img/qrcode.png" alt="qrcode" />
+              </div>
+
+            </div>
+            <div className='col-lg-4'>
+              <h2>Location</h2>
+
+              <iframe height="300" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15742.951351187497!2d77.55047730000001!3d9.444372999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1763365346692!5m2!1sen!2sin" style={{
+                border: 0, width: "100%"
+              }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              {/* <Link target='_blank' className='blackText_Clr textDecoration_none  fontWeight400 fontSize16' href="https://maps.app.goo.gl/ECLS7hB7t8YHagqh8">
                 <div className='displayInlineFlex gap16 mb_24'>
                 <div>
                     <img className='width20px' src="/assets/img/gis_location-poi.svg" alt="location" />
@@ -173,9 +194,9 @@ const Footer = () => {
                   <p className='blackText_Clr fontWeight400 fontSize16'>Rabigh - Saudi Arabia</p>
                 </div>
               </div>
-              </Link>
+              </Link> */}
 
-              <div className='displayInlineFlex gap16 mb_24'>
+              {/* <div className='displayInlineFlex gap16 mb_24'>
                 <div>
                   <img className='blackFilter width18px' src="/assets/img/phonetop_icon.svg" alt="phone" />
                 </div>
@@ -193,7 +214,7 @@ const Footer = () => {
                   </ul>
 
                 </div>
-              </div>
+              </div> */}
 
             </div>
             {/* <div className='col-lg-3'>
@@ -223,12 +244,12 @@ const Footer = () => {
             </div>
               <Link className='fontSize16 fontWeight400 bainganiText_Clr' href="/gallery">View More</Link>
             </div> */}
-           
+
           </div>
 
           <div className='copyRightsec'>
-            <p className='tranquilPondText_Clr  fontWeight400 fontSize14 textalign_center'>Copyright ©  <Link href={"/"} prefetch>Sam Technical Service Contracting Est</Link> 2025. All rights reserved.</p>
-            </div>
+            <p className='tranquilPondText_Clr  fontWeight400 fontSize14 textalign_center'>Copyright ©  <Link href={"/"} prefetch>Sam Technical Service Contracting Est</Link> {new Date().getFullYear()}. All rights reserved.</p>
+          </div>
         </div>
       </footer>
 

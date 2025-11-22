@@ -6,9 +6,21 @@ const Service = ({ pageData, pagename }) => {
   // const[serviceType,setServiceType] =useState('ro_membrane');
   const page = pageData;
 
+  const blankPages = [
+    "online_safety_testing",
+    "offline_valve_testing",
+    "alltype_valve_services",
+    "technical_manpower_supply_for_power_plant_refineries_and_water_plant",
+    "hot_tapping",
+    "heat_exchanger",
+    "ro_membrane",
+    "ro_plant_epc_contracts",
+    "upvc_aluminiumdoors_windowsfabrication"
+  ];
+
   return (
     <>
-      <section className='service_bnr'
+      <section className='hero-banner'
       // style={{
       //   backgroundImage: `url(${page.banner})`,
       //   backgroundSize: 'cover',
@@ -18,22 +30,30 @@ const Service = ({ pageData, pagename }) => {
         <div className="container height100per">
           <div className='row alignItem_center height100per' >
             <div className='col-lg-6'>
-              <div className='innerpage_bnrContent mobspaceMb_24'>
+              <div className='innerpage_bnrContent'>
                 <ul className='page_breadcrumb'>
                   <li><Link href={"/"}> Home</Link></li>
                   <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
                   <li> Services</li>
                   <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
-                  <li><Link href="#">{page.title}</Link></li>
+                  <li><Link href="#">{page?.title}</Link></li>
                 </ul>
                 <h1>{page.title}</h1>
                 {/* <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>{page.subTitle}</p> */}
                 <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>{page.bannerparagraph}</p>
-                <button className='mainbtn'>Contact Us</button>
+                {/* <button className='mainbtn' >Contact Us</button> */}
+                <Link className='mainbtn' href='#to-know-more-contact-us'>Contact Us</Link>
               </div>
             </div>
             <div className='col-lg-5 offset-lg-1'>
-              <div className={`textalign_center defaultWidth ${pagename === "online_seal" ? "seal-img" : "aboutbnr_img" && pagename === "online_safety_testing" ? " " : "aboutbnr_img" && pagename === "offline_valve_testing" ? " " : "aboutbnr_img" && pagename === "alltype_valve_services" ? " " : "aboutbnr_img" && pagename === "hot_tapping" ? " " : "aboutbnr_img" && pagename === "heat_exchanger" ? " " : "aboutbnr_img" && pagename === "ro_membrane" ? " " : "aboutbnr_img" && pagename === "upvc_aluminiumdoors_windowsfabrication" ? " " : "aboutbnr_img"  }`} >
+              <div 
+                className={`textalign_center defaultWidth ${pagename === "online_seal_leaking"
+                  ? "hero-banner_img"
+                    : blankPages.includes(pagename)
+                      ? ""
+                      : "hero-banner_img"
+                  }`}>
+               {/* className={`textalign_center defaultWidth ${pagename === "online_seal_leaking" ? "seal-img" : "hero-banner_img" && pagename === "online_safety_testing" ? " " : "hero-banner_img" && pagename === "offline_valve_testing" ? " " : "hero-banner_img" && pagename === "alltype_valve_services" ? " " : "hero-banner_img" && pagename === "hot_tapping" ? " " : "hero-banner_img" && pagename === "heat_exchanger" ? " " : "hero-banner_img" && pagename === "ro_membrane" ? " " : "hero-banner_img" && pagename === "upvc_aluminiumdoors_windowsfabrication" ? " " : "hero-banner_img"  }`} > */}
                 <img src={page.bannerImg}
                   alt={page.title || "service image"} />
 
@@ -48,7 +68,7 @@ const Service = ({ pageData, pagename }) => {
 
       <section className='serviceContentpart'>
         <div className="container">
-          <div className='row'>
+          {/* <div className='row'>
             <div className='col-lg-6 mobspaceMb_24'>
               {page.imgs.map((img, index) => (
                 <div key={index}>
@@ -64,8 +84,10 @@ const Service = ({ pageData, pagename }) => {
               ))}
             </div>
 
-          </div>
+          </div> */}
 
+        
+            {page.content}
         </div>
       </section>
 
