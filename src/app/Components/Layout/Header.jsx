@@ -36,6 +36,21 @@ const Header = () => {
   const dropdownRef = useRef();
 
 
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 50);   // scroll position
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
   // const handleMenuClose = () => {
   //   dropdownRef.current?.click();
   //   handleToggleClick();
@@ -44,7 +59,7 @@ const Header = () => {
 
   return (
 
-    <div className="sticky-top">
+   <>
       <div className="topHeader">
         <div className="container">
           <div>
@@ -67,7 +82,7 @@ const Header = () => {
                       <div>
                         Saudi :&nbsp;
                         <Link href="tel:+966507745097">+966507745097</Link>
-                      </div> 
+                      </div>
                     </div>
                   </Dropdown.Toggle>
 
@@ -77,7 +92,7 @@ const Header = () => {
                     <Dropdown.Item href="/service-page/offline_valve_testing">UAE :&nbsp;
                       <Link href="tel:+971504712069">+971504712069</Link></Dropdown.Item>
 
-                   
+
 
                     <Dropdown.Item href="/service-page/offline_valve_testing">
                       India :&nbsp;
@@ -91,15 +106,15 @@ const Header = () => {
 
             </div>
             {/* <div className="displayFlex alignItem_center gap30"> */}
-           
+
             <div>
               <ul className="socialMediaLink">
-               <li>
+                {/* <li>
                   <button className="circleIconbtn" onClick={handleSearchClick}>
                     <img className="whiteFilter" src="/assets/img/tabler_search.svg" alt="search" />
                   </button>
-               </li>
-                <li>
+               </li> */}
+                {/* <li>
                   <Link href="https://wa.me/966507745097" target="_blank">
                     <img style={{width:'24px'}} src="/assets/img/ic_baseline-whatsapp.svg" alt="whatsapp" />
                   </Link>
@@ -129,12 +144,12 @@ const Header = () => {
                   <Link href="https://www.youtube.com/@chennaipowerdesalinationtr3180" target="_blank">
                     <img src="/assets/img/youtube_icon.svg" alt="youtube" />
                   </Link>
-                </li>
+                </li> */}
 
 
               </ul>
             </div>
-            </div>
+          </div>
           {
             isOpen && (
               <div className={parentClasses}>
@@ -150,14 +165,14 @@ const Header = () => {
 
                 {/* Dropdown: only show when user types */}
                 {searchText.length > 0 && (
-                <div className="searchDropdown">
-                  <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-                    <li>Commodi ducimus doloremque perferendis aut amet hic, modi pariatur! Animi, officiis natus, neque repellat laboriosam repellendus perferendis cupiditate cumque, reiciendis eum ad.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                  </ul>
-                </div>
+                  <div className="searchDropdown">
+                    <ul>
+                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                      <li>Commodi ducimus doloremque perferendis aut amet hic, modi pariatur! Animi, officiis natus, neque repellat laboriosam repellendus perferendis cupiditate cumque, reiciendis eum ad.</li>
+                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    </ul>
+                  </div>
                 )}
               </div>
             )
@@ -165,15 +180,31 @@ const Header = () => {
         </div>
 
       </div>
-
-      <header>
+      <header className={isSticky ? "stickytop" : ""}>
         <div className="container">
-          <nav>
+          {!isSticky && (
+          <div className="deskFlexMobileBlock alignItem_center justifyContent_spacebetween deskHeader">
+          <div className="brandlogo">
+            <Link href={"/"} prefetch>
+              <img
+                  src="/assets/img/sam_logo.png"
+                alt="Logo"
+              />
+            </Link>
+          </div>
+            <div className="logo_text">
+              <h1><span>S</span>am <span>T</span>echnical <span>S</span>ervice <span>C</span>ontracting Est</h1>
+            <p>( A Unit of Power Tech Group of Companies )</p>
+          </div>
+          <div></div>
+          </div>
+          )}
+            <nav>
             <div className="mobileHeader">
-              <div className="brandlogo">
+              <div className="stickylogo">
                 <Link href={"/"} prefetch>
                   <img
-                    src="/assets/img/stsc_full.png"
+                      src="/assets/img/sam_logo.png"
                     alt="Logo"
                   />
                 </Link>
@@ -190,7 +221,7 @@ const Header = () => {
             <div
               className={isActive ? " navbarCollapse show" : "navbarCollapse"}
             >
-              <div className="margin_auto">
+              <div>
                 <ul>
                   <li>
                     <Link href={"/"} prefetch>
@@ -213,7 +244,7 @@ const Header = () => {
                         <Dropdown.Item href={'/company'}>About Us </Dropdown.Item>
                         <Dropdown.Item href={'/leadership-team'}>Leadership team</Dropdown.Item>
                         <Dropdown.Item href={'/group-companies'}>Group companies</Dropdown.Item>
-                        </Dropdown.Menu>
+                      </Dropdown.Menu>
                     </Dropdown>
 
                   </li>
@@ -222,7 +253,7 @@ const Header = () => {
                       Services
                     </Link> */}
                     <Dropdown className="serviceDropdown">
-                      <Dropdown.Toggle   id="dropdown-basic">
+                      <Dropdown.Toggle id="dropdown-basic">
                         Services
                       </Dropdown.Toggle>
 
@@ -254,27 +285,27 @@ const Header = () => {
                     </Link>
                   </li>
                   <li>
-                  
-                      <Dropdown>
-                        <Dropdown.Toggle id="dropdown-basic">
-                        Gallery
-                        </Dropdown.Toggle>
 
-                        <Dropdown.Menu>
+                    <Dropdown>
+                      <Dropdown.Toggle id="dropdown-basic">
+                        Gallery
+                      </Dropdown.Toggle>
+
+                      <Dropdown.Menu>
                         <Dropdown.Item href={'/photo-gallery'}>Photo Gallery</Dropdown.Item>
-                          <Dropdown.Item href="#">Video Gallery</Dropdown.Item>
+                        <Dropdown.Item href="#">Video Gallery</Dropdown.Item>
                         <Dropdown.Item href={'/our-branches'}>Our Branches</Dropdown.Item>
                         <Dropdown.Item href={'/trainings'}>Trainings</Dropdown.Item>
-                        </Dropdown.Menu>
-                      </Dropdown>
+                      </Dropdown.Menu>
+                    </Dropdown>
                   </li>
                   {/* <li>
                     <Link href="#" prefetch>
                       Credentials’
                     </Link>
                   </li> */}
-                 
-                
+
+
                   <li>
                     <Link href={'/careers'} prefetch>
                       Careers
@@ -285,28 +316,33 @@ const Header = () => {
                       Contact Us
                     </Link>
                   </li>
-
+                  {!isSticky && (
+                  <li>
+                    <button className="circleIconbtn" onClick={handleSearchClick}>
+                        <img className="whiteFilter" src="/assets/img/tabler_search.svg" alt="search" />
+                    </button>
+                  </li>
+                  )}
 
 
                 </ul>
               </div>
-              <div>
+              {/* <div>
 
 
-                <div className="certifiedLogo">
+              <div className="certifiedLogo">
                   <img src="/assets/img/logo2.jpg" alt="logo" />
-                </div>
+                </div> 
 
-              </div>
+              </div> */}
 
             </div>
           </nav>
+
+
         </div>
       </header>
-      {/* popup search */}
-    
-    </div>
-
+    </>
 
   );
 };

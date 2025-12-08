@@ -44,7 +44,7 @@ const page = () => {
                                         <img src="/assets/img/ptd.png" alt='ptd' />
                                     </div>
 
-                                    <h2> Sam Technical Service Contracting Est W.L.L, Bahrain</h2>
+                                    <h2>Power Tech Development W.L.L, Bahrain</h2>
                                     <p> Operation & Maintenance of Power & Water, oil & Gas Plants & EPC Contractors & Human Resource Providers</p>
 
                                 </div>

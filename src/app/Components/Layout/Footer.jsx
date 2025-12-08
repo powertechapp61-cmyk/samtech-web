@@ -89,8 +89,10 @@ const Footer = () => {
           <div className='row mb_40'>
             <div className='col-lg-4 mobspaceMb_24'>
               <h2>About Us</h2>
-              <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>Sam Technical Service Contracting Est an ISO 9001 and ISO 45001 company is Unique in Indian sub-continent and GCC countries, as ONE-STOP-SHOP for total power plant services in the areas of Repairs & Retrofits, EPC contracts.</p>
-
+              <p className='fontSize16 fontWeight400 whiteText_Clr mb_24'>Sam Technical Service Contracting Est an ISO 9001 and ISO 45001 company is Unique in Indian sub-continent and GCC countries, as ONE-STOP-SHOP for total power plant services in the areas of Repairs & Retrofits, EPC contracts.</p>
+              <div className="certifiedLogo">
+                <img src="/assets/img/logo2.jpg" alt="logo" />
+              </div>
 
             </div>
             <div className='col-lg-2 mobspaceMb_24'>
@@ -102,7 +104,7 @@ const Footer = () => {
                   <Link href={"/"} prefetch>
                     <img src="/assets/img/stepPoint.svg" alt='step point' />
                     <span>Home</span>
-                    
+
                   </Link>
                 </li>
                 <li>
@@ -125,7 +127,7 @@ const Footer = () => {
 
                   </Link>
                 </li>
-              
+
                 <li>
                   <Link href={'/photo-gallery'} prefetch>
                     <img src="/assets/img/stepPoint.svg" alt='step point' />
@@ -248,13 +250,65 @@ const Footer = () => {
           </div>
 
           <div className='copyRightsec'>
-            <p className='tranquilPondText_Clr  fontWeight400 fontSize14 textalign_center'>Copyright ©  <Link href={"/"} prefetch>Sam Technical Service Contracting Est</Link> {new Date().getFullYear()}. All rights reserved.</p>
+            <p className='whiteText_Clr  fontWeight400 fontSize14 textalign_center'>Copyright ©  <Link href={"/"} prefetch>Sam Technical Service Contracting Est</Link> {new Date().getFullYear()}. All rights reserved.</p>
           </div>
         </div>
       </footer>
 
 
+      <div className='socialMedia-icon'>
+        <ul>
 
+         
+
+         
+          <li>
+            <Link href="https://wa.me/966507745097" target="_blank">
+              <img src="/assets/img/whatsappIcon.svg" alt="whatsapp" />
+              <span>WhatsApp</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="https://www.facebook.com/people/Power-Tech-Group-Companies/61558411207892/" target="_blank">
+              <img src="/assets/img/logos_facebook.svg" alt="fb" />
+              <span>Facebook</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="https://www.instagram.com/cpdti.chennai/" target="_blank">
+              <img src="/assets/img/skill-icons_instagram.svg" alt="insta" />
+              <span>Instagram</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="https://www.linkedin.com/company/powertechdevelopment/" target="_blank">
+              <img src="/assets/img/logos_linkedin-icon.svg" alt="linkedin" />
+              <span>LinkedIn</span>
+            </Link>
+          </li>
+
+          <li>
+            <Link href="https://x.com/powertechgroup" target="_blank">
+              <img src="/assets/img/ri_twitter-x-line.svg" alt="twitter" />
+              <span>Twitter</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="https://www.youtube.com/@chennaipowerdesalinationtr3180" target="_blank">
+              <img src="/assets/img/logos_youtube-icon.svg" alt="youtube" />
+              <span>YouTube</span>
+            </Link>
+          </li>
+          <li>
+
+            <Link href="tel:+966507745097">
+              <img className='blackFilter' src="/assets/img/phone_icon.svg" alt="phone" />
+              <span>Saudi :&nbsp; +966507745097</span>
+              </Link>
+          </li>
+
+        </ul>
+      </div>
 
     </>
   );

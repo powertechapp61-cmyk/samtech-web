@@ -336,7 +336,7 @@ const Page = () => {
                                     <ul>
                                         <li>
                                             <img className='width24px' src="/assets/img/gis_location-poi.svg" />
-                                            <span> Building No#9324, Street Mughttal Ibn Slnan Street, Al Naseem Dist, Rabigh Saudi Arabia</span>
+                                        <span>Building No # 9324, Street Mughffal Ibn Sinan Street ,Al Naseem Dist., Rabigh- Saudi Arabia</span>
                                         </li>
                                         <li>
                                             <div className='width24px'>

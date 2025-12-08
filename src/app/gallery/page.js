@@ -461,6 +461,7 @@ const GalleryPage = () => {
             thumb: "/assets/img/gallery_img/01652965793.jpg"
             // caption: "Sample Photo 1",
         },
+       
     ];
 
     return (
