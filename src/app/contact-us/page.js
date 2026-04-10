@@ -16,11 +16,11 @@ const Page = () => {
                                
                             </div>
                         </div>
-                        <div className='col-lg-5 offset-lg-1'>
+                        {/* <div className='col-lg-5 offset-lg-1'>
                             <div className='hero-banner_img'>
                                 <img className="img-1" src="/assets/img/company-photo/sl3.jpg" alt="about us img" />
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
