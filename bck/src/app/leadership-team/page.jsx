@@ -34,7 +34,7 @@ const page = () => {
                   </div>
               </div>
           </section>
-    {/* <LeaderShipTeam /> */}
+    <LeaderShipTeam />
     </>
   )
 }

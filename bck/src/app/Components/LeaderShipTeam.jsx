@@ -37,13 +37,13 @@ Driven, Progressive and Team Player with sharp business acumen, who always puts 
 Won Several Accolades over the years for consistently delivering results and has several Industry certifications under his belt`
 
     },
-//     {
-//       id: 3, Img: "/assets/img/gm1.jpg", Name: "Mr. AHMED IBRAHIM", Role: "General Manager - Global Powertech UAE",
-//       content: `BE - MBA from Anna University
-// General Manager - Global Powertech UAE
-// 15+Years’ Experience is Power Transmission and Distribution Engineering, EPC Projects.
-// Having EPC Experience in 400kV, 132kV, Substation.. Underground Cabling works, OHL line replacement.
-// Worked in Contractor, Consultant Field such a reputed companies.. Engie, MITSUBISHI ELECTRIC, MOTTMAC DONALD, POYRY SWITZERLAND Executed Ministry Projects in DEWA, Etihad WE, SEWA in UAE` },
+    {
+      id: 3, Img: "/assets/img/gm1.jpg", Name: "Mr. AHMED IBRAHIM", Role: "General Manager - Global Powertech UAE",
+      content: `BE - MBA from Anna University
+General Manager - Global Powertech UAE
+15+Years’ Experience is Power Transmission and Distribution Engineering, EPC Projects.
+Having EPC Experience in 400kV, 132kV, Substation.. Underground Cabling works, OHL line replacement.
+Worked in Contractor, Consultant Field such a reputed companies.. Engie, MITSUBISHI ELECTRIC, MOTTMAC DONALD, POYRY SWITZERLAND Executed Ministry Projects in DEWA, Etihad WE, SEWA in UAE` },
     {
       id: 4, Img: "/assets/img/Jasim.jpg", Name: "Mr. J. MOHAMED JASIM", Role: "Manager- Power Tech Group Companies",
 

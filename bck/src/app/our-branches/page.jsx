@@ -125,11 +125,11 @@ const page = () => {
                                 <Link href="/contact-us" className='mainbtn'>Contact Us</Link>
                             </div>
                         </div>
-                        {/* <div className='col-lg-5 offset-lg-1'>
+                        <div className='col-lg-5 offset-lg-1'>
                             <div className='hero-banner_img'>
                                 <img className="img-1" src="/assets/img/all_logo.jfif" alt="gallery" />
                             </div>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </section>

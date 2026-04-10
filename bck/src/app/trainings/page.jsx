@@ -39,12 +39,12 @@ const page = () => {
             caption: "HSE Courses",
         },
 
-        // {
-        //     type: "image",
-        //     src: "/assets/img/trainings/hse_training_passport.png",
-        //     thumb: "/assets/img/trainings/hse_training_passport.png",
-        //     caption: "HSE Training passport",
-        // },
+        {
+            type: "image",
+            src: "/assets/img/trainings/hse_training_passport.png",
+            thumb: "/assets/img/trainings/hse_training_passport.png",
+            caption: "HSE Training passport",
+        },
         {
             type: "image",
             src: "/assets/img/trainings/recognised_by governer_of_india.jpg",

@@ -72,7 +72,7 @@ const page = () => {
                             </div>
                         </div>
 
-                        {/* <div className='col-lg-4'>
+                        <div className='col-lg-4'>
                             <div className='groupCompanyItem'>
                                 <div>
                                     <div className='groupCompanylogo'>
@@ -103,7 +103,7 @@ const page = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
 
 
 

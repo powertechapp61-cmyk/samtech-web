@@ -365,7 +365,7 @@ const Page = () => {
                                 </div>
                             </div>
 
-                            {/* <div className='col-lg-6'>
+                            <div className='col-lg-6'>
                                 <div className='addressItem'>
                                     <div>
                                         <h2>UAE Office</h2>
@@ -403,7 +403,7 @@ const Page = () => {
                                     </ul>
 
                                 </div>
-                            </div> */}
+                            </div>
 
                             <div className='col-lg-6'>
                                 <div className='addressItem'>

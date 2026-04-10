@@ -242,7 +242,7 @@ const Header = () => {
 
                       <Dropdown.Menu>
                         <Dropdown.Item href={'/company'}>About Us </Dropdown.Item>
-                        {/* <Dropdown.Item href={'/leadership-team'}>Leadership team</Dropdown.Item> */}
+                        <Dropdown.Item href={'/leadership-team'}>Leadership team</Dropdown.Item>
                         <Dropdown.Item href={'/group-companies'}>Group companies</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>

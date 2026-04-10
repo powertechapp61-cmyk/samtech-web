@@ -547,22 +547,22 @@ const Mainpage = () => {
           <div className="companyphoto-item">
             <img src="/assets/img/company-photo/sl2.jpg" alt="companyphoto" />
           </div>
-          {/* <div className="companyphoto-item">
+          <div className="companyphoto-item">
             <img src="/assets/img/company-photo/sl3.jpg" alt="companyphoto" />
-          </div> */}
+          </div>
           <div className="companyphoto-item">
             <img src="/assets/img/company-photo/sl4.jpg" alt="companyphoto" />
           </div>
           <div className="companyphoto-item">
             <img src="/assets/img/company-photo/sl5.jpg" alt="companyphoto" />
           </div>
-          {/* <div className="companyphoto-item">
+          <div className="companyphoto-item">
             <img src="/assets/img/company-photo/sl6.jpg" alt="companyphoto" />
-          </div> */}
+          </div>
         </Slider>
       </section>
 
-      {/* <LeaderShipTeam /> */}
+      <LeaderShipTeam />
 
 
       <section className='weServeGlobally_sec' ref={sectionRef}>

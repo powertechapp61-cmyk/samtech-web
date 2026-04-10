@@ -274,7 +274,7 @@ const Footer = () => {
               <span>Facebook</span>
             </Link>
           </li>
-          {/* <li>
+          <li>
             <Link href="https://www.instagram.com/cpdti.chennai/" target="_blank">
               <img src="/assets/img/skill-icons_instagram.svg" alt="insta" />
               <span>Instagram</span>
@@ -285,7 +285,7 @@ const Footer = () => {
               <img src="/assets/img/logos_linkedin-icon.svg" alt="linkedin" />
               <span>LinkedIn</span>
             </Link>
-          </li> */}
+          </li>
 
           <li>
             <Link href="https://x.com/powertechgroup" target="_blank">

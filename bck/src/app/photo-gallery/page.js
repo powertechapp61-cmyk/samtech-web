@@ -154,19 +154,19 @@ const GalleryPage = () => {
         },
 
 
-        // {
-        //     type: "image",
-        //     src: "/assets/img/gallery_img/01695359593.jpg",
-        //     thumb: "/assets/img/gallery_img/01695359593.jpg",
-        //     caption: "PTT 1",
-        // },
+        {
+            type: "image",
+            src: "/assets/img/gallery_img/01695359593.jpg",
+            thumb: "/assets/img/gallery_img/01695359593.jpg",
+            caption: "PTT 1",
+        },
 
-        // {
-        //     type: "image",
-        //     src: "/assets/img/gallery_img/01695359599.jpg",
-        //     thumb: "/assets/img/gallery_img/01695359599.jpg",
-        //     caption: "PTT",
-        // },
+        {
+            type: "image",
+            src: "/assets/img/gallery_img/01695359599.jpg",
+            thumb: "/assets/img/gallery_img/01695359599.jpg",
+            caption: "PTT",
+        },
 
 
         {
@@ -380,31 +380,31 @@ const GalleryPage = () => {
             caption: "STSC On-Site Valve Overhaul Operation",
         },
 
-        // {
-        //     type: "image",
-        //     src: "/assets/img/gallery_img/01757575015.jpeg",
-        //     thumb: "/assets/img/gallery_img/01757575015.jpeg",
-        //     caption: "CSP Tower Solar – Concentrated Solar Power, Tower Type system using heliostats and central receiver.",
-        // },
-        // {
-        //     type: "image",
-        //     src: "/assets/img/gallery_img/01757577763.jpeg",
-        //     thumb: "/assets/img/gallery_img/01757577763.jpeg",
-        //     caption: "Expert heliostat mirror fixing and alignment for CSP Tower Solar plants",
-        // },
-        // {
-        //     type: "image",
-        //     src: "/assets/img/gallery_img/01757587417.jpeg",
-        //     thumb: "/assets/img/gallery_img/01757587417.jpeg",
-        //     caption: "Manager supervising heliostat mirror fixing at the CSP Tower Solar Project in Dubai",
-        // },
+        {
+            type: "image",
+            src: "/assets/img/gallery_img/01757575015.jpeg",
+            thumb: "/assets/img/gallery_img/01757575015.jpeg",
+            caption: "CSP Tower Solar – Concentrated Solar Power, Tower Type system using heliostats and central receiver.",
+        },
+        {
+            type: "image",
+            src: "/assets/img/gallery_img/01757577763.jpeg",
+            thumb: "/assets/img/gallery_img/01757577763.jpeg",
+            caption: "Expert heliostat mirror fixing and alignment for CSP Tower Solar plants",
+        },
+        {
+            type: "image",
+            src: "/assets/img/gallery_img/01757587417.jpeg",
+            thumb: "/assets/img/gallery_img/01757587417.jpeg",
+            caption: "Manager supervising heliostat mirror fixing at the CSP Tower Solar Project in Dubai",
+        },
 
-        // {
-        //     type: "image",
-        //     src: "/assets/img/gallery_img/01757587654.jpeg",
-        //     thumb: "/assets/img/gallery_img/01757587654.jpeg",
-        //     caption: "CSP TOWER - Solar Heliostat mirror fixing",
-        // },
+        {
+            type: "image",
+            src: "/assets/img/gallery_img/01757587654.jpeg",
+            thumb: "/assets/img/gallery_img/01757587654.jpeg",
+            caption: "CSP TOWER - Solar Heliostat mirror fixing",
+        },
 
         {
             type: "image",
@@ -474,12 +474,12 @@ const GalleryPage = () => {
 
 
 
-//        {
-        //     type: "image",
-        //     src: "/assets/img/gallery_img/GPTC Solar Project L&T 5GW.jpg",
-        //     thumb: "/assets/img/gallery_img/GPTC Solar Project L&T 5GW.jpg",
-        //     caption: "GPTC Solar Project L&T 5GW",
-        // },
+        {
+            type: "image",
+            src: "/assets/img/gallery_img/GPTC Solar Project L&T 5GW.jpg",
+            thumb: "/assets/img/gallery_img/GPTC Solar Project L&T 5GW.jpg",
+            caption: "GPTC Solar Project L&T 5GW",
+        },
 
 
         {
@@ -513,12 +513,12 @@ const GalleryPage = () => {
         },
 
 
-        // {
-        //     type: "image",
-        //     src: "/assets/img/gallery_img/24 inch Gasline Valve replacement NOMAC 1.jpg",
-        //     thumb: "/assets/img/gallery_img/24 inch Gasline Valve replacement NOMAC 1.jpg",
-        //     caption: "24 inch Gasline Valve replacement NOMAC 1",
-        // },
+        {
+            type: "image",
+            src: "/assets/img/gallery_img/24 inch Gasline Valve replacement NOMAC 1.jpg",
+            thumb: "/assets/img/gallery_img/24 inch Gasline Valve replacement NOMAC 1.jpg",
+            caption: "24 inch Gasline Valve replacement NOMAC 1",
+        },
 
 
         {
@@ -548,19 +548,19 @@ const GalleryPage = () => {
             caption: "24 inch Gasline Valve replacement NOMAC 5",
         },
 
-        // {
-        //     type: "image",
-        //     src: "/assets/img/gallery_img/24 inch Gasline Valve replacement NOMAC.jpg",
-        //     thumb: "/assets/img/gallery_img/24 inch Gasline Valve replacement NOMAC.jpg",
-        //     caption: "24 inch Gasline Valve replacement NOMAC",
-        // },
+        {
+            type: "image",
+            src: "/assets/img/gallery_img/24 inch Gasline Valve replacement NOMAC.jpg",
+            thumb: "/assets/img/gallery_img/24 inch Gasline Valve replacement NOMAC.jpg",
+            caption: "24 inch Gasline Valve replacement NOMAC",
+        },
 
-        // {
-        //     type: "image",
-        //     src: "/assets/img/gallery_img/32 inch Actuator.jpg",
-        //     thumb: "/assets/img/gallery_img/32 inch Actuator.jpg",
-        //     caption: "32 inch Actuator.jpg",
-        // },
+        {
+            type: "image",
+            src: "/assets/img/gallery_img/32 inch Actuator.jpg",
+            thumb: "/assets/img/gallery_img/32 inch Actuator.jpg",
+            caption: "32 inch Actuator.jpg",
+        },
 
         {
             type: "image",
@@ -569,12 +569,12 @@ const GalleryPage = () => {
             caption: "AI Training by IBM to CPDTI students 2025 Batch",
         },
 
-        // {
-        //     type: "image",
-        //     src: "/assets/img/gallery_img/Condenser Rubber Tubing patch work for GE 2.jpg",
-        //     thumb: "/assets/img/gallery_img/Condenser Rubber Tubing patch work for GE 2.jpg",
-        //     caption: "Condenser Rubber Tubing patch work for GE 2",
-        // },
+        {
+            type: "image",
+            src: "/assets/img/gallery_img/Condenser Rubber Tubing patch work for GE 2.jpg",
+            thumb: "/assets/img/gallery_img/Condenser Rubber Tubing patch work for GE 2.jpg",
+            caption: "Condenser Rubber Tubing patch work for GE 2",
+        },
         {
             type: "image",
             src: "/assets/img/gallery_img/Condenser Rubber Tubing patch work for GE 3.jpg",
