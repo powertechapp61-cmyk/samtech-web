@@ -268,37 +268,37 @@ const Footer = () => {
               <span>WhatsApp</span>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="https://www.facebook.com/people/Power-Tech-Group-Companies/61558411207892/" target="_blank">
               <img src="/assets/img/logos_facebook.svg" alt="fb" />
               <span>Facebook</span>
             </Link>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <Link href="https://www.instagram.com/cpdti.chennai/" target="_blank">
               <img src="/assets/img/skill-icons_instagram.svg" alt="insta" />
               <span>Instagram</span>
             </Link>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <Link href="https://www.linkedin.com/company/powertechdevelopment/" target="_blank">
               <img src="/assets/img/logos_linkedin-icon.svg" alt="linkedin" />
               <span>LinkedIn</span>
             </Link>
-          </li>
+          </li> */}
 
-          <li>
+          {/* <li>
             <Link href="https://x.com/powertechgroup" target="_blank">
               <img src="/assets/img/ri_twitter-x-line.svg" alt="twitter" />
               <span>Twitter</span>
             </Link>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <Link href="https://www.youtube.com/@chennaipowerdesalinationtr3180" target="_blank">
               <img src="/assets/img/logos_youtube-icon.svg" alt="youtube" />
               <span>YouTube</span>
             </Link>
-          </li>
+          </li> */}
           <li>
 
             <Link href="tel:+966507745097">
