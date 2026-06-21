@@ -159,7 +159,7 @@ const ServicePage = () => {
             title: "All Types of Valve Servicing",
             subTitle: "SERVICES",
             bannerImg: "/assets/img/allType_valveServicing_bnr.png",
-            bannerparagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            bannerparagraph: "a.	We carry out comprehensive servicing, repair, calibration, and testing of all types of industrial valves and actuators — including safety valves, gate valves, ball valves, and control valves — both at our workshop and on-site at client facilities.",
             content: (
                 <>
                     <h5 className='fontSize18 fontWeight600 blackText_Clr mb_12'>Workshop Facility</h5>
@@ -309,7 +309,7 @@ const ServicePage = () => {
             title: "Hot Tapping & Insertion of S-Type (Gate Valve Online)",
             subTitle: "SERVICES",
             bannerImg: "/assets/img/hotTapping_bnr.png",
-            bannerparagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            bannerparagraph: "a.	We perform hot tapping — a specialised technique that allows connections, repairs, or valve insertions to be made on live pressurised pipelines without shutting down operations, minimising downtime and disruption.",
             content: (
                 <>
                     <h5 className='fontSize18 fontWeight600 blackText_Clr mb_12'>When Hot Tapping Makes the Difference: Minimizing Disruption and Maximizing Efficiency</h5>
@@ -367,7 +367,7 @@ const ServicePage = () => {
             title: "Heat Exchanger, Maintenance & Supply",
             subTitle: "SERVICES",
             bannerImg: "/assets/img/heatExchanger_bnr.png",
-            bannerparagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            bannerparagraph: "a.	We supply, install, and maintain heat exchangers used in power plants, refineries, and water treatment facilities, ensuring efficient thermal energy transfer and uninterrupted plant operations.",
             content: (
                 <>
                     <h5 className='fontSize16 fontWeight600 blackText_Clr mb_12'>HEAT EXCHANGER MAINTENANCE</h5>
@@ -435,7 +435,7 @@ const ServicePage = () => {
                 title: "RO Plants Retro Fitting",
                 subTitle: "REPLACEMENT SERVICES",
                 bannerImg: "/assets/img/roplants_retro_detail.png",
-                bannerparagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                bannerparagraph: "We upgrade and modernise existing Reverse Osmosis water treatment plants by replacing outdated components with newer, more efficient parts — extending plant life and improving water output quality without a full replacement.",
 
                 content: [
                     "PTD specializes in providing professional RO membrane replacement services",
@@ -459,7 +459,7 @@ const ServicePage = () => {
                 title: "RO Plant EPC Contracts Upto 2MIGPDA",
                 subTitle: "SERVICES",
                 bannerImg: "/assets/img/heatExchanger_bnr.png",
-                bannerparagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                bannerparagraph: "We deliver end-to-end Engineering, Procurement, and Construction of Reverse Osmosis water desalination plants with a capacity of up to 2 million imperial gallons per day, serving industrial and municipal water needs.",
                 content: [
                     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
                     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
@@ -489,7 +489,7 @@ const ServicePage = () => {
                 title: "Solar Plant EPC upto  5MW & Maintenance",
                 subTitle: "SERVICES",
                 bannerImg: "/assets/img/heatExchanger_bnr.png",
-                bannerparagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                bannerparagraph: "a.	We handle the complete Engineering, Procurement, and Construction of solar power plants up to 5MW capacity, along with ongoing maintenance to keep systems running at peak efficiency.",
                 content: [
                     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
                     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
@@ -519,7 +519,7 @@ const ServicePage = () => {
                 title: "UPVC & Aluminium Doors & Windows Fabrication & Installation",
                 subTitle: "SERVICES",
                 bannerImg: "/assets/img/upvc_bnr.png",
-                bannerparagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                bannerparagraph: "We design, fabricate, and install high-quality UPVC and aluminium doors and windows for industrial, commercial, and residential buildings, ensuring durability, weather resistance, and a professional finish.",
                 content: [
                     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
                     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
@@ -549,7 +549,7 @@ const ServicePage = () => {
                 title: "Technical Manpower supply for Power plant refineries and Water plant",
                 subTitle: "SERVICES",
                 bannerImg: "/assets/img/upvc_bnr.png",
-                bannerparagraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                bannerparagraph: "a.	We provide skilled and experienced technical personnel — including engineers, operators, and technicians — to power plants, refineries, and water treatment facilities on short-term or long-term contract basis.",
                 content: [
                     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
                     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",

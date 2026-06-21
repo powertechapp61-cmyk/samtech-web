@@ -616,9 +616,7 @@ const GalleryPage = () => {
                                     <li><Link href={'/photo-gallery'}>Photo Gallery</Link></li>
                                 </ul>
                                 <h1>Photo Gallery</h1>
-                                <p>There are many variations of passages available but the majority have suffered alteration in some form by injected humour randomised words which don&apos;t look even slightly believable. If you are going to use passage.
-
-                                </p>
+                                <p>A visual record of our work across Saudi Arabia and the GCC. From valve servicing and hot tapping to major plant overhauls and manpower deployments, our gallery reflects the breadth of our technical capability and the quality of our execution on every project we undertake.</p>
                                 <Link href="/contact-us" className='mainbtn'>Contact Us</Link>
                             </div>
                         </div>

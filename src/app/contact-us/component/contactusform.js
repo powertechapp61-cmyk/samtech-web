@@ -293,7 +293,7 @@ const ContactUsForm = () => {
             <div className="mb_24">
               <select className="mainInput" name="country"
                 value={formData.country} onChange={handleChange}>
-                <option value="">Select Country</option>
+                {/* <option value="">Select Country</option> */}
                 <option value="Bahrain">Bahrain</option>
                 <option value="Saudi Arabia">Saudi Arabia</option>
                 <option value="UAE">UAE</option>

@@ -346,7 +346,7 @@ const Page = () => {
             <div className='col-lg-6'>
               <div className='innerpage_bnrContent'>
                 <h1>Contact us</h1>
-                <p>There are many variations of passages available but the majority have suffered alteration in some form by injected humour randomised words which don&apos;t look even slightly believable. If you are going to use passage.</p>
+                <p>We are always ready to hear from you. Whether you have an enquiry about our services, a project requirement to discuss, or simply want to learn more about how SAM Technical Service Contracting Est can support your operations in Saudi Arabia, our team is on hand to respond promptly and professionally.</p>
               </div>
             </div>
             <div className='col-lg-5 offset-lg-1'>
@@ -391,7 +391,7 @@ const Page = () => {
         <div className='container'>
           <div className='row'>
 
-            <div className='col-lg-6'>
+            {/* <div className='col-lg-6'>
               <div className='addressItem'>
                 <div>
                   <h2>Bahrain Office</h2>
@@ -421,7 +421,7 @@ const Page = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
 
             <div className='col-lg-6'>
               <div className='addressItem'>

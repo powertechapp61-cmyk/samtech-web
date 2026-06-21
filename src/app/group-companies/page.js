@@ -18,7 +18,9 @@ const page = () => {
                                 </ul>
                                 <h1>Group companies</h1>
                                 {/* <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>{page.subTitle}</p> */}
-                                <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus quod fugiat corrupti, aut accusamus, porro esse, corporis nisi qui excepturi nostrum in? Maxime maiores nostrum eius cumque velit architecto ullam.</p>
+                                <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>Our strength lies not just in what we do — but in who stands behind us. As a unit of the Power Tech Group of Companies, SAM Technical Service Contracting Est is supported by a network of specialised group entities operating across five countries. Together, we bring our Saudi clients access to a full ecosystem of engineering, technical, training, and manpower capabilities — all under one trusted group.
+
+</p>
                                 <Link href="/contact-us" className='mainbtn'>Contact Us</Link>
                             </div>
                         </div>

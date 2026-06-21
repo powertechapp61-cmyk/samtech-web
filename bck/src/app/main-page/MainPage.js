@@ -143,7 +143,7 @@ const Mainpage = () => {
     }, {
       id: "side_tab8", title: "RO Plant EPC Contracts Upto 2MIGPDA", content: (
         <>
-        <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Under Construction</p>
+          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>a.	We supply, install, and maintain heat exchangers used in power plants, refineries, and water treatment facilities, ensuring efficient thermal energy transfer and uninterrupted plant operations.</p>
 
           <Link className='mainbtn' href="/service-page/ro_plant_epc_contracts">To know more Click Here</Link>
         </>
@@ -151,7 +151,7 @@ const Mainpage = () => {
     }, {
       id: "side_tab9", title: "Solar Plant EPC upto 5MW & Maintenance", content: (
         <>
-        <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Under Construction</p>
+          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>We handle the complete Engineering, Procurement, and Construction of solar power plants up to 5MW capacity, along with ongoing maintenance to keep systems running at peak efficiency.</p>
           <Link className='mainbtn' href="/service-page/solar_plant_epc">To know more Click Here</Link>
 
         </>
@@ -159,7 +159,7 @@ const Mainpage = () => {
     }, {
       id: "side_tab10", title: "RO Plants Retro Fitting", content: (
         <>
-        <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Under Construction</p>
+          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>We upgrade and modernise existing Reverse Osmosis water treatment plants by replacing outdated components with newer, more efficient parts — extending plant life and improving water output quality without a full replacement.</p>
           <Link className='mainbtn' href="/service-page/ro_membrane">To know more Click Here</Link>
 
         </>
@@ -167,7 +167,7 @@ const Mainpage = () => {
     }, {
       id: "side_tab11", title: "UPVC & Aluminium Doors & Windows Fabrication & Installation", content: (
         <>
-        <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Under Construction</p>
+          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>We design, fabricate, and install high-quality UPVC and aluminium doors and windows for industrial, commercial, and residential buildings, ensuring durability, weather resistance, and a professional finish.</p>
           <Link className='mainbtn' href="/service-page/upvc_aluminiumdoors_windowsfabrication">To know more Click Here</Link>
         </>
       )

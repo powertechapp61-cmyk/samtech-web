@@ -1469,14 +1469,15 @@ ul.page_breadcrumb li a {
 }
 
 .testmonials_sec {
-    padding: 40px 0px;
+    // padding: 40px 0px;
+    padding: 34px 0px;
     background: #f7f7f7;
 }
 
 .testimonialGrid {
     display: grid;
     gap: 0px;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .testimonialItem {
@@ -3010,7 +3011,8 @@ ul.stscTab li button:hover {
     display: flex;
     align-items: center;
     gap: 16px;
-    color: var(--black_clr);
+    // color: var(--black_clr);
+    color: #616161;
 }
 
 .addressItem ul li span {
@@ -3022,9 +3024,9 @@ ul.stscTab li button:hover {
 }
 
 .addressItem h2 {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: bold;
     color: var(--black_clr);
     margin: 0px;
 }
@@ -3033,7 +3035,8 @@ ul.stscTab li button:hover {
     font-size: 16;
     line-height: 1.5;
     font-weight: 400;
-    color: var(--tranquilPond_clr);
+    // color: var(--tranquilPond_clr);
+    color: #616161;
 }
 
 .addressItem ul li a {
@@ -3041,10 +3044,12 @@ ul.stscTab li button:hover {
     line-height: 1.5;
     font-weight: 400;
     text-decoration: none;
-    color: var(--black_clr);
-
+    // color: var(--black_clr);
+    color: #616161;
 }
-
+.addressItem ul li img{
+filter: brightness(0) saturate(100%) invert(36%) sepia(47%) saturate(0%) hue-rotate(199deg) brightness(89%) contrast(80%);
+}
 .addressItem {
     margin-bottom: 24px;
     background: #fafafa;

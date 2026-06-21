@@ -74,9 +74,7 @@ const page = () => {
                                   <li><Link href={'/trainings'}>Trainings</Link></li>
                               </ul>
                               <h1>Trainings</h1>
-                              <p>There are many variations of passages available but the majority have suffered alteration in some form by injected humour randomised words which don&apos;t look even slightly believable. If you are going to use passage.
-
-                              </p>
+                              <p>Skilled people deliver great results. Our training programmes cover power plant operations, technical disciplines, HSE compliance, and equipment-specific competencies — ensuring every member of our team is qualified, certified, and ready to deliver on site.</p>
                                <Link href="/contact-us" className='mainbtn'>Contact Us</Link>
                           </div>
                       </div>

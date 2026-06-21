@@ -301,10 +301,15 @@ const Footer = () => {
           </li> */}
           <li>
 
-            <Link href="tel:+966507745097">
+            {/* <Link href="tel:+966507745097">
               <img className='blackFilter' src="/assets/img/phone_icon.svg" alt="phone" />
               <span>Saudi :&nbsp; +966507745097</span>
-              </Link>
+              </Link> */}
+
+            <Link href="tel:+919498660803">
+              <img className='blackFilter' src="/assets/img/phone_icon.svg" alt="phone" />
+              <span>India :&nbsp; +919498660803</span>
+            </Link>
           </li>
 
         </ul>

@@ -159,7 +159,7 @@ const Mainpage = () => {
     }, {
       id: "side_tab10", title: "RO Plants Retro Fitting", content: (
         <>
-        <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Under Construction</p>
+          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>We upgrade and modernise existing Reverse Osmosis water treatment plants by replacing outdated components with newer, more efficient parts — extending plant life and improving water output quality without a full replacement.</p>
           <Link className='mainbtn' href="/service-page/ro_membrane">To know more Click Here</Link>
 
         </>
@@ -167,7 +167,7 @@ const Mainpage = () => {
     }, {
       id: "side_tab11", title: "UPVC & Aluminium Doors & Windows Fabrication & Installation", content: (
         <>
-        <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Under Construction</p>
+          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>We design, fabricate, and install high-quality UPVC and aluminium doors and windows for industrial, commercial, and residential buildings, ensuring durability, weather resistance, and a professional finish.</p>
           <Link className='mainbtn' href="/service-page/upvc_aluminiumdoors_windowsfabrication">To know more Click Here</Link>
         </>
       )
@@ -177,42 +177,66 @@ const Mainpage = () => {
 
 
   const clientSay = [
+    // {
+    //   id: 1,
+    //   year: "February 27, 2025",
+    //   Desc: "PTD received &apos;Best Employee Accommodation Management and Maintenance &apos; from ALBA CEO for the year 2024, Post various audits from ALBA Team",
+    // },
+    // {
+    //   id: 2,
+    //   year: 'October 16, 2024',
+    //   Desc: "Power Tech Group is now ISO 14001 Certified , along with the previously held ISO 9001 and ISO 45001 Certification, Recently we completed the Integrated Management System Audit for all 3 certifications and got certified",
+    // },
+    // {
+    //   id: 3,
+    //   year: 'August 11, 2024',
+    //   Desc: "PTD Successfully completed GT T1C Nozzle Replacement Mitsubishi works for ALBA Block 4 Expansion Project and received a letter of Appreciation for our support and completion of the Project from MHI Team.",
+    // },
+    // {
+    //   id: 4,
+    //   year: "July 28, 2024",
+    //   Desc: 'PTD has secured 3 Year long term contract with ALBA Power Station 5 for Mechanical, Electrical and Instrumentation Department.',
+    // },
+    // {
+    //   id: 5,
+    //   year: "December 21, 2022",
+    //   Desc: "Power Tech Group is happy to share that our company  has been awarded a Silver EcoVadis Medal. This result places our company among the top 25 percent of companies assessed by EcoVadis.",
+    // },
+    // {
+    //   id: 6,
+    //   year: "November 30, 2022",
+    //   Desc: "PTD Successfully Completed GT Major Outage with NMES (ACWA POWER) for the NOMAC ALDUR-II Plant,  PTD Also completed Unplanned GT-12 Outage in ALDUR-1 for AEOM",
+    // },
+    // {
+    //   id: 7,
+    //   year: "April 15, 2022",
+    //   Desc: "Power Tech recently completed GPIC Turnaround 2022 in Bahrain, providing close to 100 resources from Instrumentation, Electrical and Mechanical Stream",
+    // },
     {
       id: 1,
-      year: "February 27, 2025",
-      Desc: "PTD received &apos;Best Employee Accommodation Management and Maintenance &apos; from ALBA CEO for the year 2024, Post various audits from ALBA Team",
+      year: "February 2025",
+      Desc: "PTD received Best Employee Accommodation… from ALBA CEO",
     },
     {
       id: 2,
-      year: 'October 16, 2024',
-      Desc: "Power Tech Group is now ISO 14001 Certified , along with the previously held ISO 9001 and ISO 45001 Certification, Recently we completed the Integrated Management System Audit for all 3 certifications and got certified",
+      year: "August 2024",
+      Desc: "PTD Successfully completed GT T1C Nozzle Replacement… for ALBA Block 4",
     },
     {
       id: 3,
-      year: 'August 11, 2024',
-      Desc: "PTD Successfully completed GT T1C Nozzle Replacement Mitsubishi works for ALBA Block 4 Expansion Project and received a letter of Appreciation for our support and completion of the Project from MHI Team.",
+      year: "July 2024",
+      Desc: "PTD has secured 3 Year long term contract with ALBA Power Station 5",
     },
     {
       id: 4,
-      year: "July 28, 2024",
-      Desc: 'PTD has secured 3 Year long term contract with ALBA Power Station 5 for Mechanical, Electrical and Instrumentation Department.',
+      year: "November 2022",
+      Desc: "PTD Successfully Completed GT Major Outage… NOMAC ALDUR-II Plant",
     },
     {
       id: 5,
-      year: "December 21, 2022",
-      Desc: "Power Tech Group is happy to share that our company  has been awarded a Silver EcoVadis Medal. This result places our company among the top 25 percent of companies assessed by EcoVadis.",
+      year: "April 2022",
+      Desc: "GPICx Turnaround 2022 in Bahrain",
     },
-    {
-      id: 6,
-      year: "November 30, 2022",
-      Desc: "PTD Successfully Completed GT Major Outage with NMES (ACWA POWER) for the NOMAC ALDUR-II Plant,  PTD Also completed Unplanned GT-12 Outage in ALDUR-1 for AEOM",
-    },
-    {
-      id: 7,
-      year: "April 15, 2022",
-      Desc: "Power Tech recently completed GPIC Turnaround 2022 in Bahrain, providing close to 100 resources from Instrumentation, Electrical and Mechanical Stream",
-    },
-
   ];
 
   // const serviceSlider = {
@@ -478,7 +502,7 @@ const Mainpage = () => {
       </section>
 
       <section className='testmonials_sec'>
-        <div className='container-fluid'>
+        <div className='container'>
 
           {/* <div className="site-heading">
              <span className="site-title-tagline textalign_center">--- Testmonials ---</span> 

@@ -12,7 +12,7 @@ const Page = () => {
                       <div className='col-lg-6'>
                           <div className='innerpage_bnrContent'>
                               <h1>Careers</h1>
-                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                              <p>At SAM Technical Service Contracting Est, we are committed to attracting, developing, and retaining talented professionals. We offer challenging opportunities, continuous learning, and a culture of safety, integrity, and professional growth for individuals seeking a rewarding career in the industrial services sector.</p>
                               <Link href="/contact-us" className='mainbtn'>Contact Us</Link>
                           </div>
                       </div>

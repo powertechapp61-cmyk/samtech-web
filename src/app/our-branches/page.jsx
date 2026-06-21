@@ -119,9 +119,7 @@ const page = () => {
                                     <li><Link href={'/our-branches'}>Our Branches</Link></li>
                                 </ul>
                                 <h1>Our Branches</h1>
-                                <p>There are many variations of passages available but the majority have suffered alteration in some form by injected humour randomised words which don&apos;t look even slightly believable. If you are going to use passage.
-
-                                </p>
+                                <p>Our people and facilities are our foundation. SAM Technical Service Contracting Est maintains its primary operations in Rabigh, Saudi Arabia, with supporting infrastructure in India and the UAE — giving our clients the confidence that the right resources, tools, and expertise are always within reach, wherever the job takes us.</p>
                                 <Link href="/contact-us" className='mainbtn'>Contact Us</Link>
                             </div>
                         </div>
