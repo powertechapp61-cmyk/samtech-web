@@ -18,7 +18,7 @@ const Page = () => {
                       </div>
                       <div className='col-lg-5 offset-lg-1'>
                           <div className='hero-banner_img'>
-                              <img className="img-1" src="/assets/img/valve_service_home.jpeg" alt="about us img" />
+                              <img className="img-1" src="/assets/img/industry_illu.jpg" alt="about us img" />
                           </div>
                       </div>
                   </div>

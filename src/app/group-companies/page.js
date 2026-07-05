@@ -26,7 +26,7 @@ const page = () => {
                         </div>
                         <div className='col-lg-5 offset-lg-1'>
                             <div className="hero-banner_img" >
-                                <img src="/assets/img/company-photo/sl5.jpg"
+                                <img src="/assets/img/company-photo/sl3.jpg"
                                     alt="company" />
 
 
@@ -234,7 +234,7 @@ const page = () => {
 
                                             </Link>
                                         </div>
-                                        <div>      <Link href={'mailto:gm@powertechdevelopment.com.com'}>
+                                        <div>      <Link href={'mailto:gm@powertechdevelopment.com'}>
                                             <img className='width34px' src="/assets/img/mail_icon.svg" alt='mail' />
                                         </Link></div>
 

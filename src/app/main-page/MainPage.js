@@ -182,11 +182,11 @@ const Mainpage = () => {
     //   year: "February 27, 2025",
     //   Desc: "PTD received &apos;Best Employee Accommodation Management and Maintenance &apos; from ALBA CEO for the year 2024, Post various audits from ALBA Team",
     // },
-    // {
-    //   id: 2,
-    //   year: 'October 16, 2024',
-    //   Desc: "Power Tech Group is now ISO 14001 Certified , along with the previously held ISO 9001 and ISO 45001 Certification, Recently we completed the Integrated Management System Audit for all 3 certifications and got certified",
-    // },
+    {
+      id: 1,
+      year: 'October 16, 2024',
+      Desc: "Power Tech Group is now ISO 14001 Certified , along with the previously held ISO 9001 and ISO 45001 Certification, Recently we completed the Integrated Management System Audit for all 3 certifications and got certified",
+    },
     // {
     //   id: 3,
     //   year: 'August 11, 2024',
@@ -197,11 +197,11 @@ const Mainpage = () => {
     //   year: "July 28, 2024",
     //   Desc: 'PTD has secured 3 Year long term contract with ALBA Power Station 5 for Mechanical, Electrical and Instrumentation Department.',
     // },
-    // {
-    //   id: 5,
-    //   year: "December 21, 2022",
-    //   Desc: "Power Tech Group is happy to share that our company  has been awarded a Silver EcoVadis Medal. This result places our company among the top 25 percent of companies assessed by EcoVadis.",
-    // },
+    {
+      id: 2,
+      year: "December 21, 2022",
+      Desc: "Power Tech Group is happy to share that our company  has been awarded a Silver EcoVadis Medal. This result places our company among the top 25 percent of companies assessed by EcoVadis.",
+    },
     // {
     //   id: 6,
     //   year: "November 30, 2022",
@@ -212,31 +212,8 @@ const Mainpage = () => {
     //   year: "April 15, 2022",
     //   Desc: "Power Tech recently completed GPIC Turnaround 2022 in Bahrain, providing close to 100 resources from Instrumentation, Electrical and Mechanical Stream",
     // },
-    {
-      id: 1,
-      year: "February 2025",
-      Desc: "PTD received Best Employee Accommodation… from ALBA CEO",
-    },
-    {
-      id: 2,
-      year: "August 2024",
-      Desc: "PTD Successfully completed GT T1C Nozzle Replacement… for ALBA Block 4",
-    },
-    {
-      id: 3,
-      year: "July 2024",
-      Desc: "PTD has secured 3 Year long term contract with ALBA Power Station 5",
-    },
-    {
-      id: 4,
-      year: "November 2022",
-      Desc: "PTD Successfully Completed GT Major Outage… NOMAC ALDUR-II Plant",
-    },
-    {
-      id: 5,
-      year: "April 2022",
-      Desc: "GPICx Turnaround 2022 in Bahrain",
-    },
+
+   
   ];
 
   // const serviceSlider = {
@@ -561,25 +538,33 @@ const Mainpage = () => {
 
       <section className='companyPhotoSec'>
         <Slider {...companyPhoto}>
-
-
           <div className="companyphoto-item">
+            <img src="/assets/img/industry_illu2.jpg" alt="companyphoto" />
+          </div>
+            
+
+
+          {/* <div className="companyphoto-item">
             <img src="/assets/img/company-photo/slider1.jpg" alt="companyphoto" />
-          </div>
+            one
+          </div> */}
 
 
-          <div className="companyphoto-item">
+          {/* <div className="companyphoto-item">
             <img src="/assets/img/company-photo/sl2.jpg" alt="companyphoto" />
-          </div>
+            two
+          </div> */}
           {/* <div className="companyphoto-item">
             <img src="/assets/img/company-photo/sl3.jpg" alt="companyphoto" />
           </div> */}
-          <div className="companyphoto-item">
+          {/* <div className="companyphoto-item">
             <img src="/assets/img/company-photo/sl4.jpg" alt="companyphoto" />
-          </div>
-          <div className="companyphoto-item">
+            three
+          </div> */}
+          {/* <div className="companyphoto-item">
             <img src="/assets/img/company-photo/sl5.jpg" alt="companyphoto" />
-          </div>
+            four
+          </div> */}
           {/* <div className="companyphoto-item">
             <img src="/assets/img/company-photo/sl6.jpg" alt="companyphoto" />
           </div> */}

@@ -289,11 +289,11 @@ const ContactUsForm = () => {
 
         {/* Row 4: Country + How did you find us */}
         <div className='row'>
-          <div className='col-lg-6'>
+          {/* <div className='col-lg-6'>
             <div className="mb_24">
               <select className="mainInput" name="country"
                 value={formData.country} onChange={handleChange}>
-                {/* <option value="">Select Country</option> */}
+                <option value="">Select Country</option>
                 <option value="Bahrain">Bahrain</option>
                 <option value="Saudi Arabia">Saudi Arabia</option>
                 <option value="UAE">UAE</option>
@@ -301,7 +301,7 @@ const ContactUsForm = () => {
                 <option value="Other">Other</option>
               </select>
             </div>
-          </div>
+          </div> */}
           <div className='col-lg-6'>
             <div className="mb_24">
               <select className="mainInput" name="howDidYouFindUs"
@@ -315,31 +315,32 @@ const ContactUsForm = () => {
               </select>
             </div>
           </div>
+          <div className="col-lg-6">
+            <input placeholder='Subject' type="text" name="subject"
+              value={formData.subject} onChange={handleChange}
+              className="mainInput" />
+          </div>
         </div>
 
         {/* Row 5: Subject */}
-        <div className='row'>
+        {/* <div className='row'>
           <div className='col-12'>
-            <div className="mb_24">
-              <input placeholder='Subject' type="text" name="subject"
-                value={formData.subject} onChange={handleChange}
-                className="mainInput" />
-            </div>
+           
           </div>
-        </div>
+        </div> */}
 
         {/* Row 6: Message */}
         <div className='row'>
           <div className='col-12'>
             <div className="mb_24">
-              <textarea
+              <textarea 
                 placeholder='How may we help you?'
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
                 className="mainInput"
                 rows={5}
-                style={{ resize: 'vertical', width: '100%' }}
+                style={{ resize: 'vertical', width: '100%',paddingTop:'16px', height:'auto' }}
               />
             </div>
           </div>

@@ -108,7 +108,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/about-us"} prefetch>
+                  <Link href={"/company"} prefetch>
                     <img src="/assets/img/stepPoint.svg" alt='step point' />
                     <span>About Us</span>
                   </Link>
@@ -302,7 +302,7 @@ const Footer = () => {
           <li>
 
             <Link href="tel:+966507745097">
-              <img className='blackFilter' src="/assets/img/phone_icon.svg" alt="phone" />
+              <img className='whiteFilter' src="/assets/img/phone_icon.svg" alt="phone" />
               <span>Saudi :&nbsp; +966507745097</span>
               </Link>
           </li>

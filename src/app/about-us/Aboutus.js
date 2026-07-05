@@ -6,42 +6,42 @@ import cn from "classnames";
 const AboutUs = () => {
     const marqueeRef = useRef(null);
     const data = [
-        { 
-            id:1,
-            year:"February 27, 2025",
-            Desc:"PTD received &apos;Best Employee Accommodation Management and Maintenance &apos; from ALBA CEO for the year 2024, Post various audits from ALBA Team",
+        {
+            id: 1,
+            year: "February 27, 2025",
+            Desc: "PTD received &apos;Best Employee Accommodation Management and Maintenance &apos; from ALBA CEO for the year 2024, Post various audits from ALBA Team",
         },
         {
-            id:2,
-            year:'October 16, 2024',
-            Desc:"Power Tech Group is now ISO 14001 Certified , along with the previously held ISO 9001 and ISO 45001 Certification, Recently we completed the Integrated Management System Audit for all 3 certifications and got certified",
+            id: 2,
+            year: 'October 16, 2024',
+            Desc: "Power Tech Group is now ISO 14001 Certified , along with the previously held ISO 9001 and ISO 45001 Certification, Recently we completed the Integrated Management System Audit for all 3 certifications and got certified",
         },
         {
-            id:3,
-            year:'August 11, 2024',
-            Desc:"PTD Successfully completed GT T1C Nozzle Replacement Mitsubishi works for ALBA Block 4 Expansion Project and received a letter of Appreciation for our support and completion of the Project from MHI Team.",
+            id: 3,
+            year: 'August 11, 2024',
+            Desc: "PTD Successfully completed GT T1C Nozzle Replacement Mitsubishi works for ALBA Block 4 Expansion Project and received a letter of Appreciation for our support and completion of the Project from MHI Team.",
         },
         {
-            id:4,
-            year:"July 28, 2024",
-            Desc:'PTD has secured 3 Year long term contract with ALBA Power Station 5 for Mechanical, Electrical and Instrumentation Department.',
+            id: 4,
+            year: "July 28, 2024",
+            Desc: 'PTD has secured 3 Year long term contract with ALBA Power Station 5 for Mechanical, Electrical and Instrumentation Department.',
         },
         {
-            id:5,
-            year:"December 21, 2022",
-            Desc:"Power Tech Group is happy to share that our company  has been awarded a Silver EcoVadis Medal. This result places our company among the top 25 percent of companies assessed by EcoVadis.",
+            id: 5,
+            year: "December 21, 2022",
+            Desc: "Power Tech Group is happy to share that our company  has been awarded a Silver EcoVadis Medal. This result places our company among the top 25 percent of companies assessed by EcoVadis.",
         },
         {
-            id:6,
-            year:"November 30, 2022",
-            Desc:"PTD Successfully Completed GT Major Outage with NMES (ACWA POWER) for the NOMAC ALDUR-II Plant,  PTD Also completed Unplanned GT-12 Outage in ALDUR-1 for AEOM",
+            id: 6,
+            year: "November 30, 2022",
+            Desc: "PTD Successfully Completed GT Major Outage with NMES (ACWA POWER) for the NOMAC ALDUR-II Plant,  PTD Also completed Unplanned GT-12 Outage in ALDUR-1 for AEOM",
         },
         {
-            id:7,
-            year:"April 15, 2022",
-            Desc:"Power Tech recently completed GPIC Turnaround 2022 in Bahrain, providing close to 100 resources from Instrumentation, Electrical and Mechanical Stream",
+            id: 7,
+            year: "April 15, 2022",
+            Desc: "Power Tech recently completed GPIC Turnaround 2022 in Bahrain, providing close to 100 resources from Instrumentation, Electrical and Mechanical Stream",
         },
-      
+
     ];
 
     const [activeIndex, setActiveIndex] = useState(0);
@@ -52,7 +52,7 @@ const AboutUs = () => {
 
     // Usd to determine the height/spacing of each item
     const itemHeight = 100;
-    
+
 
     // Used to determine at what point an item is moved from the top to the bottom
     const shuffleThreshold = halfwayIndex * itemHeight;
@@ -279,7 +279,7 @@ const AboutUs = () => {
                                                         Math.abs(determinePlacement(i)) <= visibleStyleThreshold,
                                                 })}>
                                                 <h5>
-                                                    {typeof item.year ==="string" && item.year.length > 25
+                                                    {typeof item.year === "string" && item.year.length > 25
                                                         ? `${item.year.slice(0, 25)}...`
                                                         : item.year}
                                                 </h5>
@@ -292,6 +292,8 @@ const AboutUs = () => {
                     </div>
                 </div>
             </section>
+
+          
 
             <section className='clientlogosec'>
                 <div className="site-heading">
