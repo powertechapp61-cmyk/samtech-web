@@ -495,10 +495,11 @@ const page = () => {
                     <div className="heading">
                         <h3>OUR CORE SERVICE CAPABILITIES</h3>
                     </div>
+                    <p className='fontSize16 fontWeight400 shearwaterBlackText_clr  mb_24'>Every service we deliver is executed by qualified, experienced personnel under a structured HSE framework — with full documentation, certification, and client sign-off at every stage.</p>
 
 
 
-                    <div className='row mb_24'>
+                    <div className='row'>
                         <div className='col-lg-3'>
                             <div className="serviceItem">
                                 <div className="service-img">
@@ -695,7 +696,6 @@ const page = () => {
 
                     </div>
 
-                    <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>Every service we deliver is executed by qualified, experienced personnel under a structured HSE framework — with full documentation, certification, and client sign-off at every stage.</p>
                 </div>
             </section>
 
@@ -753,7 +753,7 @@ const page = () => {
                     </div>
 
 
-                    <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>We hold valid Company Registration Certificates, VAT certification, and GE Field core Comply works Contractor Verification with a score of 100 — reflecting our full compliance with international contractor qualification standards.</p>
+                    <p className='fontSize16 fontWeight400 shearwaterBlackText_clr'>We hold valid Company Registration Certificates, VAT certification, and GE Field core Comply works Contractor Verification with a score of 100 — reflecting our full compliance with international contractor qualification standards.</p>
 
 
 

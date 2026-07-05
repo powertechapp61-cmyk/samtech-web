@@ -923,7 +923,7 @@ const ServicePage = () => {
                         <div className='row'>
                             <div className='col-lg-5'>
                                 <div className='leadsGen-img'>
-                                    <img src="/assets/img/contact-us.webp" alt='lead gen' />
+                                    <img src="/assets/img/leadsGen_img.png" alt='lead gen' />
                                 </div>
                             </div>
                             <div className='col-lg-7'>
