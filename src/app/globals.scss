@@ -2088,7 +2088,7 @@ ul.quicklinks li a img {
 }
 
 .clientlogosec {
-    padding: 0px 0px 80px;
+    padding: 80px 0px;
 }
 
 .galleryItem {
@@ -3615,7 +3615,8 @@ BOTTOM ANGLE
 
 
 .why-choose-stsc-sec{
-    padding: 50px 0px;
+    padding: 80px 0px;
+    background: #b1b1b129;
 }
 
 /*======================
@@ -3675,7 +3676,7 @@ RESPONSIVE
 
     .vm-content p {
         font-size: 17px;
-        line-height: 1.8;
+        line-height: 1.5;
     }
 
     .line {
@@ -5093,7 +5094,7 @@ RESPONSIVE
 
 
 .who-we-are-content h2 {
-    font-size: 58px;
+    font-size: 44px;
     font-weight: 800;
     color: #072d37;
     line-height: 1.1;
@@ -5150,8 +5151,9 @@ RESPONSIVE
 
 .feature-card h4 {
     margin-bottom: 10px;
-    color: #062a34;
+    color: #008060;
     font-size: 22px;
+    font-weight: 600;
 }
 
 .feature-card span {
@@ -5316,9 +5318,9 @@ RESPONSIVE
 
 .hero-content p {
     color: #666;
-    font-size: 18px;
-    line-height: 1.8;
-    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;
 }
 
 .hero-image img {
@@ -5412,8 +5414,8 @@ RESPONSIVE
 }
 
 .section-heading p {
-    font-size: 17px;
-    line-height: 1.8;
+    font-size: 16px;
+    line-height: 1.5;
     color: #6f7787;
     margin:0px;
 }
@@ -5468,7 +5470,7 @@ RESPONSIVE
 
 .eco-card p {
     color: #6f7787;
-    line-height: 1.8;
+    line-height: 1.5;
     margin-bottom: 30px;
 }
 
@@ -5585,7 +5587,7 @@ RESPONSIVE
 
 .client-card p {
     color: #6f7787;
-    line-height: 1.8;
+    line-height: 1.5;
     margin-bottom:0px;
 }
 
@@ -5632,7 +5634,7 @@ RESPONSIVE
 
 .certificate-left p {
     color: #6f7787;
-    line-height: 1.8;
+    line-height: 1.5;
 }
 
 .certificate-right {
@@ -5676,7 +5678,7 @@ RESPONSIVE
 .certificate-card p,
 .award-box p {
     color: #6f7787;
-    line-height: 1.8;
+    line-height: 1.5;
 }
 
 /* ==========================
@@ -5796,21 +5798,7 @@ RESPONSIVE
     margin-top: 10px;
 }
 
-.presence-left h2 {
-    font-size: 58px;
-    line-height: 1.15;
-    color: #132A47;
-    font-weight: 700;
-    margin-bottom: 30px;
-}
 
-.presence-left h2 span {
-    color: #132A47;
-}
-
-.presence-left h2 br+* {
-    color: #0B67C2;
-}
 
 .presence-left p {
     font-size: 19px;
@@ -5895,7 +5883,7 @@ RESPONSIVE
 
     .presence-left p {
         font-size: 17px;
-        line-height: 1.8;
+        line-height: 1.5;
     }
 
 }

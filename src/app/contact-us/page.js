@@ -442,7 +442,7 @@ const Page = () => {
                   </li>
                   <li>
                     <img className='width24px blackFilter' src="/assets/img/ic_baseline-whatsapp.svg" alt='whatsapp' />
-                    <Link href="https://wa.me/966507745097" target="_blank">966 507745097</Link>
+                    <Link href="https://wa.me/966507745097" target="_blank">+966 507745097</Link>
                   </li>
                   <li>
                     <img className='width24px' src="/assets/img/mail_icon.svg" alt='mail' />

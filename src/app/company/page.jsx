@@ -61,9 +61,9 @@ const page = () => {
         {
             icon: <FiShield />,
             value: "ISO",
-            title: "45001 Certified",
+            title: "45001, 9001 & 14001 Certified",
         },
-        {
+        { 
             icon: <FiGlobe />,
             value: "GCC",
             title: "& India",
@@ -120,13 +120,14 @@ const page = () => {
                                 <ul className='page_breadcrumb'>
                                     <li><Link href={"/"}> Home</Link></li>
                                     <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
-                                    <li> About Us</li>
-                                    <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
                                     <li><Link href={'/company'}>Company</Link></li>
+                                    <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
+                                  
+                                    <li> About Us</li>
                                 </ul>
-                                <h1>Company</h1>
+                                <h1>Our Vision</h1>
                                 {/* <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>{page.subTitle}</p> */}
-                                <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus quod fugiat corrupti, aut accusamus, porro esse, corporis nisi qui excepturi nostrum in? Maxime maiores nostrum eius cumque velit architecto ullam.</p>
+                                <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>To be the most trusted and technically capable one-stop service partner for power, water, and industrial plant operations across Saudi Arabia and the wider GCC — delivering safe, reliable, and cost-effective solutions that keep our clients' assets performing at their peak.</p>
                                 <button className='mainbtn'>Contact Us</button>
                             </div>
                         </div>
@@ -399,7 +400,7 @@ const page = () => {
             <section class="vision-mission-section">
 
                 {/* <!-- Vision --> */}
-                <div class="vm-row vision">
+                {/* <div class="vm-row vision">
 
                     <div class="vm-content">
                         <span class="vm-label">OUR VISION</span>
@@ -418,7 +419,7 @@ const page = () => {
                         <img src="/assets/img/aboutus_bnr.jpg" alt="" />
                     </div>
 
-                </div>
+                </div> */}
 
                 {/* <!-- Mission --> */}
                 <div class="vm-row mission">
@@ -495,7 +496,7 @@ const page = () => {
                     <div className="heading">
                         <h3>OUR CORE SERVICE CAPABILITIES</h3>
                     </div>
-                    <p className='fontSize16 fontWeight400 shearwaterBlackText_clr  mb_24'>Every service we deliver is executed by qualified, experienced personnel under a structured HSE framework — with full documentation, certification, and client sign-off at every stage.</p>
+                    <p className='fontSize16 fontWeight400 shearwaterBlackText_clr  mb_34'>Every service we deliver is executed by qualified, experienced personnel under a structured HSE framework — with full documentation, certification, and client sign-off at every stage.</p>
 
 
 
@@ -769,7 +770,7 @@ const page = () => {
                         {/* <span className="section-tag">Rooted in <span>Saudi Arabia.</span><br />
                             Connected Across the Region.</span> */}
 
-                            <span className="section-tag">OUR PRESENCE</span>
+                            <h2 className="site-title mb_24">OUR <span>PRESENCE</span></h2>
 
 
                         <p>Based in Rabigh, Saudi Arabia, STSC serves clients across the Kingdom from the Red Sea coast to the industrial heartland of the Eastern Province. As part of the Power Tech Group, we draw on the technical resources, workforce pipeline, and operational knowledge of group entities operating across Saudi Arabia, UAE, Qatar, India, and Bahrain — giving our Saudi clients access to a far broader pool of expertise and capability than a standalone contractor could provide.</p>

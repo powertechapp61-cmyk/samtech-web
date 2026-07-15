@@ -69,7 +69,7 @@ const page = () => {
                               <ul className='page_breadcrumb'>
                                   <li><Link href={"/"}> Home</Link></li>
                                   <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
-                                  <li>Our Infrastructure</li>
+                                  <li>Gallery</li>
                                   <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
                                   <li><Link href={'/trainings'}>Trainings</Link></li>
                               </ul>
