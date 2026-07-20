@@ -74,22 +74,22 @@ const page = () => {
         {
             title: "NOMAC (ACWA Power) ",
             desc: "Appreciation letter for long-term manpower and valve services at Red Sea power stations",
-            logo: "/assets/img/clientlogo/c5.jpg",
+            logo: "/assets/img/nomac.png",
         },
         {
             title: "ENGIE Fadhili O&M Company ",
             desc: "Commissioned for online safety valve testing at Fadhili Gas Plant",
-            logo: "/assets/img/clientlogo/c1.jpg",
+            logo: "/assets/img/engie.png",
         },
         {
             title: "Petro Rabigh (RPC)",
             desc: "Successfully completed major valve overhauling services",
-            logo: "/images/clients/petro-rabigh.png",
+            logo: "/assets/img/rpc.png",
         },
         {
             title: "Saudi Aramco, YASREF, National Water Company, Saudi Electricity Company",
             desc: "among our key clients in the Kingdom",
-            logo: "/images/clients/saudi.png",
+            logo: "/assets/img/our-key-clients-in-the-Kingdom.png",
         },
     ];
 

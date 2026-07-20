@@ -173,14 +173,14 @@ const Footer = () => {
               <h2>Quick Code</h2>
 
               <div className='qrCodeLink'>
-                <img src="/assets/img/qrcode.png" alt="qrcode" />
+                <img src="/assets/img/qrcode.jpeg" alt="qrcode" />
               </div>
 
             </div>
             <div className='col-lg-4'>
               <h2>Location</h2>
 
-              <iframe height="300" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15742.951351187497!2d77.55047730000001!3d9.444372999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1763365346692!5m2!1sen!2sin" style={{
+              <iframe height="300" src="https://www.google.com/maps/place/22%C2%B046'27.7%22N+39%C2%B005'01.9%22E/@22.7743551,39.0812815,17z/data=!3m1!4b1!4m4!3m3!8m2!3d22.7743551!4d39.0838564?hl=en&entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D" style={{
                 border: 0, width: "100%"
               }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
               {/* <Link target='_blank' className='blackText_Clr textDecoration_none  fontWeight400 fontSize16' href="https://maps.app.goo.gl/ECLS7hB7t8YHagqh8">
