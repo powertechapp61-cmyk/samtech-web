@@ -1,9 +1,11 @@
 "use client"
 import Link from 'next/link';
 import { useState } from 'react';
+import { useLanguage } from '../../context/LanguageContext';
 
 const Service = ({ pageData, pagename }) => {
   // const[serviceType,setServiceType] =useState('ro_membrane');
+  const { t } = useLanguage();
   const page = pageData;
 
   const blankPages = [
@@ -32,9 +34,9 @@ const Service = ({ pageData, pagename }) => {
             <div className='col-lg-6'>
               <div className='innerpage_bnrContent'>
                 <ul className='page_breadcrumb'>
-                  <li><Link href={"/"}> Home</Link></li>
+                  <li><Link href={"/"}> {t("common.home")}</Link></li>
                   <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
-                  <li> Services</li>
+                  <li> {t("header.nav.services")}</li>
                   <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
                   <li><Link href="#">{page?.title}</Link></li>
                 </ul>
@@ -42,7 +44,7 @@ const Service = ({ pageData, pagename }) => {
                 {/* <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>{page.subTitle}</p> */}
                 <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>{page.bannerparagraph}</p>
                 {/* <button className='mainbtn' >Contact Us</button> */}
-                <Link className='mainbtn' href='#to-know-more-contact-us'>Contact Us</Link>
+                <Link className='mainbtn' href='#to-know-more-contact-us'>{t("common.contactUsBtn")}</Link>
               </div>
             </div>
             <div className='col-lg-5 offset-lg-1'>

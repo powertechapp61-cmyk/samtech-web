@@ -21,8 +21,10 @@ import 'lightgallery/scss/lg-zoom.scss';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 import Link from 'next/link';
+import { useLanguage } from '../context/LanguageContext';
 
 const page = () => {
+    const { t } = useLanguage();
     const onInit = () => {
         console.log("✅ LightGallery initialized successfully!");
     };
@@ -36,25 +38,25 @@ const page = () => {
             type: "image",
             src: "/assets/img/testmonials/c1.jpg",
             thumb: "/assets/img/testmonials/c1.jpg",
-            caption: "Company Registration Certificate – Sam Technical Service Contracting Est",
+            caption: t("appreciations.captions.crStsc"),
         },
         {
             type: "image",
             src: "/assets/img/testmonials/c2.jpg",
             thumb: "/assets/img/testmonials/c2.jpg",
-            caption: "Company Registration Certificate – Valve Tech Testing",
+            caption: t("appreciations.captions.crValveTech"),
         },
         {
             type: "image",
             src: "/assets/img/testmonials/company-registration-certificate-sam-tech.png",
             thumb: "/assets/img/testmonials/company-registration-certificate-sam-tech.png",
-            caption: "Company Registration Certificate – Sam Tech",
+            caption: t("appreciations.captions.crSamTech"),
         },
         {
             type: "image",
             src: "/assets/img/testmonials/vat-certificate.jpg",
             thumb: "/assets/img/testmonials/vat-certificate.jpg",
-            caption: "VAT Certificate",
+            caption: t("appreciations.captions.vatCertificate"),
         },
     ]
 
@@ -64,19 +66,19 @@ const page = () => {
             type: "image",
             src: "/assets/img/testmonials/c3.jpg",
             thumb: "/assets/img/testmonials/c3.jpg",
-            caption: "ISO - Quality Assured",
+            caption: t("appreciations.captions.isoQuality"),
         },
         {
             type: "image",
             src: "/assets/img/testmonials/c4.jpg",
             thumb: "/assets/img/testmonials/c4.jpg",
-            caption: "ISO- Occupational Safety",
+            caption: t("appreciations.captions.isoOccupational"),
         },
         {
             type: "image",
             src: "/assets/img/testmonials/c5.jpg",
             thumb: "/assets/img/testmonials/c5.jpg",
-            caption: "ISO - Green Business",
+            caption: t("appreciations.captions.isoGreen"),
         },
     ]
 
@@ -87,52 +89,52 @@ const page = () => {
             type: "image",
             src: "/assets/img/testmonials/c6.jpg",
             thumb: "/assets/img/testmonials/c6.jpg",
-            caption: "Business Appreciation Letter- Mitsubishi , Japan",
+            caption: t("appreciations.captions.mitsubishiLetter"),
         },
         {
             type: "image",
             src: "/assets/img/testmonials/c7.jpg",
             thumb: "/assets/img/testmonials/c7.jpg",
-            caption: "Electricity Water Authority - Hawar Power And Water Station - Appreciation Letter - PTD",
+            caption: t("appreciations.captions.ewaHawarLetter"),
         },
         {
             type: "image",
             src: "/assets/img/testmonials/c8.jpg",
             thumb: "/assets/img/testmonials/c8.jpg",
-            caption: "NOMAC Appreciation Letter- Sam Technical Service Contracting Est",
+            caption: t("appreciations.captions.nomacLetter"),
         },
         {
             type: "image",
             src: "/assets/img/testmonials/vat4.jpg",
             thumb: "/assets/img/testmonials/vat4.jpg",
-            caption: "VAT Certificate",
+            caption: t("appreciations.captions.vatCertificate"),
         },
 
         {
             type: "image",
             src: "/assets/img/testmonials/c55.jpg",
             thumb: "/assets/img/testmonials/c55.jpg",
-            caption: "GE – Fieldcore – Complyworks Contractor Verification Card with Score of 100",
+            caption: t("appreciations.captions.geFieldcoreCard"),
         },
 
         {
             type: "image",
             src: "/assets/img/testmonials/5.jpg",
             thumb: "/assets/img/testmonials/5.jpg",
-            caption: "Thanks and Appreciation - MTM-L-148- GPIC",
+            caption: t("appreciations.captions.gpicThanks"),
         },
         {
             type: "image",
             src: "/assets/img/testmonials/7.jpg",
             thumb: "/assets/img/testmonials/7.jpg",
-            caption: "Customer Ratings",
+            caption: t("appreciations.captions.customerRatings"),
         },
 
         {
             type: "image",
             src: "/assets/img/testmonials/eco.jpeg",
             thumb: "/assets/img/testmonials/eco.jpeg",
-            caption: "ECOVADIS SUSTAINABILITY RATING - SILVER MEDA FOR POWER TECH GROUP - TOP 25% of the companies assessed by Ecovadis",
+            caption: t("appreciations.captions.ecovadis"),
         },
 
 
@@ -140,14 +142,14 @@ const page = () => {
             type: "image",
             src: "/assets/img/testmonials/certificate_for_outstanding_worker_one.jpeg",
             thumb: "/assets/img/testmonials/certificate_for_outstanding_worker_one.jpeg",
-            caption: "Certificate For Outstanding Worker Accommodation Management & Maintenance in 2024 1",
+            caption: t("appreciations.captions.outstandingWorkerOne"),
         },
 
         {
             type: "image",
             src: "/assets/img/testmonials/certificate_for_outstanding_worker_two.jpg",
             thumb: "/assets/img/testmonials/certificate_for_outstanding_worker_two.jpg",
-            caption: "Certificate For Outstanding Worker Accommodation Management & Maintenance in 2024",
+            caption: t("appreciations.captions.outstandingWorkerTwo"),
         },
     ]
 
@@ -157,13 +159,13 @@ const page = () => {
             type: "image",
             src: "/assets/img/testmonials/engie_fadhili.jpg",
             thumb: "/assets/img/testmonials/engie_fadhili.jpg",
-            caption: "ENGIE FADHILI O&M COMPANY ONLINE SAFETY VALVE TESTING",
+            caption: t("appreciations.captions.engieFadhili"),
         },
         {
             type: "image",
             src: "/assets/img/testmonials/nomac_red_sea_long_term_manpower.jpg",
             thumb: "/assets/img/testmonials/nomac_red_sea_long_term_manpower.jpg",
-            caption: "NOMAC RED SEA LONG TERM MANPOWER",
+            caption: t("appreciations.captions.nomacRedSea"),
         },
 
     ]
@@ -176,9 +178,9 @@ const page = () => {
                   <div className='row alignItem_center' >
                       <div className='col-lg-6'>
                           <div className='innerpage_bnrContent'>
-                              <h1>Appreciations</h1>
-                              <p>We are grateful to our clients for giving us the opportunity to work for them; it is a tremendous source of encouragement for our team when our work is recognized. Numerous business leaders from Saudi Arabia and overseas have expressed appreciation for our team thus far.</p>
-                              <Link  href="/contact-us" className='mainbtn'>Contact Us</Link>
+                              <h1>{t("appreciations.pageTitle")}</h1>
+                              <p>{t("appreciations.intro")}</p>
+                              <Link  href="/contact-us" className='mainbtn'>{t("common.contactUsBtn")}</Link>
                           </div>
                       </div>
                       <div className='col-lg-5 offset-lg-1'>
@@ -199,7 +201,7 @@ const page = () => {
                       id="uncontrolled-tab-example"
                       className="stscTab"
                   >
-                      <Tab eventKey="crCopiesTab" title="CR Copies data">
+                      <Tab eventKey="crCopiesTab" title={t("appreciations.tabs.crCopies")}>
                           <div className="crCopiesTab">
                               <LightGallery
                                   onInit={onInit}
@@ -225,7 +227,7 @@ const page = () => {
                           </div>
 
                       </Tab>
-                      <Tab eventKey="isoCertificateTab" title="ISO Certificate">
+                      <Tab eventKey="isoCertificateTab" title={t("appreciations.tabs.isoCertificate")}>
 
                           <div className="isoTab">
                               <LightGallery
@@ -250,7 +252,7 @@ const page = () => {
                               </LightGallery>
                           </div>
                       </Tab>
-                      <Tab eventKey="appreciationLetterTab" title="Appreciation letter data">
+                      <Tab eventKey="appreciationLetterTab" title={t("appreciations.tabs.appreciationLetter")}>
 
 
                           <div className=" appLetterTab">
@@ -277,7 +279,7 @@ const page = () => {
                           </div>
                       </Tab>
 
-                      <Tab eventKey="referenceTab" title="Reference and PO's"
+                      <Tab eventKey="referenceTab" title={t("appreciations.tabs.reference")}
                       >
                           
                           <div className="appLetterTab">
