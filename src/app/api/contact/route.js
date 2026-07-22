@@ -1,4 +1,50 @@
 import nodemailer from 'nodemailer';
+import { v2 as cloudinary } from 'cloudinary';
+
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+});
+
+export async function POST(req) {
+  try {
+    const formData = await req.formData();
+    const file = formData.get('file');
+
+    if (!file) {
+      return Response.json({ message: 'No file provided.' }, { status: 400 });
+    }
+
+    if (file.type !== 'application/pdf') {
+      return Response.json({ message: 'Only PDF files are allowed.' }, { status: 400 });
+    }
+
+    const arrayBuffer = await file.arrayBuffer();
+    const buffer = Buffer.from(arrayBuffer);
+    const base64 = `data:application/pdf;base64,${buffer.toString('base64')}`;
+
+    const result = await cloudinary.uploader.upload(base64, {
+      resource_type: 'raw', // required for non-image files like PDFs
+      folder: 'samtech_pdfs', // optional: organizes uploads in a folder
+      public_id: file.name.replace(/\.pdf$/i, ''), // keeps original filename (without extension)
+      use_filename: true,
+      unique_filename: true, // set to false if you want to overwrite same-name files
+    });
+
+    return Response.json(
+      {
+        message: 'Upload successful!',
+        url: result.secure_url,
+        public_id: result.public_id,
+      },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error('Cloudinary upload error:', error);
+    return Response.json({ message: 'Upload failed.' }, { status: 500 });
+  }
+}
 
 export async function POST(req) {
   try {

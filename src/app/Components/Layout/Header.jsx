@@ -70,7 +70,10 @@ const Header = () => {
                 <select
                   className="langSelect"
                   value={language}
-                  onChange={(e) => setLanguage(e.target.value)}
+                  onChange={(e) => {
+                    localStorage.setItem('currLan',e.target.value)
+                    setLanguage(e.target.value)
+                  }}
                 >
                   <option value="en">English</option>
                   <option value="ar">Arabic</option>

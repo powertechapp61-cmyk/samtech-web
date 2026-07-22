@@ -10,9 +10,12 @@ import 'slick-carousel/slick/slick-theme.css';
 import LeaderShipTeam from '../Components/LeaderShipTeam';
 import Image from 'next/image';
 import { useLanguage } from '../context/LanguageContext';
+import PdfUploader from '../Components/uploadpdf/uploadpdf';
 
 const Mainpage = () => {
   const { t } = useLanguage();
+  const currentLanguage = localStorage.getItem('currLan')
+  console.log("t-------->",currentLanguage)
   const [active, setActive] = useState("side_tab1");
   // const [isTabsVisible, setIsTabsVisible] = useState(window.innerWidth >= 800);
 
@@ -332,15 +335,16 @@ const Mainpage = () => {
 
 
   const mainBnr = {
-    dots: false,
-    infinite: true,
-    speed: 800,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    arrows: true,
-    fade: true, // smooth fade transition
+  dots: false,
+  infinite: true,
+  speed: 800,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  arrows: true,
+  fade: currentLanguage !== 'ar',   // disable fade only for Arabic
+  rtl: currentLanguage === 'ar',
 
     responsive: [
       {
@@ -436,20 +440,7 @@ const Mainpage = () => {
   }, []);
   return (
     <>
-      <section className='herobnr'>
-        {/* <div className='row'>
-            <div className='col-lg-7'>
-              <div className='bnrContent'>
-                <span>--- A unit of Powertech Group Companies ---</span>
-                <h1>Operations and Maintenance Service Provider </h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,   </p>
-                <button className='mainbtn'>Learn More</button>
-              </div>
-            </div>
-            <div className='col-lg-5'>
-
-            </div>
-          </div> */}
+      {/* <section className='herobnr'>
 
 
 
@@ -467,8 +458,6 @@ const Mainpage = () => {
                   <div className='row'>
                     <div className='col-lg-8'>
                       <h1>{banner.title}</h1>
-                      {/* <p>{banner.description}</p> */}
-                      {/* <button className='mainbtn'>Learn More</button> */}
                     </div>
                   </div>
                 </div>
@@ -478,7 +467,30 @@ const Mainpage = () => {
 
         </Slider>
 
-      </section>
+      </section> */}
+      <section className='herobnr'>
+  <div dir="ltr">
+    <Slider {...mainBnr}>
+      {banners.map((banner) => (
+        <div key={banner.id} className="banner-slide">
+          <img src={banner.img} alt={banner.title} />
+          <div className="bnrContent">
+            <div className='container-fluid'>
+              <div className='row'>
+                <div className='col-lg-8'>
+                  <h1>{banner.title}</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </Slider>
+  </div>
+</section>
+
+    {/* <PdfUploader /> */}
+
 
       <section className='testmonials_sec'>
         <div className='container'>
