@@ -1,3 +1,4 @@
+"use client";
 // import Link from 'next/link';
 // import React from 'react'
 
@@ -336,8 +337,10 @@
 
 import Link from 'next/link';
 import ContactUsForm from './component/contactusform';
+import { useLanguage } from '../context/LanguageContext';
 
 const Page = () => {
+  const { t } = useLanguage();
   return (
     <>
       <section className='hero-banner mb_80'>
@@ -345,8 +348,8 @@ const Page = () => {
           <div className='row alignItem_center'>
             <div className='col-lg-6'>
               <div className='innerpage_bnrContent'>
-                <h1>Contact us</h1>
-                <p>We are always ready to hear from you. Whether you have an enquiry about our services, a project requirement to discuss, or simply want to learn more about how SAM Technical Service Contracting Est can support your operations in Saudi Arabia, our team is on hand to respond promptly and professionally.</p>
+                <h1>{t("contactUs.title")}</h1>
+                <p>{t("contactUs.intro")}</p>
               </div>
             </div>
             <div className='col-lg-5 offset-lg-1'>
@@ -363,9 +366,9 @@ const Page = () => {
           <div className='row'>
             <div className='col-lg-6'>
               <div className="site-heading">
-                <h2 className="site-title">How can we <span>help you?</span></h2>
+                <h2 className="site-title">{t("contactUs.helpHeadingPre")} <span>{t("contactUs.helpHeadingHighlight")}</span></h2>
                 <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_24'>
-                  Let us know how we can help you with your existing or future projects, and one of our sales or support representatives will contact you shortly.
+                  {t("contactUs.helpText")}
                 </p>
               </div>
             </div>
@@ -426,8 +429,8 @@ const Page = () => {
             <div className='col-lg-6'>
               <div className='addressItem'>
                 <div>
-                  <h2>Saudi Arabia Office</h2>
-                  <p>Sam Technical Service Contracting</p>
+                  <h2>{t("contactUs.saudiOfficeTitle")}</h2>
+                  <p>{t("contactUs.saudiOfficeSubtitle")}</p>
                 </div>
                 <ul>
                   <li>
@@ -455,8 +458,8 @@ const Page = () => {
             <div className='col-lg-6'>
               <div className='addressItem'>
                 <div>
-                  <h2>Chennai Office</h2>
-                  <p>Power Tech Testing And Services</p>
+                  <h2>{t("contactUs.chennaiOfficeTitle")}</h2>
+                  <p>{t("contactUs.chennaiOfficeSubtitle")}</p>
                 </div>
                 <ul>
                   <li>

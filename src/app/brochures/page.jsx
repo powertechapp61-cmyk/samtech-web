@@ -1,7 +1,9 @@
 "use client";
 import React from 'react'
+import { useLanguage } from '../context/LanguageContext';
 
 const page = () => {
+    const { t } = useLanguage();
 
     const handleDownload = () => {
         const link = document.createElement("a");
@@ -16,8 +18,8 @@ const page = () => {
                     <div className='row alignItem_center' >
                         <div className='col-lg-6'>
                             <div className='innerpage_bnrContent'>
-                                <h1>Brochures</h1>
-                                <p>Discover who we are, what we do, and how we deliver value to our clients across Saudi Arabia. Our company brochure provides an overview of our services, capabilities, industry experience, and commitment to quality, safety, and operational excellence.</p>
+                                <h1>{t("brochures.title")}</h1>
+                                <p>{t("brochures.intro")}</p>
 
                             </div>
                         </div>
@@ -33,7 +35,7 @@ const page = () => {
             <section className='brochure_sec'>
                 <div className="container">
                     <div className='brochureframe'>
-                        <h5 className='fontSize20 fontWeight600 blackText_Clr mb_24'>Download Brochures</h5>
+                        <h5 className='fontSize20 fontWeight600 blackText_Clr mb_24'>{t("brochures.downloadTitle")}</h5>
                     <div className='row'>
                         <div className='col-lg-3'>
                             <div className='brochure_item'>
@@ -41,7 +43,7 @@ const page = () => {
                                     <img src="/assets/img/pdf-download.svg" alt="pdf download" />
                                 </div>
                                 <div>
-                                    <h5>Mechanical Maintenance</h5>
+                                    <h5>{t("brochures.mechanicalMaintenance")}</h5>
                                 </div>
                                
 
@@ -54,7 +56,7 @@ const page = () => {
                                     <img src="/assets/img/pdf-download.svg" alt="pdf download" />
                                 </div>
                                 <div>
-                                    <h5>Electrical Maintenance</h5>
+                                    <h5>{t("brochures.electricalMaintenance")}</h5>
                                 </div>
                                
 
@@ -67,7 +69,7 @@ const page = () => {
                                 <div>
                                     <img src="/assets/img/pdf-download.svg" alt="pdf download" />
                                 </div>
-                                <div>  <h5>Fabrication</h5></div>
+                                <div>  <h5>{t("brochures.fabrication")}</h5></div>
                               
 
 
@@ -79,7 +81,7 @@ const page = () => {
                                 <div>
                                     <img src="/assets/img/pdf-download.svg" alt="pdf download" />
                                 </div>
-                                <div><h5>Valve Testing</h5></div>
+                                <div><h5>{t("brochures.valveTesting")}</h5></div>
                                
 
 
@@ -90,7 +92,7 @@ const page = () => {
                                 <div>
                                     <img src="/assets/img/pdf-download.svg" alt="pdf download" />
                                 </div>
-                                <div> <h5>Manpower</h5></div>
+                                <div> <h5>{t("brochures.manpower")}</h5></div>
 
 
                             </div>
@@ -100,7 +102,7 @@ const page = () => {
                                 <div>
                                     <img src="/assets/img/pdf-download.svg" alt="pdf download" />
                                 </div>
-                                <div><h5>Powerplant O & M</h5></div>
+                                <div><h5>{t("brochures.powerplantOM")}</h5></div>
 
 
                             </div>
@@ -110,7 +112,7 @@ const page = () => {
                                     <div>
                                         <img src="/assets/img/pdf-download.svg" alt="pdf download" />
                                     </div>
-                                    <div><h5>Pipeline Intervention</h5></div>
+                                    <div><h5>{t("brochures.pipelineIntervention")}</h5></div>
 
 
                                 </div>

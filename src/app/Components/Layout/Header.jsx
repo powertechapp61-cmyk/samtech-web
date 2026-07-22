@@ -2,8 +2,10 @@
 import Link from "next/link";
 import React, { useState, useRef, useEffect } from "react";
 import { Dropdown } from "react-bootstrap";
+import { useLanguage } from "../../context/LanguageContext";
 
 const Header = () => {
+  const { language, setLanguage, t } = useLanguage();
   const [isActive, setIsActive] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -65,10 +67,14 @@ const Header = () => {
           <div>
             <div className="displayFlex alignItem_center gap30">
               <div>
-                <select className="langSelect">
+                <select
+                  className="langSelect"
+                  value={language}
+                  onChange={(e) => setLanguage(e.target.value)}
+                >
                   <option value="en">English</option>
                   <option value="ar">Arabic</option>
-                  <option value="hi">Hindi</option>
+                  {/* <option value="hi">Hindi</option> */}
                 </select>
               </div>
               <div>
@@ -80,22 +86,22 @@ const Header = () => {
                         <img src="/assets/img/phonetop_icon.svg" alt="phone" />
                       </div>
                       <div>
-                        Saudi :&nbsp;
+                        {t("header.phone.saudi")} :&nbsp;
                         <Link href="tel:+966507745097">+966507745097</Link>
                       </div>
                     </div>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
-                    <Dropdown.Item href="/service-page/online_safety_testing"> Bahrain :&nbsp;
+                    <Dropdown.Item href="/service-page/online_safety_testing"> {t("header.phone.bahrain")} :&nbsp;
                       <Link href="tel:+97366622536">+97366622536</Link></Dropdown.Item>
-                    <Dropdown.Item href="/service-page/offline_valve_testing">UAE :&nbsp;
+                    <Dropdown.Item href="/service-page/offline_valve_testing">{t("header.phone.uae")} :&nbsp;
                       <Link href="tel:+971504712069">+971504712069</Link></Dropdown.Item>
 
 
 
                     <Dropdown.Item href="/service-page/offline_valve_testing">
-                      India :&nbsp;
+                      {t("header.phone.india")} :&nbsp;
                       <Link href="tel:+919498660803">+919498660803</Link></Dropdown.Item>
 
 
@@ -155,7 +161,7 @@ const Header = () => {
               <div className={parentClasses}>
                 <form action="#" onSubmit={(e) => e.preventDefault()}>
                   <div className="form-group">
-                    <input type="search" name="search-field" placeholder="Search Here..." value={searchText}
+                    <input type="search" name="search-field" placeholder={t("header.searchPlaceholder")} value={searchText}
                       onChange={(e) => setSearchText(e.target.value)} onFocus={() => setIsOpen(true)} required="" />
                     <button type="submit" onClick={() => setIsOpen(false)}>
                       <img src="/assets/img/ic_round-close.svg" alt="close" />
@@ -194,7 +200,7 @@ const Header = () => {
           </div>
             <div className="logo_text">
               <h1><span>S</span>am <span>T</span>echnical <span>S</span>ervice <span>C</span>ontracting Est</h1>
-            <p>( A Unit of Power Tech Group of Companies )</p>
+            <p>{t("header.logoTagline")}</p>
           </div>
           <div></div>
           </div>
@@ -225,7 +231,7 @@ const Header = () => {
                 <ul>
                   <li>
                     <Link href={"/"} prefetch>
-                      Home
+                      {t("header.nav.home")}
                     </Link>
                   </li>
                   <li>
@@ -237,13 +243,13 @@ const Header = () => {
 
                     <Dropdown>
                       <Dropdown.Toggle id="dropdown-basic">
-                        Company
+                        {t("header.nav.company")}
                       </Dropdown.Toggle>
 
                       <Dropdown.Menu>
-                        <Dropdown.Item href={'/company'}>About Us </Dropdown.Item>
+                        <Dropdown.Item href={'/company'}>{t("header.nav.aboutUs")} </Dropdown.Item>
                         {/* <Dropdown.Item href={'/leadership-team'}>Leadership team</Dropdown.Item> */}
-                        <Dropdown.Item href={'/group-companies'}>Group companies</Dropdown.Item>
+                        <Dropdown.Item href={'/group-companies'}>{t("header.nav.groupCompanies")}</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
 
@@ -254,21 +260,21 @@ const Header = () => {
                     </Link> */}
                     <Dropdown className="serviceDropdown">
                       <Dropdown.Toggle id="dropdown-basic">
-                        Services
+                        {t("header.nav.services")}
                       </Dropdown.Toggle>
 
                       <Dropdown.Menu>
-                        <Dropdown.Item href="/service-page/online_safety_testing">Online Safety Valve Testing (Trevi  Type)</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/offline_valve_testing">Offline Valve Testing</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/alltype_valve_services">All Types of Valve Servicing</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">Technical Manpower supply for Power plant refineries and Water plant</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/online_seal_leaking">Online Leak Sealing – SYLMASATA & Conventional</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/hot_tapping">Hot Tapping & Insertion of S-Type( Gate Valve Online)</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/heat_exchanger">Heat Exchanger, Maintenance & Supply</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/ro_plant_epc_contracts">RO Plant EPC Contracts Upto 2MIGPDA</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/solar_plant_epc">Solar Plant EPC upto  5MW & Maintenance</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/ro_membrane">RO Plants Retro  Fitting</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/upvc_aluminiumdoors_windowsfabrication">UPVC & Aluminium Doors & Windows Fabrication & Installation</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/online_safety_testing">{t("header.nav.onlineSafetyValveTesting")}</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/offline_valve_testing">{t("header.nav.offlineValveTesting")}</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/alltype_valve_services">{t("header.nav.allTypesValveServicing")}</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">{t("header.nav.technicalManpowerSupply")}</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/online_seal_leaking">{t("header.nav.onlineLeakSealing")}</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/hot_tapping">{t("header.nav.hotTapping")}</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/heat_exchanger">{t("header.nav.heatExchanger")}</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/ro_plant_epc_contracts">{t("header.nav.roPlantEpc")}</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/solar_plant_epc">{t("header.nav.solarPlantEpc")}</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/ro_membrane">{t("header.nav.roPlantsRetroFitting")}</Dropdown.Item>
+                        <Dropdown.Item href="/service-page/upvc_aluminiumdoors_windowsfabrication">{t("header.nav.upvcDoorsWindows")}</Dropdown.Item>
 
                       </Dropdown.Menu>
                     </Dropdown>
@@ -276,26 +282,26 @@ const Header = () => {
                   </li>
                   <li>
                     <Link href={"/appreciations"} prefetch>
-                      Appreciations
+                      {t("header.nav.appreciations")}
                     </Link>
                   </li>
                   <li>
                     <Link href={"/brochures"} prefetch>
-                      Brochures
+                      {t("header.nav.brochures")}
                     </Link>
                   </li>
                   <li>
 
                     <Dropdown>
                       <Dropdown.Toggle id="dropdown-basic">
-                        Gallery
+                        {t("header.nav.gallery")}
                       </Dropdown.Toggle>
 
                       <Dropdown.Menu>
-                        <Dropdown.Item href={'/photo-gallery'}>Photo Gallery</Dropdown.Item>
-                        <Dropdown.Item href="#">Video Gallery</Dropdown.Item>
-                        <Dropdown.Item href={'/our-branches'}>Our Branches</Dropdown.Item>
-                        <Dropdown.Item href={'/trainings'}>Trainings</Dropdown.Item>
+                        <Dropdown.Item href={'/photo-gallery'}>{t("header.nav.photoGallery")}</Dropdown.Item>
+                        <Dropdown.Item href="#">{t("header.nav.videoGallery")}</Dropdown.Item>
+                        <Dropdown.Item href={'/our-branches'}>{t("header.nav.ourBranches")}</Dropdown.Item>
+                        <Dropdown.Item href={'/trainings'}>{t("header.nav.trainings")}</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
                   </li>
@@ -308,12 +314,12 @@ const Header = () => {
 
                   <li>
                     <Link href={'/careers'} prefetch>
-                      Careers
+                      {t("header.nav.careers")}
                     </Link>
                   </li>
                   <li>
                     <Link href={"/contact-us"} prefetch>
-                      Contact Us
+                      {t("header.nav.contactUs")}
                     </Link>
                   </li>
                   {!isSticky && (

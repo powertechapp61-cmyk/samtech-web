@@ -1,5 +1,6 @@
 import Footer from "./Components/Layout/Footer";
 import Header from "./Components/Layout/Header";
+import { LanguageProvider } from "./context/LanguageContext";
 import "./globals.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -27,11 +28,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="pageWrapper">
-        <Header />
-        {children}
-        <Footer />
-        </div>
+        <LanguageProvider>
+          <div className="pageWrapper">
+            <Header />
+            {children}
+            <Footer />
+          </div>
+        </LanguageProvider>
       </body>
     </html>
   );

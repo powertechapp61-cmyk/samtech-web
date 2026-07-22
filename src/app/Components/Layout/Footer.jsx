@@ -1,7 +1,9 @@
 'use client';
 import Link from 'next/link';
+import { useLanguage } from '../../context/LanguageContext';
 
 const Footer = () => {
+  const { t } = useLanguage();
 
 
   // const items = [
@@ -88,42 +90,42 @@ const Footer = () => {
         <div className="container">
           <div className='row mb_40'>
             <div className='col-lg-4 mobspaceMb_24'>
-              <h2>About Us</h2>
-              <p className='fontSize16 fontWeight400 whiteText_Clr mb_24'>Sam Technical Service Contracting Est an ISO 9001 and ISO 45001 company is Unique in Indian sub-continent and GCC countries, as ONE-STOP-SHOP for total power plant services in the areas of Repairs & Retrofits, EPC contracts.</p>
+              <h2>{t("footer.aboutTitle")}</h2>
+              <p className='fontSize16 fontWeight400 whiteText_Clr mb_24'>{t("footer.aboutText")}</p>
               <div className="certifiedLogo">
                 <img src="/assets/img/logo2.jpg" alt="logo" />
               </div>
 
             </div>
             <div className='col-lg-2 mobspaceMb_24'>
-              <h2>Quick Links</h2>
+              <h2>{t("footer.quickLinks")}</h2>
 
 
               <ul className='quicklinks'>
                 <li>
                   <Link href={"/"} prefetch>
                     <img src="/assets/img/stepPoint.svg" alt='step point' />
-                    <span>Home</span>
+                    <span>{t("footer.home")}</span>
 
                   </Link>
                 </li>
                 <li>
                   <Link href={"/company"} prefetch>
                     <img src="/assets/img/stepPoint.svg" alt='step point' />
-                    <span>About Us</span>
+                    <span>{t("footer.aboutUs")}</span>
                   </Link>
                 </li>
                 <li>
                   <Link href={"/group-companies"} prefetch>
                     <img src="/assets/img/stepPoint.svg" alt='step point' />
-                    <span>Group Companies</span>
+                    <span>{t("footer.groupCompanies")}</span>
 
                   </Link>
                 </li>
                 <li>
                   <Link href={"/appreciations"} prefetch>
                     <img src="/assets/img/stepPoint.svg" alt='step point' />
-                    <span>Appreciations</span>
+                    <span>{t("footer.appreciations")}</span>
 
                   </Link>
                 </li>
@@ -131,35 +133,35 @@ const Footer = () => {
                 <li>
                   <Link href={'/photo-gallery'} prefetch>
                     <img src="/assets/img/stepPoint.svg" alt='step point' />
-                    <span> Photo Gallery</span>
+                    <span> {t("footer.photoGallery")}</span>
 
                   </Link>
                 </li>
                 <li>
                   <Link href={'/our-branches'} prefetch>
                     <img src="/assets/img/stepPoint.svg" alt='step point' />
-                    <span>Our Branches</span>
+                    <span>{t("footer.ourBranches")}</span>
 
                   </Link>
                 </li>
                 <li>
                   <Link href={'/trainings'} prefetch>
                     <img src="/assets/img/stepPoint.svg" alt='step point' />
-                    <span>Trainings</span>
+                    <span>{t("footer.trainings")}</span>
 
                   </Link>
                 </li>
                 <li>
                   <Link href={'/careers'} prefetch>
                     <img src="/assets/img/stepPoint.svg" alt='step point' />
-                    <span>Careers</span>
+                    <span>{t("footer.careers")}</span>
 
                   </Link>
                 </li>
                 <li>
                   <Link href={"/contact-us"} prefetch>
                     <img src="/assets/img/stepPoint.svg" alt='step point' />
-                    <span> Contact Us</span>
+                    <span> {t("footer.contactUs")}</span>
 
                   </Link>
                 </li>
@@ -170,7 +172,7 @@ const Footer = () => {
             </div>
 
             <div className='col-lg-2 mobspaceMb_24'>
-              <h2>Quick Code</h2>
+              <h2>{t("footer.quickCode")}</h2>
 
               <div className='qrCodeLink'>
                 <img src="/assets/img/qrcode.jpeg" alt="qrcode" />
@@ -178,7 +180,7 @@ const Footer = () => {
 
             </div>
             <div className='col-lg-4'>
-              <h2>Location</h2>
+              <h2>{t("footer.location")}</h2>
 
               <iframe height="300" src="https://www.google.com/maps/place/22%C2%B046'27.7%22N+39%C2%B005'01.9%22E/@22.7743551,39.0812815,17z/data=!3m1!4b1!4m4!3m3!8m2!3d22.7743551!4d39.0838564?hl=en&entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D" style={{
                 border: 0, width: "100%"
@@ -250,7 +252,7 @@ const Footer = () => {
           </div>
 
           <div className='copyRightsec'>
-            <p className='whiteText_Clr  fontWeight400 fontSize14 textalign_center'>Copyright ©  <Link href={"/"} prefetch>Sam Technical Service Contracting Est</Link> {new Date().getFullYear()}. All rights reserved.</p>
+            <p className='whiteText_Clr  fontWeight400 fontSize14 textalign_center'>{t("footer.copyrightText")}  <Link href={"/"} prefetch>{t("footer.companyName")}</Link> {new Date().getFullYear()}. {t("footer.allRightsReserved")}</p>
           </div>
         </div>
       </footer>
@@ -265,7 +267,7 @@ const Footer = () => {
           <li>
             <Link href="https://wa.me/966507745097" target="_blank">
               <img src="/assets/img/whatsappIcon.svg" alt="whatsapp" />
-              <span>WhatsApp</span>
+              <span>{t("footer.whatsapp")}</span>
             </Link>
           </li>
           {/* <li>
@@ -303,7 +305,7 @@ const Footer = () => {
 
             <Link href="tel:+966507745097">
               <img className='whiteFilter' src="/assets/img/phone_icon.svg" alt="phone" />
-              <span>Saudi :&nbsp; +966507745097</span>
+              <span>{t("footer.saudiPhoneLabel")} :&nbsp; +966507745097</span>
               </Link>
           </li>
 

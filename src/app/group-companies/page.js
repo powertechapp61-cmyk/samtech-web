@@ -1,7 +1,10 @@
+"use client";
 import Link from 'next/link'
 import React from 'react'
+import { useLanguage } from '../context/LanguageContext';
 
 const page = () => {
+    const { t } = useLanguage();
     return (
         <>
             <section className='hero-banner'>
@@ -10,18 +13,18 @@ const page = () => {
                         <div className='col-lg-6'>
                             <div className='innerpage_bnrContent'>
                                 <ul className='page_breadcrumb'>
-                                    <li><Link href={"/"}> Home</Link></li>
+                                    <li><Link href={"/"}> {t("common.home")}</Link></li>
                                     <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
-                                    <li> About Us</li>
+                                    <li> {t("groupCompanies.breadcrumbAboutUs")}</li>
                                     <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
-                                    <li><Link href={'/group-companies'}>Group companies</Link></li>
+                                    <li><Link href={'/group-companies'}>{t("header.nav.groupCompanies")}</Link></li>
                                 </ul>
-                                <h1>Group companies</h1>
+                                <h1>{t("groupCompanies.pageTitle")}</h1>
                                 {/* <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>{page.subTitle}</p> */}
-                                <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>Our strength lies not just in what we do — but in who stands behind us. As a unit of the Power Tech Group of Companies, SAM Technical Service Contracting Est is supported by a network of specialised group entities operating across five countries. Together, we bring our Saudi clients access to a full ecosystem of engineering, technical, training, and manpower capabilities — all under one trusted group.
+                                <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>{t("groupCompanies.intro")}
 
 </p>
-                                <Link href="/contact-us" className='mainbtn'>Contact Us</Link>
+                                <Link href="/contact-us" className='mainbtn'>{t("common.contactUsBtn")}</Link>
                             </div>
                         </div>
                         <div className='col-lg-5 offset-lg-1'>
@@ -47,7 +50,7 @@ const page = () => {
                                     </div>
 
                                     <h2>Power Tech Development W.L.L, Bahrain</h2>
-                                    <p> Operation & Maintenance of Power & Water, oil & Gas Plants & EPC Contractors & Human Resource Providers</p>
+                                    <p>{t("groupCompanies.companies.ptd")}</p>
 
                                 </div>
 
@@ -117,7 +120,7 @@ const page = () => {
                                     </div>
 
                                     <h2> SAM Technical Service Contracting Est, Saudi Arabia</h2>
-                                    <p>  Operation& Maintenanceof Power &Water,oil &Gas Plants &EPC Contractors & Human Resource Providers, Trevi testing & all types of valves & actuators servicing, online leak sealing, Heat Exchanger Maintenance & Supply, Hot Tapping</p>
+                                    <p>{t("groupCompanies.companies.stsc")}</p>
                                 </div>
                                 <div className='displayFlex alignItem_center justifyContent_spacebetween'>
                                     <div className='displayInlineFlex alignItem_center gap12'>
@@ -153,7 +156,7 @@ const page = () => {
                                     </div>
 
                                     <h2>Chennai Power & Desalination Training Institute, India</h2>
-                                    <p>O&M Trainingforfreshgraduatesanddiploma holders, 210/600W Thermal Simulator Training, EHS training & 100% in house placements</p>
+                                    <p>{t("groupCompanies.companies.cpdti")}</p>
                                 </div>
                                 <div className='displayFlex alignItem_center justifyContent_spacebetween'>
                                     <div className='displayInlineFlex alignItem_center gap12'>
@@ -189,7 +192,7 @@ const page = () => {
                                     </div>
 
                                     <h2>POWERTECH ELECTRO MECHANICAL INDUSTRIES Pvt.(Ltd)</h2>
-                                    <p>Solar EPC & Maintenance, RO Plants, Import & Export of Scrap / Aluminium / UPVC Profiles, and Dismantling of Power & Industrial Plants.</p>
+                                    <p>{t("groupCompanies.companies.pemi")}</p>
                                 </div>
                                 <div className='displayFlex alignItem_center justifyContent_spacebetween'>
                                     <div className='displayInlineFlex alignItem_center gap12'>
@@ -223,7 +226,7 @@ const page = () => {
                                     </div>
 
                                     <h2>IBN Badooda Electro Mechanical Workshop, Bahrain</h2>
-                                    <p>UPVC and Aluminium Doors and Windows Fabrication</p>
+                                    <p>{t("groupCompanies.companies.ibnBadooda")}</p>
                                 </div>
                                 <div className='displayFlex alignItem_center justifyContent_spacebetween'>
                                     <div className='displayInlineFlex alignItem_center gap12'>
@@ -257,7 +260,7 @@ const page = () => {
                                     </div>
 
                                     <h2>Power Tech International, India</h2>
-                                    <p>A Premier Government approved placement agency L NO : B-1192/CHEN/PER/100/5/9405/2018</p>
+                                    <p>{t("groupCompanies.companies.ptIntl")}</p>
                                 </div>
                                 <div className='displayFlex alignItem_center justifyContent_spacebetween'>
                                     <div className='displayInlineFlex alignItem_center gap12'>
@@ -293,7 +296,7 @@ const page = () => {
                                     </div>
 
                                     <h2> Valve Tech Testing & Services, Bahrain</h2>
-                                    <p>Online/Offline Safety valve Testing & Calibration & servicing of all types of valves & actuators & Hot Tapping, Heat Exchanger Maintenance & Supply</p>
+                                    <p>{t("groupCompanies.companies.vtts")}</p>
                                 </div>
                                 <div className='displayFlex alignItem_center justifyContent_spacebetween'>
                                     <div className='displayInlineFlex alignItem_center gap12'>
@@ -327,7 +330,7 @@ const page = () => {
                                     </div>
 
                                     <h2>Power Tech Testing & Services, India</h2>
-                                    <p>Online/Offline Safety valve Testing & Calibration, servicing of all types of valves & actuators, Hot Tapping, Heat Exchanger Maintenance & Supply</p>
+                                    <p>{t("groupCompanies.companies.ptts")}</p>
                                 </div>
                                 <div className='displayFlex alignItem_center justifyContent_spacebetween'>
                                     <div className='displayInlineFlex alignItem_center gap12'>
@@ -364,7 +367,7 @@ const page = () => {
                                     </div>
 
                                     <h2> SAMS Building Contracting L.L.C</h2>
-                                    <p>Turn Key Construction of Buildings, Interior works like UPVC, Aluminium Doors & Windows, MEP Works & STP</p>
+                                    <p>{t("groupCompanies.companies.samsBuilding")}</p>
                                 </div>
                                 <div className='displayFlex alignItem_center justifyContent_spacebetween'>
                                     <div className='displayInlineFlex alignItem_center gap12'>
@@ -399,7 +402,7 @@ const page = () => {
                                     </div>
 
                                     <h2>Q-Power Tech Mechanical Contracting, Qatar</h2>
-                                    <p> Operation & Maintenance of Power & Water, oil & Gas Plants & EPC Contractors & Human Resource Providers, Online testing & calibration of valves & actuators, Valve Servicing, Hot Tapping, Heat Exchanger Maintenance & Supply</p>
+                                    <p>{t("groupCompanies.companies.qPowerTech")}</p>
                                 </div>
                                 <div className='displayFlex alignItem_center justifyContent_spacebetween'>
                                     <div className='displayInlineFlex alignItem_center gap12'>
@@ -434,7 +437,7 @@ const page = () => {
                                     </div>
 
                                     <h2> Knowledge City, India</h2>
-                                    <p> Social arm of Power Tech Group of Companies for EDUCATIONAL EXCELLENCE & EMPOWERMENT. A Skill Development & Placement Centre</p>
+                                    <p>{t("groupCompanies.companies.knowledgeCity")}</p>
                                 </div>
                                 <div className='displayFlex alignItem_center justifyContent_spacebetween'>
                                     <div className='displayInlineFlex alignItem_center gap12'>

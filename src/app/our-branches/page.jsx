@@ -16,89 +16,91 @@ import 'lightgallery/scss/lg-zoom.scss';
 // import plugins if you need
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
+import { useLanguage } from '../context/LanguageContext';
 const page = () => {
+    const { t } = useLanguage();
     const tabData = [
         {
             key: "bahrainTab",
-            title: "Bahrain - Building Picture and Workshop",
+            title: t("ourBranches.tabs.bahrain"),
             items: [
                 {
                     src: "/assets/img/bahrain/powertech_bahrain_two.jpeg",
                     thumb: "/assets/img/bahrain/powertech_bahrain_two.jpeg",
-                    caption: "Power Tech Group Building Bahrain (2)",
+                    caption: t("ourBranches.captions.bahrainBuildingTwo"),
                     type: "image"
                 },
                 {
                     src: "/assets/img/bahrain/powertech_bahrain_one.jpeg",
                     thumb: "/assets/img/bahrain/powertech_bahrain_one.jpeg",
-                    caption: "Power Tech Group Building Bahrain",
+                    caption: t("ourBranches.captions.bahrainBuildingOne"),
                     type: "image"
                 },
                 {
                     src: "/assets/img/bahrain/powertech_bahrain_three.jpg",
                     thumb: "/assets/img/bahrain/powertech_bahrain_three.jpg",
-                    caption: "Power Tech Group Building Bahrain",
+                    caption: t("ourBranches.captions.bahrainBuildingOne"),
                     type: "image"
                 },
                 {
                     src: "/assets/img/bahrain/ptd_conference_room.jpg",
                     thumb: "/assets/img/bahrain/ptd_conference_room.jpg",
-                    caption: "PTD Conference room",
+                    caption: t("ourBranches.captions.bahrainConferenceRoom"),
                     type: "image"
                 },
                 {
                     src: "/assets/img/bahrain/ptd_employees_accomodation.jpeg",
                     thumb: "/assets/img/bahrain/ptd_employees_accomodation.jpeg",
-                    caption: "PTD Employees accomodation",
+                    caption: t("ourBranches.captions.bahrainEmployeesAccommodation"),
                     type: "image"
                 },
                 {
                     src: "/assets/img/bahrain/ptd_nomac_hse_audit.jpeg",
                     thumb: "/assets/img/bahrain/ptd_nomac_hse_audit.jpeg",
-                    caption: "PTD Nomac HSE Audit",
+                    caption: t("ourBranches.captions.bahrainHseAudit"),
                     type: "image"
                 },
                 {
                     src: "/assets/img/bahrain/ptd_upvc_factory_inside.jpeg",
                     thumb: "/assets/img/bahrain/ptd_upvc_factory_inside.jpeg",
-                    caption: "PTD UPVC Factory Inside",
+                    caption: t("ourBranches.captions.bahrainUpvcFactoryInside"),
                     type: "image"
                 },
                 {
                     src: "/assets/img/bahrain/ptd_upvc_factory.jpeg",
                     thumb: "/assets/img/bahrain/ptd_upvc_factory.jpeg",
-                    caption: "PTD UPVC Factory",
+                    caption: t("ourBranches.captions.bahrainUpvcFactory"),
                     type: "image"
                 },
                 {
                     src: "/assets/img/bahrain/valve-tech-workshop-in-bahrain.jpeg",
                     thumb: "/assets/img/bahrain/valve-tech-workshop-in-bahrain.jpeg",
-                    caption: "Valve Tech workshop in Bahrain",
+                    caption: t("ourBranches.captions.bahrainValveWorkshop"),
                     type: "image"
                 }
             ],
         },
         {
             key: "saudiTab",
-            title: "Saudi - Office & Rabigh Picture",
+            title: t("ourBranches.tabs.saudi"),
             items: [
-                { src: "/assets/img/bahrain/saudi1.jpg", thumb: "/assets/img/bahrain/saudi1_thumb.jpg", caption: "Saudi Office", type: "image" },
+                { src: "/assets/img/bahrain/saudi1.jpg", thumb: "/assets/img/bahrain/saudi1_thumb.jpg", caption: t("ourBranches.captions.saudiOffice"), type: "image" },
             ],
         },
         {
             key: "indiaTab",
-            title: "India - CPDTI & Dindigul Workshop Picture",
+            title: t("ourBranches.tabs.india"),
             items: [
-                { src: "/assets/img/india_branch/cpdti_Institute_chennai_india.jpg", thumb: "/assets/img/india_branch/cpdti_Institute_chennai_india.jpg", caption: "CPDTI Institute, Chennai, India", type: "image" },
-                { src: "/assets/img/india_branch/dindigul-office.jpg", thumb: "/assets/img/india_branch/dindigul-office.jpg", caption: "dindigul office", type: "image" },
-                { src: "/assets/img/india_branch/dindigul-training-center.png", thumb: "/assets/img/india_branch/dindigul-training-center.png", caption: "Dindigul Training center", type: "image" },
+                { src: "/assets/img/india_branch/cpdti_Institute_chennai_india.jpg", thumb: "/assets/img/india_branch/cpdti_Institute_chennai_india.jpg", caption: t("ourBranches.captions.cpdtiInstitute"), type: "image" },
+                { src: "/assets/img/india_branch/dindigul-office.jpg", thumb: "/assets/img/india_branch/dindigul-office.jpg", caption: t("ourBranches.captions.dindigulOffice"), type: "image" },
+                { src: "/assets/img/india_branch/dindigul-training-center.png", thumb: "/assets/img/india_branch/dindigul-training-center.png", caption: t("ourBranches.captions.dindigulTrainingCenter"), type: "image" },
             ],
         },
         {
             key: "uaeTab",
-            title: "UAE Workshop & Ajman Photos",
+            title: t("ourBranches.tabs.uae"),
             items: [
-                { src: "/assets/img/bahrain/uae1.jpg", thumb: "/assets/img/bahrain/uae1_thumb.jpg", caption: "Ajman Workshop", type: "image" },
+                { src: "/assets/img/bahrain/uae1.jpg", thumb: "/assets/img/bahrain/uae1_thumb.jpg", caption: t("ourBranches.captions.ajmanWorkshop"), type: "image" },
             ],
         },
     ];
@@ -112,15 +114,15 @@ const page = () => {
                         <div className='col-lg-6'>
                             <div className='innerpage_bnrContent'>
                                 <ul className='page_breadcrumb'>
-                                    <li><Link href={"/"}> Home</Link></li>
+                                    <li><Link href={"/"}> {t("common.home")}</Link></li>
                                     <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
-                                    <li>Gallery</li>
+                                    <li>{t("header.nav.gallery")}</li>
                                     <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
-                                    <li><Link href={'/our-branches'}>Our Branches</Link></li>
+                                    <li><Link href={'/our-branches'}>{t("header.nav.ourBranches")}</Link></li>
                                 </ul>
-                                <h1>Our Branches</h1>
-                                <p>Our people and facilities are our foundation. SAM Technical Service Contracting Est maintains its primary operations in Rabigh, Saudi Arabia, with supporting infrastructure in India and the UAE — giving our clients the confidence that the right resources, tools, and expertise are always within reach, wherever the job takes us.</p>
-                                <Link href="/contact-us" className='mainbtn'>Contact Us</Link>
+                                <h1>{t("ourBranches.pageTitle")}</h1>
+                                <p>{t("ourBranches.intro")}</p>
+                                <Link href="/contact-us" className='mainbtn'>{t("common.contactUsBtn")}</Link>
                             </div>
                         </div>
                         {/* <div className='col-lg-5 offset-lg-1'>

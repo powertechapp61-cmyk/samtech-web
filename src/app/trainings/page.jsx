@@ -16,27 +16,29 @@ import 'lightgallery/scss/lg-zoom.scss';
 // import plugins if you need
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
+import { useLanguage } from '../context/LanguageContext';
 const page = () => {
+    const { t } = useLanguage();
     const items = [
         {
             type: "image",
             src: "/assets/img/trainings/ai_training_by_ibm.jpg",
             thumb: "/assets/img/trainings/ai_training_by_ibm.jpg",
-            caption: "AI Training by IBM to CPDTI students 2025 Batch",
+            caption: t("trainings.captions.aiTraining"),
         },
 
         {
             type: "image",
             src: "/assets/img/trainings/ban_airport_training.jpg",
             thumb: "/assets/img/trainings/ban_airport_training.jpg",
-            caption: "BANGALORE INTERNATIONAL AIRPORT TRAINING",
+            caption: t("trainings.captions.bangaloreAirport"),
         },
 
         {
             type: "image",
             src: "/assets/img/trainings/hse_courses.jpg",
             thumb: "/assets/img/trainings/hse_courses.jpg",
-            caption: "HSE Courses",
+            caption: t("trainings.captions.hseCourses"),
         },
 
         // {
@@ -49,13 +51,13 @@ const page = () => {
             type: "image",
             src: "/assets/img/trainings/recognised_by governer_of_india.jpg",
             thumb: "/assets/img/trainings/recognised_by governer_of_india.jpg",
-            caption: "Recognised by Governer of India- 2017",
+            caption: t("trainings.captions.governerRecognition"),
         },
         {
             type: "image",
             src: "/assets/img/trainings/sudanKosti_power_plant_training.jpg",
             thumb: "/assets/img/trainings/sudanKosti_power_plant_training.jpg",
-            caption: "SUDAN KOSTI POWER PLANT TRAINING",
+            caption: t("trainings.captions.sudanKosti"),
         },
     ];
   return (
@@ -67,15 +69,15 @@ const page = () => {
                       <div className='col-lg-6'>
                           <div className='innerpage_bnrContent'>
                               <ul className='page_breadcrumb'>
-                                  <li><Link href={"/"}> Home</Link></li>
+                                  <li><Link href={"/"}> {t("common.home")}</Link></li>
                                   <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
-                                  <li>Gallery</li>
+                                  <li>{t("header.nav.gallery")}</li>
                                   <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
-                                  <li><Link href={'/trainings'}>Trainings</Link></li>
+                                  <li><Link href={'/trainings'}>{t("header.nav.trainings")}</Link></li>
                               </ul>
-                              <h1>Trainings</h1>
-                              <p>Skilled people deliver great results. Our training programmes cover power plant operations, technical disciplines, HSE compliance, and equipment-specific competencies — ensuring every member of our team is qualified, certified, and ready to deliver on site.</p>
-                               <Link href="/contact-us" className='mainbtn'>Contact Us</Link>
+                              <h1>{t("trainings.pageTitle")}</h1>
+                              <p>{t("trainings.intro")}</p>
+                               <Link href="/contact-us" className='mainbtn'>{t("common.contactUsBtn")}</Link>
                           </div>
                       </div>
                       <div className='col-lg-5 offset-lg-1'>

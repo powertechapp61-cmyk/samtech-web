@@ -36,59 +36,61 @@ import {
     FiGlobe,
 } from "react-icons/fi";
 import { HiOutlineOfficeBuilding } from "react-icons/hi";
+import { useLanguage } from "../context/LanguageContext";
 
 
 
 const page = () => {
+    const { t } = useLanguage();
     const marqueeRef = useRef(null);
 
     const stats = [
         {
             icon: <FiAward />,
             value: "15+",
-            title: "Years & Counting",
+            title: t("company.stats.years"),
         },
         {
             icon: <FiUsers />,
             value: "200+",
-            title: "Satisfied Customers",
+            title: t("company.stats.satisfiedCustomers"),
         },
         {
             icon: <HiOutlineOfficeBuilding />,
             value: "500+",
-            title: "Employees",
+            title: t("company.stats.employees"),
         },
         {
             icon: <FiShield />,
             value: "ISO",
-            title: "45001, 9001 & 14001 Certified",
+            title: t("company.stats.isoCertified"),
         },
         { 
             icon: <FiGlobe />,
             value: "GCC",
-            title: "& India",
+            title: t("company.stats.gccIndia"),
         },
     ];
 
     const clients = [
         {
-            title: "NOMAC (ACWA Power) ",
-            desc: "Appreciation letter for long-term manpower and valve services at Red Sea power stations",
+            title: t("company.clients.nomacTitle"),
+            desc: t("company.clients.nomacDesc"),
             logo: "/assets/img/nomac.png",
         },
         {
-            title: "ENGIE Fadhili O&M Company ",
-            desc: "Commissioned for online safety valve testing at Fadhili Gas Plant",
+            title: t("company.clients.engieTitle"),
+            desc: t("company.clients.engieDesc"),
             logo: "/assets/img/engie.png",
         },
         {
-            title: "Petro Rabigh (RPC)",
-            desc: "Successfully completed major valve overhauling services",
+            title: t("company.clients.rpcTitle"),
+            desc: t("company.clients.rpcDesc"),
             logo: "/assets/img/rpc.png",
         },
         {
-            title: "Saudi Aramco, YASREF, National Water Company, Saudi Electricity Company",
-            desc: "among our key clients in the Kingdom",
+            title: t("company.clients.keyClientsTitle"),
+            desc: t("company.clients.keyClientsDesc"),
             logo: "/assets/img/our-key-clients-in-the-Kingdom.png",
         },
     ];
@@ -118,17 +120,17 @@ const page = () => {
                         <div className='col-lg-6'>
                             <div className='innerpage_bnrContent'>
                                 <ul className='page_breadcrumb'>
-                                    <li><Link href={"/"}> Home</Link></li>
+                                    <li><Link href={"/"}> {t("common.home")}</Link></li>
                                     <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
-                                    <li><Link href={'/company'}>Company</Link></li>
+                                    <li><Link href={'/company'}>{t("company.breadcrumbCompany")}</Link></li>
                                     <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
                                   
-                                    <li> About Us</li>
+                                    <li> {t("company.breadcrumbAboutUs")}</li>
                                 </ul>
-                                <h1>Our Vision</h1>
+                                <h1>{t("company.ourVision")}</h1>
                                 {/* <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>{page.subTitle}</p> */}
-                                <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>To be the most trusted and technically capable one-stop service partner for power, water, and industrial plant operations across Saudi Arabia and the wider GCC — delivering safe, reliable, and cost-effective solutions that keep our clients' assets performing at their peak.</p>
-                                <button className='mainbtn'>Contact Us</button>
+                                <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>{t("company.visionText")}</p>
+                                <button className='mainbtn'>{t("common.contactUsBtn")}</button>
                             </div>
                         </div>
                         <div className='col-lg-5 offset-lg-1'>
@@ -216,7 +218,7 @@ const page = () => {
                     {/* Heading */}
 
                     <span className="sectionTag">
-                        ABOUT US
+                        {t("company.aboutTag")}
                     </span>
 
                     <div className="badgeRow">
@@ -230,15 +232,15 @@ const page = () => {
                         <div className="headingContent">
 
                             <h1>
-                                OPERATION & MAINTENANCE
+                                {t("company.opMaintHeading")}
                             </h1>
 
                             <h2>
-                                SERVICE PROVIDER
+                                {t("company.serviceProviderHeading")}
                             </h2>
 
                             <p>
-                                POWER PLANT SPECIALIST
+                                {t("company.powerPlantSpecialist")}
                             </p>
 
                         </div>
@@ -290,20 +292,18 @@ const page = () => {
 
 
                                 <h2>
-                                    <span>Who</span> We Are
+                                    <span>{t("company.whoWeAreTitlePre")}</span> {t("company.whoWeAreTitlePost")}
                                 </h2>
 
                                 <div className="title-line"></div>
 
                                 <p>
-                                    <strong>SAM Technical Service Contracting Est (STSC)</strong> is a
-                                    Saudi Arabia-based technical services and contracting company
-                                    headquartered in Rabigh, Kingdom of Saudi Arabia.
+                                    <strong>{t("company.whoWeAreP1Bold")}</strong> {t("company.whoWeAreP1Rest")}
                                 </p>
 
-                                <p>We are a proud unit of the <strong>Power Tech Group of Companies</strong> — a decade-strong, multi-national group with an established presence across the GCC and the Indian subcontinent, holding ISO 9001 (Quality Management), ISO 45001 (Occupational Health & Safety), and ISO 14001 (Environmental Management) certifications across its integrated management system.</p>
+                                <p>{t("company.whoWeAreP2")}</p>
 
-                                <p>As a registered and VAT-certified entity in the Kingdom of Saudi Arabia, STSC operates as the group's dedicated technical arm in the Saudi market — delivering specialised engineering services, operations and maintenance solutions, and technical manpower to power generation, oil and gas, petrochemical, and water treatment sectors.</p>
+                                <p>{t("company.whoWeAreP3")}</p>
 
                                 {/* FEATURES */}
 
@@ -311,26 +311,26 @@ const page = () => {
 
                                     <div className="feature-card">
                                         <FaMapMarkerAlt />
-                                        <h4>Headquartered</h4>
-                                        <span>Rabigh, Saudi Arabia</span>
+                                        <h4>{t("company.featureHeadquartered")}</h4>
+                                        <span>{t("company.featureHeadquarteredValue")}</span>
                                     </div>
 
                                     <div className="feature-card">
                                         <FiUsers />
-                                        <h4>Power Tech Group</h4>
-                                        <span>Multinational Company</span>
+                                        <h4>{t("company.featurePowerTechGroup")}</h4>
+                                        <span>{t("company.featurePowerTechGroupValue")}</span>
                                     </div>
 
                                     <div className="feature-card">
                                         <FaCertificate />
-                                        <h4>ISO Certified</h4>
-                                        <span>9001 | 45001 | 14001</span>
+                                        <h4>{t("company.featureIsoCertified")}</h4>
+                                        <span>{t("company.featureIsoCertifiedValue")}</span>
                                     </div>
 
                                     <div className="feature-card">
                                         <FaFileInvoiceDollar />
-                                        <h4>VAT Registered</h4>
-                                        <span>Trusted KSA Partner</span>
+                                        <h4>{t("company.featureVatRegistered")}</h4>
+                                        <span>{t("company.featureVatRegisteredValue")}</span>
                                     </div>
 
                                 </div>
@@ -353,34 +353,34 @@ const page = () => {
 
                                         <div className="service">
                                             <FaIndustry />
-                                            <span>Engineering Services</span>
+                                            <span>{t("company.servicesEngineering")}</span>
                                         </div>
 
                                         <div className="service">
                                             <FaCog />
-                                            <span>Operation & Maintenance</span>
+                                            <span>{t("company.servicesOpMaint")}</span>
                                         </div>
 
                                         <div className="service">
                                             <FaTools />
-                                            <span>Technical Manpower</span>
+                                            <span>{t("company.servicesManpower")}</span>
                                         </div>
 
                                     </div>
 
                                     <div className="industry">
 
-                                        <h4>Serving Key Industries</h4>
+                                        <h4>{t("company.servingIndustries")}</h4>
 
                                         <div className="industry-list">
 
-                                            <span><FaBolt /> Power</span>
+                                            <span><FaBolt /> {t("company.industryPower")}</span>
 
-                                            <span><FaOilCan /> Oil & Gas</span>
+                                            <span><FaOilCan /> {t("company.industryOilGas")}</span>
 
-                                            <span><FaIndustry /> Petrochemical</span>
+                                            <span><FaIndustry /> {t("company.industryPetrochemical")}</span>
 
-                                            <span><FaWater /> Water Treatment</span>
+                                            <span><FaWater /> {t("company.industryWater")}</span>
 
                                         </div>
 
@@ -431,21 +431,17 @@ const page = () => {
                     <div class="vm-content dark">
 
                         <span class="vm-label">
-                            OUR <span>MISSION</span>
+                            {t("company.missionLabelPre")} <span>{t("company.missionLabelHighlight")}</span>
                         </span>
 
                         <div class="line"></div>
 
                         <p>
-                            To provide world-class technical services, innovative engineering
-                            solutions, and skilled manpower to the energy and industrial
-                            sectors — built on a foundation of safety, quality, integrity,
-                            and continuous improvement.
+                            {t("company.missionP1")}
                         </p>
 
                         <p>
-                            We are committed to protecting our clients' operational
-                            continuity while delivering measurable value on every engagement.
+                            {t("company.missionP2")}
                         </p>
 
                     </div>
@@ -464,25 +460,21 @@ const page = () => {
                     <div className="hero-content">
 
                         <span className="section-tag">
-                            WHAT WE DO
+                            {t("company.whatWeDoTag")}
                         </span>
 
                         <h2>
-                            One Partner.
+                            {t("company.whatWeDoHeadingLine1")}
                             <br />
-                            Complete Industrial Solutions.
+                            {t("company.whatWeDoHeadingLine2")}
                         </h2>
 
                         <p>
-                            STSC is a fully integrated technical services contractor serving
-                            the power generation, oil & gas, petrochemical and water treatment
-                            industries across Saudi Arabia.
+                            {t("company.whatWeDoP1")}
                         </p>
 
                         <p>
-                            We operate as a true one-stop-shop, eliminating the need for
-                            multiple contractors while delivering reliable engineering,
-                            maintenance and industrial support services under one roof.
+                            {t("company.whatWeDoP2")}
                         </p>
 
                     </div>
@@ -494,9 +486,9 @@ const page = () => {
                     </div> */}
 
                     <div className="heading">
-                        <h3>OUR CORE SERVICE CAPABILITIES</h3>
+                        <h3>{t("company.coreServiceCapabilities")}</h3>
                     </div>
-                    <p className='fontSize16 fontWeight400 shearwaterBlackText_clr  mb_34'>Every service we deliver is executed by qualified, experienced personnel under a structured HSE framework — with full documentation, certification, and client sign-off at every stage.</p>
+                    <p className='fontSize16 fontWeight400 shearwaterBlackText_clr  mb_34'>{t("company.coreServiceText")}</p>
 
 
 
@@ -511,7 +503,7 @@ const page = () => {
                                 </div>
                                 <div className="service-caption">
                                     <Link href="/service-page/online_safety_testing">
-                                        <h3>Online and offline safety valve testing, calibration, and full valve servicing for all valve and actuator types</h3></Link>
+                                        <h3>{t("company.services.valveTesting")}</h3></Link>
                                 </div>
                             </div>
                         </div>
@@ -532,7 +524,7 @@ const page = () => {
                                 </div>
                                 <div className="service-caption">
                                     <Link href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">
-                                        <h3>Online leak sealing for pressurised systems at temperatures up to 700°C</h3></Link>
+                                        <h3>{t("company.services.leakSealing")}</h3></Link>
                                 </div>
                             </div>
                         </div>
@@ -549,7 +541,7 @@ const page = () => {
                                 </div>
                                 <div className="service-caption">
                                     <Link href="/service-page/hot_tapping">
-                                        <h3>Hot tapping and live-line gate valve insertion on operational pipelines</h3></Link>
+                                        <h3>{t("company.services.hotTapping")}</h3></Link>
                                 </div>
                             </div>
                         </div>
@@ -565,7 +557,7 @@ const page = () => {
 
                                 </div>
                                 <div className="service-caption">
-                                    <Link href="/service-page/heat_exchanger">  <h3>Heat exchanger maintenance, re-tubing, and supply</h3></Link>
+                                    <Link href="/service-page/heat_exchanger">  <h3>{t("company.services.heatExchanger")}</h3></Link>
                                 </div>
                             </div>
                         </div>
@@ -582,7 +574,7 @@ const page = () => {
                                 </div>
                                 <div className="service-caption">
                                     <Link href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">
-                                        <h3>Operations and maintenance manpower supply for power plants, refineries, and water treatment facilities</h3></Link>
+                                        <h3>{t("company.services.manpower")}</h3></Link>
                                 </div>
                             </div>
                         </div>
@@ -598,7 +590,7 @@ const page = () => {
 
                                 </div>
                                 <div className="service-caption">
-                                    <Link href="/service-page/ro_plant_epc_contracts"> <h3>RO plant EPC contracts up to 2 million imperial gallons per day</h3></Link>
+                                    <Link href="/service-page/ro_plant_epc_contracts"> <h3>{t("company.services.roEpc")}</h3></Link>
                                 </div>
                             </div>
                         </div>
@@ -615,7 +607,7 @@ const page = () => {
 
                                 </div>
                                 <div className="service-caption">
-                                    <Link href="/service-page/ro_membrane"> <h3>RO plant retrofitting and performance restoration</h3></Link>
+                                    <Link href="/service-page/ro_membrane"> <h3>{t("company.services.roRetro")}</h3></Link>
                                 </div>
                             </div>
                         </div>
@@ -631,7 +623,7 @@ const page = () => {
 
                                 </div>
                                 <div className="service-caption">
-                                    <Link href="/service-page/solar_plant_epc"> <h3>Solar plant EPC up to 5MW capacity and ongoing maintenance</h3> </Link>
+                                    <Link href="/service-page/solar_plant_epc"> <h3>{t("company.services.solarEpc")}</h3> </Link>
                                 </div>
                             </div>
                         </div>
@@ -649,7 +641,7 @@ const page = () => {
 
                                 </div>
                                 <div className="service-caption">
-                                    <Link href="/service-page/upvc_aluminiumdoors_windowsfabrication"> <h3>UPVC and aluminium doors and windows fabrication and installation</h3></Link>
+                                    <Link href="/service-page/upvc_aluminiumdoors_windowsfabrication"> <h3>{t("company.services.upvc")}</h3></Link>
                                 </div>
                             </div>
                         </div>
@@ -709,14 +701,14 @@ const page = () => {
 
                     <div className="section-heading">
 
-                        <span>OUR CREDENTIALS & CLIENT TRUST</span>
+                        <span>{t("company.credentialsTag")}</span>
 
                         <h2>
-                            Proven Credentials.<br />
-                            Trusted Across Saudi Arabia.
+                            {t("company.credentialsHeadingLine1")}<br />
+                            {t("company.credentialsHeadingLine2")}
                         </h2>
 
-                        <p>STSC operates under the full quality and compliance umbrella of the Power Tech Group, which holds an internationally recognised EcoVadis Silver Sustainability Medal — placing the group among the top 25% of companies assessed globally for environmental, social, and governance performance.
+                        <p>{t("company.credentialsText")}
 
                         </p>
 
@@ -726,7 +718,7 @@ const page = () => {
 
                     <div className="client-title">
 
-                        <h3>Our work in Saudi Arabia has been formally recognised by major industry clients including:</h3>
+                        <h3>{t("company.clientTitle")}</h3>
 
                     </div>
 
@@ -754,7 +746,7 @@ const page = () => {
                     </div>
 
 
-                    <p className='fontSize16 fontWeight400 shearwaterBlackText_clr'>We hold valid Company Registration Certificates, VAT certification, and GE Field core Comply works Contractor Verification with a score of 100 — reflecting our full compliance with international contractor qualification standards.</p>
+                    <p className='fontSize16 fontWeight400 shearwaterBlackText_clr'>{t("company.complianceText")}</p>
 
 
 
@@ -770,10 +762,10 @@ const page = () => {
                         {/* <span className="section-tag">Rooted in <span>Saudi Arabia.</span><br />
                             Connected Across the Region.</span> */}
 
-                            <h2 className="site-title mb_24">OUR <span>PRESENCE</span></h2>
+                            <h2 className="site-title mb_24">{t("company.presenceHeadingPre")} <span>{t("company.presenceHeadingHighlight")}</span></h2>
 
 
-                        <p>Based in Rabigh, Saudi Arabia, STSC serves clients across the Kingdom from the Red Sea coast to the industrial heartland of the Eastern Province. As part of the Power Tech Group, we draw on the technical resources, workforce pipeline, and operational knowledge of group entities operating across Saudi Arabia, UAE, Qatar, India, and Bahrain — giving our Saudi clients access to a far broader pool of expertise and capability than a standalone contractor could provide.</p>
+                        <p>{t("company.presenceText")}</p>
 
                        
                     </div>
@@ -789,18 +781,18 @@ const page = () => {
                 <div className='container'>
                         {/* <span className="site-title-tagline textalign_center">--- Client ---</span> */}
                         <h2 className="site-title mb_24">
-                            <span>Why Choose</span> STSC
+                            <span>{t("company.whyChooseTitlePre")}</span> {t("company.whyChooseTitlePost")}
                         </h2>
 
                     <ul>
-                        <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>Over a decade of group-level experience in power plant and industrial services across the GCC</li>
+                        <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>{t("company.whyChoosePoints.0")}</li>
 
-                        <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>ISO 9001, ISO 45001, and ISO 14001 certified — with a fully integrated management system</li>
-                        <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>Proven track record with major Saudi clients including NOMAC, ENGIE, Petro Rabigh, Saudi Aramco, and YASREF</li>
-                        <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>Multi-discipline capability eliminating the need for multiple contractors</li>
-                        <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>Rapid mobilisation of skilled, vetted, HSE-compliant technical personnel</li>
-                        <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>Full traceability — every job documented, tested, certified, and signed off</li>
-                        <li className='fontSize16 fontWeight400 shearwaterBlackText_clr'>Backed by the resources, network, and expertise of the Power Tech Group of Companies</li>
+                        <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>{t("company.whyChoosePoints.1")}</li>
+                        <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>{t("company.whyChoosePoints.2")}</li>
+                        <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>{t("company.whyChoosePoints.3")}</li>
+                        <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>{t("company.whyChoosePoints.4")}</li>
+                        <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>{t("company.whyChoosePoints.5")}</li>
+                        <li className='fontSize16 fontWeight400 shearwaterBlackText_clr'>{t("company.whyChoosePoints.6")}</li>
 
                     </ul>
 
@@ -810,7 +802,7 @@ const page = () => {
                 <div className="site-heading">
                     {/* <span className="site-title-tagline textalign_center">--- Client ---</span> */}
                     <h2 className="site-title textalign_center">
-                        <span>Valve Services</span> - Human Resource <br /> & Manpower Supply
+                        <span>{t("home.valveServicesSpan")}</span> {t("home.valveServicesLine1")} <br /> {t("home.valveServicesLine2")}
                     </h2>
                 </div>
                 <div className="customerLogos">

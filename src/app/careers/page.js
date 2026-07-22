@@ -3,7 +3,9 @@ import Link from 'next/link';
 import React from 'react'
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import { useLanguage } from '../context/LanguageContext';
 const Page = () => {
+  const { t } = useLanguage();
   return (
     <>
           <section className='hero-banner'>
@@ -11,9 +13,9 @@ const Page = () => {
                   <div className='row alignItem_center' >
                       <div className='col-lg-6'>
                           <div className='innerpage_bnrContent'>
-                              <h1>Careers</h1>
-                              <p>At SAM Technical Service Contracting Est, we are committed to attracting, developing, and retaining talented professionals. We offer challenging opportunities, continuous learning, and a culture of safety, integrity, and professional growth for individuals seeking a rewarding career in the industrial services sector.</p>
-                              <Link href="/contact-us" className='mainbtn'>Contact Us</Link>
+                              <h1>{t("careers.title")}</h1>
+                              <p>{t("careers.intro")}</p>
+                              <Link href="/contact-us" className='mainbtn'>{t("common.contactUsBtn")}</Link>
                           </div>
                       </div>
                       <div className='col-lg-5 offset-lg-1'>

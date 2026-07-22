@@ -93,7 +93,7 @@
 //           </div>
 //           <div className='col-lg-6'>
 //             <div className="mb_24">
-//               <input placeholder='Email Address' type="email" name="email"
+//               <input placeholder={t("contactForm.email")} type="email" name="email"
 //                 value={formData.email} onChange={handleChange}
 //                 className="mainInput" required />
 //             </div>
@@ -103,7 +103,7 @@
 //         <div className='row'>
 //           <div className='col-lg-6'>
 //             <div className="mb_24">
-//               <input placeholder='Phone Number' type="text" name="phone"
+//               <input placeholder={t("contactForm.phone")} type="text" name="phone"
 //                 value={formData.phone} onChange={handleChange}
 //                 className="mainInput" />
 //             </div>
@@ -141,7 +141,7 @@
 //         </div>
 
 //         <button type="submit" className="mainbtn" disabled={status === 'loading'}>
-//           {status === 'loading' ? 'Sending...' : 'Submit'}
+//           {status === 'loading' ? t("contactForm.sending") : t("contactForm.submit")}
 //         </button>
 //       </form>
 //     </div>
@@ -153,6 +153,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useLanguage } from '../../context/LanguageContext';
 
 const initialState = {
   firstName: '',
@@ -169,6 +170,7 @@ const initialState = {
 };
 
 const ContactUsForm = () => {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState(initialState);
   const [status, setStatus] = useState('idle');
   const [message, setMessage] = useState('');
@@ -200,24 +202,24 @@ const ContactUsForm = () => {
 
       if (res.ok) {
         setStatus('success');
-        setMessage('Your message has been sent! We will get back to you shortly.');
+        setMessage(t("contactForm.successMessage"));
         setFormData(initialState);
       } else {
         setStatus('error');
-        setMessage(data.message || 'Something went wrong. Please try again.');
+        setMessage(data.message || t("contactForm.errorMessageDefault"));
       }
     } catch (err) {
       setStatus('error');
-      setMessage('Network error. Please try again.');
+      setMessage(t("contactForm.networkError"));
     }
   };
 
   return (
     <div className='leadGenFrame'>
-      <h2 className='mb_8'>Reach Us Quickly</h2>
+      <h2 className='mb_8'>{t("contactForm.heading")}</h2>
       <hr style={{ marginBottom: '16px' }} />
       <p className='fontSize14 fontWeight400 mb_24' style={{ color: '#444' }}>
-        Please let us know if you have a question, want to leave a comment, or would like further information about our services.
+        {t("contactForm.intro")}
       </p>
 
       {status === 'success' && (
@@ -237,14 +239,14 @@ const ContactUsForm = () => {
         <div className='row'>
           <div className='col-lg-6'>
             <div className="mb_24">
-              <input placeholder='First Name' type="text" name="firstName"
+              <input placeholder={t("contactForm.firstName")} type="text" name="firstName"
                 value={formData.firstName} onChange={handleChange}
                 className="mainInput" required />
             </div>
           </div>
           <div className='col-lg-6'>
             <div className="mb_24">
-              <input placeholder='Last Name' type="text" name="lastName"
+              <input placeholder={t("contactForm.lastName")} type="text" name="lastName"
                 value={formData.lastName} onChange={handleChange}
                 className="mainInput" />
             </div>
@@ -255,14 +257,14 @@ const ContactUsForm = () => {
         <div className='row'>
           <div className='col-lg-6'>
             <div className="mb_24">
-              <input placeholder='Email Address' type="email" name="email"
+              <input placeholder={t("contactForm.email")} type="email" name="email"
                 value={formData.email} onChange={handleChange}
                 className="mainInput" required />
             </div>
           </div>
           <div className='col-lg-6'>
             <div className="mb_24">
-              <input placeholder='Phone Number' type="text" name="phone"
+              <input placeholder={t("contactForm.phone")} type="text" name="phone"
                 value={formData.phone} onChange={handleChange}
                 className="mainInput" />
             </div>
@@ -273,14 +275,14 @@ const ContactUsForm = () => {
         <div className='row'>
           <div className='col-lg-6'>
             <div className="mb_24">
-              <input placeholder='Company Name' type="text" name="companyName"
+              <input placeholder={t("contactForm.companyName")} type="text" name="companyName"
                 value={formData.companyName} onChange={handleChange}
                 className="mainInput" />
             </div>
           </div>
           <div className='col-lg-6'>
             <div className="mb_24">
-              <input placeholder='Website URL' type="text" name="websiteUrl"
+              <input placeholder={t("contactForm.websiteUrl")} type="text" name="websiteUrl"
                 value={formData.websiteUrl} onChange={handleChange}
                 className="mainInput" />
             </div>
@@ -298,7 +300,7 @@ const ContactUsForm = () => {
                 <option value="Saudi Arabia">Saudi Arabia</option>
                 <option value="UAE">UAE</option>
                 <option value="India">India</option>
-                <option value="Other">Other</option>
+                <option value="Other">{t("contactForm.other")}</option>
               </select>
             </div>
           </div> */}
@@ -306,17 +308,17 @@ const ContactUsForm = () => {
             <div className="mb_24">
               <select className="mainInput" name="howDidYouFindUs"
                 value={formData.howDidYouFindUs} onChange={handleChange}>
-                <option value="">- How did you find us? -</option>
-                <option value="Google">Google</option>
-                <option value="Social Media">Social Media</option>
-                <option value="Referral">Referral</option>
-                <option value="Advertisement">Advertisement</option>
-                <option value="Other">Other</option>
+                <option value="">{t("contactForm.howDidYouFindUsDefault")}</option>
+                <option value="Google">{t("contactForm.google")}</option>
+                <option value="Social Media">{t("contactForm.socialMedia")}</option>
+                <option value="Referral">{t("contactForm.referral")}</option>
+                <option value="Advertisement">{t("contactForm.advertisement")}</option>
+                <option value="Other">{t("contactForm.other")}</option>
               </select>
             </div>
           </div>
           <div className="col-lg-6">
-            <input placeholder='Subject' type="text" name="subject"
+            <input placeholder={t("contactForm.subject")} type="text" name="subject"
               value={formData.subject} onChange={handleChange}
               className="mainInput" />
           </div>
@@ -334,7 +336,7 @@ const ContactUsForm = () => {
           <div className='col-12'>
             <div className="mb_24">
               <textarea 
-                placeholder='How may we help you?'
+                placeholder={t("contactForm.messagePlaceholder")}
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
@@ -371,7 +373,7 @@ const ContactUsForm = () => {
         <div style={{ textAlign: 'center' }}>
           <button type="submit" className="mainbtn" disabled={status === 'loading'}
             style={{ minWidth: '160px' }}>
-            {status === 'loading' ? 'Sending...' : 'Submit'}
+            {status === 'loading' ? t("contactForm.sending") : t("contactForm.submit")}
           </button>
         </div>
 

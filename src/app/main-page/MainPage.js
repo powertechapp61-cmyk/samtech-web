@@ -9,8 +9,10 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import LeaderShipTeam from '../Components/LeaderShipTeam';
 import Image from 'next/image';
+import { useLanguage } from '../context/LanguageContext';
 
 const Mainpage = () => {
+  const { t } = useLanguage();
   const [active, setActive] = useState("side_tab1");
   // const [isTabsVisible, setIsTabsVisible] = useState(window.innerWidth >= 800);
 
@@ -49,36 +51,36 @@ const Mainpage = () => {
 
   const tabs = [
     {
-      id: "side_tab1", title: "Online Safety Valve Testing (Trevi Type)", content: (
+      id: "side_tab1", title: t("home.tabs.onlineSafety.title"), content: (
         <>
           <div className='mb_24'>
             <img src="/assets/img/treviType.webp" alt="Online Safety Valve Testing (Trevi Type)" />
           </div>
-          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>THE ONLY THING MORE IMPORTANT THAN A SAFETY VALVE IS HOW YOU TEST IT</p>
-          <h5>AccuTEST Safety Valve Test System & L – PLAN LEGA TEST System- Online Safety Valve Testing Test Online</h5>
-          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Safety valves are essential to the protection of lives and property, so regular testing is crucial to ensure that valves are functioning properly. But can you really be sure of the results if the test is not conducted under the stress of everyday conditions?</p>
-          <Link className='mainbtn' href="/service-page/online_safety_testing">To know more Click Here</Link>
+          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.onlineSafety.tagline")}</p>
+          <h5>{t("home.tabs.onlineSafety.heading")}</h5>
+          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.onlineSafety.desc")}</p>
+          <Link className='mainbtn' href="/service-page/online_safety_testing">{t("home.knowMore")}</Link>
 
 
         </>
       )
     },
     {
-      id: "side_tab2", title: "Offline Valve Testing", content: (
+      id: "side_tab2", title: t("home.tabs.offlineTesting.title"), content: (
         <>
           <div className='mb_24'>
             <img src="/assets/img/safety_valve_calibration.png" alt="safety valve calibration" />
           </div>
           
-          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>THE ONLY THING MORE IMPORTANT THAN A SAFETY VALVE IS HOW YOU TEST IT</p>
-          <h5>TESTING CURVE, HARDWARE- Offline Valve Testing</h5>
-          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Safety valves are essential to the protection of lives and property, so regular testing is crucial to ensure that valves are functioning properly. But can you really be sure of the results if the test is not conducted under the stress of everyday conditions?</p>
-          <Link className='mainbtn' href="/service-page/offline_valve_testing">To know more Click Here</Link>
+          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.offlineTesting.tagline")}</p>
+          <h5>{t("home.tabs.offlineTesting.heading")}</h5>
+          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.offlineTesting.desc")}</p>
+          <Link className='mainbtn' href="/service-page/offline_valve_testing">{t("home.knowMore")}</Link>
           </>
       )
     },
     {
-      id: "side_tab3", title: "All Types of Valve Servicing", content: (
+      id: "side_tab3", title: t("home.tabs.allTypesValve.title"), content: (
         <>
           <div className='mb_24'>
             <img src="/assets/img/valve_servicing_testing.png" alt="valve servicing testing" />
@@ -86,89 +88,89 @@ const Mainpage = () => {
           
 
 
-          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Our Group Company Valve Tech testing and services and Power Tech testing and services specialize in handling services for different type of Valves, Actuators, Pumps, Compressors etc, for more information pls visit <Link target='_blank' href="www.powertechtesting.com">www.powertechtesting.com</Link></p>
-          <Link className='mainbtn' href="/service-page/alltype_valve_services">To know more Click Here</Link>
+          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.allTypesValve.descPre")} <Link target='_blank' href="www.powertechtesting.com">www.powertechtesting.com</Link></p>
+          <Link className='mainbtn' href="/service-page/alltype_valve_services">{t("home.knowMore")}</Link>
 
 
              </>
       )
     }, {
-      id: "side_tab4", title: "Technical Manpower supply for Power plant refineries and Water plant", content: (
+      id: "side_tab4", title: t("home.tabs.technicalManpower.title"), content: (
         <>
 
           
-          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Under Construction</p>
+          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.underConstruction")}</p>
 
-          <Link className='mainbtn' href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">To know more Click Here</Link>
+          <Link className='mainbtn' href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">{t("home.knowMore")}</Link>
 
         </>
       )
     }, {
-      id: "side_tab5", title: "ONLINE SEAL LEAKING", content: (
+      id: "side_tab5", title: t("home.tabs.onlineSealLeaking.title"), content: (
         <>
           <div className='mb_24'>
             <img src="/assets/img/online_seal_leaking.png" alt="online seal leaking" />
           </div>
           
-          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Online leak sealing today is the leak-sealing solutions of choice as it saves energy, prevents and expensive and unwanted shutdown and can address a wide variety of leaks. With the combination of engineering solutions support from global experts, we have leak sealing compounds that can address a wide variety of steam, chemical, hydrocarbon and gas leaks at temperature up to 700° C. We have highly trained, highly skilled technicians who can handle the adverse situations very tactically and bring downs the situation to normal conditions</p>
-          <Link className='mainbtn' href="/service-page/online_seal_leaking">To know more Click Here</Link>
+          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.onlineSealLeaking.desc")}</p>
+          <Link className='mainbtn' href="/service-page/online_seal_leaking">{t("home.knowMore")}</Link>
 
 
          
         </>
       )
     }, {
-      id: "side_tab6", title: "Hot Tapping & Insertion of S-Type (Gate Valve Online)", content: (
+      id: "side_tab6", title: t("home.tabs.hotTapping.title"), content: (
       <>
           <div className='mb_24'>
             <img src="/assets/img/gate_valve_online.png" alt="gate_valve_online" />
           </div>
-        <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{`Hot tapping is more than just a fancy technique; it's a game-changer in the world of pipeline management. By prioritizing efficiency, safety, and sustainability, it offers a clear advantage for maintaining and upgrading your system with minimal disruption. If you're looking for a way to keep your operations flowing while optimizing your pipeline network, hot tapping might just be the answer you've been searching for`}</p>
-          <Link className='mainbtn' href="/service-page/hot_tapping">To know more Click Here</Link>
+        <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.hotTapping.desc")}</p>
+          <Link className='mainbtn' href="/service-page/hot_tapping">{t("home.knowMore")}</Link>
         </>
       )
     }, {
-      id: "side_tab7", title: "Heat Exchanger, Maintenance & Supply", content: (
+      id: "side_tab7", title: t("home.tabs.heatExchanger.title"), content: (
         <>
           
           <div className='mb_24'>
             <img src="/assets/img/heatExchanger.png" alt="heatExchanger" />
           </div>
-          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>A heat exchanger is an apparatus where the exchange of heat energy occurs between two different fluids at different temperatures.</p>
-          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>The most used is what is known as “tubular beam and cloak exchanger “, as its large surface structure allows to exchange large quantities of heat.</p>
-          <Link className='mainbtn' href="/service-page/heat_exchanger">To know more Click Here</Link>
+          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.heatExchanger.desc1")}</p>
+          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.heatExchanger.desc2")}</p>
+          <Link className='mainbtn' href="/service-page/heat_exchanger">{t("home.knowMore")}</Link>
 
         </>
       )
     }, {
-      id: "side_tab8", title: "RO Plant EPC Contracts Upto 2MIGPDA", content: (
+      id: "side_tab8", title: t("home.tabs.roPlantEpc.title"), content: (
         <>
-        <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Under Construction</p>
+        <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.underConstruction")}</p>
 
-          <Link className='mainbtn' href="/service-page/ro_plant_epc_contracts">To know more Click Here</Link>
+          <Link className='mainbtn' href="/service-page/ro_plant_epc_contracts">{t("home.knowMore")}</Link>
         </>
       )
     }, {
-      id: "side_tab9", title: "Solar Plant EPC upto 5MW & Maintenance", content: (
+      id: "side_tab9", title: t("home.tabs.solarPlantEpc.title"), content: (
         <>
-        <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>Under Construction</p>
-          <Link className='mainbtn' href="/service-page/solar_plant_epc">To know more Click Here</Link>
-
-        </>
-      )
-    }, {
-      id: "side_tab10", title: "RO Plants Retro Fitting", content: (
-        <>
-          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>We upgrade and modernise existing Reverse Osmosis water treatment plants by replacing outdated components with newer, more efficient parts — extending plant life and improving water output quality without a full replacement.</p>
-          <Link className='mainbtn' href="/service-page/ro_membrane">To know more Click Here</Link>
+        <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.underConstruction")}</p>
+          <Link className='mainbtn' href="/service-page/solar_plant_epc">{t("home.knowMore")}</Link>
 
         </>
       )
     }, {
-      id: "side_tab11", title: "UPVC & Aluminium Doors & Windows Fabrication & Installation", content: (
+      id: "side_tab10", title: t("home.tabs.roPlantsRetro.title"), content: (
         <>
-          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>We design, fabricate, and install high-quality UPVC and aluminium doors and windows for industrial, commercial, and residential buildings, ensuring durability, weather resistance, and a professional finish.</p>
-          <Link className='mainbtn' href="/service-page/upvc_aluminiumdoors_windowsfabrication">To know more Click Here</Link>
+          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.roPlantsRetro.desc")}</p>
+          <Link className='mainbtn' href="/service-page/ro_membrane">{t("home.knowMore")}</Link>
+
+        </>
+      )
+    }, {
+      id: "side_tab11", title: t("home.tabs.upvcDoors.title"), content: (
+        <>
+          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.upvcDoors.desc")}</p>
+          <Link className='mainbtn' href="/service-page/upvc_aluminiumdoors_windowsfabrication">{t("home.knowMore")}</Link>
         </>
       )
     }
@@ -185,7 +187,7 @@ const Mainpage = () => {
     {
       id: 1,
       year: 'October 16, 2024',
-      Desc: "Power Tech Group is now ISO 14001 Certified , along with the previously held ISO 9001 and ISO 45001 Certification, Recently we completed the Integrated Management System Audit for all 3 certifications and got certified",
+      Desc: t("home.clientSay.item1"),
     },
     // {
     //   id: 3,
@@ -200,7 +202,7 @@ const Mainpage = () => {
     {
       id: 2,
       year: "December 21, 2022",
-      Desc: "Power Tech Group is happy to share that our company  has been awarded a Silver EcoVadis Medal. This result places our company among the top 25 percent of companies assessed by EcoVadis.",
+      Desc: t("home.clientSay.item2"),
     },
     // {
     //   id: 6,
@@ -365,16 +367,16 @@ const Mainpage = () => {
     ],
   };
   const banners = [
-    { id: 1, img: "/assets/img/operation_and_maintainance_service_provider.jpg", title: "Operations and Maintenance Service Provider ", },
-    { id: 2, img: "/assets/img/electro_mechanical.png", title: "Electro Mechanical and Instrumentation Project Experts", },
+    { id: 1, img: "/assets/img/operation_and_maintainance_service_provider.jpg", title: t("home.banners.opsMaintenance"), },
+    { id: 2, img: "/assets/img/electro_mechanical.png", title: t("home.banners.electroMechanical"), },
 
 
-    { id: 3, img: "/assets/img/hottapping.jpg", title: "Hot Tapping ", },
+    { id: 3, img: "/assets/img/hottapping.jpg", title: t("home.banners.hotTapping"), },
 
-    { id: 4, img: "/assets/img/gas_turbine_steam_turbine_works.jpg", title: "Gas Turbine and Steam Turbine Works ", },
+    { id: 4, img: "/assets/img/gas_turbine_steam_turbine_works.jpg", title: t("home.banners.gasSteamTurbine"), },
 
-    { id: 5, img: "/assets/img/valve_servicing_testing.png", title: "	Valve Servicing , Testing and Calibration Works", },
-    { id: 6, img: "/assets/img/welding_fabrication_work.jfif", title: "Welding and Fabrication Works", },
+    { id: 5, img: "/assets/img/valve_servicing_testing.png", title: t("home.banners.valveServicing"), },
+    { id: 6, img: "/assets/img/welding_fabrication_work.jfif", title: t("home.banners.weldingFabrication"), },
 
   ];
 
@@ -578,7 +580,7 @@ const Mainpage = () => {
         <div className='container'>
           {/* <div className="site-heading"> */}
             {/* <span className="site-title-tagline">--- WE SERVE GLOBALLY ---</span> */}
-            <h2>WE SERVE <span>GLOBALLY</span></h2>
+            <h2>{t("home.serveGloballyPre")} <span>{t("home.serveGloballyHighlight")}</span></h2>
           {/* </div> */}
 
 
@@ -591,24 +593,24 @@ const Mainpage = () => {
 
               <div className='mb_16'>
 
-                <h5 className='blackText_Clr fontSize24 fontWeight600 mb_12'>Our Global Presence</h5>
+                <h5 className='blackText_Clr fontSize24 fontWeight600 mb_12'>{t("home.globalPresenceTitle")}</h5>
 
-                <p className='blackText_Clr fontSize16 fontWeight400'>Power Tech Group Companies an ISO 9001 and ISO 45001 company is Unique in Indian sub-continent and GCC countries, as ONE-STOP-SHOP for total power plant services in the areas of Repairs & Retrofits, EPC contracts, O&M contracts, Re-Engineering and Relocation of Power Plants, Spares & Services for a decade. We offer Qualitative and Economical Alternative to various OEMS around the World in the areas of expertise. We offer quality services and expertise in Repairs & Retrofits, Spares & Services, EPC contracts, O&M Contracts, Re-Engineering and Relocation of Power Plants, for a decade.</p>
+                <p className='blackText_Clr fontSize16 fontWeight400'>{t("home.globalPresenceText")}</p>
 
 
               </div>
               <div className='ourGlobalPresence'>
                 <div>
                   <h5 className="data" ref={addToRefs} data-value="15">0</h5>
-                  <p>Years</p>
+                  <p>{t("home.yearsLabel")}</p>
                 </div>
                 <div>
                   <h5 className="data" ref={addToRefs} data-value="5">0</h5>
-                  <p>Countries</p>
+                  <p>{t("home.countriesLabel")}</p>
                 </div>
                 <div>
                   <h5 className="data" ref={addToRefs} data-value="250">0</h5>
-                  <p>Customers</p>
+                  <p>{t("home.customersLabel")}</p>
                 </div>
               </div>
 
@@ -631,7 +633,7 @@ const Mainpage = () => {
           <div className="site-heading">
             {/* <span className="site-title-tagline textalign_center">--- Service ---</span> */}
             <h2 className="site-title textalign_center">
-              <span>Valve Services</span> - Human Resource <br /> & Manpower Supply
+              <span>{t("home.valveServicesSpan")}</span> {t("home.valveServicesLine1")} <br /> {t("home.valveServicesLine2")}
             </h2>
           </div>
           <div className='gear-pattern-layer'></div>
@@ -1053,7 +1055,7 @@ const Mainpage = () => {
         <div className="site-heading">
           {/* <span className="site-title-tagline textalign_center">--- Client ---</span> */}
           <h2 className="site-title textalign_center">
-            We Are <span>Trusted</span> By
+            {t("home.trustedByPre")} <span>{t("home.trustedByHighlight")}</span> {t("home.trustedByPost")}
           </h2>
         </div>
         <div className="customerLogos">
