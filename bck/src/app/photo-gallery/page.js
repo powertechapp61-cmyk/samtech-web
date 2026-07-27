@@ -468,7 +468,7 @@ const GalleryPage = () => {
         {
             type: "image",
             src: "/assets/img/gallery_img/EWA valve fixing completed and collected 1valve for servicing.jpg",
-            thumb: "/assets/img/gallery_img/EWA valve fixing completed and collected 1valvefor servicing.jpg",
+            thumb: "/assets/img/gallery_img/EWA valve fixing completed and collected 1valve for servicing.jpg",
             caption: "EWA valve fixing completed and collected 1valve for servicing",
         },
 
