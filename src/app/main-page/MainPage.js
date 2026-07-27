@@ -24,7 +24,7 @@ const Mainpage = () => {
   useEffect(() => {
     const stored = localStorage.getItem('currLan');
     if (stored) setCurrentLanguage(stored);
-  }, []);
+  });
   // useEffect(() => {
   //   const handleResize = () => {
   //     setIsTabsVisible(window.innerWidth >= 800);
