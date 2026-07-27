@@ -459,16 +459,16 @@ const GalleryPage = () => {
 
         {
             type: "image",
-            src: " /assets/img/gallery_img/EWA valve fixing completed and collected 1valve for servicing 3.jpg",
-            thumb: "/assets/img/gallery_img/EWA valve fixing completed and collected 1valve for servicing 3.jpg",
+            src: "/assets/img/gallery_img/EWA_valve_fixing_completed_and_collected_1valve_for_servicing_3.jpg",
+            thumb: "/assets/img/gallery_img/EWA_valve_fixing_completed_and_collected_1valve_for_servicing_3.jpg",
             caption: "EWA valve fixing completed and collected 1valve for servicing 3",
         },
 
 
         {
             type: "image",
-            src: "/assets/img/gallery_img/EWA valve fixing completed and collected 1valve for servicing.jpg",
-            thumb: "/assets/img/gallery_img/EWA valve fixing completed and collected 1valve for servicing.jpg",
+            src: "/assets/img/gallery_img/EWA_valve_fixing_completed_and_collected_1valve_for_servicing.jpg",
+            thumb: "/assets/img/gallery_img/EWA_valve_fixing_completed_and_collected_1valve_for_servicing.jpg",
             caption: "EWA valve fixing completed and collected 1valve for servicing",
         },
 
@@ -515,43 +515,43 @@ const GalleryPage = () => {
 
         // {
         //     type: "image",
-        //     src: "/assets/img/gallery_img/24 inch Gasline Valve replacement NOMAC 1.jpg",
-        //     thumb: "/assets/img/gallery_img/24 inch Gasline Valve replacement NOMAC 1.jpg",
+        //     src: "/assets/img/gallery_img/24_inch_Gasline_Valve_replacement_NOMAC_1.jpg",
+        //     thumb: "/assets/img/gallery_img/24_inch_Gasline_Valve_replacement_NOMAC_1.jpg",
         //     caption: "24 inch Gasline Valve replacement NOMAC 1",
         // },
 
 
         {
             type: "image",
-            src: "/assets/img/gallery_img/24 inch Gasline Valve replacement NOMAC 2.jpg",
-            thumb: "/assets/img/gallery_img/24 inch Gasline Valve replacement NOMAC 2.jpg",
+            src: "/assets/img/gallery_img/24_inch_Gasline_Valve_replacement_NOMAC_2.jpg",
+            thumb: "/assets/img/gallery_img/24_inch_Gasline_Valve_replacement_NOMAC_2.jpg",
             caption: "24 inch Gasline Valve replacement NOMAC 2",
         },
 
         {
             type: "image",
-            src: "/assets/img/gallery_img/24 inch Gasline Valve replacement NOMAC 3.jpg",
-            thumb: "/assets/img/gallery_img/24 inch Gasline Valve replacement NOMAC 3.jpg",
+            src: "/assets/img/gallery_img/24_inch_Gasline_Valve_replacement_NOMAC_3.jpg",
+            thumb: "/assets/img/gallery_img/24_inch_Gasline_Valve_replacement_NOMAC_3.jpg",
             caption: "24 inch Gasline Valve replacement NOMAC 3",
         },
 
         {
             type: "image",
-            src: "/assets/img/gallery_img/24 inch Gasline Valve replacement NOMAC 4.jpg",
-            thumb: "/assets/img/gallery_img/24 inch Gasline Valve replacement NOMAC 4.jpg",
+            src: "/assets/img/gallery_img/24_inch_Gasline_Valve_replacement_NOMAC_4.jpg",
+            thumb: "/assets/img/gallery_img/24_inch_Gasline_Valve_replacement_NOMAC_4.jpg",
             caption: "24 inch Gasline Valve replacement NOMAC 4",
         },
         {
             type: "image",
-            src: "/assets/img/gallery_img/24 inch Gasline Valve replacement NOMAC 5.jpg",
-            thumb: "/assets/img/gallery_img/24 inch Gasline Valve replacement NOMAC 5.jpg",
+            src: "/assets/img/gallery_img/24_inch_Gasline_Valve_replacement_NOMAC_5.jpg",
+            thumb: "/assets/img/gallery_img/24_inch_Gasline_Valve_replacement_NOMAC_5.jpg",
             caption: "24 inch Gasline Valve replacement NOMAC 5",
         },
 
         // {
         //     type: "image",
-        //     src: "/assets/img/gallery_img/24 inch Gasline Valve replacement NOMAC.jpg",
-        //     thumb: "/assets/img/gallery_img/24 inch Gasline Valve replacement NOMAC.jpg",
+        //     src: "/assets/img/gallery_img/24_inch_Gasline_Valve_replacement_NOMAC.jpg",
+        //     thumb: "/assets/img/gallery_img/24_inch_Gasline_Valve_replacement_NOMAC.jpg",
         //     caption: "24 inch Gasline Valve replacement NOMAC",
         // },
 
@@ -571,26 +571,26 @@ const GalleryPage = () => {
 
         // {
         //     type: "image",
-        //     src: "/assets/img/gallery_img/Condenser Rubber Tubing patch work for GE 2.jpg",
-        //     thumb: "/assets/img/gallery_img/Condenser Rubber Tubing patch work for GE 2.jpg",
+        //     src: "/assets/img/gallery_img/Condenser_Rubber_Tubing_patch_work_for_GE_2.jpg",
+        //     thumb: "/assets/img/gallery_img/Condenser_Rubber_Tubing_patch_work_for_GE_2.jpg",
         //     caption: "Condenser Rubber Tubing patch work for GE 2",
         // },
         {
             type: "image",
-            src: "/assets/img/gallery_img/Condenser Rubber Tubing patch work for GE 3.jpg",
-            thumb: "/assets/img/gallery_img/Condenser Rubber Tubing patch work for GE 3.jpg",
+            src: "/assets/img/gallery_img/Condenser_Rubber_Tubing_patch_work_for_GE_3.jpg",
+            thumb: "/assets/img/gallery_img/Condenser_Rubber_Tubing_patch_work_for_GE_3.jpg",
             caption: "Condenser Rubber Tubing patch work for GE 3",
         },
         {
             type: "image",
-            src: "/assets/img/gallery_img/Condenser Rubber Tubing patch work for GE.jpg",
-            thumb: "/assets/img/gallery_img/Condenser Rubber Tubing patch work for GE.jpg",
+            src: "/assets/img/gallery_img/Condenser_Rubber_Tubing_patch_work_for_GE.jpg",
+            thumb: "/assets/img/gallery_img/Condenser_Rubber_Tubing_patch_work_for_GE.jpg",
             caption: "Condenser Rubber Tubing patch work for GE",
         },
         {
             type: "image",
-            src: "/assets/img/gallery_img/EWA valve fixing completed and collected 1valve for servicing 2.jpg",
-            thumb: "/assets/img/gallery_img/EWA valve fixing completed and collected 1valve for servicing 2.jpg",
+            src: "/assets/img/gallery_img/EWA_valve_fixing_completed_and_collected_1valve_for_servicing_2.jpg",
+            thumb: "/assets/img/gallery_img/EWA_valve_fixing_completed_and_collected_1valve_for_servicing_2.jpg",
             caption: "EWA valve fixing completed and collected 1valve for servicing",
         },
         {
