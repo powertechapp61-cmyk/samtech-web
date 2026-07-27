@@ -14,12 +14,17 @@ import PdfUploader from '../Components/uploadpdf/uploadpdf';
 
 const Mainpage = () => {
   const { t } = useLanguage();
-  const currentLanguage = localStorage.getItem('currLan')
-  console.log("t-------->",currentLanguage)
+  // const currentLanguage = localStorage?.getItem('currLan')
   const [active, setActive] = useState("side_tab1");
   // const [isTabsVisible, setIsTabsVisible] = useState(window.innerWidth >= 800);
 
+  const [currentLanguage, setCurrentLanguage] = useState(null); // safe default for SSR
+  console.log("t-------->",currentLanguage)
 
+  useEffect(() => {
+    const stored = localStorage.getItem('currLan');
+    if (stored) setCurrentLanguage(stored);
+  }, []);
   // useEffect(() => {
   //   const handleResize = () => {
   //     setIsTabsVisible(window.innerWidth >= 800);
