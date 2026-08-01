@@ -205,7 +205,23 @@ const Header = () => {
               <h1><span>S</span>am <span>T</span>echnical <span>S</span>ervice <span>C</span>ontracting Est</h1>
             <p>{t("header.logoTagline")}</p>
           </div>
-          <div></div>
+          <div className="qatarDivision">
+
+            <div>
+                <div>
+                    <h3>OUR QATAR DIVISION</h3>
+                  <img width="150"
+                    src="/assets/img/q-power-logo.png"
+                    alt="Q power Logo"
+                  />
+                </div>
+            <div>
+            <h5>Q-POWER TECH</h5>
+            <p>Mechanical Contracting, Qatar</p>
+            </div>
+            </div>
+
+          </div>
           </div>
           )}
             <nav>

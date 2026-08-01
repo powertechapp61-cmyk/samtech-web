@@ -694,27 +694,46 @@ header nav {
 
 .logo_text h1 {
     color: var(--narenjiOrange_clr);
-    font-size: 54px;
+    // font-size: 54px;
+    font-size: 34px;
     line-height: 1.5;
     font-weight: bold;
     // margin-top: 36px;
     margin: 0px;
 }
 
-.logo_text h1 span {
-    color: var(--narenjiOrange_clr);
-    font-size: 70px;
-}
+// .logo_text h1 span {
+//     color: var(--narenjiOrange_clr);
+//     font-size: 70px;
+// }
 
 .logo_text p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0px;
     text-align: center;
-    color: var(--black_clr);
+    // color: var(--black_clr);
+    color: #939397;
+    position: relative;
+        display: flex;
+            align-items: center;
+            text-align: center;
 }
-
+.logo_text p:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid #939397;
+    -webkit-margin-start: 1vw;
+    margin-inline-start: 1vw;
+}
+ .logo_text p:before {
+     content: "";
+     flex: 1 1;
+     border-bottom: 1px solid #939397;
+     -webkit-margin-end: 1vw;
+     margin-inline-end: 1vw;
+ }
 header ul {
     display: flex;
     align-items: center;
@@ -3619,6 +3638,47 @@ BOTTOM ANGLE
     background: #b1b1b129;
 }
 
+.qatarDivision{
+    position: relative;
+    display: flex  ;
+}
+.qatarDivision:before {
+    content: "";
+    -webkit-margin-end: 1vw;
+    border-left: 1px solid #939397;
+    flex: 1;
+    margin-inline-end: 1vw;
+}
+.qatarDivision>div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.qatarDivision h3{
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #4d516c;
+    margin-bottom:0px;
+    font-family: var(--fontFamily_two) !important;
+}
+.qatarDivision h5 {
+    font-size: 22px;
+    line-height: 1.5; 
+    font-weight: 600;
+    color: #572351;  
+    margin-bottom: 0px;
+    font-family: var(--fontFamily_two) !important;
+}
+
+.qatarDivision p {
+    font-size: 15px;
+    line-height: 1.5; 
+    font-weight: 500;
+    color: #000;  
+    margin-bottom: 0px;
+    font-family: var(--fontFamily_two) !important;
+}
 /*======================
 RESPONSIVE
 =======================*/
@@ -4664,6 +4724,27 @@ RESPONSIVE
 }
 
 @media (min-width: 1027px) and (max-width: 1229px) {
+ 
+                .brandlogo img {
+                    width: 180px;
+                }
+        
+                .qatarDivision img {
+                    width: 140px;
+                }
+        
+                .qatarDivision h5 {
+                    font-size: 18px;
+                }
+        
+                .logo_text h1 {
+                    font-size: 28px;
+                }
+        
+                header {
+                    padding-top: 20px;
+                }
+
 
     .leadershipteam-img img {
         width: 100%;
@@ -4673,7 +4754,22 @@ RESPONSIVE
 }
 
 @media (min-width: 1230px) and (max-width: 1440px) {
+.brandlogo img {
+        width: 180px;
+    }
+        .qatarDivision img{
+            width: 140px;
+        }
+                .qatarDivision h5 {
+                    font-size: 18px;
+                }
+.logo_text h1{
+    font-size: 28px;
+}
 
+header{
+    padding-top: 20px;
+}
     .leadershipteam-img img {
         width: 100%;
         height: 100%;

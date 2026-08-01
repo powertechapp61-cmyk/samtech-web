@@ -17,7 +17,7 @@ export const translations = {
         uae: "UAE",
         india: "India",
       },
-      logoTagline: "( A Unit of Power Tech Group of Companies )",
+      logoTagline: "A Unit of Power Tech Group of Companies",
       nav: {
         home: "Home",
         company: "Company",
