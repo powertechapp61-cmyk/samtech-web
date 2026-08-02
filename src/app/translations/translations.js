@@ -30,7 +30,9 @@ export const translations = {
         technicalManpowerSupply:
           "Technical Manpower supply for Power plant refineries and Water plant",
         onlineLeakSealing: "Online Leak Sealing – SYLMASATA & Conventional",
-        hotTapping: "Hot Tapping & Insertion of S-Type ( Gate Valve Online)",
+        // hotTapping: "Hot Tapping & Insertion of S-Type ( Gate Valve Online)",
+        hotTapping: "Hot Tapping",
+
         heatExchanger: "Heat Exchanger, Maintenance & Supply",
         roPlantEpc: "RO Plant EPC Contracts Upto 2MIGPDA",
         solarPlantEpc: "Solar Plant EPC upto 5MW & Maintenance",
@@ -705,7 +707,8 @@ export const translations = {
         technicalManpowerSupply:
           "توريد الكوادر التقنية لمحطات الطاقة والمصافي ومحطات المياه",
         onlineLeakSealing: "إصلاح التسريب أثناء التشغيل – سيلماساتا والطرق التقليدية",
-        hotTapping: "التفريع الساخن وتركيب الصمامات من نوع (S) أثناء التشغيل",
+        // hotTapping: "التفريع الساخن وتركيب الصمامات من نوع (S) أثناء التشغيل",
+        hotTapping: "التفريع الساخن",
         heatExchanger: "المبادلات الحرارية، الصيانة والتوريد",
         roPlantEpc: "عقود تصميم وتوريد وتشغيل محطات التحلية بالتناضح العكسي حتى 2 مليون غالون يوميًا",
         solarPlantEpc: "عقود تصميم وتوريد وتشغيل محطات الطاقة الشمسية حتى 5 ميجاوات والصيانة",

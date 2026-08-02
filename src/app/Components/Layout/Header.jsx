@@ -288,7 +288,7 @@ const Header = () => {
                         <Dropdown.Item href="/service-page/alltype_valve_services">{t("header.nav.allTypesValveServicing")}</Dropdown.Item>
                         <Dropdown.Item href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">{t("header.nav.technicalManpowerSupply")}</Dropdown.Item>
                         <Dropdown.Item href="/service-page/online_seal_leaking">{t("header.nav.onlineLeakSealing")}</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/hot_tapping">{t("header.nav.hotTapping")}</Dropdown.Item>
+                        {/* <Dropdown.Item href="/service-page/hot_tapping">{t("header.nav.hotTapping")}</Dropdown.Item> */}
                         <Dropdown.Item href="/service-page/heat_exchanger">{t("header.nav.heatExchanger")}</Dropdown.Item>
                         <Dropdown.Item href="/service-page/ro_plant_epc_contracts">{t("header.nav.roPlantEpc")}</Dropdown.Item>
                         <Dropdown.Item href="/service-page/solar_plant_epc">{t("header.nav.solarPlantEpc")}</Dropdown.Item>
@@ -299,6 +299,14 @@ const Header = () => {
                     </Dropdown>
 
                   </li>
+
+
+                  <li>
+                    <Link href={"/service-page/hot_tapping"} prefetch>
+                      {t("header.nav.hotTapping")}
+                    </Link>
+                  </li>
+
                   <li>
                     <Link href={"/appreciations"} prefetch>
                       {t("header.nav.appreciations")}
