@@ -181,10 +181,14 @@ const Footer = () => {
             </div>
             <div className='col-lg-4'>
               <h2>{t("footer.location")}</h2>
-
+              <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3678.7581463974284!2d39.08128147530646!3d22.77435507934854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDQ2JzI3LjciTiAzOcKwMDUnMDEuOSJF!5e0!3m2!1sen!2sin!4v1785747178077!5m2!1sen!2sin" 
+                height="300" style={{
+                  border: 0, width: "100%"
+                }} allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+{/* 
               <iframe height="300" src="https://www.google.com/maps/place/22%C2%B046'27.7%22N+39%C2%B005'01.9%22E/@22.7743551,39.0812815,17z/data=!3m1!4b1!4m4!3m3!8m2!3d22.7743551!4d39.0838564?hl=en&entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D" style={{
                 border: 0, width: "100%"
-              }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe> */}
               {/* <Link target='_blank' className='blackText_Clr textDecoration_none  fontWeight400 fontSize16' href="https://maps.app.goo.gl/ECLS7hB7t8YHagqh8">
                 <div className='displayInlineFlex gap16 mb_24'>
                 <div>
