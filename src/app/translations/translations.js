@@ -86,11 +86,12 @@ export const translations = {
       serveGloballyPre: "WE SERVE",
       serveGloballyHighlight: "GLOBALLY",
       globalPresenceTitle: "Our Global Presence",
-      globalPresenceText:
-        "Power Tech Group Companies an ISO 9001 and ISO 45001 company is Unique in Indian sub-continent and GCC countries, as ONE-STOP-SHOP for total power plant services in the areas of Repairs & Retrofits, EPC contracts, O&M contracts, Re-Engineering and Relocation of Power Plants, Spares & Services for a decade. We offer Qualitative and Economical Alternative to various OEMS around the World in the areas of expertise. We offer quality services and expertise in Repairs & Retrofits, Spares & Services, EPC contracts, O&M Contracts, Re-Engineering and Relocation of Power Plants, for a decade.",
+      globalPresenceTextone:
+        "Power Tech Group of Companies, an ISO 9001, ISO 14001 and ISO 45001 certified organization, is a unique one-stop solution provider for total power plant services across the Indian subcontinent and GCC countries. We provide Repairs & Retrofits, EPC Contracts, O&M Services, Re-Engineering, Power Plant Relocation, and Spares & Technical Services.",
+        globalPresenceTexttwo:"We offer high-quality and cost-effective alternatives to OEM services, with strong technical expertise and industry experience. Our solutions focus on improving plant reliability, efficiency, safety, and operational performance",
       yearsLabel: "Years",
       countriesLabel: "Countries",
-      customersLabel: "Customers",
+      customersLabel: "Satisfied Customers",
       valveServicesSpan: "Valve Services",
       valveServicesLine1: "- Human Resource",
       valveServicesLine2: "& Manpower Supply",
@@ -108,7 +109,7 @@ export const translations = {
           title: "Online Safety Valve Testing (Trevi Type)",
           tagline: "THE ONLY THING MORE IMPORTANT THAN A SAFETY VALVE IS HOW YOU TEST IT",
           heading:
-            "AccuTEST Safety Valve Test System & L – PLAN LEGA TEST System- Online Safety Valve Testing Test Online",
+            "AccuTEST Safety Valve Test System & L – PLAN LEGA TEST System- Online Safety Valve Testing",
           desc:
             "Safety valves are essential to the protection of lives and property, so regular testing is crucial to ensure that valves are functioning properly. But can you really be sure of the results if the test is not conducted under the stress of everyday conditions?",
         },
@@ -572,7 +573,7 @@ export const translations = {
         list1: [
           "Heat Exchangers are Important Heat transfer Equipment in Power & Process Industry.",
           "Trouble free Performance of the Heat exchanger is critical for Plant Operations and reliability.",
-          "PTD offers complete end to end services including Retubing and repair of Heat exchanger tubes as per customer needs.",
+          "SAM Tech offers complete end to end services including Retubing and repair of Heat exchanger tubes as per customer needs.",
           "Scope of service includes complete disassembly, Inspection, Manual Cleaning, Hydro jetting and hydro testing of heat exchanger.",
           "Rectification of Leaking tubes and final assembly.",
           "Testing and Handover to Customer site.",
@@ -607,7 +608,7 @@ export const translations = {
       },
       roMembrane: {
         intro:
-          "PTD specializes in providing professional RO membrane replacement services. Maintaining the highest standards of quality and performance. With our extensive experience and commitment to excellence, we help our clients achieve optimal operation and longevity of their RO systems.",
+          "SAM Tech specializes in providing professional RO membrane replacement services. Maintaining the highest standards of quality and performance. With our extensive experience and commitment to excellence, we help our clients achieve optimal operation and longevity of their RO systems.",
         whatItIsText:
           "A specialist retrofit and performance restoration service designed to upgrade ageing or underperforming Reverse Osmosis water treatment plants to current operational, efficiency, and regulatory standards — without the capital expenditure of full plant replacement.",
         whatWeDoList: [
@@ -761,11 +762,13 @@ export const translations = {
       serveGloballyPre: "نخدم",
       serveGloballyHighlight: "عملاءنا عالميًا",
       globalPresenceTitle: "حضورنا العالمي",
-      globalPresenceText:
-        "مجموعة شركات باور تك، الحاصلة على شهادتي ISO 9001 وISO 45001، هي شركة فريدة في شبه القارة الهندية ودول مجلس التعاون الخليجي، حيث تقدم حلولاً متكاملة لخدمات محطات الطاقة في مجالات الإصلاح والتأهيل، وعقود التصميم والتوريد والتشغيل، وعقود التشغيل والصيانة، وإعادة التصنيع ونقل محطات الطاقة، والقطع والخدمات، منذ أكثر من عقد من الزمن. نقدم بديلاً اقتصاديًا وعالي الجودة لمختلف الشركات المصنعة الأصلية حول العالم في مجالات خبرتنا. كما نوفر خدمات وخبرات عالية الجودة في الإصلاح والتأهيل، والقطع والخدمات، وعقود التصميم والتوريد والتشغيل، وعقود التشغيل والصيانة، وإعادة التصنيع ونقل محطات الطاقة، منذ أكثر من عقد.",
+      globalPresenceTextone:
+        "",
+        globalPresenceTexttwo:
+        "",
       yearsLabel: "سنوات",
       countriesLabel: "دول",
-      customersLabel: "عملاء",
+      customersLabel: "عملاء راضون",
       valveServicesSpan: "خدمات الصمامات",
       valveServicesLine1: "- الموارد البشرية",
       valveServicesLine2: "وتوريد الكوادر الفنية",
@@ -783,7 +786,7 @@ export const translations = {
           title: "اختبار صمامات الأمان أثناء التشغيل (نوع تريفي)",
           tagline: "لا شيء أهم من صمام الأمان سوى الطريقة التي تختبره بها",
           heading:
-            "نظام AccuTEST لاختبار صمامات الأمان ونظام L-PLAN LEGA TEST - اختبار صمامات الأمان عبر الإنترنت أثناء التشغيل",
+            " نظام اختبار صمامات الأمان AccuTEST ونظام L-PLAN LEGA لاختبار الصمامات – الاختبار الإلكتروني لصمامات الأمان",
           desc:
             "تُعد صمامات الأمان أساسية لحماية الأرواح والممتلكات، لذا فإن الاختبار الدوري أمر بالغ الأهمية لضمان عملها بشكل صحيح. لكن هل يمكنك أن تكون واثقًا من النتائج إذا لم يتم إجراء الاختبار تحت ظروف التشغيل الفعلية؟",
         },
@@ -1246,7 +1249,7 @@ export const translations = {
         list1: [
           "تُعد المبادلات الحرارية معدات نقل حراري مهمة في قطاع الطاقة والصناعة.",
           "يُعد الأداء الخالي من الأعطال للمبادل الحراري أمرًا بالغ الأهمية لتشغيل المحطة وموثوقيتها.",
-          "تقدم PTD خدمات متكاملة من البداية إلى النهاية تشمل إعادة تمديد الأنابيب وإصلاح أنابيب المبادل الحراري وفقًا لاحتياجات العميل.",
+          "تقدم SAM Tech خدمات متكاملة من البداية إلى النهاية تشمل إعادة تمديد الأنابيب وإصلاح أنابيب المبادل الحراري وفقًا لاحتياجات العميل.",
           "يشمل نطاق الخدمة التفكيك الكامل، والفحص، والتنظيف اليدوي، والتنظيف بالضخ المائي، والاختبار المائي للمبادل الحراري.",
           "إصلاح الأنابيب المتسربة وإعادة التجميع النهائي.",
           "الاختبار والتسليم إلى موقع العميل.",
@@ -1281,7 +1284,7 @@ export const translations = {
       },
       roMembrane: {
         intro:
-          "تتخصص PTD في تقديم خدمات استبدال أغشية التناضح العكسي بشكل مهني، مع الحفاظ على أعلى معايير الجودة والأداء. وبخبرتنا الواسعة وحرصنا على التميز، نساعد عملاءنا على تحقيق التشغيل الأمثل وطول عمر أنظمتهم.",
+          "تتخصص SAM Tech في تقديم خدمات استبدال أغشية التناضح العكسي بشكل مهني، مع الحفاظ على أعلى معايير الجودة والأداء. وبخبرتنا الواسعة وحرصنا على التميز، نساعد عملاءنا على تحقيق التشغيل الأمثل وطول عمر أنظمتهم.",
         whatItIsText:
           "خدمة متخصصة لإعادة التأهيل واستعادة الأداء، صُمِّمت لترقية محطات معالجة المياه بالتناضح العكسي القديمة أو ذات الأداء المتدني إلى معايير التشغيل والكفاءة والامتثال التنظيمي الحالية، دون الحاجة إلى الإنفاق الرأسمالي لاستبدال المحطة بالكامل.",
         whatWeDoList: [

@@ -241,13 +241,13 @@ const ServicePage = () => {
 
 
                     <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_34'>
-                        {t("servicePage.onlineSealLeaking.partnerPre")} <Link class="fontWeight500 bainganiText_Clr" target="_blank" href="https://www.sylmasta.com/">Sylmasta</Link> {t("servicePage.onlineSealLeaking.partnerPost")}
+                        {t("servicePage.onlineSealLeaking.partnerPre")} <Link class="fontWeight600 narenjiOrangeTextclr" target="_blank" href="https://www.sylmasta.com/">Sylmasta</Link> {t("servicePage.onlineSealLeaking.partnerPost")}
                     </p>
 
                     <div className='row alignItem_center'>
                         <div className='col-lg-6 mobspaceMb_24'>
                             {[
-                                "/assets/img/sealLeaking_detail.png"
+                                "/assets/img/sealLeaking_detail.jpg"
                             ].map((img, index) => (
                                 <div key={index}>
                                     <div className='serviceContentImg'>
@@ -288,7 +288,7 @@ const ServicePage = () => {
         hot_tapping: {
             title: "Hot Tapping & Insertion of S-Type (Gate Valve Online)",
             subTitle: "SERVICES",
-            bannerImg: "/assets/img/hotTapping_bnr.png",
+            bannerImg: "/assets/img/hot-tapping_bnr.png",
             bannerparagraph: "We perform hot tapping — a specialised technique that allows connections, repairs, or valve insertions to be made on live pressurised pipelines without shutting down operations, minimising downtime and disruption.",
             content: (
                 <>
@@ -306,9 +306,9 @@ const ServicePage = () => {
 
 
                     <div className='row alignItem_center mb_24'>
-                        <div className='col-lg-4 mobspaceMb_24'>
+                        <div className='col-lg-5 mobspaceMb_24'>
                             {[
-                                "/assets/img/hot_tapping_detail.png"
+                                "/assets/img/hot_tapping_img.png"
                             ].map((img, index) => (
                                 <div key={index}>
                                     <div className='serviceContentImg'>
@@ -319,7 +319,7 @@ const ServicePage = () => {
 
 
                         </div>
-                        <div className='col-lg-8'>
+                        <div className='col-lg-7'>
 
 
                             <h5 className='fontSize16 fontWeight600 blackText_Clr mb_12'>{t("servicePage.hotTapping.heading2")}</h5>
@@ -379,7 +379,7 @@ const ServicePage = () => {
         heat_exchanger: {
             title: "Heat Exchanger, Maintenance & Supply",
             subTitle: "SERVICES",
-            bannerImg: "/assets/img/heatExchanger_bnr.png",
+            bannerImg: "/assets/img/heat-exchanger-main_bnr.jpg",
             bannerparagraph: "We supply, install, and maintain heat exchangers used in power plants, refineries, and water treatment facilities, ensuring efficient thermal energy transfer and uninterrupted plant operations.",
             content: (
                 <>
@@ -392,10 +392,10 @@ const ServicePage = () => {
                     </ul>
 
 
-                    <div className='row alignItem_center'>
-                        <div className='col-lg-6 mobspaceMb_24'>
+                    <div className='row alignItem_center mb_24'>
+                        <div className='col-lg-5 mobspaceMb_24'>
                             {[
-                                "/assets/img/heatExchanger_detail.png"
+                                "/assets/img/heat-exchanger-img.jpg"
                             ].map((img, index) => (
                                 <div key={index}>
                                     <div className='serviceContentImg'>
@@ -406,7 +406,7 @@ const ServicePage = () => {
 
 
                         </div>
-                        <div className='col-lg-6'>
+                        <div className='col-lg-7'>
                             <h5 className='fontSize16 fontWeight600 blackText_Clr mb_8'>{t("servicePage.heatExchanger.tubeExtractionHeading")}</h5>
                             <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_16'>{t("servicePage.heatExchanger.tubeExtractionText")}</p>
 
@@ -430,8 +430,13 @@ const ServicePage = () => {
                                 <li className='fontSize16 fontWeight400 shearwaterBlackText_clr'>{t("servicePage.heatExchanger.list3.1")}</li>
                             </ul>
 
-                            <p className='fontSize16 fontWeight400 shearwaterBlackText_clr'>{t("servicePage.heatExchanger.finalText")}</p>
+                            <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_16'>{t("servicePage.heatExchanger.finalText")}</p>
 
+
+
+                            <h5 className='fontSize18 fontWeight600 blackText_Clr mb_12'>{t("servicePage.common.whatItIs")}</h5>
+
+<p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_24'>{t("servicePage.heatExchanger.whatItIsText")}</p>
                         </div>
                     </div>
 
@@ -443,9 +448,6 @@ const ServicePage = () => {
 
 
 
-                        <h5 className='fontSize18 fontWeight600 blackText_Clr mb_12'>{t("servicePage.common.whatItIs")}</h5>
-
-                    <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_24'>{t("servicePage.heatExchanger.whatItIsText")}</p>
 
                     <h5 className='fontSize18 fontWeight600 blackText_Clr mb_12'>{t("servicePage.common.whatWeDo")}</h5>
 
@@ -542,7 +544,7 @@ const ServicePage = () => {
         ro_plant_epc_contracts: {
             title: "RO Plant EPC Contracts Upto 2MIGPDA",
             subTitle: "SERVICES",
-            bannerImg: "/assets/img/heatExchanger_bnr.png",
+            bannerImg: "/assets/img/ro-plant-epc-bnr.png",
             bannerparagraph: "We deliver end-to-end Engineering, Procurement, and Construction of Reverse Osmosis water desalination plants with a capacity of up to 2 million imperial gallons per day, serving industrial and municipal water needs.",
             content: (
                 <>
@@ -565,7 +567,7 @@ const ServicePage = () => {
                         </div>
                         <div className='col-lg-5'>
                             {[
-                                "/assets/img/heatExchanger.png"
+                                "/assets/img/ro-plant-epc-img.jpg"
                             ].map((img, index) => (
                                 <div key={index}>
                                     <div className='serviceContentImg'>
@@ -615,7 +617,7 @@ const ServicePage = () => {
         solar_plant_epc: {
             title: "Solar Plant EPC upto  5MW & Maintenance",
             subTitle: "SERVICES",
-            bannerImg: "/assets/img/heatExchanger_bnr.png",
+            bannerImg: "/assets/img/solar_plant_epc_bnr.png",
             bannerparagraph: "We handle the complete Engineering, Procurement, and Construction of solar power plants up to 5MW capacity, along with ongoing maintenance to keep systems running at peak efficiency.",
             content: (
                 <>
@@ -640,7 +642,7 @@ const ServicePage = () => {
                         </div>
                         <div className='col-lg-5'>
                             {[
-                                "/assets/img/heatExchanger.png"
+                                "/assets/img/solar-plant-epc-img.png"
                             ].map((img, index) => (
                                 <div key={index}>
                                     <div className='serviceContentImg'>
@@ -690,7 +692,7 @@ const ServicePage = () => {
         upvc_aluminiumdoors_windowsfabrication: {
             title: "UPVC & Aluminium Doors & Windows Fabrication & Installation",
             subTitle: "SERVICES",
-            bannerImg: "/assets/img/upvc_bnr.png",
+            bannerImg: "/assets/img/upvc_brn.jpg",
             bannerparagraph: "We design, fabricate, and install high-quality UPVC and aluminium doors and windows for industrial, commercial, and residential buildings, ensuring durability, weather resistance, and a professional finish.",
             content: (
                 <>
@@ -710,10 +712,16 @@ const ServicePage = () => {
                                 <li className='fontSize16 fontWeight400 shearwaterBlackText_clr'>{t("servicePage.upvc.whatWeDoList.4")}</li>
 
                             </ul>
+
+                            <h5 className='fontSize18 fontWeight600 blackText_Clr mb_12'>{t("servicePage.common.whosItFor")}</h5>
+
+<p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_24'>{t("servicePage.upvc.whosItForText")}</p>
+
+
                         </div>
                         <div className='col-lg-5'>
                             {[
-                                "/assets/img/upvc_home.png"
+                                "/assets/img/upvc.gif"
                             ].map((img, index) => (
                                 <div key={index}>
                                     <div className='serviceContentImg'>
@@ -727,11 +735,7 @@ const ServicePage = () => {
                     </div>
 
 
-                    <h5 className='fontSize18 fontWeight600 blackText_Clr mb_12'>{t("servicePage.common.whosItFor")}</h5>
-
-                    <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_24'>{t("servicePage.upvc.whosItForText")}</p>
-
-
+ 
                     <h5 className='fontSize18 fontWeight600 blackText_Clr mb_12'>{t("servicePage.common.whyItMatters")}</h5>
 
                     <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_24'>{t("servicePage.upvc.whyItMattersText")}</p>
@@ -762,7 +766,7 @@ const ServicePage = () => {
         technical_manpower_supply_for_power_plant_refineries_and_water_plant: {
             title: "Technical Manpower supply for Power plant refineries and Water plant",
             subTitle: "SERVICES",
-            bannerImg: "/assets/img/upvc_bnr.png",
+            bannerImg: "/assets/img/technicalManpower-bnr.jpg",
             bannerparagraph: "We provide skilled and experienced technical personnel — including engineers, operators, and technicians — to power plants, refineries, and water treatment facilities on short-term or long-term contract basis.",
             content: (
                 <>
@@ -786,7 +790,7 @@ const ServicePage = () => {
                         </div>
                         <div className='col-lg-5'>
                             {[
-                                "/assets/img/upvc_home.png"
+                                "/assets/img/tmsppr-img.png"
                             ].map((img, index) => (
                                 <div key={index}>
                                     <div className='serviceContentImg'>

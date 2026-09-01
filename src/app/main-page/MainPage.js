@@ -105,6 +105,9 @@ const Mainpage = () => {
     }, {
       id: "side_tab4", title: t("home.tabs.technicalManpower.title"), content: (
         <>
+         <div className='mb_24'>
+            <img src="/assets/img/tmsppr_home.jpg" alt="technicalManpower" />
+          </div>
 
           
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.underConstruction")}</p>
@@ -142,7 +145,7 @@ const Mainpage = () => {
         <>
           
           <div className='mb_24'>
-            <img src="/assets/img/heatExchanger.png" alt="heatExchanger" />
+            <img src="/assets/img/heat-exchanger-maintenance-supply-img2.jpg" alt="heatExchanger" />
           </div>
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.heatExchanger.desc1")}</p>
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.heatExchanger.desc2")}</p>
@@ -161,6 +164,10 @@ const Mainpage = () => {
     }, {
       id: "side_tab9", title: t("home.tabs.solarPlantEpc.title"), content: (
         <>
+         <div className='mb_24'>
+            <img src="/assets/img/solarPlantEpc.png" alt="solarPlantEpc" />
+          </div>
+
         <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.underConstruction")}</p>
           <Link className='mainbtn' href="/service-page/solar_plant_epc">{t("home.knowMore")}</Link>
 
@@ -558,7 +565,7 @@ const Mainpage = () => {
       <section className='companyPhotoSec'>
         <Slider {...companyPhoto}>
           <div className="companyphoto-item">
-            <img src="/assets/img/industry_illu2.jpg" alt="companyphoto" />
+            <img src="/assets/img/tmsppr-img.png" alt="companyphoto" />
           </div>
             
 
@@ -612,7 +619,8 @@ const Mainpage = () => {
 
                 <h5 className='blackText_Clr fontSize24 fontWeight600 mb_12'>{t("home.globalPresenceTitle")}</h5>
 
-                <p className='blackText_Clr fontSize16 fontWeight400'>{t("home.globalPresenceText")}</p>
+                <p className='blackText_Clr fontSize16 fontWeight400 mb_16'>{t("home.globalPresenceTextone")}</p>
+                <p className='blackText_Clr fontSize16 fontWeight400'>{t("home.globalPresenceTexttwo")}</p>
 
 
               </div>

@@ -187,8 +187,8 @@ const page = () => {
                         <div className='col-lg-4'>
                             <div className='groupCompanyItem'>
                                 <div>
-                                    <div className='groupCompanylogo'>
-                                        <img src="/assets/img/pemi_logo.jpg" alt='pemi_logo' />
+                                    <div className='groupCompanylogo' style={{backgroundColor:"#2c3790"}}>
+                                        <img src="/assets/img/pemi.jpg" alt='pemi_logo' />
                                     </div>
 
                                     <h2>POWERTECH ELECTRO MECHANICAL INDUSTRIES Pvt.(Ltd)</h2>
@@ -266,7 +266,7 @@ const page = () => {
                                     <div className='displayInlineFlex alignItem_center gap12'>
                                         <div>
 
-                                            <Link href="https://wa.me/919498660799" target="_blank">
+                                            <Link href="https://wa.me/6379422686" target="_blank">
                                                 <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='whatsapp' />
 
                                             </Link>
@@ -408,18 +408,18 @@ const page = () => {
                                     <div className='displayInlineFlex alignItem_center gap12'>
                                         <div>
 
-                                            <Link href="https://wa.me/971504712069" target="_blank">
+                                            <Link href="https://wa.me/+97471120712" target="_blank">
                                                 <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='whatsapp' />
 
                                             </Link>
                                         </div>
-                                        <div>      <Link href={'mailto:gm@qpowertech.com'}>
+                                        <div>      <Link href={'mailto:gm@samtechsa.com'}>
                                             <img className='width34px' src="/assets/img/mail_icon.svg" alt='mail' />
                                         </Link></div>
 
                                     </div>
                                     <div>
-                                        <Link href="https://www.powertechdevelopment.com" target='_blank'>
+                                        <Link href="https://samtechsa.com/" target='_blank'>
                                             <img className='width34px' src="/assets/img/link.svg" alt='link' />
                                         </Link>
                                     </div>
@@ -443,7 +443,7 @@ const page = () => {
                                     <div className='displayInlineFlex alignItem_center gap12'>
                                         <div>
 
-                                            <Link href="https://wa.me/919629607322" target="_blank">
+                                            <Link href="https://wa.me/6382087524" target="_blank">
                                                 <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='whatsapp' />
 
                                             </Link>
