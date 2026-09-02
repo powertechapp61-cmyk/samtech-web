@@ -326,7 +326,7 @@ const ServicePage = () => {
 
                             <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_16'>{t("servicePage.hotTapping.p5")}</p>
 
-                            <ul className='mb_40'>
+                            <ul>
                                 {[0,1,2].map((i) => (
                                     <li key={i} className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>{t(`servicePage.hotTapping.list1.${i}`)}</li>
                                 ))}
