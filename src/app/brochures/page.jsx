@@ -137,7 +137,7 @@ const page = () => {
 
                                 </div>
                             </div>
-                            <div className='col-lg-3' onClick={()=>handleDownload('')}>
+                            <div className='col-lg-3' onClick={()=>handleDownload('https://res.cloudinary.com/dxmhjg6x1/raw/upload/v1788352092/samtech_pdfs/SAM%20Brochure%2029-06-2026.pdf')}>
                                 <div className='brochure_item' onClick={handleDownload} style={{cursor: 'pointer'}}>
                                     <div>
                                         <img src="/assets/img/pdf-download.svg" alt="pdf download" />
