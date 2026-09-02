@@ -137,6 +137,16 @@ const page = () => {
 
                                 </div>
                             </div>
+                            <div className='col-lg-3' onClick={()=>handleDownload('')}>
+                                <div className='brochure_item' onClick={handleDownload} style={{cursor: 'pointer'}}>
+                                    <div>
+                                        <img src="/assets/img/pdf-download.svg" alt="pdf download" />
+                                    </div>
+                                    <div><h5>{t("brochures.samtech")}</h5></div>
+
+
+                                </div>
+                            </div>
                     </div>
                     </div>
                 </div>

@@ -267,7 +267,7 @@ const Header = () => {
 
                       <Dropdown.Menu>
                         <Dropdown.Item href={'/company'}>{t("header.nav.aboutUs")} </Dropdown.Item>
-                        {/* <Dropdown.Item href={'/leadership-team'}>Leadership team</Dropdown.Item> */}
+                        <Dropdown.Item href={'/leadership-team'}>Leadership team</Dropdown.Item>
                         <Dropdown.Item href={'/group-companies'}>{t("header.nav.groupCompanies")}</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
@@ -326,7 +326,7 @@ const Header = () => {
 
                       <Dropdown.Menu>
                         <Dropdown.Item href={'/photo-gallery'}>{t("header.nav.photoGallery")}</Dropdown.Item>
-                        <Dropdown.Item href="#">{t("header.nav.videoGallery")}</Dropdown.Item>
+                        <Dropdown.Item href={'/video-gallery'}>{t("header.nav.videoGallery")}</Dropdown.Item>
                         <Dropdown.Item href={'/our-branches'}>{t("header.nav.ourBranches")}</Dropdown.Item>
                         <Dropdown.Item href={'/trainings'}>{t("header.nav.trainings")}</Dropdown.Item>
                       </Dropdown.Menu>

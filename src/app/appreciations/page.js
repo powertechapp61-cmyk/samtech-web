@@ -149,7 +149,7 @@ const page = () => {
             type: "image",
             src: "/assets/img/testmonials/certificate_for_outstanding_worker_two.jpg",
             thumb: "/assets/img/testmonials/certificate_for_outstanding_worker_two.jpg",
-            caption: t("appreciations.captions.outstandingWorkerTwo"),
+            caption: t("appreciations.captions.nomacLetter"),
         },
     ]
 

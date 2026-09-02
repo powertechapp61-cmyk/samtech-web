@@ -24,19 +24,19 @@ Ministry of Electricity and Water, Bahrain - Power and desalination plant.
 
 Dubai Electricity and Water Authority - In charge of water transmission network for Dubai.
     ` },
-    {
-      id: 2,
-      Img: "/assets/img/sheikrajas.jpg",
-      Name: "Mr. A. MOHAMMED SHEIK RAJA",
-      Role: "General Manager- Power Tech Group Companies",
-      content: `B. Tech from Madras University and M.BA (Marketing & Finance) from Delhi
-Over 20+ Years of Experience in working with Top Multinational Companies in India & GCC Region
-Had worked with Companies like IBM, HPE, DELL and SHARP in leadership roles
-Has exposure to various Industries such as Information Technology, Office Automation, Solar, Power Plants and Technical Manpower Provisioning
-Driven, Progressive and Team Player with sharp business acumen, who always puts customers first in all his engagement
-Won Several Accolades over the years for consistently delivering results and has several Industry certifications under his belt`
+//     {
+//       id: 2,
+//       Img: "/assets/img/sheikrajas.jpg",
+//       Name: "Mr. A. MOHAMMED SHEIK RAJA",
+//       Role: "General Manager- Power Tech Group Companies",
+//       content: `B. Tech from Madras University and M.BA (Marketing & Finance) from Delhi
+// Over 20+ Years of Experience in working with Top Multinational Companies in India & GCC Region
+// Had worked with Companies like IBM, HPE, DELL and SHARP in leadership roles
+// Has exposure to various Industries such as Information Technology, Office Automation, Solar, Power Plants and Technical Manpower Provisioning
+// Driven, Progressive and Team Player with sharp business acumen, who always puts customers first in all his engagement
+// Won Several Accolades over the years for consistently delivering results and has several Industry certifications under his belt`
 
-    },
+//     },
 //     {
 //       id: 3, Img: "/assets/img/gm1.jpg", Name: "Mr. AHMED IBRAHIM", Role: "General Manager - Global Powertech UAE",
 //       content: `BE - MBA from Anna University

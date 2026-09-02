@@ -289,6 +289,7 @@ export const translations = {
       manpower: "Manpower",
       powerplantOM: "Powerplant O & M",
       pipelineIntervention: "Pipeline Intervention",
+      samtech:"SAM Tech",
     },
     ourBranches: {
       pageTitle: "Our Branches",
@@ -965,6 +966,7 @@ export const translations = {
       manpower: "الكوادر الفنية",
       powerplantOM: "تشغيل وصيانة محطات الطاقة",
       pipelineIntervention: "التدخل في خطوط الأنابيب",
+      samtech:"سام تك",
     },
     ourBranches: {
       pageTitle: "فروعنا",

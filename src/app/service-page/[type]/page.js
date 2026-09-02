@@ -236,7 +236,7 @@ const ServicePage = () => {
                     <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_24'>{t("servicePage.onlineSealLeaking.intro1")}</p>
 
                     <div className='mb_16'>
-                        <img className='width150px' src="/assets/img/sylmasta.png" />
+                    <Link target="_blank" href="https://www.sylmasta.com/"><img className='width150px' src="/assets/img/sylmasta.png" /></Link>
                     </div>
 
 

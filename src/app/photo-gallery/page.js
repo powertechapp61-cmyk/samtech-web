@@ -35,12 +35,12 @@ const GalleryPage = () => {
             caption: "Actuator Servicing and Installation at site",
         },
 
-        {
-            type: "image",
-            src: "/assets/img/gallery_img/01652965823.jpg",
-            thumb: "/assets/img/gallery_img/01652965823.jpg",
-            caption: "GAS TURBINE WORKS",
-        },
+        // {
+        //     type: "image",
+        //     src: "/assets/img/gallery_img/01652965823.jpg",
+        //     thumb: "/assets/img/gallery_img/01652965823.jpg",
+        //     caption: "GAS TURBINE WORKS",
+        // },
 
         {
             type: "image",
@@ -64,12 +64,12 @@ const GalleryPage = () => {
             caption: "Electrical Works by Team PT",
         },
 
-        {
-            type: "image",
-            src: "/assets/img/gallery_img/01653488601.jpeg",
-            thumb: "/assets/img/gallery_img/01653488601.jpeg",
-            caption: "ALDUR AUDIT AT PTD OFFICE",
-        },
+        // {
+        //     type: "image",
+        //     src: "/assets/img/gallery_img/01653488601.jpeg",
+        //     thumb: "/assets/img/gallery_img/01653488601.jpeg",
+        //     caption: "ALDUR AUDIT AT PTD OFFICE",
+        // },
 
         {
             type: "image",
@@ -105,26 +105,26 @@ const GalleryPage = () => {
         },
 
 
-        {
-            type: "image",
-            src: "/assets/img/gallery_img/01669019977.jpg",
-            thumb: "/assets/img/gallery_img/01669019977.jpg",
-            caption: "GT12 Successful Completion Celebration - PTD Team with PTD GM and ALDUR GM",
-        },
+        // {
+        //     type: "image",
+        //     src: "/assets/img/gallery_img/01669019977.jpg",
+        //     thumb: "/assets/img/gallery_img/01669019977.jpg",
+        //     caption: "GT12 Successful Completion Celebration - PTD Team with PTD GM and ALDUR GM",
+        // },
 
-        {
-            type: "image",
-            src: "/assets/img/gallery_img/01671609843.jpg",
-            thumb: "/assets/img/gallery_img/01671609843.jpg",
-            caption: "ECOVADIS SUSTAINABILITY RATING - SILVER MEDA FOR POWER TECH GROUP- TOP 25% of the companies assessed",
-        },
+        // {
+        //     type: "image",
+        //     src: "/assets/img/gallery_img/01671609843.jpg",
+        //     thumb: "/assets/img/gallery_img/01671609843.jpg",
+        //     caption: "ECOVADIS SUSTAINABILITY RATING - SILVER MEDA FOR POWER TECH GROUP- TOP 25% of the companies assessed",
+        // },
 
-        {
-            type: "image",
-            src: "/assets/img/gallery_img/01677246901.jpg",
-            thumb: "/assets/img/gallery_img/01677246901.jpg",
-            caption: "Powertech Development",
-        },
+        // {
+        //     type: "image",
+        //     src: "/assets/img/gallery_img/01677246901.jpg",
+        //     thumb: "/assets/img/gallery_img/01677246901.jpg",
+        //     caption: "Powertech Development",
+        // },
 
 
         {
@@ -184,20 +184,20 @@ const GalleryPage = () => {
             caption: "Workshop VTTS",
         },
 
-        {
-            type: "image",
-            src: "/assets/img/gallery_img/01696864248.jpeg",
-            thumb: "/assets/img/gallery_img/01696864248.jpeg",
-            caption: "ALDUR CONTRACTOR DAY",
-        },
+        // {
+        //     type: "image",
+        //     src: "/assets/img/gallery_img/01696864248.jpeg",
+        //     thumb: "/assets/img/gallery_img/01696864248.jpeg",
+        //     caption: "ALDUR CONTRACTOR DAY",
+        // },
 
 
-        {
-            type: "image",
-            src: "/assets/img/gallery_img/01696864271.jpeg",
-            thumb: "/assets/img/gallery_img/01696864271.jpeg",
-            caption: "HSE Recognition at ALDUR",
-        },
+        // {
+        //     type: "image",
+        //     src: "/assets/img/gallery_img/01696864271.jpeg",
+        //     thumb: "/assets/img/gallery_img/01696864271.jpeg",
+        //     caption: "HSE Recognition at ALDUR",
+        // },
 
 
         {
@@ -255,19 +255,19 @@ const GalleryPage = () => {
             caption: "Online Leak Sealing using Clamp Fabrication",
         },
 
-        {
-            type: "image",
-            src: "/assets/img/gallery_img/01727517390.jpeg",
-            thumb: "/assets/img/gallery_img/01727517390.jpeg",
-            caption: "PTD Camp Inspection Audit by ALBA Team",
-        },
+        // {
+        //     type: "image",
+        //     src: "/assets/img/gallery_img/01727517390.jpeg",
+        //     thumb: "/assets/img/gallery_img/01727517390.jpeg",
+        //     caption: "PTD Camp Inspection Audit by ALBA Team",
+        // },
 
-        {
-            type: "image",
-            src: "/assets/img/gallery_img/01727517800.jpeg",
-            thumb: "/assets/img/gallery_img/01727517800.jpeg",
-            caption: "ALBA Team Visit to PTD office",
-        },
+        // {
+        //     type: "image",
+        //     src: "/assets/img/gallery_img/01727517800.jpeg",
+        //     thumb: "/assets/img/gallery_img/01727517800.jpeg",
+        //     caption: "ALBA Team Visit to PTD office",
+        // },
         {
             type: "image",
             src: "/assets/img/gallery_img/01727518084.jpeg",
@@ -339,27 +339,27 @@ const GalleryPage = () => {
             caption: "Online Leak Sealing Injection Method",
         },
 
-        {
-            type: "image",
-            src: "/assets/img/gallery_img/01727779197.jpg",
-            thumb: "/assets/img/gallery_img/01727779197.jpg",
-            caption: "Aldur Safety Walk done by PTD Management",
-        },
+        // {
+        //     type: "image",
+        //     src: "/assets/img/gallery_img/01727779197.jpg",
+        //     thumb: "/assets/img/gallery_img/01727779197.jpg",
+        //     caption: "Aldur Safety Walk done by PTD Management",
+        // },
 
 
-        {
-            type: "image",
-            src: "/assets/img/gallery_img/01729073316.jpeg",
-            thumb: "/assets/img/gallery_img/01729073316.jpeg",
-            caption: "Electricity Water Authority Visit to our Workshop for Boiler Works",
-        },
+        // {
+        //     type: "image",
+        //     src: "/assets/img/gallery_img/01729073316.jpeg",
+        //     thumb: "/assets/img/gallery_img/01729073316.jpeg",
+        //     caption: "Electricity Water Authority Visit to our Workshop for Boiler Works",
+        // },
 
-        {
-            type: "image",
-            src: "/assets/img/gallery_img/01729073384.jpeg",
-            thumb: "/assets/img/gallery_img/01729073384.jpeg",
-            caption: "EWA- WTD and PTD Kick Off Meeting for 3 years Valve contract",
-        },
+        // {
+        //     type: "image",
+        //     src: "/assets/img/gallery_img/01729073384.jpeg",
+        //     thumb: "/assets/img/gallery_img/01729073384.jpeg",
+        //     caption: "EWA- WTD and PTD Kick Off Meeting for 3 years Valve contract",
+        // },
         {
             type: "image",
             src: "/assets/img/gallery_img/01748237710.jpeg",
@@ -490,12 +490,12 @@ const GalleryPage = () => {
         },
 
 
-        {
-            type: "image",
-            src: "/assets/img/gallery_img/PTD GM received awared from Alba in 2025, Bahrain.jpg",
-            thumb: "/assets/img/gallery_img/PTD GM received awared from Alba in 2025, Bahrain.jpg",
-            caption: "PTD GM received awared from Alba in 2025, Bahrain",
-        },
+        // {
+        //     type: "image",
+        //     src: "/assets/img/gallery_img/PTD GM received awared from Alba in 2025, Bahrain.jpg",
+        //     thumb: "/assets/img/gallery_img/PTD GM received awared from Alba in 2025, Bahrain.jpg",
+        //     caption: "PTD GM received awared from Alba in 2025, Bahrain",
+        // },
 
         {
             type: "image",
