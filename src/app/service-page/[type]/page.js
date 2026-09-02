@@ -332,17 +332,17 @@ const ServicePage = () => {
                                 ))}
                             </ul>
 
-                            <h5 className='fontSize16 fontWeight600 blackText_Clr mb_12'>{t("servicePage.hotTapping.heading3")}</h5>
-
-                            <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_24'>{t("servicePage.hotTapping.p6")}</p>
-
-
-                            <button className='mainbtn' onClick={handleDownload} style={{ cursor: 'pointer' }}>{t("servicePage.common.downloadPipelinePdf")}</button>
-                        </div>
+                           </div>
                     </div>
 
 
+                    <h5 className='fontSize16 fontWeight600 blackText_Clr mb_12'>{t("servicePage.hotTapping.heading3")}</h5>
 
+<p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_24'>{t("servicePage.hotTapping.p6")}</p>
+
+<div className='mb_24'>
+<button className='mainbtn' onClick={handleDownload} style={{ cursor: 'pointer' }}>{t("servicePage.common.downloadPipelinePdf")}</button>
+</div>
 
 
 
