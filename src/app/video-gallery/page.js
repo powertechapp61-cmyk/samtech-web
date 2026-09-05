@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react'
 import Link from 'next/link'
-import LightGallery from 'lightgallery/react';
+// import LightGallery from 'lightgallery/react';
 // import styles
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
@@ -18,10 +18,15 @@ import lgZoom from 'lightgallery/plugins/zoom';
 
 const GalleryPage = () => {
 
-
-    const onInit = () => {
-        console.log("✅ LightGallery initialized successfully!");
+    const [selectedVideo, setSelectedVideo] = useState(null);
+    const getYoutubeEmbedUrl = (url) => {
+        const videoId = url.split("youtu.be/")[1]?.split("?")[0];
+    
+        return `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
     };
+    // const onInit = () => {
+    //     console.log("✅ LightGallery initialized successfully!");
+    // };
 
 
     // const [open, setOpen] = useState(false);
@@ -30,12 +35,42 @@ const GalleryPage = () => {
     const items = [
         {
             type: "image",
-            src: "/assets/img/gallery_img/01652965804.jpg",
-            thumb: "/assets/img/gallery_img/01652965804.jpg",
-            caption: "Actuator Servicing and Installation at site",
+            src: "/assets/img/maxresdefault.jpg",
+            link :"https://youtu.be/qQ68wjMlgD8?si=T0CAKoO0CVNsYF4-",
+            caption: "ACCUTEST",
+        },
+        {
+            type: "image",
+            src: "/assets/img/maxresdefault_2.jpg",
+            link :"https://youtu.be/WZ79VwwtoGs?si=6xeVeHabCqORHa9K",
+            caption: "ACCUTEST",
+        },
+        {
+            type: "image",
+            src: "/assets/img/maxresdefault_3.jpg",
+            link :"https://youtu.be/-5mMvSf8LjM?si=bMVX6lRPsywk8hgA",
+            caption: "ACCUTEST",
+        },
+        {
+            type: "image",
+            src: "/assets/img/maxresdefault_3.jpg",
+            link : "https://youtu.be/5CVWtvrCsG4?si=cxMQ0r9QEpSzvStE",
+            caption: "ACCUTEST",
+        },
+        {
+            type: "image",
+            src: "/assets/img/maxresdefault_4.jpg",
+            link : "https://youtu.be/oxllYLlCP8Q?si=69Vz41j_VBcbv1HX",
+            caption: "LEGA-TEST",
+        },
+        {
+            type: "image",
+            src: "/assets/img/maxresdefault_5.jpg",
+            link : "https://youtu.be/H0ayq66gMZU?si=gjoymDU8Q6AKEhSY",
+            caption: "LEGA-TEST",
         },
 
-      
+
     ];
 
     return (
@@ -69,7 +104,7 @@ const GalleryPage = () => {
             <section className='gallerySec'>
                 <div className='container'>
 
-                    <LightGallery
+                    {/* <LightGallery
                         onInit={onInit}
                         speed={500}
                         plugins={[lgZoom, lgThumbnail]}
@@ -85,11 +120,64 @@ const GalleryPage = () => {
                                 <div className='galleryhover'><h5>{item.caption}</h5></div>
                             </a>
                         ))}
-                </LightGallery>
+                    </LightGallery> */}
 
-
+            <div className='row'>
+            {items.map((item, i) => (
+                <div className='col-lg-4 mb_24' key={i}>
+                <div className="video-item">
+                        <img className='video-img' src={item.src} alt={item.src} />
+                        <div className="video-overlay">
+                        <button
+                        type="button"
+                        className="play-btn"
+                        onClick={() => setSelectedVideo(item.link)}
+                    >
+                        <img
+                            src="/assets/img/play-icon.svg"
+                            alt="play"
+                        />
+                    </button>
+                            <div className="video-caption">{item.caption}</div>
+                        </div>
+                    </div>
+                </div>
+                  ))}
+                
             </div>
-        </section >
+
+
+
+            {selectedVideo && (
+    <div
+        className="video-modal"
+        onClick={() => setSelectedVideo(null)}
+    >
+        <div
+            className="video-modal-content"
+            onClick={(e) => e.stopPropagation()}
+        >
+
+            <button
+                type="button"
+                className="video-close"
+                onClick={() => setSelectedVideo(null)}
+            >
+                ×
+            </button>
+
+            <iframe
+                src={getYoutubeEmbedUrl(selectedVideo)}
+                title="YouTube video"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowFullScreen
+            />
+        </div>
+    </div>
+)}
+
+                </div>
+            </section >
         </>
     )
 }
