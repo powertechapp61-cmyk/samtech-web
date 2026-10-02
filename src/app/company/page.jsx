@@ -136,7 +136,7 @@ const page = () => {
                         </div>
                         <div className='col-lg-5 offset-lg-1'>
                             <div className="hero-banner_img" >
-                                <img src="/assets/img/gallery_img/01653488601.jpeg"
+                                <img src="/assets/img/company-photo/sl6.jpg"
                                     alt="SAM Technical Service Contracting Est team on site in Saudi Arabia" fetchPriority="high" />
                             </div>
                         </div>

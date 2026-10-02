@@ -20,7 +20,7 @@ const Page = () => {
                       </div>
                       <div className='col-lg-5 offset-lg-1'>
                           <div className='hero-banner_img'>
-                              <img className="img-1" src="/assets/img/industry_illu.jpg" alt="Engineers and technicians working at SAM Tech" fetchPriority="high" />
+                              <img className="img-1" src="/assets/img/careers-bnr.jpeg" alt="Engineers and technicians working at SAM Tech" fetchPriority="high" />
                           </div>
                       </div>
                   </div>

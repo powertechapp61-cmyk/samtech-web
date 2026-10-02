@@ -203,7 +203,23 @@ const Header = () => {
               <BrandTag className="logo_title"><span>S</span>am <span>T</span>echnical <span>S</span>ervice <span>C</span>ontracting Est</BrandTag>
             <p>{t("header.logoTagline")}</p>
           </div>
-          <div></div>
+          <div className="qatarDivision">
+
+            <div>
+                <div>
+                    <h3>OUR QATAR DIVISION</h3>
+                  <img width="150"
+                    src="/assets/img/q-power-logo.png"
+                    alt="Q power Logo"
+                  />
+                </div>
+            <div>
+            <h5>Q-POWER TECH</h5>
+            <p>Mechanical Contracting, Qatar</p>
+            </div>
+            </div>
+
+          </div>
           </div>
           )}
             <nav>
@@ -249,7 +265,7 @@ const Header = () => {
 
                       <Dropdown.Menu>
                         <Dropdown.Item href={'/company'}>{t("header.nav.aboutUs")} </Dropdown.Item>
-                        {/* <Dropdown.Item href={'/leadership-team'}>Leadership team</Dropdown.Item> */}
+                        <Dropdown.Item href={'/leadership-team'}>Leadership team</Dropdown.Item>
                         <Dropdown.Item href={'/group-companies'}>{t("header.nav.groupCompanies")}</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
@@ -270,7 +286,7 @@ const Header = () => {
                         <Dropdown.Item href="/services/industrial-valve-servicing">{t("header.nav.allTypesValveServicing")}</Dropdown.Item>
                         <Dropdown.Item href="/services/technical-manpower-supply">{t("header.nav.technicalManpowerSupply")}</Dropdown.Item>
                         <Dropdown.Item href="/services/online-leak-sealing">{t("header.nav.onlineLeakSealing")}</Dropdown.Item>
-                        <Dropdown.Item href="/services/hot-tapping">{t("header.nav.hotTapping")}</Dropdown.Item>
+                        {/* <Dropdown.Item href="/services/hot-tapping">{t("header.nav.hotTapping")}</Dropdown.Item> */}
                         <Dropdown.Item href="/services/heat-exchanger-maintenance">{t("header.nav.heatExchanger")}</Dropdown.Item>
                         <Dropdown.Item href="/services/ro-plant-epc-contracts">{t("header.nav.roPlantEpc")}</Dropdown.Item>
                         <Dropdown.Item href="/services/solar-plant-epc">{t("header.nav.solarPlantEpc")}</Dropdown.Item>
@@ -281,6 +297,14 @@ const Header = () => {
                     </Dropdown>
 
                   </li>
+
+
+                  <li>
+                    <Link href={"/service-page/hot_tapping"} prefetch>
+                      {t("header.nav.hotTapping")}
+                    </Link>
+                  </li>
+
                   <li>
                     <Link href={"/appreciations"} prefetch>
                       {t("header.nav.appreciations")}
@@ -300,7 +324,7 @@ const Header = () => {
 
                       <Dropdown.Menu>
                         <Dropdown.Item href={'/photo-gallery'}>{t("header.nav.photoGallery")}</Dropdown.Item>
-                        <Dropdown.Item href="#">{t("header.nav.videoGallery")}</Dropdown.Item>
+                        <Dropdown.Item href={'/video-gallery'}>{t("header.nav.videoGallery")}</Dropdown.Item>
                         <Dropdown.Item href={'/our-branches'}>{t("header.nav.ourBranches")}</Dropdown.Item>
                         <Dropdown.Item href={'/trainings'}>{t("header.nav.trainings")}</Dropdown.Item>
                       </Dropdown.Menu>

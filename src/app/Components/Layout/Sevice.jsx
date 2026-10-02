@@ -14,11 +14,13 @@ const Service = ({ pageData, pagename, navKey }) => {
     "online_safety_testing",
     "offline_valve_testing",
     "alltype_valve_services",
-    "hot_tapping",
-    "heat_exchanger",
+    // "technical_manpower_supply_for_power_plant_refineries_and_water_plant",
+    // "hot_tapping",
+    // "heat_exchanger",
     "ro_membrane",
     "ro_plant_epc_contracts",
-    "upvc_aluminiumdoors_windowsfabrication"
+    // "upvc_aluminiumdoors_windowsfabrication"
+    
   ];
 
   return (
