@@ -11,6 +11,7 @@ import LeaderShipTeam from '../Components/LeaderShipTeam';
 import Image from 'next/image';
 import { useLanguage } from '../context/LanguageContext';
 import PdfUploader from '../Components/uploadpdf/uploadpdf';
+import { CLIENT_LOGOS } from '@/lib/clients';
 
 const Mainpage = () => {
   const { t } = useLanguage();
@@ -19,12 +20,11 @@ const Mainpage = () => {
   // const [isTabsVisible, setIsTabsVisible] = useState(window.innerWidth >= 800);
 
   const [currentLanguage, setCurrentLanguage] = useState(null); // safe default for SSR
-  console.log("t-------->",currentLanguage)
 
   useEffect(() => {
     const stored = localStorage.getItem('currLan');
     if (stored) setCurrentLanguage(stored);
-  });
+  }, []);
   // useEffect(() => {
   //   const handleResize = () => {
   //     setIsTabsVisible(window.innerWidth >= 800);
@@ -62,12 +62,12 @@ const Mainpage = () => {
       id: "side_tab1", title: t("home.tabs.onlineSafety.title"), content: (
         <>
           <div className='mb_24'>
-            <img src="/assets/img/treviType.webp" alt="Online Safety Valve Testing (Trevi Type)" />
+            <img src="/assets/img/treviType.webp" alt="Online safety valve testing (Trevi type) equipment on a live safety valve" loading="lazy" />
           </div>
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.onlineSafety.tagline")}</p>
           <h5>{t("home.tabs.onlineSafety.heading")}</h5>
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.onlineSafety.desc")}</p>
-          <Link className='mainbtn' href="/service-page/online_safety_testing">{t("home.knowMore")}</Link>
+          <Link className='mainbtn' href="/services/online-safety-valve-testing">{t("home.knowMore")}</Link>
 
 
         </>
@@ -77,13 +77,13 @@ const Mainpage = () => {
       id: "side_tab2", title: t("home.tabs.offlineTesting.title"), content: (
         <>
           <div className='mb_24'>
-            <img src="/assets/img/safety_valve_calibration.png" alt="safety valve calibration" />
+            <img src="/assets/img/safety_valve_calibration.png" alt="Offline safety valve testing and calibration on a test bench" loading="lazy" />
           </div>
           
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.offlineTesting.tagline")}</p>
           <h5>{t("home.tabs.offlineTesting.heading")}</h5>
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.offlineTesting.desc")}</p>
-          <Link className='mainbtn' href="/service-page/offline_valve_testing">{t("home.knowMore")}</Link>
+          <Link className='mainbtn' href="/services/offline-valve-testing">{t("home.knowMore")}</Link>
           </>
       )
     },
@@ -91,13 +91,13 @@ const Mainpage = () => {
       id: "side_tab3", title: t("home.tabs.allTypesValve.title"), content: (
         <>
           <div className='mb_24'>
-            <img src="/assets/img/valve_servicing_testing.png" alt="valve servicing testing" />
+            <img src="/assets/img/valve_servicing_testing.webp" alt="Industrial valve servicing and testing by SAM Tech technicians" loading="lazy" />
           </div>
           
 
 
-          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.allTypesValve.descPre")} <Link target='_blank' href="www.powertechtesting.com">www.powertechtesting.com</Link></p>
-          <Link className='mainbtn' href="/service-page/alltype_valve_services">{t("home.knowMore")}</Link>
+          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.allTypesValve.descPre")} <Link target='_blank' rel="noopener" href="https://www.powertechtesting.com">www.powertechtesting.com</Link></p>
+          <Link className='mainbtn' href="/services/industrial-valve-servicing">{t("home.knowMore")}</Link>
 
 
              </>
@@ -107,9 +107,12 @@ const Mainpage = () => {
         <>
 
           
-          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.underConstruction")}</p>
+          <div className='mb_24'>
+            <img src="/assets/img/technical_manpower_provisioning_home.jpg" alt="Technical manpower team supplied by SAM Tech at a power plant" loading="lazy" />
+          </div>
+          <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("servicePage.technicalManpower.whatItIsText")}</p>
 
-          <Link className='mainbtn' href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">{t("home.knowMore")}</Link>
+          <Link className='mainbtn' href="/services/technical-manpower-supply">{t("home.knowMore")}</Link>
 
         </>
       )
@@ -117,11 +120,11 @@ const Mainpage = () => {
       id: "side_tab5", title: t("home.tabs.onlineSealLeaking.title"), content: (
         <>
           <div className='mb_24'>
-            <img src="/assets/img/online_seal_leaking.png" alt="online seal leaking" />
+            <img src="/assets/img/online_seal_leaking.png" alt="Online leak sealing of a live pipeline leak" loading="lazy" />
           </div>
           
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.onlineSealLeaking.desc")}</p>
-          <Link className='mainbtn' href="/service-page/online_seal_leaking">{t("home.knowMore")}</Link>
+          <Link className='mainbtn' href="/services/online-leak-sealing">{t("home.knowMore")}</Link>
 
 
          
@@ -131,10 +134,10 @@ const Mainpage = () => {
       id: "side_tab6", title: t("home.tabs.hotTapping.title"), content: (
       <>
           <div className='mb_24'>
-            <img src="/assets/img/gate_valve_online.png" alt="gate_valve_online" />
+            <img src="/assets/img/gate_valve_online.webp" alt="Hot tapping and online gate valve insertion on a pipeline" loading="lazy" />
           </div>
         <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.hotTapping.desc")}</p>
-          <Link className='mainbtn' href="/service-page/hot_tapping">{t("home.knowMore")}</Link>
+          <Link className='mainbtn' href="/services/hot-tapping">{t("home.knowMore")}</Link>
         </>
       )
     }, {
@@ -142,27 +145,27 @@ const Mainpage = () => {
         <>
           
           <div className='mb_24'>
-            <img src="/assets/img/heatExchanger.png" alt="heatExchanger" />
+            <img src="/assets/img/heatExchanger.webp" alt="Heat exchanger tube bundle cleaning and maintenance" loading="lazy" />
           </div>
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.heatExchanger.desc1")}</p>
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.heatExchanger.desc2")}</p>
-          <Link className='mainbtn' href="/service-page/heat_exchanger">{t("home.knowMore")}</Link>
+          <Link className='mainbtn' href="/services/heat-exchanger-maintenance">{t("home.knowMore")}</Link>
 
         </>
       )
     }, {
       id: "side_tab8", title: t("home.tabs.roPlantEpc.title"), content: (
         <>
-        <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.underConstruction")}</p>
+        <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("servicePage.roPlantEpc.whatItIsText")}</p>
 
-          <Link className='mainbtn' href="/service-page/ro_plant_epc_contracts">{t("home.knowMore")}</Link>
+          <Link className='mainbtn' href="/services/ro-plant-epc-contracts">{t("home.knowMore")}</Link>
         </>
       )
     }, {
       id: "side_tab9", title: t("home.tabs.solarPlantEpc.title"), content: (
         <>
-        <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.underConstruction")}</p>
-          <Link className='mainbtn' href="/service-page/solar_plant_epc">{t("home.knowMore")}</Link>
+        <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("servicePage.solarPlantEpc.whatItIsText")}</p>
+          <Link className='mainbtn' href="/services/solar-plant-epc">{t("home.knowMore")}</Link>
 
         </>
       )
@@ -170,7 +173,7 @@ const Mainpage = () => {
       id: "side_tab10", title: t("home.tabs.roPlantsRetro.title"), content: (
         <>
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.roPlantsRetro.desc")}</p>
-          <Link className='mainbtn' href="/service-page/ro_membrane">{t("home.knowMore")}</Link>
+          <Link className='mainbtn' href="/services/ro-plant-retrofitting">{t("home.knowMore")}</Link>
 
         </>
       )
@@ -178,7 +181,7 @@ const Mainpage = () => {
       id: "side_tab11", title: t("home.tabs.upvcDoors.title"), content: (
         <>
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.upvcDoors.desc")}</p>
-          <Link className='mainbtn' href="/service-page/upvc_aluminiumdoors_windowsfabrication">{t("home.knowMore")}</Link>
+          <Link className='mainbtn' href="/services/upvc-aluminium-doors-windows">{t("home.knowMore")}</Link>
         </>
       )
     }
@@ -377,14 +380,14 @@ const Mainpage = () => {
   };
   const banners = [
     { id: 1, img: "/assets/img/operation_and_maintainance_service_provider.jpg", title: t("home.banners.opsMaintenance"), },
-    { id: 2, img: "/assets/img/electro_mechanical.png", title: t("home.banners.electroMechanical"), },
+    { id: 2, img: "/assets/img/electro_mechanical.webp", title: t("home.banners.electroMechanical"), },
 
 
     { id: 3, img: "/assets/img/hottapping.jpg", title: t("home.banners.hotTapping"), },
 
     { id: 4, img: "/assets/img/gas_turbine_steam_turbine_works.jpg", title: t("home.banners.gasSteamTurbine"), },
 
-    { id: 5, img: "/assets/img/valve_servicing_testing.png", title: t("home.banners.valveServicing"), },
+    { id: 5, img: "/assets/img/valve_servicing_testing.webp", title: t("home.banners.valveServicing"), },
     { id: 6, img: "/assets/img/welding_fabrication_work.jfif", title: t("home.banners.weldingFabrication"), },
 
   ];
@@ -476,14 +479,14 @@ const Mainpage = () => {
       <section className='herobnr'>
   <div dir="ltr">
     <Slider {...mainBnr}>
-      {banners.map((banner) => (
+      {banners.map((banner, i) => (
         <div key={banner.id} className="banner-slide">
-          <img src={banner.img} alt={banner.title} />
+          <img src={banner.img} alt={`${banner.title} – SAM Tech Saudi Arabia`} fetchPriority={i === 0 ? "high" : undefined} />
           <div className="bnrContent">
             <div className='container-fluid'>
               <div className='row'>
                 <div className='col-lg-8'>
-                  <h1>{banner.title}</h1>
+                  <h2 className="bnrTitle">{banner.title}</h2>
                 </div>
               </div>
             </div>
@@ -558,7 +561,7 @@ const Mainpage = () => {
       <section className='companyPhotoSec'>
         <Slider {...companyPhoto}>
           <div className="companyphoto-item">
-            <img src="/assets/img/industry_illu2.jpg" alt="companyphoto" />
+            <img src="/assets/img/industry_illu2.jpg" alt="Power, water and industrial plants served by SAM Tech" loading="lazy" />
           </div>
             
 
@@ -618,15 +621,15 @@ const Mainpage = () => {
               </div>
               <div className='ourGlobalPresence'>
                 <div>
-                  <h5 className="data" ref={addToRefs} data-value="15">0</h5>
+                  <h5 className="data" ref={addToRefs} data-value="15">15+</h5>
                   <p>{t("home.yearsLabel")}</p>
                 </div>
                 <div>
-                  <h5 className="data" ref={addToRefs} data-value="5">0</h5>
+                  <h5 className="data" ref={addToRefs} data-value="5">5+</h5>
                   <p>{t("home.countriesLabel")}</p>
                 </div>
                 <div>
-                  <h5 className="data" ref={addToRefs} data-value="250">0</h5>
+                  <h5 className="data" ref={addToRefs} data-value="250">250+</h5>
                   <p>{t("home.customersLabel")}</p>
                 </div>
               </div>
@@ -635,7 +638,7 @@ const Mainpage = () => {
 
             <div className='col-lg-5'>
               <div>
-                <img className='width100per borderRadius10' src="/assets/img/operation_and_maintainance_service_provider.jpg" />
+                <img className='width100per borderRadius10' src="/assets/img/operation_and_maintainance_service_provider.jpg" alt="Operation and maintenance services for power and process plants across the GCC" loading="lazy" />
               </div>
 
             </div>
@@ -694,7 +697,7 @@ const Mainpage = () => {
                   {!isTabsVisible && (
                     <div className={`${active === t.id ? "bg-gray-700" : "bg-gray-200"}`}>
                       <span>{t.title}</span>
-                      <img className='arrowToggle' src="/assets/img/arrowdown_icon.svg" />
+                      <img className='arrowToggle' src="/assets/img/arrowdown_icon.svg" alt="" />
                     </div>
                   )}
 
@@ -718,12 +721,12 @@ const Mainpage = () => {
               <div className="serviceItem">
                 <div className="service-img">
                   <img src="/assets/img/online_safety_valve_testing_img.jpg" alt='Online Safety Valve Testing' />
-                  <Link href="/service-page/online_safety_testing">
+                  <Link href="/services/online-safety-valve-testing">
                     <img src="/assets/img/bx_link.svg" alt='link' />
                   </Link>
                 </div>
                 <div className="service-caption">
-                  <Link href="/service-page/online_safety_testing">
+                  <Link href="/services/online-safety-valve-testing">
                     <h3> Online Safety Valve Testing (Trevi  Type)</h3></Link>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
@@ -732,15 +735,15 @@ const Mainpage = () => {
             <div className='col-lg-4'>
               <div className="serviceItem">
                 <div className="service-img">
-                  <img src="/assets/img/offline_valve_testing_home.png" alt='Offline Valve Testing' />
+                  <img src="/assets/img/offline_valve_testing_home.webp" alt='Offline Valve Testing' />
 
-                  <Link href="/service-page/offline_valve_testing">
+                  <Link href="/services/offline-valve-testing">
                     <img src="/assets/img/bx_link.svg" alt='link' />
                   </Link>
 
                 </div>
                 <div className="service-caption">
-                  <Link href="/service-page/offline_valve_testing"><h3>Offline Valve Testing</h3></Link>
+                  <Link href="/services/offline-valve-testing"><h3>Offline Valve Testing</h3></Link>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
               </div>
@@ -749,12 +752,12 @@ const Mainpage = () => {
               <div className="serviceItem">
                 <div className="service-img">
                   <img src="/assets/img/valve_service_home.jpeg" alt='All Types of Valve Servicing' />
-                  <Link href="/service-page/alltype_valve_services">
+                  <Link href="/services/industrial-valve-servicing">
                     <img src="/assets/img/bx_link.svg" alt='link' />
                   </Link>
                 </div>
                 <div className="service-caption">
-                  <Link href="/service-page/offline_valve_testing">
+                  <Link href="/services/offline-valve-testing">
                     <h3>All Types of Valve Servicing</h3></Link>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
@@ -765,13 +768,13 @@ const Mainpage = () => {
                 <div className="service-img">
                   <img src="/assets/img/technical_manpower_provisioning_home.jpg" alt='Technical Manpower supply for Power plant refineries and Water plant' />
 
-                  <Link href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">
+                  <Link href="/services/technical-manpower-supply">
                     <img src="/assets/img/bx_link.svg" alt='link' />
                   </Link>
 
                 </div>
                 <div className="service-caption">
-                  <Link href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">
+                  <Link href="/services/technical-manpower-supply">
                     <h3>Technical Manpower supply for Power plant refineries and Water plant</h3></Link>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
@@ -781,10 +784,10 @@ const Mainpage = () => {
 
               <div className="serviceItem">
                 <div className="service-img">
-                  <img src="/assets/img/online_leak_sealing_home.png" alt='Online Leak Sealing' />
+                  <img src="/assets/img/online_leak_sealing_home.webp" alt='Online Leak Sealing' />
 
 
-                  <Link href="/service-page/online_seal">
+                  <Link href="/services/online-leak-sealing">
                     <img src="/assets/img/bx_link.svg" alt='link' />
                   </Link>
 
@@ -793,7 +796,7 @@ const Mainpage = () => {
 
                 </div>
                 <div className="service-caption">
-                  <Link href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">
+                  <Link href="/services/technical-manpower-supply">
                     <h3>Online Leak Sealing – SYLMASATA & Conventional</h3></Link>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
@@ -804,14 +807,14 @@ const Mainpage = () => {
                 <div className="service-img">
                   <img src="/assets/img/hottapping_home.jpg" alt='Hot Tapping' />
 
-                  <Link href="/service-page/hot_tapping">
+                  <Link href="/services/hot-tapping">
                     <img src="/assets/img/bx_link.svg" alt='link' />
                   </Link>
 
 
                 </div>
                 <div className="service-caption">
-                  <Link href="/service-page/hot_tapping">
+                  <Link href="/services/hot-tapping">
                     <h3>Hot Tapping & Insertion of S-Type( Gate Valve Online)</h3></Link>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
@@ -822,14 +825,14 @@ const Mainpage = () => {
                 <div className="service-img">
                   <img src="/assets/img/heat_exchanger_maintenance_home.jpg" alt='Heat Exchanger, Maintenance' />
 
-                  <Link href="/service-page/heat_exchanger">
+                  <Link href="/services/heat-exchanger-maintenance">
                     <img src="/assets/img/bx_link.svg" alt='link' />
                   </Link>
 
 
                 </div>
                 <div className="service-caption">
-                  <Link href="/service-page/heat_exchanger">  <h3>Heat Exchanger, Maintenance & Supply</h3></Link>
+                  <Link href="/services/heat-exchanger-maintenance">  <h3>Heat Exchanger, Maintenance & Supply</h3></Link>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
               </div>
@@ -839,14 +842,14 @@ const Mainpage = () => {
                 <div className="service-img">
                   <img src="/assets/img/ro_plant_epc_contracts_home.jpg" alt='RO Plant EPC Contracts' />
 
-                  <Link href="/service-page/ro_plant_epc_contracts">
+                  <Link href="/services/ro-plant-epc-contracts">
                     <img src="/assets/img/bx_link.svg" alt='link' />
                   </Link>
 
 
                 </div>
                 <div className="service-caption">
-                  <Link href="/service-page/ro_plant_epc_contracts"> <h3>RO Plant EPC Contracts Upto 2MIGPDA</h3></Link>
+                  <Link href="/services/ro-plant-epc-contracts"> <h3>RO Plant EPC Contracts Upto 2MIGPDA</h3></Link>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
               </div>
@@ -856,14 +859,14 @@ const Mainpage = () => {
                 <div className="service-img">
                   <img src="/assets/img/solar-plant_epc_home.jpeg" alt='Solar Plant EPC' />
 
-                  <Link href="/service-page/solar_plant_epc">
+                  <Link href="/services/solar-plant-epc">
                     <img src="/assets/img/bx_link.svg" alt='link' />
                   </Link>
 
 
                 </div>
                 <div className="service-caption">
-                  <Link href="/service-page/solar_plant_epc"> <h3>Solar Plant EPC upto  5MW & Maintenance</h3> </Link>
+                  <Link href="/services/solar-plant-epc"> <h3>Solar Plant EPC upto  5MW & Maintenance</h3> </Link>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
               </div>
@@ -875,13 +878,13 @@ const Mainpage = () => {
                   <img src="/assets/img/ro-plants-retro-fitting_home.jpg" alt='RO Plants Retro  Fitting' />
 
 
-                  <Link href="/service-page/ro_membrane">
+                  <Link href="/services/ro-plant-retrofitting">
                     <img src="/assets/img/bx_link.svg" alt='link' />
                   </Link>
 
                 </div>
                 <div className="service-caption">
-                  <Link href="/service-page/ro_membrane"> <h3>RO Plants Retro  Fitting</h3></Link>
+                  <Link href="/services/ro-plant-retrofitting"> <h3>RO Plants Retro  Fitting</h3></Link>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
               </div>
@@ -889,9 +892,9 @@ const Mainpage = () => {
             <div className='col-lg-4'>
               <div className="serviceItem">
                 <div className="service-img">
-                  <img src="/assets/img/upvc_home.png" alt='UPVC' />
+                  <img src="/assets/img/upvc_home.webp" alt='UPVC' />
 
-                  <Link href="/service-page/upvc_aluminiumdoors_windowsfabrication">
+                  <Link href="/services/upvc-aluminium-doors-windows">
                     <img src="/assets/img/bx_link.svg" alt='link' />
                   </Link>
 
@@ -899,7 +902,7 @@ const Mainpage = () => {
 
                 </div>
                 <div className="service-caption">
-                  <Link href="/service-page/upvc_aluminiumdoors_windowsfabrication"> <h3>UPVC & Aluminium Doors & Windows Fabrication & Installation</h3></Link>
+                  <Link href="/services/upvc-aluminium-doors-windows"> <h3>UPVC & Aluminium Doors & Windows Fabrication & Installation</h3></Link>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
               </div>
@@ -1078,115 +1081,11 @@ const Mainpage = () => {
         <div className="customerLogos">
 
           <Slider {...clientlogoSlider}>
-
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/saudi_aramco.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/yasref.png" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/national_water_company.png" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/saudi_electricity_company.png" alt='' />
-            </div>
-
-
-            {/* sas */}
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c1.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c2.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c3.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c4.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c5.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c6.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c7.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c8.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c9.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c10.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c11.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c12.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c13.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c14.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c15.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c16.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c17.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c18.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c19.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c20.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c21.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c22.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c23.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c24.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c25.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c26.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c27.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c28.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c29.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c30.jpg" alt='' />
-            </div>
-            <div className='clientLogo_item'>
-              <img src="/assets/img/clientlogo/c31.jpg" alt='' />
-            </div>
+            {CLIENT_LOGOS.map((c) => (
+              <div className='clientLogo_item' key={c.src}>
+                <img src={c.src} alt={`${c.name} logo`} title={c.name} loading="lazy" />
+              </div>
+            ))}
           </Slider>
 
 

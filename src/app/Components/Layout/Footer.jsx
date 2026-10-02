@@ -93,7 +93,7 @@ const Footer = () => {
               <h2>{t("footer.aboutTitle")}</h2>
               <p className='fontSize16 fontWeight400 whiteText_Clr mb_24'>{t("footer.aboutText")}</p>
               <div className="certifiedLogo">
-                <img src="/assets/img/logo2.jpg" alt="logo" />
+                <img src="/assets/img/logo2.jpg" alt="TRAIB Cert ISO 9001:2015 Quality Assured and ISO 45001:2018 Occupational Safety certification marks, IRQAO and ASCB accreditation" loading="lazy" />
               </div>
 
             </div>
@@ -104,27 +104,27 @@ const Footer = () => {
               <ul className='quicklinks'>
                 <li>
                   <Link href={"/"} prefetch>
-                    <img src="/assets/img/stepPoint.svg" alt='step point' />
+                    <img src="/assets/img/stepPoint.svg" alt='' />
                     <span>{t("footer.home")}</span>
 
                   </Link>
                 </li>
                 <li>
                   <Link href={"/company"} prefetch>
-                    <img src="/assets/img/stepPoint.svg" alt='step point' />
+                    <img src="/assets/img/stepPoint.svg" alt='' />
                     <span>{t("footer.aboutUs")}</span>
                   </Link>
                 </li>
                 <li>
                   <Link href={"/group-companies"} prefetch>
-                    <img src="/assets/img/stepPoint.svg" alt='step point' />
+                    <img src="/assets/img/stepPoint.svg" alt='' />
                     <span>{t("footer.groupCompanies")}</span>
 
                   </Link>
                 </li>
                 <li>
                   <Link href={"/appreciations"} prefetch>
-                    <img src="/assets/img/stepPoint.svg" alt='step point' />
+                    <img src="/assets/img/stepPoint.svg" alt='' />
                     <span>{t("footer.appreciations")}</span>
 
                   </Link>
@@ -132,35 +132,35 @@ const Footer = () => {
 
                 <li>
                   <Link href={'/photo-gallery'} prefetch>
-                    <img src="/assets/img/stepPoint.svg" alt='step point' />
+                    <img src="/assets/img/stepPoint.svg" alt='' />
                     <span> {t("footer.photoGallery")}</span>
 
                   </Link>
                 </li>
                 <li>
                   <Link href={'/our-branches'} prefetch>
-                    <img src="/assets/img/stepPoint.svg" alt='step point' />
+                    <img src="/assets/img/stepPoint.svg" alt='' />
                     <span>{t("footer.ourBranches")}</span>
 
                   </Link>
                 </li>
                 <li>
                   <Link href={'/trainings'} prefetch>
-                    <img src="/assets/img/stepPoint.svg" alt='step point' />
+                    <img src="/assets/img/stepPoint.svg" alt='' />
                     <span>{t("footer.trainings")}</span>
 
                   </Link>
                 </li>
                 <li>
                   <Link href={'/careers'} prefetch>
-                    <img src="/assets/img/stepPoint.svg" alt='step point' />
+                    <img src="/assets/img/stepPoint.svg" alt='' />
                     <span>{t("footer.careers")}</span>
 
                   </Link>
                 </li>
                 <li>
                   <Link href={"/contact-us"} prefetch>
-                    <img src="/assets/img/stepPoint.svg" alt='step point' />
+                    <img src="/assets/img/stepPoint.svg" alt='' />
                     <span> {t("footer.contactUs")}</span>
 
                   </Link>
@@ -175,14 +175,15 @@ const Footer = () => {
               <h2>{t("footer.quickCode")}</h2>
 
               <div className='qrCodeLink'>
-                <img src="/assets/img/qrcode.jpeg" alt="qrcode" />
+                <img src="/assets/img/qrcode.jpeg" alt="QR code – SAM Technical Service Contracting Est" loading="lazy" />
               </div>
 
             </div>
             <div className='col-lg-4'>
               <h2>{t("footer.location")}</h2>
 
-              <iframe height="300" src="https://www.google.com/maps/place/22%C2%B046'27.7%22N+39%C2%B005'01.9%22E/@22.7743551,39.0812815,17z/data=!3m1!4b1!4m4!3m3!8m2!3d22.7743551!4d39.0838564?hl=en&entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D" style={{
+              {/* Embeddable map URL (a normal /maps/place link is blocked inside iframes) */}
+              <iframe title="SAM Technical Service Contracting Est location – Rabigh, Saudi Arabia" height="300" src="https://maps.google.com/maps?q=22.7743551,39.0838564&z=16&hl=en&output=embed" style={{
                 border: 0, width: "100%"
               }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
               {/* <Link target='_blank' className='blackText_Clr textDecoration_none  fontWeight400 fontSize16' href="https://maps.app.goo.gl/ECLS7hB7t8YHagqh8">
@@ -265,8 +266,8 @@ const Footer = () => {
 
          
           <li>
-            <Link href="https://wa.me/966507745097" target="_blank">
-              <img src="/assets/img/whatsappIcon.svg" alt="whatsapp" />
+            <Link href="https://wa.me/966507745097" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp +966507745097">
+              <img src="/assets/img/whatsappIcon.svg" alt="" />
               <span>{t("footer.whatsapp")}</span>
             </Link>
           </li>
@@ -304,7 +305,7 @@ const Footer = () => {
           <li>
 
             <Link href="tel:+966507745097">
-              <img className='whiteFilter' src="/assets/img/phone_icon.svg" alt="phone" />
+              <img className='whiteFilter' src="/assets/img/phone_icon.svg" alt="" />
               <span>{t("footer.saudiPhoneLabel")} :&nbsp; +966507745097</span>
               </Link>
           </li>

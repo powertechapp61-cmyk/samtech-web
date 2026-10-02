@@ -19,9 +19,7 @@ import lgZoom from 'lightgallery/plugins/zoom';
 const GalleryPage = () => {
 
 
-    const onInit = () => {
-        console.log("✅ LightGallery initialized successfully!");
-    };
+    const onInit = () => {};
 
 
     // const [open, setOpen] = useState(false);
@@ -484,32 +482,32 @@ const GalleryPage = () => {
 
         {
             type: "image",
-            src: "/assets/img/gallery_img/ISO IMS External Recertification Audit (9001, 45001, 14001).jpeg",
-            thumb: "/assets/img/gallery_img/ISO IMS External Recertification Audit (9001, 45001, 14001).jpeg",
+            src: "/assets/img/gallery_img/iso-ims-external-recertification-audit-9001-45001-14001.jpeg",
+            thumb: "/assets/img/gallery_img/iso-ims-external-recertification-audit-9001-45001-14001.jpeg",
             caption: "ISO IMS External Recertification Audit (9001, 45001, 14001)",
         },
 
 
         {
             type: "image",
-            src: "/assets/img/gallery_img/PTD GM received awared from Alba in 2025, Bahrain.jpg",
-            thumb: "/assets/img/gallery_img/PTD GM received awared from Alba in 2025, Bahrain.jpg",
-            caption: "PTD GM received awared from Alba in 2025, Bahrain",
+            src: "/assets/img/gallery_img/ptd-gm-receives-alba-award-2025-bahrain.jpg",
+            thumb: "/assets/img/gallery_img/ptd-gm-receives-alba-award-2025-bahrain.jpg",
+            caption: "PTD GM received award from Alba in 2025, Bahrain",
         },
 
         {
             type: "image",
-            src: "/assets/img/gallery_img/Samtech visited Nomac Red sea team.jpg",
-            thumb: "/assets/img/gallery_img/Samtech visited Nomac Red sea team.jpg",
+            src: "/assets/img/gallery_img/samtech-visit-nomac-red-sea-team.jpg",
+            thumb: "/assets/img/gallery_img/samtech-visit-nomac-red-sea-team.jpg",
             caption: "Samtech visited Nomac Red sea team",
         },
 
 
         {
             type: "image",
-            src: "/assets/img/gallery_img/Top Recruiter 2025 to PTD by Naukri Gulf.jpg",
-            thumb: "/assets/img/gallery_img/Top Recruiter 2025 to PTD by Naukri Gulf.jpg",
-            caption: "Top Recruiter 2025 to PTD by Naukri Gulf.jpg",
+            src: "/assets/img/gallery_img/top-recruiter-2025-ptd-naukri-gulf.jpg",
+            thumb: "/assets/img/gallery_img/top-recruiter-2025-ptd-naukri-gulf.jpg",
+            caption: "Top Recruiter 2025 to PTD by Naukri Gulf",
         },
 
 
@@ -564,8 +562,8 @@ const GalleryPage = () => {
 
         {
             type: "image",
-            src: "/assets/img/gallery_img/AI Training by IBM to CPDTI students 2025 Batch.jpg",
-            thumb: "/assets/img/gallery_img/AI Training by IBM to CPDTI students 2025 Batch.jpg",
+            src: "/assets/img/gallery_img/ai-training-by-ibm-cpdti-students-2025.jpg",
+            thumb: "/assets/img/gallery_img/ai-training-by-ibm-cpdti-students-2025.jpg",
             caption: "AI Training by IBM to CPDTI students 2025 Batch",
         },
 
@@ -610,9 +608,9 @@ const GalleryPage = () => {
                             <div className='innerpage_bnrContent'>
                                 <ul className='page_breadcrumb'>
                                     <li><Link href={"/"}> Home</Link></li>
-                                    <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
+                                    <li aria-hidden="true"><img src="/assets/img/rightIcon.svg" alt='' /> </li>
                                     <li>Gallery</li>
-                                    <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
+                                    <li aria-hidden="true"><img src="/assets/img/rightIcon.svg" alt='' /> </li>
                                     <li><Link href={'/photo-gallery'}>Photo Gallery</Link></li>
                                 </ul>
                                 <h1>Photo Gallery</h1>
@@ -622,7 +620,7 @@ const GalleryPage = () => {
                         </div>
                         <div className='col-lg-5 offset-lg-1'>
                             <div className='hero-banner_img'>
-                                <img className="img-1" src="/assets/img/gallery_img/01696864443.jpeg" alt="gallery" />
+                                <img className="img-1" src="/assets/img/gallery_img/01696864443.jpeg" alt="SAM Tech and Power Tech Group project work" fetchPriority="high" />
                             </div>
                         </div>
                     </div>
@@ -641,11 +639,11 @@ const GalleryPage = () => {
 
                             <a key={i}
                                 href={item.src}
-                                data-sub-html={`<h4>${item.caption}</h4>`}
+                                data-sub-html={item.caption ? `<h4>${item.caption}</h4>` : ""}
                                 data-poster={item.type === "video" ? item.thumb : undefined}
                             >
-                                <img src={item.thumb} alt={item.caption} />
-                                <div className='galleryhover'><h5>{item.caption}</h5></div>
+                                <img src={item.thumb} alt={item.caption || "SAM Tech / Power Tech Group project photo"} loading="lazy" />
+                                {item.caption && <div className='galleryhover'><h5>{item.caption}</h5></div>}
                             </a>
                         ))}
                 </LightGallery>

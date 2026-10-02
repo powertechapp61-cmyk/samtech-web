@@ -19,7 +19,7 @@
 //                         </div>
 //                         <div className='col-lg-5 offset-lg-1'>
 //                             <div className='hero-banner_img'>
-//                                 <img className="img-1" src="/assets/img/company-photo/sl3.jpg" alt="about us img" />
+//                                 <img className="img-1" src="/assets/img/company-photo/sl3.jpg" alt="Contact SAM Technical Service Contracting Est, Rabigh" fetchPriority="high" />
 //                             </div>
 //                         </div>
 //                     </div>
@@ -45,7 +45,7 @@
 //                         <div className='row'>
 //                             <div className='col-lg-6'>
 //                                 <div className='leadsGen-img'>
-//                                     <img src="/assets/img/leadsGen_img.png" alt='lead gen' />
+//                                     <img src="/assets/img/leadsGen_img.png" alt="Send an enquiry to SAM Tech" loading="lazy" />
 //                                 </div>
 //                             </div>
 //                             <div className='col-lg-6'>
@@ -178,7 +178,7 @@
 //                                         </li>
 //                                         <li>
 //                                             <div className='width24px'>
-//                                             <img className='width20px blackFilter' src="/assets/img/phonetop_icon.svg" />
+//                                             <img className='width20px blackFilter' src="/assets/img/phonetop_icon.svg" alt="" />
 //                                             </div>
 //                                             <span>
 //                                                 <Link href="tel:97337164858">+973 3716 4858</Link> ,
@@ -186,14 +186,14 @@
 //                                             </span>
 //                                         </li>
 //                                         <li>
-//                                         <img className='width24px blackFilter' src="/assets/img/ic_baseline-whatsapp.svg" alt='whatsapp' />
+//                                         <img className='width24px blackFilter' src="/assets/img/ic_baseline-whatsapp.svg" alt="" />
 
 //                                             <Link href="https://wa.me/97334010755" target="_blank">
 //                                                 973 3401 0755
 //                                             </Link>
 //                                         </li>
 //                                         <li>
-//                                         <img className='width24px' src="/assets/img/mail_icon.svg" alt='mail' />
+//                                         <img className='width24px' src="/assets/img/mail_icon.svg" alt="" />
 
 //                                             <Link href={'mailto:gm@powertechdevelopment.com'}>
 //                                                 gm@powertechdevelopment.com
@@ -214,26 +214,26 @@
 
 //                                     <ul>
 //                                         <li>
-//                                             <img className='width24px' src="/assets/img/gis_location-poi.svg" />
+//                                             <img className='width24px' src="/assets/img/gis_location-poi.svg" alt="" />
 //                                         <span>Building No # 9324, Street Mughffal Ibn Sinan Street ,Al Naseem Dist., Rabigh- Saudi Arabia</span>
 //                                         </li>
 //                                         <li>
 //                                             <div className='width24px'>
-//                                                 <img className='blackFilter width20px' src="/assets/img/phonetop_icon.svg" />
+//                                                 <img className='blackFilter width20px' src="/assets/img/phonetop_icon.svg" alt="" />
 //                                             </div>
 //                                             <span>
-//                                                 <Link href="tel:966507745097">+966 507745097</Link>
+//                                                 <Link href="tel:+966507745097">+966 507745097</Link>
 //                                             </span>
 //                                         </li>
 //                                         <li>
-//                                         <img className='width24px blackFilter' src="/assets/img/ic_baseline-whatsapp.svg" alt='whatsapp' />
+//                                         <img className='width24px blackFilter' src="/assets/img/ic_baseline-whatsapp.svg" alt="" />
 
 //                                             <Link href="https://wa.me/966507745097" target="_blank">
 //                                                 966 507745097
 //                                             </Link>
 //                                         </li>
 //                                         <li>
-//                                             <img className='width24px' src="/assets/img/mail_icon.svg" alt='mail' />
+//                                             <img className='width24px' src="/assets/img/mail_icon.svg" alt="" />
 
 //                                             <Link href={'mailto:samtech@powertechdevelopment.com'}>
 //                                                 samtech@powertechdevelopment.com
@@ -254,26 +254,26 @@
 
 //                                     <ul>
 //                                         <li>
-//                                             <img className='width24px' src="/assets/img/gis_location-poi.svg" />
+//                                             <img className='width24px' src="/assets/img/gis_location-poi.svg" alt="" />
 //                                             <span>WH.no2 Shabra A1 jurf industrial Area 2 Ajman UAE</span>
 //                                         </li>
 //                                         <li>
 //                                             <div className='width24px'>
-//                                             <img className='width20px blackFilter' src="/assets/img/phonetop_icon.svg" />
+//                                             <img className='width20px blackFilter' src="/assets/img/phonetop_icon.svg" alt="" />
 //                                             </div>
 //                                             <span>
 //                                                 <Link href="tel:971504712069">971504712069</Link>
 //                                             </span>
 //                                         </li>
 //                                         <li>
-//                                         <img className='width24px blackFilter' src="/assets/img/ic_baseline-whatsapp.svg" alt='whatsapp' />
+//                                         <img className='width24px blackFilter' src="/assets/img/ic_baseline-whatsapp.svg" alt="" />
 
 //                                             <Link href="https://wa.me/971504712069" target="_blank">
 //                                                 971 50 471 2069
 //                                             </Link>
 //                                         </li>
 //                                         <li>
-//                                             <img className='width24px' src="/assets/img/mail_icon.svg" alt='mail' />
+//                                             <img className='width24px' src="/assets/img/mail_icon.svg" alt="" />
 
 //                                             <Link href={'mailto:global@powertechdevelopment.com'}>
 //                                                 global@powertechdevelopment.com ,
@@ -294,26 +294,26 @@
 
 //                                     <ul>
 //                                         <li>
-//                                             <img className='width24px' src="/assets/img/gis_location-poi.svg" />
+//                                             <img className='width24px' src="/assets/img/gis_location-poi.svg" alt="" />
 //                                             <span>40 A, Padavattamman Koil First Street, Padi, Chennai – 600050.</span>
 //                                         </li>
 //                                         <li>
 //                                             <div className='width24px'>
-//                                             <img className='width20px blackFilter' src="/assets/img/phonetop_icon.svg" />
+//                                             <img className='width20px blackFilter' src="/assets/img/phonetop_icon.svg" alt="" />
 //                                             </div>
 //                                             <span>
-//                                                 <Link href="tel:919498660803">+91 94986 60803</Link>
+//                                                 <Link href="tel:+919498660803">+91 94986 60803</Link>
 //                                             </span>
 //                                         </li>
 //                                         <li>
-//                                         <img className='width24px blackFilter ' src="/assets/img/ic_baseline-whatsapp.svg" alt='whatsapp' />
+//                                         <img className='width24px blackFilter ' src="/assets/img/ic_baseline-whatsapp.svg" alt="" />
 
 //                                             <Link href="https://wa.me/919498660803" target="_blank">
 //                                                 +91 94986 60803
 //                                             </Link>
 //                                         </li>
 //                                         <li>
-//                                             <img className='width24px' src="/assets/img/mail_icon.svg" alt='mail' />
+//                                             <img className='width24px' src="/assets/img/mail_icon.svg" alt="" />
 
 //                                             <Link href={'mailto:enquiry@powertechtesting.com'}>
 //                                                 enquiry@powertechtesting.com
@@ -354,7 +354,7 @@ const Page = () => {
             </div>
             <div className='col-lg-5 offset-lg-1'>
               <div className='hero-banner_img'>
-                <img className="img-1" src="/assets/img/company-photo/sl3.jpg" alt="about us img" />
+                <img className="img-1" src="/assets/img/company-photo/sl3.jpg" alt="Contact SAM Technical Service Contracting Est, Rabigh" fetchPriority="high" />
               </div>
             </div>
           </div>
@@ -378,7 +378,7 @@ const Page = () => {
             <div className='row'>
               <div className='col-lg-6'>
                 <div className='leadsGen-img'>
-                  <img src="/assets/img/leadsGen_img.png" alt='lead gen' />
+                  <img src="/assets/img/leadsGen_img.png" alt="Send an enquiry to SAM Tech" loading="lazy" />
                 </div>
               </div>
               <div className='col-lg-6'>
@@ -402,12 +402,12 @@ const Page = () => {
                 </div>
                 <ul>
                   <li>
-                    <img className='width24px' src="/assets/img/gis_location-poi.svg" />
+                    <img className='width24px' src="/assets/img/gis_location-poi.svg" alt="" />
                     <span>Building 1506, Road 4819, Block 948, Lhassay, Manama, Bahrain</span>
                   </li>
                   <li>
                     <div className='width24px'>
-                      <img className='width20px blackFilter' src="/assets/img/phonetop_icon.svg" />
+                      <img className='width20px blackFilter' src="/assets/img/phonetop_icon.svg" alt="" />
                     </div>
                     <span>
                       <Link href="tel:97337164858">+973 3716 4858</Link> ,
@@ -415,11 +415,11 @@ const Page = () => {
                     </span>
                   </li>
                   <li>
-                    <img className='width24px blackFilter' src="/assets/img/ic_baseline-whatsapp.svg" alt='whatsapp' />
+                    <img className='width24px blackFilter' src="/assets/img/ic_baseline-whatsapp.svg" alt="" />
                     <Link href="https://wa.me/97334010755" target="_blank">973 3401 0755</Link>
                   </li>
                   <li>
-                    <img className='width24px' src="/assets/img/mail_icon.svg" alt='mail' />
+                    <img className='width24px' src="/assets/img/mail_icon.svg" alt="" />
                     <Link href='mailto:gm@powertechdevelopment.com'>gm@powertechdevelopment.com</Link>
                   </li>
                 </ul>
@@ -434,21 +434,21 @@ const Page = () => {
                 </div>
                 <ul>
                   <li>
-                    <img className='width24px' src="/assets/img/gis_location-poi.svg" />
+                    <img className='width24px' src="/assets/img/gis_location-poi.svg" alt="" />
                     <span>Building No # 9324, Street Mughffal Ibn Sinan Street, Al Naseem Dist., Rabigh- Saudi Arabia</span>
                   </li>
                   <li>
                     <div className='width24px'>
-                      <img className='blackFilter width20px' src="/assets/img/phonetop_icon.svg" />
+                      <img className='blackFilter width20px' src="/assets/img/phonetop_icon.svg" alt="" />
                     </div>
-                    <span><Link href="tel:966507745097">+966 507745097</Link></span>
+                    <span><Link href="tel:+966507745097">+966 507745097</Link></span>
                   </li>
                   <li>
-                    <img className='width24px blackFilter' src="/assets/img/ic_baseline-whatsapp.svg" alt='whatsapp' />
-                    <Link href="https://wa.me/966507745097" target="_blank">+966 507745097</Link>
+                    <img className='width24px blackFilter' src="/assets/img/ic_baseline-whatsapp.svg" alt="" />
+                    <Link href="https://wa.me/966507745097" target="_blank" rel="noopener noreferrer">+966 507745097</Link>
                   </li>
                   <li>
-                    <img className='width24px' src="/assets/img/mail_icon.svg" alt='mail' />
+                    <img className='width24px' src="/assets/img/mail_icon.svg" alt="" />
                     <Link href='mailto:samtech@powertechdevelopment.com'>samtech@powertechdevelopment.com</Link>
                   </li>
                 </ul>
@@ -463,21 +463,21 @@ const Page = () => {
                 </div>
                 <ul>
                   <li>
-                    <img className='width24px' src="/assets/img/gis_location-poi.svg" />
+                    <img className='width24px' src="/assets/img/gis_location-poi.svg" alt="" />
                     <span>40 A, Padavattamman Koil First Street, Padi, Chennai – 600050.</span>
                   </li>
                   <li>
                     <div className='width24px'>
-                      <img className='width20px blackFilter' src="/assets/img/phonetop_icon.svg" />
+                      <img className='width20px blackFilter' src="/assets/img/phonetop_icon.svg" alt="" />
                     </div>
-                    <span><Link href="tel:919498660803">+91 94986 60803</Link></span>
+                    <span><Link href="tel:+919498660803">+91 94986 60803</Link></span>
                   </li>
                   <li>
-                    <img className='width24px blackFilter' src="/assets/img/ic_baseline-whatsapp.svg" alt='whatsapp' />
-                    <Link href="https://wa.me/919498660803" target="_blank">+91 94986 60803</Link>
+                    <img className='width24px blackFilter' src="/assets/img/ic_baseline-whatsapp.svg" alt="" />
+                    <Link href="https://wa.me/919498660803" target="_blank" rel="noopener noreferrer">+91 94986 60803</Link>
                   </li>
                   <li>
-                    <img className='width24px' src="/assets/img/mail_icon.svg" alt='mail' />
+                    <img className='width24px' src="/assets/img/mail_icon.svg" alt="" />
                     <Link href='mailto:enquiry@powertechtesting.com'>enquiry@powertechtesting.com</Link>
                   </li>
                 </ul>

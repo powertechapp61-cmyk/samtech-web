@@ -1,12 +1,10 @@
+// Fonts (Marcellus + Roboto) are self-hosted via @fontsource and imported in layout.js
+// (the old Google Fonts @import lines were render-blocking and loaded two unused families).
 // @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 // @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 *,
 ::after,
@@ -30,7 +28,7 @@ a:hover {
     // --fontFamily_two: "Poppins", sans-serif;
 
     --fontFamily: "Marcellus", serif;
-    --fontFamily_two: "Roboto", sans-serif;
+    --fontFamily_two: "Roboto Variable", "Roboto", sans-serif;
     // --fontFamily: "Lexend", sans-serif;
     // --fontFamily: "Oswald", sans-serif;
     --white_clr: #FFF;
@@ -692,7 +690,8 @@ header nav {
     display: block;
 }
 
-.logo_text h1 {
+.logo_text .logo_title {
+    font-family: var(--fontFamily) !important;
     color: var(--narenjiOrange_clr);
     font-size: 54px;
     line-height: 1.5;
@@ -701,7 +700,7 @@ header nav {
     margin: 0px;
 }
 
-.logo_text h1 span {
+.logo_text .logo_title span {
     color: var(--narenjiOrange_clr);
     font-size: 70px;
 }
@@ -1004,7 +1003,7 @@ header ul li a.active {
     color: var(--baingani_clr);
 }
 
-.bnrContent h1 {
+.bnrContent .bnrTitle {
     font-size: 54px;
     line-height: 1.4;
     font-weight: 600;
@@ -3696,7 +3695,7 @@ RESPONSIVE
         display: none;
     }
 
-    .logo_text h1 {
+    .logo_text .logo_title {
         font-size: 24px;
         text-align: center;
     }
@@ -3706,7 +3705,7 @@ RESPONSIVE
         font-weight: 500;
     }
 
-    .logo_text h1 span {
+    .logo_text .logo_title span {
         font-size: 30px;
     }
 
@@ -3821,7 +3820,7 @@ RESPONSIVE
         left: 0;
     }
 
-    .bnrContent h1 {
+    .bnrContent .bnrTitle {
         font-size: 34px;
     }
 
@@ -4503,12 +4502,12 @@ RESPONSIVE
 .deskHeader .brandlogo {
     display: none;
 }
-    .logo_text h1 {
+    .logo_text .logo_title {
         font-size: 34px;
         text-align: center;
     }
 
-    .logo_text h1 span {
+    .logo_text .logo_title span {
         font-size: 54px;
         text-align: center;
     }
@@ -4801,14 +4800,16 @@ RESPONSIVE
     text-align: center;
 }
 
-.headingContent h1 {
+.headingContent .headingMain {
     font-size: clamp(40px, 5vw, 64px);
     color: var(--narenjiOrange_clr);
     font-weight: 900;
     line-height: 1.05;
 }
 
-.headingContent h2 {
+.headingContent .headingSub {
+    font-family: var(--fontFamily) !important;
+    line-height: 1.2;
     margin-top: 8px;
 
     font-size: clamp(34px, 4vw, 50px);
@@ -5029,11 +5030,11 @@ RESPONSIVE
         padding: 60px 18px 130px;
     }
 
-    .headingContent h1 {
+    .headingContent .headingMain {
         font-size: 34px;
     }
 
-    .headingContent h2 {
+    .headingContent .headingSub {
         font-size: 28px;
     }
 

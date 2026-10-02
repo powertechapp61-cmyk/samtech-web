@@ -4,7 +4,7 @@ import React, { useRef, useState } from 'react'
 import Marquee from "react-fast-marquee";
 
 // import leftPlant from "";
-// import rightPlant from "/assets/img/right-plant.png";
+// import rightPlant from "/assets/img/right-plant.webp";
 // import iso9001 from "/assets/img/iso9001.png";
 // import iso45001 from "/assets/img/iso45001.png";
 import {
@@ -37,6 +37,7 @@ import {
 } from "react-icons/fi";
 import { HiOutlineOfficeBuilding } from "react-icons/hi";
 import { useLanguage } from "../context/LanguageContext";
+import { CLIENT_LOGOS } from "@/lib/clients";
 
 
 
@@ -121,22 +122,22 @@ const page = () => {
                             <div className='innerpage_bnrContent'>
                                 <ul className='page_breadcrumb'>
                                     <li><Link href={"/"}> {t("common.home")}</Link></li>
-                                    <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
-                                    <li><Link href={'/company'}>{t("company.breadcrumbCompany")}</Link></li>
-                                    <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
+                                    <li aria-hidden="true"><img src="/assets/img/rightIcon.svg" alt='' /> </li>
+                                    <li>{t("company.breadcrumbCompany")}</li>
+                                    <li aria-hidden="true"><img src="/assets/img/rightIcon.svg" alt='' /> </li>
                                   
-                                    <li> {t("company.breadcrumbAboutUs")}</li>
+                                    <li aria-current="page"> {t("company.breadcrumbAboutUs")}</li>
                                 </ul>
                                 <h1>{t("company.ourVision")}</h1>
                                 {/* <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>{page.subTitle}</p> */}
                                 <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>{t("company.visionText")}</p>
-                                <button className='mainbtn'>{t("common.contactUsBtn")}</button>
+                                <Link href="/contact-us" className='mainbtn'>{t("common.contactUsBtn")}</Link>
                             </div>
                         </div>
                         <div className='col-lg-5 offset-lg-1'>
                             <div className="hero-banner_img" >
                                 <img src="/assets/img/gallery_img/01653488601.jpeg"
-                                    alt="company" />
+                                    alt="SAM Technical Service Contracting Est team on site in Saudi Arabia" fetchPriority="high" />
                             </div>
                         </div>
                     </div>
@@ -202,14 +203,16 @@ const page = () => {
 
                 {/* Side Power Plants */}
                 <img
-                    src="/assets/img/left-plant.png"
-                    alt="Power Plant"
+                    src="/assets/img/left-plant.webp"
+                    alt=""
+                    aria-hidden="true"
                     className="plant plantLeft"
                 />
 
                 <img
-                    src="/assets/img/right-plant.png"
-                    alt="Power Plant"
+                    src="/assets/img/right-plant.webp"
+                    alt=""
+                    aria-hidden="true"
                     className="plant plantRight"
                 />
 
@@ -225,19 +228,19 @@ const page = () => {
 
                         <img
                             src="/assets/img/iso9001.png"
-                            alt="ISO 9001"
+                            alt="ISO 9001 certified"
                             className="isoBadge"
                         />
 
                         <div className="headingContent">
 
-                            <h1>
+                            <h2 className="headingMain">
                                 {t("company.opMaintHeading")}
-                            </h1>
-
-                            <h2>
-                                {t("company.serviceProviderHeading")}
                             </h2>
+
+                            <div className="headingSub">
+                                {t("company.serviceProviderHeading")}
+                            </div>
 
                             <p>
                                 {t("company.powerPlantSpecialist")}
@@ -247,7 +250,7 @@ const page = () => {
 
                         <img
                             src="/assets/img/iso45001.png"
-                            alt="ISO 45001"
+                            alt="ISO 45001 certified"
                             className="isoBadge"
                         />
 
@@ -344,7 +347,8 @@ const page = () => {
 
                                 <img className='mb_24'
                                     src="/assets/img/aboutus_bnr.jpg"
-                                    alt="Industrial Plant"
+                                    alt="Industrial plant served by SAM Tech in Saudi Arabia"
+                                    loading="lazy"
                                 />
 
                                 <div className="service-box">
@@ -397,7 +401,7 @@ const page = () => {
             </section>
 
 
-            <section class="vision-mission-section">
+            <section className="vision-mission-section">
 
                 {/* <!-- Vision --> */}
                 {/* <div class="vm-row vision">
@@ -422,19 +426,19 @@ const page = () => {
                 </div> */}
 
                 {/* <!-- Mission --> */}
-                <div class="vm-row mission">
+                <div className="vm-row mission">
 
-                    <div class="vm-image">
-                        <img src="/assets/img/aboutus_bnr.jpg" alt="" />
+                    <div className="vm-image">
+                        <img src="/assets/img/aboutus_bnr.jpg" alt="SAM Tech engineers at an industrial plant" loading="lazy" />
                     </div>
 
-                    <div class="vm-content dark">
+                    <div className="vm-content dark">
 
-                        <span class="vm-label">
+                        <span className="vm-label">
                             {t("company.missionLabelPre")} <span>{t("company.missionLabelHighlight")}</span>
                         </span>
 
-                        <div class="line"></div>
+                        <div className="line"></div>
 
                         <p>
                             {t("company.missionP1")}
@@ -496,13 +500,13 @@ const page = () => {
                         <div className='col-lg-3'>
                             <div className="serviceItem">
                                 <div className="service-img">
-                                    <img src="/assets/img/online_safety_valve_testing_img.jpg" alt='Online Safety Valve Testing' />
-                                    <Link href="/service-page/online_safety_testing">
-                                        <img src="/assets/img/bx_link.svg" alt='link' />
+                                    <img src="/assets/img/online_safety_valve_testing_img.jpg" alt='Online safety valve testing in Saudi Arabia' loading='lazy' />
+                                    <Link href="/services/online-safety-valve-testing">
+                                        <img src="/assets/img/bx_link.svg" alt='View service details' />
                                     </Link>
                                 </div>
                                 <div className="service-caption">
-                                    <Link href="/service-page/online_safety_testing">
+                                    <Link href="/services/online-safety-valve-testing">
                                         <h3>{t("company.services.valveTesting")}</h3></Link>
                                 </div>
                             </div>
@@ -511,11 +515,11 @@ const page = () => {
 
                             <div className="serviceItem">
                                 <div className="service-img">
-                                    <img src="/assets/img/online_leak_sealing_home.png" alt='Online Leak Sealing' />
+                                    <img src="/assets/img/online_leak_sealing_home.webp" alt='Online leak sealing' loading='lazy' />
 
 
-                                    <Link href="/service-page/online_seal">
-                                        <img src="/assets/img/bx_link.svg" alt='link' />
+                                    <Link href="/services/online-leak-sealing">
+                                        <img src="/assets/img/bx_link.svg" alt='View service details' />
                                     </Link>
 
 
@@ -523,7 +527,7 @@ const page = () => {
 
                                 </div>
                                 <div className="service-caption">
-                                    <Link href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">
+                                    <Link href="/services/online-leak-sealing">
                                         <h3>{t("company.services.leakSealing")}</h3></Link>
                                 </div>
                             </div>
@@ -531,16 +535,16 @@ const page = () => {
                         <div className='col-lg-3'>
                             <div className="serviceItem">
                                 <div className="service-img">
-                                    <img src="/assets/img/hottapping_home.jpg" alt='Hot Tapping' />
+                                    <img src="/assets/img/hottapping_home.jpg" alt='Hot tapping on a live pipeline' loading='lazy' />
 
-                                    <Link href="/service-page/hot_tapping">
-                                        <img src="/assets/img/bx_link.svg" alt='link' />
+                                    <Link href="/services/hot-tapping">
+                                        <img src="/assets/img/bx_link.svg" alt='View service details' />
                                     </Link>
 
 
                                 </div>
                                 <div className="service-caption">
-                                    <Link href="/service-page/hot_tapping">
+                                    <Link href="/services/hot-tapping">
                                         <h3>{t("company.services.hotTapping")}</h3></Link>
                                 </div>
                             </div>
@@ -548,16 +552,16 @@ const page = () => {
                         <div className='col-lg-3'>
                             <div className="serviceItem">
                                 <div className="service-img">
-                                    <img src="/assets/img/heat_exchanger_maintenance_home.jpg" alt='Heat Exchanger, Maintenance' />
+                                    <img src="/assets/img/heat_exchanger_maintenance_home.jpg" alt='Heat exchanger maintenance' loading='lazy' />
 
-                                    <Link href="/service-page/heat_exchanger">
-                                        <img src="/assets/img/bx_link.svg" alt='link' />
+                                    <Link href="/services/heat-exchanger-maintenance">
+                                        <img src="/assets/img/bx_link.svg" alt='View service details' />
                                     </Link>
 
 
                                 </div>
                                 <div className="service-caption">
-                                    <Link href="/service-page/heat_exchanger">  <h3>{t("company.services.heatExchanger")}</h3></Link>
+                                    <Link href="/services/heat-exchanger-maintenance">  <h3>{t("company.services.heatExchanger")}</h3></Link>
                                 </div>
                             </div>
                         </div>
@@ -565,15 +569,15 @@ const page = () => {
                         <div className='col-lg-3'>
                             <div className="serviceItem">
                                 <div className="service-img">
-                                    <img src="/assets/img/technical_manpower_provisioning_home.jpg" alt='Technical Manpower supply for Power plant refineries and Water plant' />
+                                    <img src="/assets/img/technical_manpower_provisioning_home.jpg" alt='Technical manpower supply for power plants, refineries and water plants' loading='lazy' />
 
-                                    <Link href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">
-                                        <img src="/assets/img/bx_link.svg" alt='link' />
+                                    <Link href="/services/technical-manpower-supply">
+                                        <img src="/assets/img/bx_link.svg" alt='View service details' />
                                     </Link>
 
                                 </div>
                                 <div className="service-caption">
-                                    <Link href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">
+                                    <Link href="/services/technical-manpower-supply">
                                         <h3>{t("company.services.manpower")}</h3></Link>
                                 </div>
                             </div>
@@ -581,16 +585,16 @@ const page = () => {
                         <div className='col-lg-3'>
                             <div className="serviceItem">
                                 <div className="service-img">
-                                    <img src="/assets/img/ro_plant_epc_contracts_home.jpg" alt='RO Plant EPC Contracts' />
+                                    <img src="/assets/img/ro_plant_epc_contracts_home.jpg" alt='RO plant EPC contracts' loading='lazy' />
 
-                                    <Link href="/service-page/ro_plant_epc_contracts">
-                                        <img src="/assets/img/bx_link.svg" alt='link' />
+                                    <Link href="/services/ro-plant-epc-contracts">
+                                        <img src="/assets/img/bx_link.svg" alt='View service details' />
                                     </Link>
 
 
                                 </div>
                                 <div className="service-caption">
-                                    <Link href="/service-page/ro_plant_epc_contracts"> <h3>{t("company.services.roEpc")}</h3></Link>
+                                    <Link href="/services/ro-plant-epc-contracts"> <h3>{t("company.services.roEpc")}</h3></Link>
                                 </div>
                             </div>
                         </div>
@@ -598,32 +602,32 @@ const page = () => {
 
                             <div className="serviceItem">
                                 <div className="service-img">
-                                    <img src="/assets/img/ro-plants-retro-fitting_home.jpg" alt='RO Plants Retro  Fitting' />
+                                    <img src="/assets/img/ro-plants-retro-fitting_home.jpg" alt='RO plant retrofitting' loading='lazy' />
 
 
-                                    <Link href="/service-page/ro_membrane">
-                                        <img src="/assets/img/bx_link.svg" alt='link' />
+                                    <Link href="/services/ro-plant-retrofitting">
+                                        <img src="/assets/img/bx_link.svg" alt='View service details' />
                                     </Link>
 
                                 </div>
                                 <div className="service-caption">
-                                    <Link href="/service-page/ro_membrane"> <h3>{t("company.services.roRetro")}</h3></Link>
+                                    <Link href="/services/ro-plant-retrofitting"> <h3>{t("company.services.roRetro")}</h3></Link>
                                 </div>
                             </div>
                         </div>
                         <div className='col-lg-3'>
                             <div className="serviceItem">
                                 <div className="service-img">
-                                    <img src="/assets/img/solar-plant_epc_home.jpeg" alt='Solar Plant EPC' />
+                                    <img src="/assets/img/solar-plant_epc_home.jpeg" alt='Solar plant EPC' loading='lazy' />
 
-                                    <Link href="/service-page/solar_plant_epc">
-                                        <img src="/assets/img/bx_link.svg" alt='link' />
+                                    <Link href="/services/solar-plant-epc">
+                                        <img src="/assets/img/bx_link.svg" alt='View service details' />
                                     </Link>
 
 
                                 </div>
                                 <div className="service-caption">
-                                    <Link href="/service-page/solar_plant_epc"> <h3>{t("company.services.solarEpc")}</h3> </Link>
+                                    <Link href="/services/solar-plant-epc"> <h3>{t("company.services.solarEpc")}</h3> </Link>
                                 </div>
                             </div>
                         </div>
@@ -631,17 +635,17 @@ const page = () => {
                         <div className='col-lg-3'>
                             <div className="serviceItem">
                                 <div className="service-img">
-                                    <img src="/assets/img/upvc_home.png" alt='UPVC' />
+                                    <img src="/assets/img/upvc_home.webp" alt='UPVC and aluminium doors and windows fabrication' loading='lazy' />
 
-                                    <Link href="/service-page/upvc_aluminiumdoors_windowsfabrication">
-                                        <img src="/assets/img/bx_link.svg" alt='link' />
+                                    <Link href="/services/upvc-aluminium-doors-windows">
+                                        <img src="/assets/img/bx_link.svg" alt='View service details' />
                                     </Link>
 
 
 
                                 </div>
                                 <div className="service-caption">
-                                    <Link href="/service-page/upvc_aluminiumdoors_windowsfabrication"> <h3>{t("company.services.upvc")}</h3></Link>
+                                    <Link href="/services/upvc-aluminium-doors-windows"> <h3>{t("company.services.upvc")}</h3></Link>
                                 </div>
                             </div>
                         </div>
@@ -651,15 +655,15 @@ const page = () => {
                         {/* <div className='col-lg-3'>
                             <div className="serviceItem">
                                 <div className="service-img">
-                                    <img src="/assets/img/offline_valve_testing_home.png" alt='Offline Valve Testing' />
+                                    <img src="/assets/img/offline_valve_testing_home.webp" alt='Offline Valve Testing' />
 
-                                    <Link href="/service-page/offline_valve_testing">
-                                        <img src="/assets/img/bx_link.svg" alt='link' />
+                                    <Link href="/services/offline-valve-testing">
+                                        <img src="/assets/img/bx_link.svg" alt='View service details' />
                                     </Link>
 
                                 </div>
                                 <div className="service-caption">
-                                    <Link href="/service-page/offline_valve_testing"><h3>Offline Valve Testing</h3></Link>
+                                    <Link href="/services/offline-valve-testing"><h3>Offline Valve Testing</h3></Link>
                                 </div>
                             </div>
                         </div>
@@ -667,12 +671,12 @@ const page = () => {
                             <div className="serviceItem">
                                 <div className="service-img">
                                     <img src="/assets/img/valve_service_home.jpeg" alt='All Types of Valve Servicing' />
-                                    <Link href="/service-page/alltype_valve_services">
-                                        <img src="/assets/img/bx_link.svg" alt='link' />
+                                    <Link href="/services/industrial-valve-servicing">
+                                        <img src="/assets/img/bx_link.svg" alt='View service details' />
                                     </Link>
                                 </div>
                                 <div className="service-caption">
-                                    <Link href="/service-page/offline_valve_testing">
+                                    <Link href="/services/offline-valve-testing">
                                         <h3>All Types of Valve Servicing</h3></Link>
                                 </div>
                             </div>
@@ -771,7 +775,7 @@ const page = () => {
                     </div>
 
                     <div className="col-lg-6 presence-right">
-                        <img src="/assets/img/our-presence.png" alt="STSC Regional Presence" />
+                        <img src="/assets/img/our-presence.webp" alt="SAM Tech and Power Tech Group presence in Saudi Arabia, UAE, Qatar, Bahrain and India" loading="lazy" />
                     </div>
                     </div>
 
@@ -808,101 +812,18 @@ const page = () => {
                 <div className="customerLogos">
 
                     <Marquee direction="left" ref={marqueeRef} speed={70} className="marquee" loop={0}>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c1.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c2.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c3.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c4.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c5.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c6.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c7.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c8.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c9.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c10.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c11.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c12.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c13.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c14.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c15.jpg" alt='' />
-                        </div>
+                        {CLIENT_LOGOS.slice(4, 19).map((c) => (
+                            <div className='clientLogo_item' key={c.src}>
+                                <img src={c.src} alt={`${c.name} logo`} title={c.name} loading="lazy" />
+                            </div>
+                        ))}
                     </Marquee>
                     <Marquee className="marquee" direction="right" loop={0} speed={70} >
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c16.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c17.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c18.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c19.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c20.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c21.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c22.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c23.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c24.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c25.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c26.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c27.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c28.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c29.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c30.jpg" alt='' />
-                        </div>
-                        <div className='clientLogo_item'>
-                            <img src="/assets/img/clientlogo/c31.jpg" alt='' />
-                        </div>
+                        {CLIENT_LOGOS.slice(19).map((c) => (
+                            <div className='clientLogo_item' key={c.src}>
+                                <img src={c.src} alt={`${c.name} logo`} title={c.name} loading="lazy" />
+                            </div>
+                        ))}
                     </Marquee>
 
 

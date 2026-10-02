@@ -14,9 +14,9 @@ const page = () => {
                             <div className='innerpage_bnrContent'>
                                 <ul className='page_breadcrumb'>
                                     <li><Link href={"/"}> {t("common.home")}</Link></li>
-                                    <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
+                                    <li aria-hidden="true"><img src="/assets/img/rightIcon.svg" alt='' /> </li>
                                     <li> {t("groupCompanies.breadcrumbAboutUs")}</li>
-                                    <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
+                                    <li aria-hidden="true"><img src="/assets/img/rightIcon.svg" alt='' /> </li>
                                     <li><Link href={'/group-companies'}>{t("header.nav.groupCompanies")}</Link></li>
                                 </ul>
                                 <h1>{t("groupCompanies.pageTitle")}</h1>
@@ -30,7 +30,7 @@ const page = () => {
                         <div className='col-lg-5 offset-lg-1'>
                             <div className="hero-banner_img" >
                                 <img src="/assets/img/company-photo/sl3.jpg"
-                                    alt="company" />
+                                    alt="Power Tech Group of Companies" fetchPriority="high" />
 
 
                             </div>
@@ -46,7 +46,7 @@ const page = () => {
                             <div className='groupCompanyItem'>
                                 <div>
                                     <div className='groupCompanylogo'>
-                                        <img src="/assets/img/ptd.png" alt='ptd' />
+                                        <img src="/assets/img/ptd.png" alt='Power Tech Development W.L.L, Bahrain logo' loading='lazy' />
                                     </div>
 
                                     <h2>Power Tech Development W.L.L, Bahrain</h2>
@@ -58,19 +58,19 @@ const page = () => {
                                     <div className='displayInlineFlex alignItem_center gap12'>
                                         <div>
 
-                                            <Link href="https://wa.me/97334010755" target="_blank">
-                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='whatsapp' />
+                                            <Link href="https://wa.me/97334010755" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='' />
 
                                             </Link>
                                         </div>
-                                        <div>      <Link href={'mailto:gm@powertechdevelopment.com'}>
-                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='mail' />
+                                        <div>      <Link href={'mailto:gm@powertechdevelopment.com'} aria-label="Email">
+                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='' />
                                         </Link></div>
 
                                     </div>
                                     <div>
-                                        <Link href="https://www.powertechdevelopment.com/index.php" target='_blank'>
-                                            <img className='width34px' src="/assets/img/link.svg" alt='link' />
+                                        <Link href="https://www.powertechdevelopment.com/index.php" target='_blank' rel="noopener" aria-label="Website">
+                                            <img className='width34px' src="/assets/img/link.svg" alt='' />
                                         </Link>
                                     </div>
                                 </div>
@@ -91,19 +91,19 @@ const page = () => {
                                     <div className='displayInlineFlex alignItem_center gap12'>
                                         <div>
 
-                                            <Link href="https://wa.me/971504712069" target="_blank">
-                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='whatsapp' />
+                                            <Link href="https://wa.me/971504712069" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='' />
 
                                             </Link>
                                         </div>
-                                        <div>      <Link href={'mailto:global@powertechdevelopment.com'}>
-                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='mail' />
+                                        <div>      <Link href={'mailto:global@powertechdevelopment.com'} aria-label="Email">
+                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='' />
                                         </Link></div>
 
                                     </div>
                                     <div>
-                                        <Link href="https://gptcae.com" target='_blank'>
-                                            <img className='width34px' src="/assets/img/link.svg" alt='link' />
+                                        <Link href="https://gptcae.com" target='_blank' rel="noopener" aria-label="Website">
+                                            <img className='width34px' src="/assets/img/link.svg" alt='' />
                                         </Link>
                                     </div>
                                 </div>
@@ -116,7 +116,7 @@ const page = () => {
                             <div className='groupCompanyItem'>
                                 <div>
                                     <div className='groupCompanylogo'>
-                                        <img src="/assets/img/sam_logo.png" alt='stsc' />
+                                        <img src="/assets/img/sam_logo.png" alt='SAM Technical Service Contracting Est logo' loading='lazy' />
                                     </div>
 
                                     <h2> SAM Technical Service Contracting Est, Saudi Arabia</h2>
@@ -126,19 +126,19 @@ const page = () => {
                                     <div className='displayInlineFlex alignItem_center gap12'>
                                         <div>
 
-                                            <Link href="https://wa.me/966507745097" target="_blank">
-                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='whatsapp' />
+                                            <Link href="https://wa.me/966507745097" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='' />
 
                                             </Link>
                                         </div>
-                                        <div>      <Link href={'mailto:samtech@powertechdevelopment.com'}>
-                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='mail' />
+                                        <div>      <Link href={'mailto:samtech@powertechdevelopment.com'} aria-label="Email">
+                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='' />
                                         </Link></div>
 
                                     </div>
                                     <div>
-                                        <Link href="https://samtechsa.com" target='_blank'>
-                                            <img className='width34px' src="/assets/img/link.svg" alt='link' />
+                                        <Link href="https://samtechsa.com" target='_blank' rel="noopener" aria-label="Website">
+                                            <img className='width34px' src="/assets/img/link.svg" alt='' />
                                         </Link>
                                     </div>
                                 </div>
@@ -152,7 +152,7 @@ const page = () => {
                             <div className='groupCompanyItem'>
                                 <div>
                                     <div className='groupCompanylogo'>
-                                        <img src="/assets/img/cpdti.png" alt='cpdti' />
+                                        <img src="/assets/img/cpdti.png" alt='Chennai Power & Desalination Training Institute (CPDTI) logo' loading='lazy' />
                                     </div>
 
                                     <h2>Chennai Power & Desalination Training Institute, India</h2>
@@ -162,19 +162,19 @@ const page = () => {
                                     <div className='displayInlineFlex alignItem_center gap12'>
                                         <div>
 
-                                            <Link href="https://wa.me/919750172525" target="_blank">
-                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='whatsapp' />
+                                            <Link href="https://wa.me/919750172525" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='' />
 
                                             </Link>
                                         </div>
-                                        <div>      <Link href={'mailto:chennai.power.padi@gmail.com'}>
-                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='mail' />
+                                        <div>      <Link href={'mailto:chennai.power.padi@gmail.com'} aria-label="Email">
+                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='' />
                                         </Link></div>
 
                                     </div>
                                     <div>
-                                        <Link href="https://www.cpdti.in" target='_blank'>
-                                            <img className='width34px' src="/assets/img/link.svg" alt='link' />
+                                        <Link href="https://www.cpdti.in" target='_blank' rel="noopener" aria-label="Website">
+                                            <img className='width34px' src="/assets/img/link.svg" alt='' />
                                         </Link>
                                     </div>
                                 </div>
@@ -188,7 +188,7 @@ const page = () => {
                             <div className='groupCompanyItem'>
                                 <div>
                                     <div className='groupCompanylogo'>
-                                        <img src="/assets/img/pemi_logo.jpg" alt='pemi_logo' />
+                                        <img src="/assets/img/pemi_logo.jpg" alt='Powertech Electro Mechanical Industries logo' loading='lazy' />
                                     </div>
 
                                     <h2>POWERTECH ELECTRO MECHANICAL INDUSTRIES Pvt.(Ltd)</h2>
@@ -198,19 +198,19 @@ const page = () => {
                                     <div className='displayInlineFlex alignItem_center gap12'>
                                         <div>
 
-                                            <Link href="https://wa.me/917092255005" target="_blank">
-                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='whatsapp' />
+                                            <Link href="https://wa.me/917092255005" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='' />
 
                                             </Link>
                                         </div>
-                                        <div>      <Link href={'mailto:enquiry@pemiindia.com'}>
-                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='mail' />
+                                        <div>      <Link href={'mailto:enquiry@pemiindia.com'} aria-label="Email">
+                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='' />
                                         </Link></div>
 
                                     </div>
                                     <div>
-                                        <Link href="https://pemiindia.com" target='_blank'>
-                                            <img className='width34px' src="/assets/img/link.svg" alt='link' />
+                                        <Link href="https://pemiindia.com" target='_blank' rel="noopener" aria-label="Website">
+                                            <img className='width34px' src="/assets/img/link.svg" alt='' />
                                         </Link>
                                     </div>
                                 </div>
@@ -222,7 +222,7 @@ const page = () => {
                             <div className='groupCompanyItem'>
                                 <div>
                                     <div className='groupCompanylogo'>
-                                        <img src="/assets/img/ib-badooda.png" alt='ib-badooda' />
+                                        <img src="/assets/img/ib-badooda.png" alt='IBN Badooda Electro Mechanical Workshop logo' loading='lazy' />
                                     </div>
 
                                     <h2>IBN Badooda Electro Mechanical Workshop, Bahrain</h2>
@@ -232,19 +232,19 @@ const page = () => {
                                     <div className='displayInlineFlex alignItem_center gap12'>
                                         <div>
 
-                                            <Link href="https://wa.me/97334010755" target="_blank">
-                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='whatsapp' />
+                                            <Link href="https://wa.me/97334010755" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='' />
 
                                             </Link>
                                         </div>
-                                        <div>      <Link href={'mailto:gm@powertechdevelopment.com'}>
-                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='mail' />
+                                        <div>      <Link href={'mailto:gm@powertechdevelopment.com'} aria-label="Email">
+                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='' />
                                         </Link></div>
 
                                     </div>
                                     <div>
-                                        <Link href="https://www.powertechdevelopment.com" target='_blank'>
-                                            <img className='width34px' src="/assets/img/link.svg" alt='link' />
+                                        <Link href="https://www.powertechdevelopment.com" target='_blank' rel="noopener" aria-label="Website">
+                                            <img className='width34px' src="/assets/img/link.svg" alt='' />
                                         </Link>
                                     </div>
                                 </div>
@@ -256,7 +256,7 @@ const page = () => {
                             <div className='groupCompanyItem'>
                                 <div>
                                     <div className='groupCompanylogo'>
-                                        <img src="/assets/img/ptintl.png" alt='ptintl' />
+                                        <img src="/assets/img/ptintl.png" alt='Power Tech International logo' loading='lazy' />
                                     </div>
 
                                     <h2>Power Tech International, India</h2>
@@ -266,19 +266,19 @@ const page = () => {
                                     <div className='displayInlineFlex alignItem_center gap12'>
                                         <div>
 
-                                            <Link href="https://wa.me/919498660799" target="_blank">
-                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='whatsapp' />
+                                            <Link href="https://wa.me/919498660799" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='' />
 
                                             </Link>
                                         </div>
-                                        <div>      <Link href={'mailto:hrptg@ptijobs.in'}>
-                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='mail' />
+                                        <div>      <Link href={'mailto:hrptg@ptijobs.in'} aria-label="Email">
+                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='' />
                                         </Link></div>
 
                                     </div>
                                     <div>
-                                        <Link href="https://ptijobs.in" target='_blank'>
-                                            <img className='width34px' src="/assets/img/link.svg" alt='link' />
+                                        <Link href="https://ptijobs.in" target='_blank' rel="noopener" aria-label="Website">
+                                            <img className='width34px' src="/assets/img/link.svg" alt='' />
                                         </Link>
                                     </div>
                                 </div>
@@ -292,7 +292,7 @@ const page = () => {
                             <div className='groupCompanyItem'>
                                 <div>
                                     <div className='groupCompanylogo'>
-                                        <img src="/assets/img/vtts.png" alt='vtts' />
+                                        <img src="/assets/img/vtts.png" alt='Valve Tech Testing & Services logo' loading='lazy' />
                                     </div>
 
                                     <h2> Valve Tech Testing & Services, Bahrain</h2>
@@ -302,19 +302,19 @@ const page = () => {
                                     <div className='displayInlineFlex alignItem_center gap12'>
                                         <div>
 
-                                            <Link href="https://wa.me/97334010755" target="_blank">
-                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='whatsapp' />
+                                            <Link href="https://wa.me/97334010755" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='' />
 
                                             </Link>
                                         </div>
-                                        <div>      <Link href={'mailto:enquiry@powertechtesting.com'}>
-                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='mail' />
+                                        <div>      <Link href={'mailto:enquiry@powertechtesting.com'} aria-label="Email">
+                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='' />
                                         </Link></div>
 
                                     </div>
                                     <div>
-                                        <Link href="https://www.powertechdevelopment.com" target='_blank'>
-                                            <img className='width34px' src="/assets/img/link.svg" alt='link' />
+                                        <Link href="https://www.powertechdevelopment.com" target='_blank' rel="noopener" aria-label="Website">
+                                            <img className='width34px' src="/assets/img/link.svg" alt='' />
                                         </Link>
                                     </div>
                                 </div>
@@ -326,7 +326,7 @@ const page = () => {
                             <div className='groupCompanyItem'>
                                 <div>
                                     <div className='groupCompanylogo'>
-                                        <img src="/assets/img/ptts.png" alt='ptts' />
+                                        <img src="/assets/img/ptts.png" alt='Power Tech Testing & Services logo' loading='lazy' />
                                     </div>
 
                                     <h2>Power Tech Testing & Services, India</h2>
@@ -336,19 +336,19 @@ const page = () => {
                                     <div className='displayInlineFlex alignItem_center gap12'>
                                         <div>
 
-                                            <Link href="https://wa.me/919498660803" target="_blank">
-                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='whatsapp' />
+                                            <Link href="https://wa.me/919498660803" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='' />
 
                                             </Link>
                                         </div>
-                                        <div>      <Link href={'mailto:valvetests@gmail.com'}>
-                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='mail' />
+                                        <div>      <Link href={'mailto:valvetests@gmail.com'} aria-label="Email">
+                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='' />
                                         </Link></div>
 
                                     </div>
                                     <div>
-                                        <Link href="https://powertechtesting.com" target='_blank'>
-                                            <img className='width34px' src="/assets/img/link.svg" alt='link' />
+                                        <Link href="https://powertechtesting.com" target='_blank' rel="noopener" aria-label="Website">
+                                            <img className='width34px' src="/assets/img/link.svg" alt='' />
                                         </Link>
                                     </div>
                                 </div>
@@ -362,7 +362,7 @@ const page = () => {
                                 <div>
                                     <div>
                                         <div className='groupCompanylogo'>
-                                            <img src="/assets/img/sams_logo.jpg" alt='sams' />
+                                            <img src="/assets/img/sams_logo.jpg" alt='SAMS Building Contracting L.L.C logo' loading='lazy' />
                                         </div>
                                     </div>
 
@@ -373,19 +373,19 @@ const page = () => {
                                     <div className='displayInlineFlex alignItem_center gap12'>
                                         <div>
 
-                                            <Link href="https://wa.me/971504712069" target="_blank">
-                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='whatsapp' />
+                                            <Link href="https://wa.me/971504712069" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='' />
 
                                             </Link>
                                         </div>
-                                        <div>      <Link href={'mailto:global@powertechdevelopment.com'}>
-                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='mail' />
+                                        <div>      <Link href={'mailto:global@powertechdevelopment.com'} aria-label="Email">
+                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='' />
                                         </Link></div>
 
                                     </div>
                                     <div>
-                                        <Link href="https://gptcae.com" target='_blank'>
-                                            <img className='width34px' src="/assets/img/link.svg" alt='link' />
+                                        <Link href="https://gptcae.com" target='_blank' rel="noopener" aria-label="Website">
+                                            <img className='width34px' src="/assets/img/link.svg" alt='' />
                                         </Link>
                                     </div>
                                 </div>
@@ -398,7 +398,7 @@ const page = () => {
                             <div className='groupCompanyItem'>
                                 <div>
                                     <div className='groupCompanylogo'>
-                                        <img src="/assets/img/q-power.png" alt='Q-Power Tech Mechanical Contracting' />
+                                        <img src="/assets/img/q-power.png" alt='Q-Power Tech Mechanical Contracting, Qatar logo' loading='lazy' />
                                     </div>
 
                                     <h2>Q-Power Tech Mechanical Contracting, Qatar</h2>
@@ -408,19 +408,19 @@ const page = () => {
                                     <div className='displayInlineFlex alignItem_center gap12'>
                                         <div>
 
-                                            <Link href="https://wa.me/971504712069" target="_blank">
-                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='whatsapp' />
+                                            <Link href="https://wa.me/971504712069" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='' />
 
                                             </Link>
                                         </div>
-                                        <div>      <Link href={'mailto:gm@qpowertech.com'}>
-                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='mail' />
+                                        <div>      <Link href={'mailto:gm@qpowertech.com'} aria-label="Email">
+                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='' />
                                         </Link></div>
 
                                     </div>
                                     <div>
-                                        <Link href="https://www.powertechdevelopment.com" target='_blank'>
-                                            <img className='width34px' src="/assets/img/link.svg" alt='link' />
+                                        <Link href="https://www.powertechdevelopment.com" target='_blank' rel="noopener" aria-label="Website">
+                                            <img className='width34px' src="/assets/img/link.svg" alt='' />
                                         </Link>
                                     </div>
                                 </div>
@@ -433,7 +433,7 @@ const page = () => {
                             <div className='groupCompanyItem'>
                                 <div>
                                     <div className='groupCompanylogo'>
-                                        <img src="/assets/img/knowledge_city.png" alt='knowledge_city' />
+                                        <img src="/assets/img/knowledge_city.png" alt='Knowledge City logo' loading='lazy' />
                                     </div>
 
                                     <h2> Knowledge City, India</h2>
@@ -443,19 +443,19 @@ const page = () => {
                                     <div className='displayInlineFlex alignItem_center gap12'>
                                         <div>
 
-                                            <Link href="https://wa.me/919629607322" target="_blank">
-                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='whatsapp' />
+                                            <Link href="https://wa.me/919629607322" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                                <img className='width34px' src="/assets/img/whatsappIcon.svg" alt='' />
 
                                             </Link>
                                         </div>
-                                        <div>      <Link href={'mailto:head.knowledgecity@gmail.com'}>
-                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='mail' />
+                                        <div>      <Link href={'mailto:head.knowledgecity@gmail.com'} aria-label="Email">
+                                            <img className='width34px' src="/assets/img/mail_icon.svg" alt='' />
                                         </Link></div>
 
                                     </div>
                                     <div>
-                                        <Link href="https://jamiaabdussalam.org" target='_blank'>
-                                            <img className='width34px' src="/assets/img/link.svg" alt='link' />
+                                        <Link href="https://jamiaabdussalam.org" target='_blank' rel="noopener" aria-label="Website">
+                                            <img className='width34px' src="/assets/img/link.svg" alt='' />
                                         </Link>
                                     </div>
                                 </div>

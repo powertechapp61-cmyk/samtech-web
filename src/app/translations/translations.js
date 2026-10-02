@@ -29,7 +29,7 @@ export const translations = {
         allTypesValveServicing: "All Types of Valve Servicing",
         technicalManpowerSupply:
           "Technical Manpower supply for Power plant refineries and Water plant",
-        onlineLeakSealing: "Online Leak Sealing – SYLMASATA & Conventional",
+        onlineLeakSealing: "Online Leak Sealing – Sylmasta & Conventional",
         hotTapping: "Hot Tapping & Insertion of S-Type ( Gate Valve Online)",
         heatExchanger: "Heat Exchanger, Maintenance & Supply",
         roPlantEpc: "RO Plant EPC Contracts Upto 2MIGPDA",
@@ -126,7 +126,7 @@ export const translations = {
           title: "Technical Manpower supply for Power plant refineries and Water plant",
         },
         onlineSealLeaking: {
-          title: "ONLINE SEAL LEAKING",
+          title: "Online Leak Sealing",
           desc:
             "Online leak sealing today is the leak-sealing solutions of choice as it saves energy, prevents and expensive and unwanted shutdown and can address a wide variety of leaks. With the combination of engineering solutions support from global experts, we have leak sealing compounds that can address a wide variety of steam, chemical, hydrocarbon and gas leaks at temperature up to 700° C. We have highly trained, highly skilled technicians who can handle the adverse situations very tactically and bring downs the situation to normal conditions",
         },
@@ -435,7 +435,7 @@ export const translations = {
         downloadPipelinePdf: "Download Pipeline Intervention PDF",
         toKnowMoreHeading: "To Know More Contact Us",
         toKnowMoreDesc:
-          "It is a long established fact that a reader will be distracted by the readable content of a page randomised words which don't look even slightly when looking at its layout.",
+          "Tell us about your plant, equipment and schedule. Our engineers will review your requirement and get back to you with a technical proposal and quotation.",
         formFirstName: "First name",
         formLastName: "Last name",
         formCompanyName: "Company Name",
@@ -1108,7 +1108,7 @@ export const translations = {
         downloadPipelinePdf: "تحميل ملف PDF عن التدخل في خطوط الأنابيب",
         toKnowMoreHeading: "لمعرفة المزيد اتصل بنا",
         toKnowMoreDesc:
-          "من الحقائق الثابتة أن القارئ يميل إلى التركيز على محتوى الصفحة المقروء بدلاً من تفاصيل تصميمها عند تصفحه.",
+          "أخبرنا عن منشأتك ومعداتك وجدولك الزمني، وسيقوم مهندسونا بدراسة متطلباتك والتواصل معك بعرض فني وعرض سعر.",
         formFirstName: "الاسم الأول",
         formLastName: "اسم العائلة",
         formCompanyName: "اسم الشركة",

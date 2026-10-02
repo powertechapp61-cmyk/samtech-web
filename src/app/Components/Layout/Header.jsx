@@ -1,11 +1,15 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useState, useRef, useEffect } from "react";
 import { Dropdown } from "react-bootstrap";
 import { useLanguage } from "../../context/LanguageContext";
 
 const Header = () => {
   const { language, setLanguage, t } = useLanguage();
+  const pathname = usePathname();
+  // The company name is the page's <h1> only on the home page; inner pages have their own <h1>.
+  const BrandTag = pathname === "/" ? "h1" : "div";
   const [isActive, setIsActive] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -22,7 +26,6 @@ const Header = () => {
 `.trim();
   const handleSearchClick = (e) => {
     setIsOpen((current) => !current);
-    console.log('clicked');
   }
   useEffect(() => {
     const body = document.body;
@@ -68,6 +71,7 @@ const Header = () => {
             <div className="displayFlex alignItem_center gap30">
               <div>
                 <select
+                  aria-label={t("header.langLabel")}
                   className="langSelect"
                   value={language}
                   onChange={(e) => {
@@ -86,7 +90,7 @@ const Header = () => {
 
                     <div className="displayInlineFlex alignItem_center gap12">
                       <div>
-                        <img src="/assets/img/phonetop_icon.svg" alt="phone" />
+                        <img src="/assets/img/phonetop_icon.svg" alt="" aria-hidden="true" />
                       </div>
                       <div>
                         {t("header.phone.saudi")} :&nbsp;
@@ -96,16 +100,10 @@ const Header = () => {
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
-                    <Dropdown.Item href="/service-page/online_safety_testing"> {t("header.phone.bahrain")} :&nbsp;
-                      <Link href="tel:+97366622536">+97366622536</Link></Dropdown.Item>
-                    <Dropdown.Item href="/service-page/offline_valve_testing">{t("header.phone.uae")} :&nbsp;
-                      <Link href="tel:+971504712069">+971504712069</Link></Dropdown.Item>
-
-
-
-                    <Dropdown.Item href="/service-page/offline_valve_testing">
-                      {t("header.phone.india")} :&nbsp;
-                      <Link href="tel:+919498660803">+919498660803</Link></Dropdown.Item>
+                    {/* Plain tel: links (previously these were links nested inside links to service pages) */}
+                    <Dropdown.Item href="tel:+97366622536">{t("header.phone.bahrain")} :&nbsp;+97366622536</Dropdown.Item>
+                    <Dropdown.Item href="tel:+971504712069">{t("header.phone.uae")} :&nbsp;+971504712069</Dropdown.Item>
+                    <Dropdown.Item href="tel:+919498660803">{t("header.phone.india")} :&nbsp;+919498660803</Dropdown.Item>
 
 
                   </Dropdown.Menu>
@@ -194,15 +192,15 @@ const Header = () => {
           {!isSticky && (
           <div className="deskFlexMobileBlock alignItem_center justifyContent_spacebetween deskHeader">
           <div className="brandlogo">
-            <Link href={"/"} prefetch>
+            <Link href={"/"} prefetch aria-label="SAM Technical Service Contracting Est – Home">
               <img
                   src="/assets/img/sam_logo.png"
-                alt="Logo"
+                alt="SAM Technical Service Contracting Est logo"
               />
             </Link>
           </div>
             <div className="logo_text">
-              <h1><span>S</span>am <span>T</span>echnical <span>S</span>ervice <span>C</span>ontracting Est</h1>
+              <BrandTag className="logo_title"><span>S</span>am <span>T</span>echnical <span>S</span>ervice <span>C</span>ontracting Est</BrandTag>
             <p>{t("header.logoTagline")}</p>
           </div>
           <div></div>
@@ -211,16 +209,16 @@ const Header = () => {
             <nav>
             <div className="mobileHeader">
               <div className="stickylogo">
-                <Link href={"/"} prefetch>
+                <Link href={"/"} prefetch aria-label="SAM Technical Service Contracting Est – Home">
                   <img
                       src="/assets/img/sam_logo.png"
-                    alt="Logo"
+                    alt="SAM Technical Service Contracting Est logo"
                   />
                 </Link>
               </div>
 
               <div className="mobileToggle">
-                <button className="emptyBtn" onClick={handleToggleClick}>
+                <button className="emptyBtn" onClick={handleToggleClick} aria-label="Toggle menu" aria-expanded={isActive}>
                   <span></span>
                   <span></span>
                   <span></span>
@@ -267,17 +265,17 @@ const Header = () => {
                       </Dropdown.Toggle>
 
                       <Dropdown.Menu>
-                        <Dropdown.Item href="/service-page/online_safety_testing">{t("header.nav.onlineSafetyValveTesting")}</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/offline_valve_testing">{t("header.nav.offlineValveTesting")}</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/alltype_valve_services">{t("header.nav.allTypesValveServicing")}</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/technical_manpower_supply_for_power_plant_refineries_and_water_plant">{t("header.nav.technicalManpowerSupply")}</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/online_seal_leaking">{t("header.nav.onlineLeakSealing")}</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/hot_tapping">{t("header.nav.hotTapping")}</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/heat_exchanger">{t("header.nav.heatExchanger")}</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/ro_plant_epc_contracts">{t("header.nav.roPlantEpc")}</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/solar_plant_epc">{t("header.nav.solarPlantEpc")}</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/ro_membrane">{t("header.nav.roPlantsRetroFitting")}</Dropdown.Item>
-                        <Dropdown.Item href="/service-page/upvc_aluminiumdoors_windowsfabrication">{t("header.nav.upvcDoorsWindows")}</Dropdown.Item>
+                        <Dropdown.Item href="/services/online-safety-valve-testing">{t("header.nav.onlineSafetyValveTesting")}</Dropdown.Item>
+                        <Dropdown.Item href="/services/offline-valve-testing">{t("header.nav.offlineValveTesting")}</Dropdown.Item>
+                        <Dropdown.Item href="/services/industrial-valve-servicing">{t("header.nav.allTypesValveServicing")}</Dropdown.Item>
+                        <Dropdown.Item href="/services/technical-manpower-supply">{t("header.nav.technicalManpowerSupply")}</Dropdown.Item>
+                        <Dropdown.Item href="/services/online-leak-sealing">{t("header.nav.onlineLeakSealing")}</Dropdown.Item>
+                        <Dropdown.Item href="/services/hot-tapping">{t("header.nav.hotTapping")}</Dropdown.Item>
+                        <Dropdown.Item href="/services/heat-exchanger-maintenance">{t("header.nav.heatExchanger")}</Dropdown.Item>
+                        <Dropdown.Item href="/services/ro-plant-epc-contracts">{t("header.nav.roPlantEpc")}</Dropdown.Item>
+                        <Dropdown.Item href="/services/solar-plant-epc">{t("header.nav.solarPlantEpc")}</Dropdown.Item>
+                        <Dropdown.Item href="/services/ro-plant-retrofitting">{t("header.nav.roPlantsRetroFitting")}</Dropdown.Item>
+                        <Dropdown.Item href="/services/upvc-aluminium-doors-windows">{t("header.nav.upvcDoorsWindows")}</Dropdown.Item>
 
                       </Dropdown.Menu>
                     </Dropdown>
@@ -327,8 +325,8 @@ const Header = () => {
                   </li>
                   {!isSticky && (
                   <li>
-                    <button className="circleIconbtn" onClick={handleSearchClick}>
-                        <img className="whiteFilter" src="/assets/img/tabler_search.svg" alt="search" />
+                    <button className="circleIconbtn" onClick={handleSearchClick} aria-label="Search">
+                        <img className="whiteFilter" src="/assets/img/tabler_search.svg" alt="" />
                     </button>
                   </li>
                   )}

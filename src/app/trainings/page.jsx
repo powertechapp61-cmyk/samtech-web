@@ -70,9 +70,9 @@ const page = () => {
                           <div className='innerpage_bnrContent'>
                               <ul className='page_breadcrumb'>
                                   <li><Link href={"/"}> {t("common.home")}</Link></li>
-                                  <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
+                                  <li aria-hidden="true"><img src="/assets/img/rightIcon.svg" alt='' /> </li>
                                   <li>{t("header.nav.gallery")}</li>
-                                  <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
+                                  <li aria-hidden="true"><img src="/assets/img/rightIcon.svg" alt='' /> </li>
                                   <li><Link href={'/trainings'}>{t("header.nav.trainings")}</Link></li>
                               </ul>
                               <h1>{t("trainings.pageTitle")}</h1>
@@ -82,7 +82,7 @@ const page = () => {
                       </div>
                       <div className='col-lg-5 offset-lg-1'>
                           <div className='hero-banner_img'>
-                              <img className="img-1" src="/assets/img/trainings/ai_training_by_ibm.jpg" alt="gallery" />
+                              <img className="img-1" src="/assets/img/trainings/ai_training_by_ibm.jpg" alt="AI training by IBM for CPDTI students" fetchPriority="high" />
                           </div>
                       </div>
                   </div>
@@ -104,7 +104,7 @@ const page = () => {
                           >
                               <img
                                   src={item.thumb}
-                                  alt={item.caption}
+                                  alt={item.caption} loading="lazy"
                               />
                               <div className='galleryhover'><h5>{item.caption}</h5></div>
                           </a>

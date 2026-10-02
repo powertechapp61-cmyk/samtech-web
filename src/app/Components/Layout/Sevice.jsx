@@ -3,16 +3,17 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 
-const Service = ({ pageData, pagename }) => {
+const Service = ({ pageData, pagename, navKey }) => {
   // const[serviceType,setServiceType] =useState('ro_membrane');
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const page = pageData;
+  // English H1 is SEO-optimised in services/[slug]/ServiceContent.jsx; Arabic uses the menu translation
+  const heading = language === "ar" && navKey ? t(navKey) : page.title;
 
   const blankPages = [
     "online_safety_testing",
     "offline_valve_testing",
     "alltype_valve_services",
-    "technical_manpower_supply_for_power_plant_refineries_and_water_plant",
     "hot_tapping",
     "heat_exchanger",
     "ro_membrane",
@@ -33,14 +34,16 @@ const Service = ({ pageData, pagename }) => {
           <div className='row alignItem_center height100per' >
             <div className='col-lg-6'>
               <div className='innerpage_bnrContent'>
+                <nav aria-label="Breadcrumb">
                 <ul className='page_breadcrumb'>
                   <li><Link href={"/"}> {t("common.home")}</Link></li>
-                  <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
+                  <li aria-hidden="true"><img src="/assets/img/rightIcon.svg" alt='' /> </li>
                   <li> {t("header.nav.services")}</li>
-                  <li><img src="/assets/img/rightIcon.svg" alt='right icon' /> </li>
-                  <li><Link href="#">{page?.title}</Link></li>
+                  <li aria-hidden="true"><img src="/assets/img/rightIcon.svg" alt='' /> </li>
+                  <li aria-current="page">{heading}</li>
                 </ul>
-                <h1>{page.title}</h1>
+                </nav>
+                <h1>{heading}</h1>
                 {/* <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>{page.subTitle}</p> */}
                 <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>{page.bannerparagraph}</p>
                 {/* <button className='mainbtn' >Contact Us</button> */}
@@ -57,7 +60,8 @@ const Service = ({ pageData, pagename }) => {
                   }`}>
                {/* className={`textalign_center defaultWidth ${pagename === "online_seal_leaking" ? "seal-img" : "hero-banner_img" && pagename === "online_safety_testing" ? " " : "hero-banner_img" && pagename === "offline_valve_testing" ? " " : "hero-banner_img" && pagename === "alltype_valve_services" ? " " : "hero-banner_img" && pagename === "hot_tapping" ? " " : "hero-banner_img" && pagename === "heat_exchanger" ? " " : "hero-banner_img" && pagename === "ro_membrane" ? " " : "hero-banner_img" && pagename === "upvc_aluminiumdoors_windowsfabrication" ? " " : "hero-banner_img"  }`} > */}
                 <img src={page.bannerImg}
-                  alt={page.title || "service image"} />
+                  alt={`${page.title} – SAM Tech Saudi Arabia`}
+                  fetchPriority="high" />
 
 
               </div>

@@ -1,0 +1,42 @@
+// Client logos shown in the "We Are Trusted By" sliders.
+// Descriptive alt text lets Google (and screen readers) know who the clients are.
+export const CLIENT_LOGOS = [
+  { src: "/assets/img/clientlogo/saudi_aramco.jpg", name: "Saudi Aramco" },
+  { src: "/assets/img/clientlogo/yasref.png", name: "YASREF – Yanbu Aramco Sinopec Refining Company" },
+  { src: "/assets/img/clientlogo/national_water_company.png", name: "National Water Company (NWC)" },
+  { src: "/assets/img/clientlogo/saudi_electricity_company.png", name: "Saudi Electricity Company (SEC)" },
+  { src: "/assets/img/clientlogo/c1.jpg", name: "ENGIE" },
+  { src: "/assets/img/clientlogo/c2.jpg", name: "GPIC – Gulf Petrochemical Industries Co." },
+  { src: "/assets/img/clientlogo/c3.jpg", name: "Alba – Aluminium Bahrain" },
+  { src: "/assets/img/clientlogo/c4.jpg", name: "Al Ezzel O&M Company" },
+  { src: "/assets/img/clientlogo/c5.jpg", name: "NOMAC" },
+  { src: "/assets/img/clientlogo/c6.jpg", name: "ENGIE STOMO" },
+  { src: "/assets/img/clientlogo/c7.jpg", name: "GE Power" },
+  { src: "/assets/img/clientlogo/c8.jpg", name: "Pepsi" },
+  { src: "/assets/img/clientlogo/c9.jpg", name: "EWA – Electricity & Water Authority, Bahrain" },
+  { src: "/assets/img/clientlogo/c10.jpg", name: "SULB Company" },
+  { src: "/assets/img/clientlogo/c11.jpg", name: "Bahrain Steel" },
+  { src: "/assets/img/clientlogo/c12.jpg", name: "Técnicas Reunidas" },
+  { src: "/assets/img/clientlogo/c13.jpg", name: "Siemens" },
+  { src: "/assets/img/clientlogo/c14.jpg", name: "GARMCO" },
+  { src: "/assets/img/clientlogo/c15.jpg", name: "ABB" },
+  { src: "/assets/img/clientlogo/c16.jpg", name: "Air Liquide" },
+  { src: "/assets/img/clientlogo/c17.jpg", name: "Emirates Aluminium (EMAL)" },
+  { src: "/assets/img/clientlogo/c18.jpg", name: "Al Mirfa Power Company" },
+  { src: "/assets/img/clientlogo/c19.jpg", name: "TAPCO – Taweelah Asia Power Company" },
+  { src: "/assets/img/clientlogo/c20.jpg", name: "Fujairah F2 O&M Company" },
+  { src: "/assets/img/clientlogo/c21.jpg", name: "Torishima" },
+  { src: "/assets/img/clientlogo/c22.jpg", name: "Gulf Cryo" },
+  { src: "/assets/img/clientlogo/c23.jpg", name: "Harsco" },
+  { src: "/assets/img/clientlogo/c24.jpg", name: "Enerflex" },
+  { src: "/assets/img/clientlogo/c25.jpg", name: "AEPC – Al Ezzel Power Company" },
+  { src: "/assets/img/clientlogo/c26.jpg", name: "APS" },
+  { src: "/assets/img/clientlogo/c27.jpg", name: "Arabian Sugar Company" },
+  { src: "/assets/img/clientlogo/c28.jpg", name: "FieldCore – a GE company" },
+  { src: "/assets/img/clientlogo/c29.jpg", name: "LANCO" },
+  { src: "/assets/img/clientlogo/c30.jpg", name: "Sesa Sterlite" },
+  { src: "/assets/img/clientlogo/c31.jpg", name: "GE" },
+];
+
+/** Look up a logo's client name by its file path */
+export const clientName = (src) => CLIENT_LOGOS.find((c) => c.src === src)?.name || "Client";

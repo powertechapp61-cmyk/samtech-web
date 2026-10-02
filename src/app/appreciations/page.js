@@ -185,7 +185,7 @@ const page = () => {
                       </div>
                       <div className='col-lg-5 offset-lg-1'>
                           <div className='hero-banner_img'>
-                              <img className="img-1" src="/assets/img/company-photo/slider1.jpg" alt="about us img" />
+                              <img className="img-1" src="/assets/img/company-photo/slider1.jpg" alt="Client appreciation and certificates – SAM Tech" fetchPriority="high" />
                           </div>
                       </div>
                   </div>
@@ -217,7 +217,7 @@ const page = () => {
                                       >
                                           <img
                                               src={crCopiesItem.thumb}
-                                              alt={crCopiesItem.caption}
+                                              alt={crCopiesItem.caption} loading="lazy\"
                                           />
 
                                           <h5>{crCopiesItem.caption}</h5>
@@ -244,7 +244,7 @@ const page = () => {
                                       >
                                           <img
                                               src={isoItem.thumb}
-                                              alt={isoItem.caption}
+                                              alt={isoItem.caption} loading="lazy\"
                                           />
                                           <h5>{isoItem.caption}</h5>
                                       </a>
@@ -270,7 +270,7 @@ const page = () => {
                                       >
                                           <img
                                               src={appLtrItem.thumb}
-                                              alt={appLtrItem.caption}
+                                              alt={appLtrItem.caption} loading="lazy\"
                                           />
                                           <h5>{appLtrItem.caption}</h5>
                                       </a>
@@ -297,7 +297,7 @@ const page = () => {
                                       >
                                           <img
                                               src={referencePoItem.thumb}
-                                              alt={referencePoItem.caption}
+                                              alt={referencePoItem.caption} loading="lazy\"
                                           />
                                           <h5>{referencePoItem.caption}</h5>
                                       </a>
