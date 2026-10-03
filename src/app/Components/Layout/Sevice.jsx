@@ -3,12 +3,15 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 
-const Service = ({ pageData, pagename, navKey }) => {
+const Service = ({ pageData, pagename, navKey, copy }) => {
   // const[serviceType,setServiceType] =useState('ro_membrane');
   const { t, language } = useLanguage();
   const page = pageData;
-  // English H1 is SEO-optimised in services/[slug]/ServiceContent.jsx; Arabic uses the menu translation
-  const heading = language === "ar" && navKey ? t(navKey) : page.title;
+  // Keyword-led H1, intro and breadcrumb label come from src/lib/service-seo-content.js (EN + AR)
+  const lang = language === "ar" ? "ar" : "en";
+  const heading = copy?.[lang]?.h1 || (language === "ar" && navKey ? t(navKey) : page.title);
+  const intro = copy?.[lang]?.intro || page.bannerparagraph;
+  const crumb = copy?.[lang]?.linkText || heading;
 
   const blankPages = [
     "online_safety_testing",
@@ -40,14 +43,14 @@ const Service = ({ pageData, pagename, navKey }) => {
                 <ul className='page_breadcrumb'>
                   <li><Link href={"/"}> {t("common.home")}</Link></li>
                   <li aria-hidden="true"><img src="/assets/img/rightIcon.svg" alt='' /> </li>
-                  <li> {t("header.nav.services")}</li>
+                  <li><Link href="/services">{t("header.nav.services")}</Link></li>
                   <li aria-hidden="true"><img src="/assets/img/rightIcon.svg" alt='' /> </li>
-                  <li aria-current="page">{heading}</li>
+                  <li aria-current="page">{crumb}</li>
                 </ul>
                 </nav>
                 <h1>{heading}</h1>
                 {/* <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>{page.subTitle}</p> */}
-                <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>{page.bannerparagraph}</p>
+                <p className='fontSize16 fontWeight400 blackText_Clr mb_24'>{intro}</p>
                 {/* <button className='mainbtn' >Contact Us</button> */}
                 <Link className='mainbtn' href='#to-know-more-contact-us'>{t("common.contactUsBtn")}</Link>
               </div>

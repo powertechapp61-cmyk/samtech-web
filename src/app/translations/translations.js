@@ -26,6 +26,7 @@ export const translations = {
         services: "Services",
         onlineSafetyValveTesting: "Online Safety Valve Testing (Trevi Type)",
         offlineValveTesting: "Offline Valve Testing",
+        allServices: "All Services",
         allTypesValveServicing: "All Types of Valve Servicing",
         technicalManpowerSupply:
           "Technical Manpower supply for Power plant refineries and Water plant",
@@ -505,13 +506,13 @@ export const translations = {
           "Industrial valves are among the most safety-critical components in any plant — directly responsible for process containment, pressure protection, and emergency isolation. A valve that fails to open, close, or lift at the correct set point can trigger a catastrophic safety event, an environmental incident, or a costly unplanned shutdown. Regular, professionally executed servicing and calibration ensures every valve in a facility performs precisely as designed — protecting personnel, plant integrity, regulatory compliance, and operational continuity.",
       },
       onlineSealLeaking: {
-        heading1: "POWER TECH – INNOVATIVE AND INVOLVED",
+        heading1: "SAM TECH – INNOVATIVE AND INVOLVED",
         intro1:
-          "Power tech specializes in minimizing asset downtime by providing innovative on-line leak sealing services. We currently supply our services to the power, oil & gas industries. Our extensive engineering support, widespread international leak sealing experience, 100% injury free service record satisfy the specific needs of the individual customer.",
+          "SAM Tech specialises in minimising asset downtime with innovative online leak sealing services for the power, oil & gas and process industries in Saudi Arabia. Our extensive engineering support, international leak sealing experience and 100% injury-free service record meet the specific needs of each customer.",
         partnerPre:
-          "We are pleased to say that we have partnered up with Sylmasta UK, a world-leader in providing online leak sealing solutions to provide Polymer-based Innovative Online Leak Sealing Services to India. We are the sole distributor of",
+          "Our group, Power Tech, has partnered with Sylmasta UK, a world leader in online leak sealing solutions, to provide polymer-based online leak sealing, and is the sole distributor in India of",
         partnerPost:
-          "Leak sealing products and, therefore, this makes Power tech the leak sealing company of choice.  This Polymer based \"On-line sealing\" is an innovation of tremendous benefit to industry. A variety of leaks on various systems can be sealed on-site in a safe, efficient, non-destructive and cost-efficient manner without isolation and without loss in production thus minimizing noise and emission levels, erosion damage and improves plant safety whilst maintaining equipment integrity.",
+          "leak sealing products. Polymer-based online sealing is of tremendous benefit to industry: a variety of leaks on various systems can be sealed on site in a safe, efficient, non-destructive and cost-efficient manner, without isolation and without loss of production – minimising noise and emissions and erosion damage, and improving plant safety while maintaining equipment integrity.",
         repairExamplesHeading: "REPAIR EXAMPLES",
         repairExamplesGrid: [
           "Valve Gland Leak", "Valve Body Leaks", "Valve Bonnet Leaks", "Heat Exchanger Leaks",
@@ -705,6 +706,7 @@ export const translations = {
         services: "الخدمات",
         onlineSafetyValveTesting: "اختبار صمامات الأمان أثناء التشغيل (نوع تريفي)",
         offlineValveTesting: "اختبار الصمامات دون التشغيل",
+        allServices: "جميع الخدمات",
         allTypesValveServicing: "جميع أنواع خدمات صيانة الصمامات",
         technicalManpowerSupply:
           "توريد الكوادر التقنية لمحطات الطاقة والمصافي ومحطات المياه",
@@ -1181,13 +1183,13 @@ export const translations = {
           "تُعد الصمامات الصناعية من أهم المكونات المرتبطة بالسلامة في أي منشأة، فهي مسؤولة مباشرة عن احتواء العمليات وحماية الضغط والعزل في حالات الطوارئ. وإذا فشل صمام في الفتح أو الإغلاق أو الرفع عند نقطة الضبط الصحيحة، فقد يتسبب ذلك في حادثة سلامة كبرى أو حادثة بيئية أو توقف مكلف غير مخطط له. تضمن الصيانة والمعايرة المنتظمة والمهنية أداء كل صمام في المنشأة كما هو مصمم بالضبط، مما يحمي الموظفين وسلامة المنشأة والامتثال التنظيمي واستمرارية التشغيل.",
       },
       onlineSealLeaking: {
-        heading1: "باور تك – الابتكار والمشاركة الفعّالة",
+        heading1: "سام تك – الابتكار والمشاركة الفعّالة",
         intro1:
-          "تتخصص باور تك في تقليل فترات توقف الأصول من خلال تقديم خدمات مبتكرة لإصلاح التسريب أثناء التشغيل. نقدم خدماتنا حاليًا لقطاعي الطاقة والنفط والغاز. ويلبي دعمنا الهندسي الواسع، وخبرتنا الدولية الممتدة في إصلاح التسريب، وسجلنا الخالي من الحوادث بنسبة 100%، الاحتياجات الخاصة لكل عميل.",
+          "تتخصص سام تك في تقليل فترات توقف الأصول من خلال خدمات مبتكرة لإحكام التسريبات أثناء التشغيل لقطاعات الطاقة والنفط والغاز والصناعات التحويلية في المملكة العربية السعودية. ويلبي دعمنا الهندسي الواسع وخبرتنا الدولية في إحكام التسريبات وسجلنا الخالي من الإصابات بنسبة 100% الاحتياجات الخاصة لكل عميل.",
         partnerPre:
-          "يسرّنا أن نكون قد تشاركنا مع Sylmasta UK، الرائدة عالميًا في تقديم حلول إصلاح التسريب أثناء التشغيل، لتقديم خدمات إصلاح التسريب المبتكرة القائمة على البوليمر في الهند. نحن الموزع الوحيد لمنتجات إصلاح التسريب من",
+          "عقدت مجموعتنا باور تك شراكة مع Sylmasta UK، الرائدة عالميًا في حلول إحكام التسريبات أثناء التشغيل، لتقديم خدمات الإحكام القائمة على البوليمر، وهي الموزع الوحيد في الهند لمنتجات إحكام التسريبات من",
         partnerPost:
-          "وبذلك تُعد باور تك شركة إصلاح التسريب المفضلة. يُعد \"الإصلاح أثناء التشغيل\" القائم على البوليمر ابتكارًا ذا فائدة كبيرة للصناعة. يمكن إصلاح أنواع متعددة من التسريبات في مختلف الأنظمة في الموقع بطريقة آمنة وفعالة وغير مدمرة واقتصادية، دون عزل ودون فقدان في الإنتاج، مما يقلل من مستويات الضوضاء والانبعاثات وتلف التآكل، ويحسّن سلامة المنشأة مع الحفاظ على سلامة المعدات.",
+          ". ويُعد الإحكام أثناء التشغيل القائم على البوليمر ذا فائدة كبيرة للصناعة، إذ يمكن إحكام أنواع متعددة من التسريبات في مختلف الأنظمة في الموقع بطريقة آمنة وفعالة وغير مدمرة واقتصادية، دون عزل ودون فقدان في الإنتاج، مما يقلل الضوضاء والانبعاثات وتلف التآكل، ويحسّن سلامة المنشأة مع الحفاظ على سلامة المعدات.",
         repairExamplesHeading: "أمثلة على الإصلاحات",
         repairExamplesGrid: [
           "تسريب حشوة الصمام", "تسريبات جسم الصمام", "تسريبات غطاء الصمام", "تسريبات المبادل الحراري",

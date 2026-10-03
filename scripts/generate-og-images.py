@@ -82,17 +82,17 @@ os.makedirs(OUT, exist_ok=True)
 make("default.jpg", "operation_and_maintainance_service_provider.jpg",
      "Valve Testing, O&M & Technical Manpower Services in Saudi Arabia", kicker="POWER · OIL & GAS · WATER")
 SERVICES = [
-    ("online-safety-valve-testing", "treviType.webp", "Online Safety Valve Testing (Trevi Type)"),
-    ("offline-valve-testing", "offline_valve_testing_detail.png", "Offline Safety Valve Testing & Calibration"),
-    ("industrial-valve-servicing", "allType_valveServicing_detail.png", "Industrial Valve Servicing & Repair"),
-    ("technical-manpower-supply", "technical_manpower_provisioning_home.jpg", "Technical Manpower Supply & O&M Staffing"),
-    ("online-leak-sealing", "sealLeaking_detail.png", "Online Leak Sealing Services"),
-    ("hot-tapping", "hottapping.jpg", "Hot Tapping & Live Gate Valve Insertion"),
-    ("heat-exchanger-maintenance", "heatExchanger.png", "Heat Exchanger Maintenance & Supply"),
-    ("ro-plant-epc-contracts", "ro_plant_epc_contracts_home.jpg", "RO Desalination Plant EPC Contracts"),
-    ("solar-plant-epc", "solar-plant_epc_home.jpeg", "Solar Plant EPC up to 5 MW & Maintenance"),
-    ("ro-plant-retrofitting", "ro-plants-retro-fitting_home.jpg", "RO Plant Retrofit & Membrane Replacement"),
-    ("upvc-aluminium-doors-windows", "upvc_home.png", "UPVC & Aluminium Doors and Windows"),
+    ("online-safety-valve-testing", "treviType.webp", "Online Safety Valve Testing (Trevi) in Saudi Arabia"),
+    ("offline-valve-testing", "offline_valve_testing_detail.png", "PSV & PRV Testing and Calibration"),
+    ("industrial-valve-servicing", "allType_valveServicing_detail.png", "Industrial Valve Repair & Overhauling"),
+    ("technical-manpower-supply", "technical-manpower-power-plant-team.webp", "Technical Manpower Supply in Saudi Arabia"),
+    ("online-leak-sealing", "online-leak-sealing-saudi-arabia.webp", "Online Leak Sealing Services"),
+    ("hot-tapping", "hot-tapping-live-gate-valve-insertion.webp", "Hot Tapping & Live Gate Valve Insertion"),
+    ("heat-exchanger-maintenance", "heat-exchanger-maintenance-saudi-arabia.webp", "Heat Exchanger Maintenance & Retubing"),
+    ("ro-plant-epc-contracts", "ro-desalination-plant-epc-saudi-arabia.webp", "RO Desalination Plant EPC Contractor"),
+    ("solar-plant-epc", "solar-pv-plant-epc-saudi-arabia.webp", "Solar PV Plant EPC up to 5 MW"),
+    ("ro-plant-retrofitting", "ro-plants-retro-fitting_home.jpg", "RO Membrane Replacement & Plant Retrofit"),
+    ("upvc-aluminium-doors-windows", "upvc-aluminium-doors-windows-saudi-arabia.webp", "UPVC & Aluminium Doors and Windows"),
 ]
 for slug, photo, title in SERVICES:
     make(f"{slug}.jpg", photo, title)

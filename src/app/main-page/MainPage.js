@@ -13,6 +13,21 @@ import { useLanguage } from '../context/LanguageContext';
 import PdfUploader from '../Components/uploadpdf/uploadpdf';
 import { CLIENT_LOGOS } from '@/lib/clients';
 
+// Service page for each home-page tab (tab titles link to the service pages)
+const TAB_LINKS = {
+  side_tab1: "/services/online-safety-valve-testing",
+  side_tab2: "/services/offline-valve-testing",
+  side_tab3: "/services/industrial-valve-servicing",
+  side_tab4: "/services/technical-manpower-supply",
+  side_tab5: "/services/online-leak-sealing",
+  side_tab6: "/services/hot-tapping",
+  side_tab7: "/services/heat-exchanger-maintenance",
+  side_tab8: "/services/ro-plant-epc-contracts",
+  side_tab9: "/services/solar-plant-epc",
+  side_tab10: "/services/ro-plant-retrofitting",
+  side_tab11: "/services/upvc-aluminium-doors-windows",
+};
+
 const Mainpage = () => {
   const { t } = useLanguage();
   // const currentLanguage = localStorage?.getItem('currLan')
@@ -106,13 +121,10 @@ const Mainpage = () => {
       id: "side_tab4", title: t("home.tabs.technicalManpower.title"), content: (
         <>
          <div className='mb_24'>
-            <img src="/assets/img/tmsppr_home.jpg" alt="technicalManpower" />
+            <img src="/assets/img/technical-manpower-supply-power-plants.webp" alt="Technical manpower supply teams for power plants in Saudi Arabia" loading="lazy" />
           </div>
 
           
-          <div className='mb_24'>
-            <img src="/assets/img/technical_manpower_provisioning_home.jpg" alt="Technical manpower team supplied by SAM Tech at a power plant" loading="lazy" />
-          </div>
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("servicePage.technicalManpower.whatItIsText")}</p>
 
           <Link className='mainbtn' href="/services/technical-manpower-supply">{t("home.knowMore")}</Link>
@@ -148,7 +160,7 @@ const Mainpage = () => {
         <>
           
           <div className='mb_24'>
-            <img src="/assets/img/heat-exchanger-maintenance-supply-img2.jpg" alt="heatExchanger" alt="Heat exchanger tube bundle cleaning and maintenance" loading="lazy"/>
+            <img src="/assets/img/heat-exchanger-maintenance-supply.webp" alt="Heat exchanger tube sheet and shell – maintenance and supply" loading="lazy" />
           </div>
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.heatExchanger.desc1")}</p>
           <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("home.tabs.heatExchanger.desc2")}</p>
@@ -168,7 +180,7 @@ const Mainpage = () => {
       id: "side_tab9", title: t("home.tabs.solarPlantEpc.title"), content: (
         <>
          <div className='mb_24'>
-            <img src="/assets/img/solarPlantEpc.png" alt="solarPlantEpc" />
+            <img src="/assets/img/solar-plant-epc-maintenance.webp" alt="Solar PV plant EPC and maintenance team installing panels" loading="lazy" />
           </div>
 
         <p className='spitsbergenBlueText_clr fontSize16 fontWeight400 mb_16'>{t("servicePage.solarPlantEpc.whatItIsText")}</p>
@@ -568,7 +580,7 @@ const Mainpage = () => {
       <section className='companyPhotoSec'>
         <Slider {...companyPhoto}>
           <div className="companyphoto-item">
-            <img src="/assets/img/tmsppr-img.png" alt="companyphoto" alt="Power, water and industrial plants served by SAM Tech" loading="lazy"/>
+            <img src="/assets/img/technical-manpower-power-plant-team.webp" alt="SAM Tech technical team at a power plant turbine hall" loading="lazy" />
           </div>
             
 
@@ -711,7 +723,7 @@ const Mainpage = () => {
 
                   {/* className={`${active === t.id ? "" : ""}`} */}
                   <div className='serciceContentFrame'>
-                    <h2> {t.title}</h2>
+                    <h2>{TAB_LINKS[t.id] ? <Link href={TAB_LINKS[t.id]} className='serviceTabTitleLink'>{t.title}</Link> : t.title}</h2>
                     {t.content}
                   </div>
                 </section>

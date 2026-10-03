@@ -281,6 +281,7 @@ const Header = () => {
                       </Dropdown.Toggle>
 
                       <Dropdown.Menu>
+                        <Dropdown.Item href="/services">{t("header.nav.allServices")}</Dropdown.Item>
                         <Dropdown.Item href="/services/online-safety-valve-testing">{t("header.nav.onlineSafetyValveTesting")}</Dropdown.Item>
                         <Dropdown.Item href="/services/offline-valve-testing">{t("header.nav.offlineValveTesting")}</Dropdown.Item>
                         <Dropdown.Item href="/services/industrial-valve-servicing">{t("header.nav.allTypesValveServicing")}</Dropdown.Item>
@@ -300,7 +301,7 @@ const Header = () => {
 
 
                   <li>
-                    <Link href={"/service-page/hot_tapping"} prefetch>
+                    <Link href={"/services/hot-tapping"} prefetch>
                       {t("header.nav.hotTapping")}
                     </Link>
                   </li>

@@ -4,6 +4,8 @@ import Service from "../../Components/Layout/Sevice";
 import Link from 'next/link';
 import { useLanguage } from '../../context/LanguageContext';
 import { SERVICES } from '@/lib/seo';
+import { SERVICE_COPY } from '@/lib/service-seo-content';
+import ServiceSeoSections from '../../Components/ServiceSeoSections';
 
 
 
@@ -250,18 +252,18 @@ const ServiceContent = ({ serviceId }) => {
                     <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_24'>{t("servicePage.onlineSealLeaking.intro1")}</p>
 
                     <div className='mb_16'>
-                        <img className='width150px' src="/assets/img/sylmasta.png" alt="Sylmasta online leak sealing products" loading="lazy" />
+                        <Link target="_blank" rel="noopener noreferrer" href="https://www.sylmasta.com/"><img className='width150px' src="/assets/img/sylmasta.png" alt="Sylmasta online leak sealing products" loading="lazy" /></Link>
                     </div>
 
 
                     <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_34'>
-                        {t("servicePage.onlineSealLeaking.partnerPre")} <Link className="fontWeight500 bainganiText_Clr" target="_blank" rel="noopener noreferrer" href="https://www.sylmasta.com/">Sylmasta</Link> {t("servicePage.onlineSealLeaking.partnerPost")}
+                        {t("servicePage.onlineSealLeaking.partnerPre")} <Link className="fontWeight600 narenjiOrangeTextclr" target="_blank" rel="noopener noreferrer" href="https://www.sylmasta.com/">Sylmasta</Link> {t("servicePage.onlineSealLeaking.partnerPost")}
                     </p>
 
                     <div className='row alignItem_center'>
                         <div className='col-lg-6 mobspaceMb_24'>
                             {[
-                                "/assets/img/sealLeaking_detail.webp"
+                                "/assets/img/online-leak-sealing-saudi-arabia.webp"
                             ].map((img, index) => (
                                 <div key={index}>
                                     <div className='serviceContentImg'>
@@ -302,7 +304,7 @@ const ServiceContent = ({ serviceId }) => {
         hot_tapping: {
             title: "Hot Tapping & Insertion of S-Type (Gate Valve Online)",
             subTitle: "SERVICES",
-            bannerImg: "/assets/img/hotTapping_bnr.png",
+            bannerImg: "/assets/img/hot-tapping-services-saudi-arabia.webp",
             bannerparagraph: "We perform hot tapping — a specialised technique that allows connections, repairs, or valve insertions to be made on live pressurised pipelines without shutting down operations, minimising downtime and disruption.",
             content: (
                 <>
@@ -320,9 +322,9 @@ const ServiceContent = ({ serviceId }) => {
 
 
                     <div className='row alignItem_center mb_24'>
-                        <div className='col-lg-4 mobspaceMb_24'>
+                        <div className='col-lg-5 mobspaceMb_24'>
                             {[
-                                "/assets/img/hot_tapping_detail.webp"
+                                "/assets/img/hot-tapping-live-gate-valve-insertion.webp"
                             ].map((img, index) => (
                                 <div key={index}>
                                     <div className='serviceContentImg'>
@@ -333,26 +335,27 @@ const ServiceContent = ({ serviceId }) => {
 
 
                         </div>
-                        <div className='col-lg-8'>
+                        <div className='col-lg-7'>
 
 
                             <h3 className='fontSize16 fontWeight600 blackText_Clr mb_12'>{t("servicePage.hotTapping.heading2")}</h3>
 
                             <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_16'>{t("servicePage.hotTapping.p5")}</p>
 
-                            <ul className='mb_40'>
+                            <ul>
                                 {[0,1,2].map((i) => (
                                     <li key={i} className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>{t(`servicePage.hotTapping.list1.${i}`)}</li>
                                 ))}
                             </ul>
-
-                            <h3 className='fontSize16 fontWeight600 blackText_Clr mb_12'>{t("servicePage.hotTapping.heading3")}</h3>
-
-                            <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_24'>{t("servicePage.hotTapping.p6")}</p>
-
-
-                            <button className='mainbtn' onClick={handleDownload} style={{ cursor: 'pointer' }}>{t("servicePage.common.downloadPipelinePdf")}</button>
                         </div>
+                    </div>
+
+                    <h3 className='fontSize16 fontWeight600 blackText_Clr mb_12'>{t("servicePage.hotTapping.heading3")}</h3>
+
+                    <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_24'>{t("servicePage.hotTapping.p6")}</p>
+
+                    <div className='mb_24'>
+                        <button className='mainbtn' onClick={handleDownload} style={{ cursor: 'pointer' }}>{t("servicePage.common.downloadPipelinePdf")}</button>
                     </div>
 
 
@@ -393,7 +396,7 @@ const ServiceContent = ({ serviceId }) => {
         heat_exchanger: {
             title: "Heat Exchanger Maintenance & Supply",
             subTitle: "SERVICES",
-            bannerImg: "/assets/img/heatExchanger_bnr.webp",
+            bannerImg: "/assets/img/heat-exchanger-maintenance-saudi-arabia.webp",
             bannerparagraph: "We supply, install, and maintain heat exchangers used in power plants, refineries, and water treatment facilities, ensuring efficient thermal energy transfer and uninterrupted plant operations.",
             content: (
                 <>
@@ -406,10 +409,10 @@ const ServiceContent = ({ serviceId }) => {
                     </ul>
 
 
-                    <div className='row alignItem_center'>
-                        <div className='col-lg-6 mobspaceMb_24'>
+                    <div className='row alignItem_center mb_24'>
+                        <div className='col-lg-5 mobspaceMb_24'>
                             {[
-                                "/assets/img/heatExchanger_detail.webp"
+                                "/assets/img/heat-exchanger-retubing-tube-bundle.webp"
                             ].map((img, index) => (
                                 <div key={index}>
                                     <div className='serviceContentImg'>
@@ -420,7 +423,7 @@ const ServiceContent = ({ serviceId }) => {
 
 
                         </div>
-                        <div className='col-lg-6'>
+                        <div className='col-lg-7'>
                             <h3 className='fontSize16 fontWeight600 blackText_Clr mb_8'>{t("servicePage.heatExchanger.tubeExtractionHeading")}</h3>
                             <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_16'>{t("servicePage.heatExchanger.tubeExtractionText")}</p>
 
@@ -444,7 +447,11 @@ const ServiceContent = ({ serviceId }) => {
                                 <li className='fontSize16 fontWeight400 shearwaterBlackText_clr'>{t("servicePage.heatExchanger.list3.1")}</li>
                             </ul>
 
-                            <p className='fontSize16 fontWeight400 shearwaterBlackText_clr'>{t("servicePage.heatExchanger.finalText")}</p>
+                            <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_16'>{t("servicePage.heatExchanger.finalText")}</p>
+
+                            <h2 className='fontSize18 fontWeight600 blackText_Clr mb_12'>{t("servicePage.common.whatItIs")}</h2>
+
+                            <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_24'>{t("servicePage.heatExchanger.whatItIsText")}</p>
 
                         </div>
                     </div>
@@ -456,10 +463,6 @@ const ServiceContent = ({ serviceId }) => {
 
 
 
-
-                        <h2 className='fontSize18 fontWeight600 blackText_Clr mb_12'>{t("servicePage.common.whatItIs")}</h2>
-
-                    <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_24'>{t("servicePage.heatExchanger.whatItIsText")}</p>
 
                     <h2 className='fontSize18 fontWeight600 blackText_Clr mb_12'>{t("servicePage.common.whatWeDo")}</h2>
 
@@ -556,7 +559,7 @@ const ServiceContent = ({ serviceId }) => {
         ro_plant_epc_contracts: {
             title: "RO Plant EPC Contracts up to 2 MIGD",
             subTitle: "SERVICES",
-            bannerImg: "/assets/img/romem1.webp",
+            bannerImg: "/assets/img/ro-desalination-plant-epc-saudi-arabia.webp",
             bannerparagraph: "We deliver end-to-end Engineering, Procurement, and Construction of Reverse Osmosis water desalination plants with a capacity of up to 2 million imperial gallons per day, serving industrial and municipal water needs.",
             content: (
                 <>
@@ -579,7 +582,7 @@ const ServiceContent = ({ serviceId }) => {
                         </div>
                         <div className='col-lg-5'>
                             {[
-                                "/assets/img/ro_plant_epc_contracts_home.jpg"
+                                "/assets/img/reverse-osmosis-plant-membrane-racks.webp"
                             ].map((img, index) => (
                                 <div key={index}>
                                     <div className='serviceContentImg'>
@@ -629,7 +632,7 @@ const ServiceContent = ({ serviceId }) => {
         solar_plant_epc: {
             title: "Solar Plant EPC up to 5 MW & Maintenance",
             subTitle: "SERVICES",
-            bannerImg: "/assets/img/solar-plant_epc_home.jpeg",
+            bannerImg: "/assets/img/solar-pv-plant-epc-saudi-arabia.webp",
             bannerparagraph: "We handle the complete Engineering, Procurement, and Construction of solar power plants up to 5MW capacity, along with ongoing maintenance to keep systems running at peak efficiency.",
             content: (
                 <>
@@ -654,7 +657,7 @@ const ServiceContent = ({ serviceId }) => {
                         </div>
                         <div className='col-lg-5'>
                             {[
-                                "/assets/img/solar_pv_plant_project.jpg"
+                                "/assets/img/solar-pv-panel-installation.webp"
                             ].map((img, index) => (
                                 <div key={index}>
                                     <div className='serviceContentImg'>
@@ -704,7 +707,7 @@ const ServiceContent = ({ serviceId }) => {
         upvc_aluminiumdoors_windowsfabrication: {
             title: "UPVC & Aluminium Doors and Windows – Fabrication & Installation",
             subTitle: "SERVICES",
-            bannerImg: "/assets/img/upvc_bnr.webp",
+            bannerImg: "/assets/img/upvc-aluminium-doors-windows-saudi-arabia.webp",
             bannerparagraph: "We design, fabricate, and install high-quality UPVC and aluminium doors and windows for industrial, commercial, and residential buildings, ensuring durability, weather resistance, and a professional finish.",
             content: (
                 <>
@@ -721,13 +724,17 @@ const ServiceContent = ({ serviceId }) => {
                                 {[0,1,2,3].map((i) => (
                                     <li key={i} className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_12'>{t(`servicePage.upvc.whatWeDoList.${i}`)}</li>
                                 ))}
-                                <li className='fontSize16 fontWeight400 shearwaterBlackText_clr'>{t("servicePage.upvc.whatWeDoList.4")}</li>
+                                <li className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_24'>{t("servicePage.upvc.whatWeDoList.4")}</li>
 
                             </ul>
+
+                            <h2 className='fontSize18 fontWeight600 blackText_Clr mb_12'>{t("servicePage.common.whosItFor")}</h2>
+
+                            <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_24'>{t("servicePage.upvc.whosItForText")}</p>
                         </div>
                         <div className='col-lg-5'>
                             {[
-                                "/assets/img/upvc_home.webp"
+                                "/assets/img/upvc-aluminium-windows-fabrication.webp"
                             ].map((img, index) => (
                                 <div key={index}>
                                     <div className='serviceContentImg'>
@@ -739,11 +746,6 @@ const ServiceContent = ({ serviceId }) => {
 
                         </div>
                     </div>
-
-
-                    <h2 className='fontSize18 fontWeight600 blackText_Clr mb_12'>{t("servicePage.common.whosItFor")}</h2>
-
-                    <p className='fontSize16 fontWeight400 shearwaterBlackText_clr mb_24'>{t("servicePage.upvc.whosItForText")}</p>
 
 
                     <h2 className='fontSize18 fontWeight600 blackText_Clr mb_12'>{t("servicePage.common.whyItMatters")}</h2>
@@ -776,7 +778,7 @@ const ServiceContent = ({ serviceId }) => {
         technical_manpower_supply_for_power_plant_refineries_and_water_plant: {
             title: "Technical Manpower Supply for Power Plants, Refineries & Water Plants",
             subTitle: "SERVICES",
-            bannerImg: "/assets/img/technical_manpower_provisioning_home.jpg",
+            bannerImg: "/assets/img/technical-manpower-supply-saudi-arabia.webp",
             bannerparagraph: "We provide skilled and experienced technical personnel — including engineers, operators, and technicians — to power plants, refineries, and water treatment facilities on short-term or long-term contract basis.",
             content: (
                 <>
@@ -800,7 +802,7 @@ const ServiceContent = ({ serviceId }) => {
                         </div>
                         <div className='col-lg-5'>
                             {[
-                                "/assets/img/industry_illu.jpg"
+                                "/assets/img/technical-manpower-power-plant-team.webp"
                             ].map((img, index) => (
                                 <div key={index}>
                                     <div className='serviceContentImg'>
@@ -851,7 +853,9 @@ const ServiceContent = ({ serviceId }) => {
     return (
         <>
 
-            <Service pageData={pageData[pagename]} pagename={pagename} navKey={service?.navKey} />
+            <Service pageData={pageData[pagename]} pagename={pagename} navKey={service?.navKey} copy={SERVICE_COPY[pagename]} />
+
+            <ServiceSeoSections serviceId={pagename} />
 
 
             <section className='leadsGeneration_sec' id="to-know-more-contact-us">

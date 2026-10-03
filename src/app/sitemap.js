@@ -6,12 +6,14 @@ export default function sitemap() {
 
   const pages = [
     { path: PAGES.home.path, priority: 1.0, changeFrequency: "weekly" },
+    { path: PAGES.services.path, priority: 0.9, changeFrequency: "monthly" },
     { path: PAGES.company.path, priority: 0.8, changeFrequency: "monthly" },
     { path: PAGES.contactUs.path, priority: 0.8, changeFrequency: "yearly" },
     { path: PAGES.groupCompanies.path, priority: 0.6, changeFrequency: "monthly" },
     { path: PAGES.appreciations.path, priority: 0.6, changeFrequency: "monthly" },
     { path: PAGES.brochures.path, priority: 0.5, changeFrequency: "monthly" },
     { path: PAGES.photoGallery.path, priority: 0.5, changeFrequency: "monthly" },
+    { path: PAGES.videoGallery.path, priority: 0.4, changeFrequency: "monthly" },
     { path: PAGES.ourBranches.path, priority: 0.5, changeFrequency: "yearly" },
     { path: PAGES.trainings.path, priority: 0.4, changeFrequency: "yearly" },
     { path: PAGES.careers.path, priority: 0.5, changeFrequency: "monthly" },

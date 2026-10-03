@@ -116,6 +116,12 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
+                  <Link href={"/services"} prefetch>
+                    <img src="/assets/img/stepPoint.svg" alt='' />
+                    <span>{t("header.nav.services")}</span>
+                  </Link>
+                </li>
+                <li>
                   <Link href={"/group-companies"} prefetch>
                     <img src="/assets/img/stepPoint.svg" alt='' />
                     <span>{t("footer.groupCompanies")}</span>

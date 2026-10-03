@@ -6170,3 +6170,177 @@ header.stickytop{
     }
 
 }
+
+// ---------------------------------------------------------------
+// Service page keyword section (Components/ServiceSeoSections.jsx)
+// ---------------------------------------------------------------
+.serviceSeo {
+    padding: 0px 0px 80px;
+}
+
+.serviceSeo-points,
+.serviceSeo-areas {
+    background: #f4f7fb;
+    border: 1px solid #dfe6ef;
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+}
+
+.serviceSeo-points ul {
+    margin: 0;
+    padding-left: 20px;
+    display: grid;
+    gap: 8px;
+}
+
+[dir="rtl"] .serviceSeo-points ul {
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.serviceSeo-areas p {
+    margin: 0;
+}
+
+.serviceSeo-faq {
+    margin-top: 40px;
+}
+
+.serviceSeo-faqGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.serviceSeo-faqItem {
+    border-top: 3px solid var(--narenjiOrange_clr);
+    background: var(--white_clr);
+    box-shadow: 0 1px 6px rgba(17, 67, 123, 0.08);
+    border-radius: 0 0 10px 10px;
+    padding: 18px 20px;
+}
+
+.serviceSeo-faqItem p {
+    margin: 0;
+}
+
+.serviceSeo-related {
+    margin-top: 40px;
+}
+
+.serviceSeo-related ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.serviceSeo-related a {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 1px solid var(--narenjiOrange_clr);
+    border-radius: 999px;
+    color: var(--narenjiOrange_clr);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.serviceSeo-related a:hover,
+.serviceSeo-related a:focus-visible {
+    background: var(--narenjiOrange_clr);
+    color: var(--white_clr);
+}
+
+@media (max-width: 767px) {
+    .serviceSeo-faqGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+// ---------------------------------------------------------------
+// Services hub page (/services)
+// ---------------------------------------------------------------
+.servicesHub {
+    padding: 0px 0px 80px;
+}
+
+.servicesHub-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.servicesHub-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--white_clr);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(17, 67, 123, 0.10);
+    color: inherit;
+    text-decoration: none;
+}
+
+.servicesHub-card img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+.servicesHub-card .servicesHub-body {
+    padding: 18px 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.servicesHub-card h2 {
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: var(--narenjiOrange_clr);
+    margin: 0;
+}
+
+.servicesHub-card p {
+    font-size: 15px;
+    color: var(--shearwaterBlack_clr);
+    margin: 0;
+    flex: 1;
+}
+
+.servicesHub-card span {
+    font-weight: 600;
+    color: var(--narenjiOrange_clr);
+}
+
+.servicesHub-card:hover h2,
+.servicesHub-card:focus-visible h2 {
+    text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+    .servicesHub-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 575px) {
+    .servicesHub-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.serviceTabTitleLink {
+    color: inherit;
+    text-decoration: none;
+}
+
+.serviceTabTitleLink:hover,
+.serviceTabTitleLink:focus-visible {
+    text-decoration: underline;
+}

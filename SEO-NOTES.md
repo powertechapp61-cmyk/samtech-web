@@ -1,8 +1,8 @@
 # SEO setup – samtechsa.com
 
-> **Installing this update:** unzip over the existing project folder (overwrite files),
-> **delete the folder `src/app/service-page/`** (replaced by `src/app/services/`),
-> then run `npm install` and `npm run build`.
+> **Important for developers:** the live service pages are `src/app/services/[slug]/ServiceContent.jsx`.
+> The old folder `src/app/service-page/` is no longer used (its URLs redirect to /services/…) and has been deleted —
+> edits made there never appear on the site.
 
 All titles, descriptions, keywords, service URLs and structured data live in **`src/lib/seo.js`**.
 Edit that one file to change how any page appears in Google.
@@ -26,3 +26,23 @@ Edit that one file to change how any page appears in Google.
 - Photos for the Saudi office and UAE workshop tabs on `/our-branches` (`/assets/img/bahrain/saudi1.jpg`, `uae1.jpg` are missing).
 - Real job openings / application email on `/careers` (page is very thin).
 - Arabic pages are only switched client-side, so Google indexes English only. Separate `/ar/...` URLs with `hreflang` would be needed to rank in Arabic search.
+
+## Service pages – keyword map (Oct 2026)
+On-page copy (H1, intro, keyword section, FAQs, related links – English + Arabic) is in
+**`src/lib/service-seo-content.js`**; titles, meta descriptions and keyword lists are in `SERVICES` in `src/lib/seo.js`.
+Service areas shown on every page: `SERVICE_AREAS` in `service-seo-content.js` (add Riyadh etc. there if you serve it).
+
+| URL | Main keyword | Supporting keywords |
+|---|---|---|
+| /services/online-safety-valve-testing | online safety valve testing Saudi Arabia | Trevi testing, in-situ PSV testing, boiler / steam safety valve testing, testing without shutdown |
+| /services/offline-valve-testing | safety valve testing and calibration Saudi Arabia | PSV testing, PRV calibration, safety valve recertification, bench testing |
+| /services/industrial-valve-servicing | valve repair Saudi Arabia | valve overhauling, industrial valve maintenance, control valve repair, actuator servicing |
+| /services/technical-manpower-supply | technical manpower supply Saudi Arabia | manpower supply company, shutdown / turnaround manpower, O&M manpower |
+| /services/online-leak-sealing | online leak sealing Saudi Arabia | leak sealing company, live leak repair, flange / steam leak sealing, Sylmasta |
+| /services/hot-tapping | hot tapping Saudi Arabia | hot tapping services, live gate valve insertion, pipeline intervention |
+| /services/heat-exchanger-maintenance | heat exchanger maintenance Saudi Arabia | retubing, tube bundle cleaning, hydro jetting, ASME / TEMA supply |
+| /services/ro-plant-epc-contracts | RO plant EPC contractor Saudi Arabia | desalination plant contractor, reverse osmosis plant, SWRO, 2 MIGD |
+| /services/solar-plant-epc | solar EPC company Saudi Arabia | solar PV plant installation, solar O&M, 5 MW solar plant |
+| /services/ro-plant-retrofitting | RO membrane replacement Saudi Arabia | SWRO membrane replacement, RO plant retrofit / refurbishment |
+| /services/upvc-aluminium-doors-windows | UPVC windows and doors Saudi Arabia | aluminium windows and doors, aluminium fabrication |
+| /services | industrial maintenance services Saudi Arabia | hub page linking all services |
