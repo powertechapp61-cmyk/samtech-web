@@ -46,3 +46,18 @@ Service areas shown on every page: `SERVICE_AREAS` in `service-seo-content.js` (
 | /services/ro-plant-retrofitting | RO membrane replacement Saudi Arabia | SWRO membrane replacement, RO plant retrofit / refurbishment |
 | /services/upvc-aluminium-doors-windows | UPVC windows and doors Saudi Arabia | aluminium windows and doors, aluminium fabrication |
 | /services | industrial maintenance services Saudi Arabia | hub page linking all services |
+
+## AI search visibility (ChatGPT, Gemini, Perplexity, Copilot, Google AI Overviews)
+What is on the site:
+- `/llms.txt` – plain-text company summary for AI crawlers, generated from `seo.js`, `service-seo-content.js` and `company-facts.js` (`src/app/llms.txt/route.js`).
+- "SAM Tech at a glance" facts + company FAQ on `/company` (English + Arabic) with `AboutPage` + `FAQPage` structured data. Copy: `src/lib/company-facts.js`.
+- Organization schema: parent group (website + LinkedIn/Facebook/X), service cities, `sameAs` slot.
+- IndexNow (pushes URLs to Bing, which feeds ChatGPT search and Copilot): key file `public/855135b29be00d42326d4e255a79b2b0.txt` (do not delete) and `scripts/indexnow-submit.mjs`.
+
+After each deploy:
+1. `node scripts/indexnow-submit.mjs` (expects "HTTP 200" or "HTTP 202").
+2. Check https://samtechsa.com/llms.txt opens.
+
+When new official profiles exist (Google Business Profile, Bing Places, SAM Tech LinkedIn page, directory listings), add their URLs to `COMPANY.sameAs` in `src/lib/seo.js`.
+Keep the company name, address, phone and service list word-for-word the same on every profile – AI assistants trust facts that match across sources.
+If the site sits behind Cloudflare, make sure "Block AI bots" / "AI Scrapers and Crawlers" is OFF, or AI search tools cannot read the site.

@@ -362,7 +362,7 @@ export const SERVICE_COPY = {
         "SAM Tech seals live leaks on pipelines, flanges, valves and vessels in Saudi Arabia without a shutdown – steam, gas, hydrocarbon and chemical leaks at temperatures up to 700°C.",
       sectionTitle: "Live leak repair for steam, gas and process lines",
       paragraphs: [
-        "Online leak sealing stops a leak while the line stays pressurised and in service. Our technicians fit an engineered clamp or enclosure around the leak and inject a sealing compound selected for the fluid, pressure and temperature, or apply Sylmasta polymer composite repairs where they suit the leak.",
+        "Online leak sealing stops a leak while the line stays pressurised and in service. Our technicians fit an engineered clamp or enclosure around the leak and inject a sealing compound selected for the fluid, pressure and temperature, or apply Sylmasta polymer composite repairs where they suit the leak. Through the Power Tech Group's partnership with Sylmasta UK, SAM Tech offers Sylmasta leak sealing in Saudi Arabia.",
         "Typical repairs include flange leaks, valve gland, bonnet and body leaks, heat exchanger leaks, pipeline and riser leaks and expansion joints. Each repair is planned before the job, so the plant can keep running safely until a planned shutdown.",
         "Sealing leaks online saves energy and product, cuts emissions and noise, and removes the safety hazard of a steam or gas leak. We have carried out online leak sealing for NOMAC in Saudi Arabia and serve power, oil & gas, petrochemical and water plants across the Kingdom.",
       ],
@@ -390,6 +390,10 @@ export const SERVICE_COPY = {
           q: "Which leaks can you seal online?",
           a: "Flange leaks, valve gland, bonnet and body leaks, heat exchanger and pressure vessel leaks, pipeline and riser leaks, and expansion joint leaks.",
         },
+        {
+          q: "Do you offer Sylmasta leak sealing in Saudi Arabia?",
+          a: "Yes. Through the Power Tech Group's partnership with Sylmasta UK, SAM Tech carries out Sylmasta polymer-based leak sealing in Saudi Arabia, sealing leaks on site without isolation and without loss of production.",
+        },
       ],
     },
     ar: {
@@ -399,7 +403,7 @@ export const SERVICE_COPY = {
         "تُحكم سام تك التسريبات الحية في خطوط الأنابيب والفلنجات والصمامات والأوعية في المملكة العربية السعودية دون إيقاف التشغيل، لتسريبات البخار والغاز والهيدروكربونات والكيماويات عند درجات حرارة تصل إلى 700 درجة مئوية.",
       sectionTitle: "إصلاح التسريبات الحية في خطوط البخار والغاز والعمليات",
       paragraphs: [
-        "يوقف إحكام التسريبات أثناء التشغيل التسريب بينما يبقى الخط تحت الضغط وفي الخدمة. يركّب فنيونا مشبكًا أو غلافًا مصممًا حول موضع التسريب ويحقنون مادة إحكام مختارة وفق نوع السائل والضغط والحرارة، أو يستخدمون إصلاحات سيلماستا البوليمرية المركبة حين تناسب التسريب.",
+        "يوقف إحكام التسريبات أثناء التشغيل التسريب بينما يبقى الخط تحت الضغط وفي الخدمة. يركّب فنيونا مشبكًا أو غلافًا مصممًا حول موضع التسريب ويحقنون مادة إحكام مختارة وفق نوع السائل والضغط والحرارة، أو يستخدمون إصلاحات سيلماستا البوليمرية المركبة حين تناسب التسريب. ومن خلال شراكة مجموعة باور تك مع Sylmasta UK، تقدم سام تك خدمة إحكام التسريبات بمنتجات سيلماستا (Sylmasta) في المملكة العربية السعودية.",
         "تشمل الإصلاحات المعتادة تسريبات الفلنجات، وتسريبات حشوة الصمام وغطائه وجسمه، وتسريبات المبادلات الحرارية، وخطوط الأنابيب والصواعد، ووصلات التمدد. ويُخطط لكل إصلاح قبل التنفيذ حتى تستمر المحطة في العمل بأمان حتى موعد الإيقاف المخطط.",
         "يوفر إحكام التسريبات أثناء التشغيل الطاقة والمنتج، ويقلل الانبعاثات والضوضاء، ويزيل خطر تسريبات البخار والغاز. نفّذنا أعمال إحكام التسريبات أثناء التشغيل لشركة نوماك في المملكة، ونخدم محطات الطاقة والنفط والغاز والبتروكيماويات والمياه في جميع أنحاء المملكة.",
       ],
@@ -426,6 +430,10 @@ export const SERVICE_COPY = {
         {
           q: "ما التسريبات التي يمكنكم إحكامها أثناء التشغيل؟",
           a: "تسريبات الفلنجات، وتسريبات حشوة الصمام وغطائه وجسمه، وتسريبات المبادلات الحرارية وأوعية الضغط، وخطوط الأنابيب والصواعد، ووصلات التمدد.",
+        },
+        {
+          q: "هل تقدمون إحكام التسريبات بمنتجات سيلماستا (Sylmasta) في المملكة العربية السعودية؟",
+          a: "نعم. من خلال شراكة مجموعة باور تك مع Sylmasta UK، تنفذ سام تك إحكام التسريبات بمنتجات سيلماستا البوليمرية في المملكة العربية السعودية، فتُحكم التسريبات في الموقع دون عزل الخط ودون خسارة في الإنتاج.",
         },
       ],
     },

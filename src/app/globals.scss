@@ -6225,6 +6225,11 @@ header.stickytop{
     margin: 0;
 }
 
+// an odd last FAQ spans both columns instead of sitting alone
+.serviceSeo-faqItem:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+}
+
 .serviceSeo-related {
     margin-top: 40px;
 }
@@ -6343,4 +6348,47 @@ header.stickytop{
 .serviceTabTitleLink:hover,
 .serviceTabTitleLink:focus-visible {
     text-decoration: underline;
+}
+
+// ---------------------------------------------------------------
+// Company page: "SAM Tech at a glance" + company FAQ
+// ---------------------------------------------------------------
+.companyFacts {
+    padding-top: 80px;
+}
+
+.companyFacts-list {
+    margin: 0;
+    border: 1px solid #dfe6ef;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.companyFacts-row {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 16px;
+    padding: 14px 22px;
+    background: var(--white_clr);
+}
+
+.companyFacts-row:nth-child(odd) {
+    background: #f4f7fb;
+}
+
+.companyFacts-row dt,
+.companyFacts-row dd {
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .companyFacts {
+        padding-top: 48px;
+    }
+
+    .companyFacts-row {
+        grid-template-columns: 1fr;
+        gap: 4px;
+        padding: 12px 16px;
+    }
 }

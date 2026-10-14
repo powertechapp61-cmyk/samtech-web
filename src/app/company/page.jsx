@@ -38,6 +38,7 @@ import {
 import { HiOutlineOfficeBuilding } from "react-icons/hi";
 import { useLanguage } from "../context/LanguageContext";
 import { CLIENT_LOGOS } from "@/lib/clients";
+import CompanyFacts from "../Components/CompanyFacts";
 
 
 
@@ -802,6 +803,7 @@ const page = () => {
 
                 </div>
             </section>
+            <CompanyFacts />
             <section className='clientlogosec'>
                 <div className="site-heading">
                     {/* <span className="site-title-tagline textalign_center">--- Client ---</span> */}

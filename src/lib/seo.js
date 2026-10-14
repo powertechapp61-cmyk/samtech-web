@@ -11,6 +11,19 @@ export const COMPANY = {
   shortName: "SAM Tech",
   alternateNames: ["SAM Tech", "STSC", "Sam Technical Service Contracting Est", "SAM Tech Saudi Arabia"],
   parent: "Power Tech Group of Companies",
+  parentUrl: "https://www.powertechdevelopment.com",
+  // Group social profiles (the ones linked in the site header/footer)
+  parentSameAs: [
+    "https://www.linkedin.com/company/powertechdevelopment/",
+    "https://www.facebook.com/people/Power-Tech-Group-Companies/61558411207892/",
+    "https://x.com/powertechgroup",
+  ],
+  // SAM Tech's OWN official profiles – add each full URL here as soon as it exists:
+  // Google Business Profile (share link), Bing Places, a SAM Tech LinkedIn company page,
+  // directory listings (Kompass, D&B, ArabLocal, Yellow Pages KSA…), Wikidata.
+  // They are published as `sameAs` so Google and AI assistants treat them and this
+  // website as one company. Leave out anything that is not SAM Tech's own page.
+  sameAs: [],
   logo: "/assets/img/sam_logo.png",
   phone: "+966507745097",
   email: "samtech@powertechdevelopment.com",
@@ -135,7 +148,7 @@ export const SERVICES = [
     keywords: [
       "online leak sealing Saudi Arabia", "leak sealing company Saudi Arabia", "live leak repair",
       "steam leak sealing", "flange leak sealing", "valve gland leak sealing", "leak sealing clamp",
-      "injection leak sealing", "Sylmasta Saudi Arabia", "pipeline leak repair without shutdown",
+      "injection leak sealing", "Sylmasta leak sealing Saudi Arabia", "pipeline leak repair without shutdown",
     ],
     image: "/assets/img/online-leak-sealing-saudi-arabia.webp",
     ogImage: "/og/online-leak-sealing.jpg",
@@ -407,7 +420,8 @@ export function organizationJsonLd() {
         logo: { "@type": "ImageObject", url: absoluteUrl(COMPANY.logo), width: 1202, height: 631 },
         image: absoluteUrl(DEFAULT_OG_IMAGE.url),
         description:
-          "Saudi Arabia-based technical services and contracting company in Rabigh providing safety valve testing, valve servicing, online leak sealing, hot tapping, heat exchanger maintenance, O&M and technical manpower to power, oil & gas, petrochemical and water treatment plants.",
+          "Saudi Arabia-based technical services and contracting company in Rabigh providing online and offline safety valve testing, valve servicing, online leak sealing, hot tapping, heat exchanger maintenance, O&M and technical manpower to power, oil & gas, petrochemical and water treatment plants, plus RO desalination and solar plant EPC projects.",
+        ...(COMPANY.sameAs.length ? { sameAs: COMPANY.sameAs } : {}),
         telephone: COMPANY.phone,
         email: COMPANY.email,
         address: { "@type": "PostalAddress", ...COMPANY.address },
@@ -415,9 +429,15 @@ export function organizationJsonLd() {
         hasMap: `https://www.google.com/maps?q=${COMPANY.geo.latitude},${COMPANY.geo.longitude}`,
         areaServed: [
           { "@type": "Country", name: "Saudi Arabia" },
+          ...["Rabigh", "Jeddah", "Yanbu", "Jubail", "Dammam"].map((c) => ({ "@type": "City", name: c })),
           { "@type": "Place", name: "GCC" },
         ],
-        parentOrganization: { "@type": "Organization", name: COMPANY.parent },
+        parentOrganization: {
+          "@type": "Organization",
+          name: COMPANY.parent,
+          url: COMPANY.parentUrl,
+          sameAs: COMPANY.parentSameAs,
+        },
         contactPoint: [
           {
             "@type": "ContactPoint",
@@ -428,7 +448,14 @@ export function organizationJsonLd() {
             availableLanguage: ["English", "Arabic"],
           },
         ],
-        knowsAbout: SERVICES.map((s) => s.title),
+        knowsAbout: [
+          ...SERVICES.map((s) => s.title),
+          "Power plant maintenance",
+          "Oil and gas plant maintenance",
+          "Petrochemical plant maintenance",
+          "Desalination and water treatment plants",
+        ],
+        knowsLanguage: ["en", "ar"],
         hasOfferCatalog: {
           "@type": "OfferCatalog",
           name: "Industrial & power plant services",
